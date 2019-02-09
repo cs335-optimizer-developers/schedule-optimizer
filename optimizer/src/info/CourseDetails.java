@@ -1,13 +1,14 @@
 package info;
 
-public class Class {
-	public final String title;
-	public final Tag[] tags;
-	public final String department;
-	public final int number;
-	public final String xl;
+public class CourseDetails {
 	
-	public Class(String title, Tag[] tags, String department, int number, String xl) {
+	public final String title;
+	public final String department;
+	public final String xl;
+	public final int number;
+	public final Tag[] tags;
+	
+	public CourseDetails(String title, Tag[] tags, String department, int number, String xl) {
 		this.title = title;
 		this.tags = tags;
 		this.department = department;
