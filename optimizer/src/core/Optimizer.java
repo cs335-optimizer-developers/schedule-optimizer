@@ -11,6 +11,7 @@ public class Optimizer {
 	}
 
 	public void generate() {
+		Reader reader = new Reader(input);
 		
 	}
 }
