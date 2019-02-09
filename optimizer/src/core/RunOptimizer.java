@@ -1,4 +1,4 @@
-package optimizer;
+package core;
 
 public class RunOptimizer {
 	
