@@ -2,6 +2,10 @@ package core;
 
 import java.util.ArrayList;
 
+import algorithm.Algorithm;
+import algorithm.AlgorithmRandom;
+import reader.Reader;
+
 public class Optimizer {
 
 	String input;

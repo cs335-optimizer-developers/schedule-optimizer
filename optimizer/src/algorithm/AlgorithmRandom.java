@@ -1,4 +1,4 @@
-package core;
+package algorithm;
 
 public class AlgorithmRandom implements Algorithm {
 
