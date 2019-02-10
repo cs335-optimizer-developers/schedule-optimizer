@@ -2,7 +2,7 @@ package reader;
 
 import java.util.ArrayList;
 
-public class Reader {
+public abstract class Reader {
 	
 	private String source;
 	
