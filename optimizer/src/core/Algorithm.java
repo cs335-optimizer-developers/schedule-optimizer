@@ -1,7 +1,5 @@
 package core;
 
-import info.*;
-
 public interface Algorithm {
-	Semester[] build(Course[] classes, CourseDetails[] curriculum);
+	String[][] build(String[] programs);
 }

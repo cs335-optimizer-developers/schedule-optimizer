@@ -1,19 +1,17 @@
 package core;
 
-import info.*;
+import java.util.ArrayList;
 
 public class Reader {
 	
 	private String source;
 	
-	public final CourseDetails[] curriculum;
-	public final Course[] classes;
-
 	public Reader(String source) {
 		this.source = source;
-		
-		curriculum = null;
-		classes = null;
-		
 	}
+
+	public ArrayList<String> readCurriculum(String program) {
+		return null;
+	}
+	
 }
