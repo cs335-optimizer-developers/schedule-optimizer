@@ -22,6 +22,7 @@ public class AlgorithmRandom implements Algorithm {
 			System.out.println(i);
 			toReturn[i/4][i%4] = toTake.get(i);
 		}
+		
 		return toReturn;
 	}
 }
