@@ -1,4 +1,4 @@
-CSCI
++CSCI
 235
 243
 245
@@ -7,9 +7,9 @@ CSCI
 351
 494
 
-MATH
++MATH
 231
 245
 
-PHYS
++PHYS
 231

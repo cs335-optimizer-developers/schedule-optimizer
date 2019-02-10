@@ -22,25 +22,25 @@ public class Optimizer {
 		
 		Algorithm alg = new AlgorithmRandom();
 		String[] programs = {
-				"csci"
+				"csci-major"
 		};
 		
 		schedule = alg.build(programs);
-		
-		//Test writing of schedule.
-		testSchedule();
 		
 		//Writing schedule to local file.
 		writeSchedule();
 	}
 	
+	@SuppressWarnings("unused")
 	private void testSchedule() {
 		schedule = new String[4][4];
 		for (int i = 0;i<4;i++)
 			for (int j=0;j<4;j++)
 				schedule[i][j] = i+j+" class";
-		schedule[0][2] = "Data Structures";
-		schedule[1][3] = "Software Dev";		
+		schedule[3][0] = "Data Structures";
+		schedule[0][1] = "DMFP";
+		schedule[0][3] = "Programming I";
+		schedule[1][2] = "Programming II";
 	}
 	
 	private void writeSchedule() {
@@ -49,9 +49,10 @@ public class Optimizer {
 
 		String toWrite = "";
 		for (int i=0;i<schedule.length;i++) {
-			schedule[i][0] = "Semester "+i;
-			for (int j=1;j<schedule[i].length+1;j++)
-				toWrite += schedule[i][j-1] + ",";
+			toWrite += "Semester "+i+",";
+			for (int j=0;j<schedule[i].length;j++)
+				if (schedule[i][j] != null)
+					toWrite += schedule[i][j] + ",";
 			toWrite += "\n";
 		}
 		
