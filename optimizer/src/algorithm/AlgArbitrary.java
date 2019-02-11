@@ -5,7 +5,7 @@ import java.util.List;
 
 import reader.ReadPrg;
 
-public class AlgorithmRandom implements Algorithm {
+public class AlgArbitrary implements Algorithm {
 
 	public String[][] build(String[] programs) {
 		
@@ -18,10 +18,8 @@ public class AlgorithmRandom implements Algorithm {
 		
 		String[][] toReturn = new String[toTake.size()/4+1][4];
 		
-		for (int i=toTake.size()-1;i>=0;i--) {
-			System.out.println(i);
+		for (int i=toTake.size()-1;i>=0;i--)
 			toReturn[i/4][i%4] = toTake.get(i);
-		}
 		
 		return toReturn;
 	}
