@@ -48,11 +48,11 @@ public class Optimizer {
 			for (int j=0;j<schedule.length;j++) {
 			String add = schedule[j][i];
 			if (add != null)
-				toWrite += add+"-"+desc.get(add) + ",";
+				toWrite += add+"-"+desc.get(add);
+			toWrite += ",";
 			}
 			toWrite += "\n";
 		}
-		toWrite += "\n";
 		
 		try {
 			//Make and write to the file.
