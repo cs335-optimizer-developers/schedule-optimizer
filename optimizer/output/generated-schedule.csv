@@ -1,3 +1,6 @@
-Semester 0,null,null,null,Prog II,
-Semester 1,Software Dev,Prog I,Data Structures,Systems,
-Semester 2,Senior Capstone,DMFP,
+Semester 0,Semester 1,Semester 2,
+PHYS231-null,CSCI335-Software Dev,CSCI494-Senior Capstone,
+MATH231-null,CSCI235-Prog I,CSCI243-DMFP,
+MATH245-null,CSCI345-Data Structures,
+CSCI245-Prog II,CSCI351-Systems,
+

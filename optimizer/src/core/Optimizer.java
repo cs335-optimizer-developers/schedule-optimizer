@@ -40,15 +40,19 @@ public class Optimizer {
 		Map<String,String> desc = new ReadDet().read();
 
 		String toWrite = "";
-		for (int i=0;i<schedule.length;i++) {
+		for (int i=0;i<schedule.length;i++)
 			toWrite += "Semester "+i+",";
-			for (int j=0;j<schedule[i].length;j++) {
-				String add = schedule[i][j];
-				if (add != null)
-					toWrite += desc.get(add) + ",";
+		toWrite += "\n";
+			
+		for (int i=0;i<schedule[0].length;i++) {
+			for (int j=0;j<schedule.length;j++) {
+			String add = schedule[j][i];
+			if (add != null)
+				toWrite += add+"-"+desc.get(add) + ",";
 			}
 			toWrite += "\n";
 		}
+		toWrite += "\n";
 		
 		try {
 			//Make and write to the file.
