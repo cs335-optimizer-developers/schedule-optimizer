@@ -41,25 +41,27 @@ public class Display5 {
 				//you need text field and button
 	}*/
 	
-	SearchBar(){
+	Display5(){
 		
 		JFrame frame = new JFrame("Schedule Optimizer-Search Bar");
 		
 		//enter button
 		JButton button = new JButton("Enter");
-		button.setBounds(100,100,140,40);
+		button.setBounds(250,50,90,20);
+		
+	
 		
 		
 		JLabel label = new JLabel();
 		label.setText("Search");
-		label.setBounds(10,10,100,100);
+		label.setBounds(50,10,100,100);
 		
 		
 		JLabel label1 = new JLabel();
 		label1.setBounds(10,110,200,100);
 		
 		JTextField searchField = new JTextField();
-		searchField.setBounds(110,50,130,30);
+		searchField.setBounds(110,50,130,20);
 		
 		frame.add(label1);
 		frame.add(searchField);
@@ -78,10 +80,11 @@ public class Display5 {
 		});
 		
 		
-		public static void main(String[] args) {
-			new SearchBar();
-		}
 		
+		
+	}
+	public static void main(String[] args) {
+		new Display5();
 	}
 	
 	
