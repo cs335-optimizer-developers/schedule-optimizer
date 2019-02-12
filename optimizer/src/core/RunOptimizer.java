@@ -10,6 +10,5 @@ public class RunOptimizer {
 		opt.generate();
 		
 		System.out.println("Completed");
-
 	}
 }
