@@ -41,14 +41,14 @@ public class Optimizer {
 
 		String toWrite = "";
 		for (int i=0;i<schedule.length;i++)
-			toWrite += "Semester "+i+",";
+			toWrite += "Semester "+(i+1)+",";
 		toWrite += "\n";
 			
 		for (int i=0;i<schedule[0].length;i++) {
 			for (int j=0;j<schedule.length;j++) {
 			String add = schedule[j][i];
 			if (add != null)
-				toWrite += add+"-"+desc.get(add);
+				toWrite += add+" - "+desc.get(add);
 			toWrite += ",";
 			}
 			toWrite += "\n";
