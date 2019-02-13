@@ -15,38 +15,34 @@ public class Display4 {
         JFrame frame = new JFrame("Schedule Optimizer");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        //Add the ubiquitous "Hello World" label.
+        //create and set up the JLabel
         JLabel label = new JLabel("Your	Parameters");
-        //label.setHorizontalAlignment(JLabel.CENTER);
         Dimension d = new Dimension(100,50);
         label.setPreferredSize(d);
         label.setHorizontalAlignment(SwingConstants.CENTER);
 
-        
+        //Create and set up the JPanel
         JPanel main = new JPanel();
         main.setLayout(new BoxLayout(main, BoxLayout.Y_AXIS));
         main.add(label);
         
+        //Creating a table and its data
         String[] columns = {"Requirement","Fulfilled?"};
         String[][] data = {{"Gen EDs","no"},{"CATC Tags","yes"},{"Computer Science Major","no"}};
         JTable jt;
         jt = new JTable(data, columns);
         jt.setFillsViewportHeight(true);
-       
         TableColumn tc = jt.getColumnModel().getColumn(0);
-        
         tc.setPreferredWidth(400);
         tc = jt.getColumnModel().getColumn(1);
         tc.setPreferredWidth(100);
-        
         JScrollPane jsp = new JScrollPane(jt);
         main.add(jsp);
         
+        //making the generate button
         JButton jb = new JButton("Generate Schedule Based on These Constrains");
         main.add(jb);
-        frame.getContentPane().add(main);
-
-        
+        frame.getContentPane().add(main);        
 
         //Display the window.
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
