@@ -1,45 +1,14 @@
 package display;
-/** mock up* by Naissa Charles*/
-/**search buttom*/
+/** mock up by Naissa Charles*/
+/**search button*/
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
  import javax.swing.*;
-
-import java.awt.FlowLayout;
-import java.awt.GraphicsConfiguration;
-import java.awt.TextField;
- //import javax.awt.*;
  
 
 public class Display5 {
-	
-	/*static JTextField searchField;
-	
-	//public TextField (String intitalText);
-	static GraphicsConfiguration gc;
-	
-	
-	//print a statement when you press enter;
-
-	public static void main (String [] args) {
-	 
-		//create the window
-				JFrame frame = new JFrame (gc);
-				frame.setTitle("Schedule Optimizer-Search Bar");
-				frame.setSize(600, 400);
-				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-				
-				frame.getContentPane().setLayout(new FlowLayout());
-				searchField = new JTextField("Search", 20);
-				
-				
-				frame.getContentPane().add(searchField);
-				frame.setVisible(true);
-				//you need text field and button
-	}*/
 	
 	Display5(){
 		
@@ -49,9 +18,7 @@ public class Display5 {
 		JButton button = new JButton("Enter");
 		button.setBounds(250,50,90,20);
 		
-	
-		
-		
+		//search label
 		JLabel label = new JLabel();
 		label.setText("Search");
 		label.setBounds(50,10,100,100);
@@ -60,9 +27,11 @@ public class Display5 {
 		JLabel label1 = new JLabel();
 		label1.setBounds(10,110,200,100);
 		
+		//the actual search bar
 		JTextField searchField = new JTextField();
 		searchField.setBounds(110,50,130,20);
 		
+		//adding everything to the frame
 		frame.add(label1);
 		frame.add(searchField);
 		frame.add(label);
@@ -72,6 +41,7 @@ public class Display5 {
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		//button action listener 
 		button.addActionListener(new ActionListener(){
 			
 			public void actionPerformed(ActionEvent arg0) {
@@ -79,17 +49,11 @@ public class Display5 {
 			}
 		});
 		
-		
-		
-		
 	}
 	public static void main(String[] args) {
 		new Display5();
 	}
 	
 	
-	
-	
-
 }
 
