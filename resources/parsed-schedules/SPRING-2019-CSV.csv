@@ -1,0 +1,1050 @@
+CRN,Subject,Number,Section,Quad,Title / Comment,Credits,Meeting Time,Days,Instructor(s),Room,Fees,Attributes
+10007,ENVR,494,0,,Environmental Science Capstone,2,8:30 AM - 10:20 AM,T,"Keil, Charles B.",MEY 063,,
+10008,ENVR,495,0,,Environmental Science Research,2 TO 4,TBA,,STAFF,,,
+10010,GEOL,211,1,,Exploring the Dynamic Earth,4,9:20 AM - 10:30 AM,M W F,"Maneiro, Kathryn A.",MEY 021,35,SP
+10011,GEOL,211,2,,Exploring the Dynamic Earth,4,2:15 PM - 3:25 PM,M W F,"Tagne, Gilles V.",MEY 145,35,SP
+10012,GEOL,211L,1,,Dynamic Earth Lab,0,8:30 AM - 10:20 AM,T,"Heidlauf, Lisa E.",MEY 043,,
+10013,GEOL,211L,2,,Dynamic Earth Lab,0,11:15 AM - 1:05 PM,T,"Heidlauf, Lisa E.",MEY 043,,
+10014,GEOL,211L,3,,Dynamic Earth Lab,0,1:15 PM - 3:05 PM,T,"Heidlauf, Lisa E.",MEY 043,,
+10015,GEOL,211L,4,,Dynamic Earth Lab,0,11:15 AM - 1:05 PM,R,"Heidlauf, Lisa E.",MEY 043,,
+10017,GEOL,211L,5,,Dynamic Earth Lab,0,1:15 PM - 3:05 PM,R,"Tagne, Gilles V.",MEY 043,,
+10018,GEOL,321,0,,Earth History Stratig,4,12:55 PM - 2:05 PM,M W F,"Maneiro, Kathryn A.",MEY 045,145,SIP
+10019,GEOL,321L,0,,Earth History Stratig Lab,0,1:15 PM - 3:05 PM,T,"Maneiro, Kathryn A.",MEY 045,,
+10020,GEOL,372,0,,GIS Practicum,2,8:30 AM - 10:20 AM,R,"Tagne, Gilles V.",MEY 061,,
+10021,GEOL,308,0,,Energy & Climate Change,4,9:20 AM - 10:30 AM,M W F,"Tagne, Gilles V.",MEY 043,25,SIP
+10026,GEOL,495,0,,Problems In Geology,1 TO 4,TBA,,STAFF,,,
+10027,GEOL,496,0,,Internship,1 TO 4,TBA,,STAFF,,,
+10029,B EC,227,0,,Principles of Accounting II,4,1:15 PM - 3:05 PM,T R,"Tomal, Annette H.",MSC 124,,
+10030,B EC,328,0,B,Business Ethics,2,11:35 AM - 12:45 PM,M W F,"Gordon, James R.",BLANCH 273,,
+10034,B EC,431,0,,Invest Analysis/Capital Mkts,4,9:20 AM - 10:30 AM,M W F,"Norton, Seth W.",MSC 105,,
+10036,B EC,321,1,,Statistics,4,11:15 AM - 1:05 PM,T R,"Makaudze, Ephias",MSC 105,,
+10038,B EC,341,0,,Principles of Marketing,4,9:20 AM - 10:30 AM,M W F,"Stolze, Hannah J.",BGC 134,,
+10039,B EC,342,1,,Principles of Management,4,9:20 AM - 10:30 AM,M W F,"Lee, Min-Dong Paul",MSC 302,,
+10040,B EC,342,2,,Principles of Management,4,8:30 AM - 10:20 AM,T R,"Jackson, Christophe",MSC 302,,
+10041,B EC,367,0,,Principles of Finance,4,8:00 AM - 9:10 AM,M W F,"Norton, Seth W.",MSC 302,,
+10042,B EC,493,1,,Business Strategy,2,8:30 AM - 10:20 AM,R,"Norton, Seth W.",MSC 304,,
+10043,B EC,493,2,,Business Strategy,2,11:15 AM - 1:05 PM,R,"Norton, Seth W.",MSC 304,,
+10046,B EC,494,3,,Senior Seminar,2,11:15 AM - 1:05 PM,T,"Lee, Min-Dong Paul",MSC 304,,
+10047,ECON,211,1,,Principles of Microeconomics,4,9:20 AM - 10:30 AM,M W F,"Cook, Jeremy A.",MSC 124,,SI
+10048,ECON,211,2,,Principles of Microeconomics,4,11:35 AM - 12:45 PM,M W F,"Cook, Jeremy A.",MSC 124,,SI
+10050,ECON,212,1,A,Principles of Macroeconomics,2,9:20 AM - 10:30 AM,M W F,"Hill, Enoch S.",MSC 122,,
+10051,ECON,212,2,A,Principles of Macroeconomics,2,11:35 AM - 12:45 PM,M W F,"Hill, Enoch S.",MEY 143,,
+10052,ECON,212,3,B,Principles of Macroeconomics,2,9:20 AM - 10:30 AM,M W F,"Hill, Enoch S.",MSC 122,,
+10054,ECON,325,1,,Intermediate Macroeconomics,4,12:55 PM - 2:05 PM,M W F,"Guo, Nick L.",MSC 124,,
+10055,ECON,325,2,,Intermediate Macroeconomics,4,2:15 PM - 3:25 PM,M W F,"Guo, Nick L.",MSC 124,,
+10056,ECON,326,1,,Intermediate Microeconomics,4,11:15 AM - 1:05 PM,T R,"Jankowski, Donald J",MSC 302,,
+10057,ECON,375,1,,Econometrics,4,11:15 AM - 1:05 PM,T R,"Forsstrom, Matthew",M. SC 122,,
+10058,ECON,375,2,,Econometrics,4,2:15 PM - 3:25 PM,M W F,"Makaudze, Ephias",MSC 302,,
+10062,ART,101,1,B,Art Survey,2,3:15 PM - 5:05 PM,T R,STAFF,ADAMS 301,,VPAV
+10063,ART,101,2,A,Art Survey,2,11:35 AM - 12:45 PM,M W F,"Milliner, Matthew J.",ADAMS 301,,VPAV
+10064,ART,101,3,A,Art Survey,2,11:15 AM - 1:05 PM,T R,"Thompson, Jeffrey P",ADAMS 301,,VPAV
+10065,ART,101,4,B,Art Survey,2,11:15 AM - 1:05 PM,T R,"Thompson, Jeffrey P",ADAMS 301,,VPAV
+10068,ART,221,0,,Taking Pictures,3,9:00 AM - 12:00 PM,T R,"Schreck, Gregory H.",ADAMS 213,,VPAV
+10069,ART,231,0,,Sculpture I,3,1:15 PM - 4:15 PM,T R,"Woods, Sarah B.",ADAMS 013,,VPAV
+10070,ART,232,0,,Drawing I,3,1:15 PM - 4:15 PM,T R,"Samuelson, Leah M.",ADAMS 309,,VPAV
+10071,ART,233,0,,Creativity & Design,3,9:00 AM - 12:00 PM,T R,"Botts, Jeremy G.",ADAMS 101,,
+10072,ART,234,0,,Digital Studio,3,1:15 PM - 4:15 PM,T R,"Park, Joonhee",ADAMS 311,,
+10075,ART,318,0,,Graphic Design I,3,12:55 PM - 3:55 PM,M W,"Botts, Jeremy G.",ADAMS 106,,
+10077,ART,324,0,,Digital Photography II,3,12:55 PM - 3:55 PM,M W,"Schreck, Gregory H.",ADAMS 107,,
+10078,ART,325,0,,Cinema,4,2:15 PM - 4:05 PM,M W,"Park, Joonhee",ADAMS 207,,
+10081,ART,336,0,,Ceramics II,3,1:15 PM - 4:15 PM,T R,"Hooker, David J.",ADAMS 006,,
+10085,ART,429,0,,Community Art II,3,2:00 PM - 8:00 PM,M,"Samuelson, Leah M.",ADAMS 101,,
+10087,ART,495,0,,Independent Projects,1 TO 4,TBA,,STAFF,,,
+10088,ART,496,0,,Internship,2 TO 8,TBA,,STAFF,,,
+10090,AHS,101,1,B,Wellness,2,11:15 AM - 1:05 PM,T R,"Penfound, Jean E.",CHR 223,,
+10091,AHS,101,2,A,Wellness,2,11:35 AM - 12:45 PM,M W F,"Daly, Dana N.",CHR 223,,
+10092,AHS,101,3,A,Wellness,2,8:00 AM - 9:10 AM,M W F,"Daly, Dana N.",CHR 223,,
+10093,AHS,101,4,B,Wellness,2,8:30 AM - 10:20 AM,T R,"Daly, Dana N.",CHR 223,,
+10094,AHS,101,5,B,Wellness,2,11:15 AM - 1:05 PM,T R,"Daly, Dana N.",MEY 133,,
+10095,AHS,101,6,B,Wellness,2,11:35 AM - 12:45 PM,M W F,"Penfound, Jean E.",CHR 223,,
+10096,AHS,101,7,A,Wellness,2,12:55 PM - 2:05 PM,M W F,"Daly, Dana N.",CHR 223,,
+10098,AHS,273,0,A,Behavioral Medicine,2,11:15 AM - 1:05 PM,T R,"Penfound, Jean E.",CHR 223,,
+10099,AHS,361,0,,Integrative Human Physiology,4,8:00 AM - 9:10 AM,M W F,"Hunt, Brian E.",MEY 145,75,
+10100,AHS,281,0,,Biostatistics,4,9:20 AM - 10:30 AM,M W F,"Hunt, Brian E.",CHR 223,,AAQR
+10101,AHS,361L,1,,Integrative Physiology Lab,0,7:30 AM - 10:20 AM,T,"Penfound, Jean E.",MEY 111,,
+10102,AHS,361L,2,,Integrative Physiology Lab,0,1:15 PM - 4:05 PM,R,"Penfound, Jean E.",MEY 111,,
+10103,AHS,361L,3,,Integrative Physiology Lab,0,7:30 AM - 10:20 AM,R,"Penfound, Jean E.",MEY 111,,
+10104,AHS,361L,4,,Integrative Physiology Lab,0,1:15 PM - 4:05 PM,T,"Penfound, Jean E.",MEY 111,,
+10106,AHS,368,0,,Concepts in Nutrition,4,1:15 PM - 3:05 PM,T R,"Ickes, Scott B.",CHR 223,,
+10107,AHS,371,0,,Clinical Kinesiology,4,7:00 PM - 9:50 PM,M,"Alford, Micah L.",MEY 021,,
+10108,AHS,371L,1,,Clinical Kinesiology Lab,0,5:00 PM - 6:50 PM,R,"Alford, Micah L.",MEY 205,,
+10109,AHS,371L,2,,Clinical Kinesiology Lab,0,7:00 PM - 8:50 PM,R,"Alford, Micah L.",MEY 205,,
+10111,AHS,451,0,A,Advanced Human Anatomy,2,8:30 AM - 10:20 AM,T R,"Townsend, Dana K.",MEY 011,,
+10115,AHS,494,0,B,Integrative Seminar,2,6:30 PM - 10:00 PM,T,"Hunt, Brian E.",CHR 223,,
+10121,PHIL,101,1,,Introduction to Philosophy,4,8:30 AM - 10:20 AM,T R,"Wood, W. Jay",BLANCH 125,,PI
+10123,PHIL,103,0,,Philosophy & the Sciences,4,11:35 AM - 12:45 PM,M W F,"O'Connor, Robert C.",BLANCH 125,,"PI, SIP"
+10124,PHIL,105,1,,Race & Justice,4,8:00 AM - 9:10 AM,M W F,"Cartagena, Nathan",BLANCH 125,,"DUS, PI"
+10127,PHIL,245,0,,Logic,4,9:20 AM - 10:30 AM,M W F,"O'Connor, Robert C.",BLANCH 222,,AAQR
+10128,PHIL,255,1,,Existentialism,4,6:30 AM - 1:05 PM,T,"Kemp, Ryan S.",BLANCH 124,,"LE, PI"
+10129,PHIL,255,2,,Existentialism,4,6:30 AM - 1:05 PM,R,"Kemp, Ryan S.",BLANCH 124,,"LE, PI"
+10131,PHIL,315,0,,Philosophy of Religion,4,1:15 PM - 3:05 PM,T R,"Wood, W. Jay",BLANCH 440,,PI
+10133,PHIL,328,2,B,Business Ethics,2,11:35 AM - 12:45 PM,M W F,"Gordon, James R.",BLANCH 273,,
+10144,PHIL,496,0,,Internship,2 OR 4,TBA,,STAFF,,,
+10145,PHIL,499,0,,Honors Thesis,4,TBA,,STAFF,,,
+10146,ARCH,211,0,,OT Archaeology,4,9:20 AM - 10:30 AM,M W F,"Miglio, Adam E.",BGC 534,,
+10148,ARCH,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10156,BITH,211,1,,OT Lit & Interpretation,4,12:55 PM - 2:05 PM,M W F,"Stanghelle, Jason S.",BGC 136,,SHAR
+10157,BITH,211,2,,OT Lit & Interpretation,4,1:15 PM - 3:05 PM,T R,"Master, Daniel M.",BGC 136,,SHAR
+10158,BITH,211,3,,OT Lit & Interpretation,4,11:15 AM - 1:05 PM,T R,"Hill, Andrew E.",BGC 136,,SHAR
+10159,BITH,211,4,,OT Lit & Interpretation,4,11:35 AM - 12:45 PM,M W F,"Buster, Aubrey E.",BGC 136,,SHAR
+10160,BITH,211,5,,OT Lit & Interpretation,4,8:30 AM - 10:20 AM,T R,"Haydon, Ronald E.",BGC 136,,SHAR
+10161,BITH,211,6,,OT Lit & Interpretation,4,9:20 AM - 10:30 AM,M W F,"Walton, John H.",BGC 136,,SHAR
+10163,BITH,213,1,,NT Lit & Interpretation,4,8:30 AM - 10:20 AM,T R,"Ehorn, Seth M.",BGC 132,,SHAR
+10165,BITH,213,3,,NT Lit & Interpretation,4,11:15 AM - 1:05 PM,T R,"Ehorn, Seth M.",BGC 132,,SHAR
+10166,BITH,213,4,,NT Lit & Interpretation,4,12:55 PM - 2:05 PM,M W F,"Vlachos, Chris A.",BGC 138,,SHAR
+10167,BITH,213,5,,NT Lit & Interpretation,4,1:15 PM - 3:05 PM,T R,"Brendsel, Daniel J.",BGC 138,,SHAR
+10168,BITH,213,6,,NT Lit & Interpretation,4,9:20 AM - 10:30 AM,M W F,"Sosa Siliezar, Carlos",B.GC 132,,SHAR
+10169,BITH,213,7,,NT Lit & Interpretation,4,6:30 PM - 10:00 PM,T,"LeMahieu, Nathan",BGC 138,,SHAR
+10171,BITH,315,1,,Christian Thought,4,8:30 AM - 10:20 AM,T R,"Bacote, Vincent E.",BGC 130,,SHAR
+10173,BITH,315,3,,Christian Thought,4,9:20 AM - 10:30 AM,M W F,"McGowin, Emily H.",BGC 140,,SHAR
+10174,BITH,315,4,,Christian Thought,4,11:35 AM - 12:45 PM,M W F,"Johnson, Keith L.",BGC 140,,SHAR
+10175,BITH,315,5,,Christian Thought,4,6:30 PM - 10:00 PM,R,"Lee, Gregory W.",BGC 136,,SHAR
+10176,BITH,315,6,,Christian Thought,4,8:00 AM - 9:10 AM,M W F,"McGowin, Emily H.",BGC 140,,SHAR
+10177,BITH,315,7,,Christian Thought,4,2:15 PM - 3:25 PM,M W F,"Bruce, Matthew J.",BGC 140,,SHAR
+10178,BITH,315,8,,Christian Thought,4,1:15 PM - 3:05 PM,T R,"Jones, Beth F.",BGC 132,,SHAR
+10180,BITH,325,0,,Biblical Interp & Hermeneutics,4,11:15 AM - 1:05 PM,T R,"Abernethy, Andrew",BGC 130,,
+10183,BITH,343,0,A,OT Cultural Environment,2,1:15 PM - 3:05 PM,T R,"Walton, John H.",BGC 532,,
+10184,BITH,349,1,A,OT Topics: Christan Fathers,2,11:35 AM - 12:45 PM,M W F,"Graves, Michael W.",BGC 130,,
+10186,BITH,372,0,,Historical Theology,4,1:15 AM - 3:05 PM,T R,"Bruce, Matthew J.",BGC 534,,
+10187,BITH,373,0,,"Marriage, Sex and Family",4,11:15 AM - 1:05 PM,T R,"Jones, Beth F.",BGC 532,,
+10188,BITH,374,0,,Systematic Theology,4,9:20 AM - 10:30 AM,M W F,"Johnson, Keith L.",BGC 532,,
+10193,BITH,494,0,,Senior Seminar,2,8:00 AM - 1:00 PM,,Lee & Peeler,,,
+10194,BITH,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10195,BITH,496,0,,Internship,1 TO 4,TBA,,STAFF,,,
+10196,BITH,499,0,,Honors Thesis,2 OR 4,TBA,,STAFF,,,
+10197,BITH,505,0,,French for Reading,4,11:35 AM - 12:45 PM,M W F,"Richmond, Lisa T.",BUS 133,,
+10200,BITH,539,0,A,ANE Backgrounds,2,1:15 PM - 3:05 PM,T R,"Walton, John H.",BGC 532,,
+10201,BITH,375,0,,Christian Ethics,4,2:15 PM - 3:25 PM,M W F,"Johnson, Keith L.",BGC 532,,
+10204,BITH,546,0,,NT Book/1st & 2nd Peter & Jude,2 OR 4,6:30 PM - 10:00 PM,T,"Green, Gene L.",BGC 532,,
+10205,BITH,551,0,B,Greco-Roman Backgrounds of NT,2,6:30 PM - 10:00 PM,M,"Sandy, D. Brent",BGC 130,,
+10206,BITH,561,0,,Theological Anthropology,2,8:30 AM - 10:20 AM,W,"Cortez, Marc A.",BLANCH 339,,
+10208,BITH,565,1,,Christian Theology,4,8:00 AM - 5:00 PM,MTWRFS,"Barbeau, Jeffrey W.",BGC 532,,
+10208,BITH,565,1,,Christian Theology,4,TBA,,"Barbeau, Jeffrey W.",,,
+10209,BITH,565,2,,Christian Theology,4,1:15 PM - 3:05 PM,T R,"Cortez, Marc A.",BGC 130,,
+10211,BITH,576,0,,Hist of Christianity to 1900,4,6:30 PM - 10:00 PM,T,"Larsen, Timothy T.",BGC 132,,
+10212,BITH,577,0,,World Christianity,4,6:30 PM - 10:00 PM,M,"Tooley, William A.",BGC 132,,
+10213,BITH,622,0,,Theo/Rel Iss In Psyc,2,1:15 PM - 3:05 PM,T,Perrin & Jones,BGC 252,,
+10216,BITH,635,1,,Hebrew Exegesis: Job,4,8:00 AM - 9:10 AM,M W F,"Walton, John H.",BGC 532,,
+10220,BITH,655,0,A,Hist Theology: Reformation,2,11:15 AM - 1:05 PM,T R,"McNutt, Jennifer P.",BGC 524,,
+10221,BITH,656,0,B,Hist Theology: Modern,2,11:15 AM - 1:05 PM,T R,STAFF,BGC 250,,
+10222,BITH,674,0,,Theology & Liberal Arts,4,6:30 PM - 10:00 PM,W,"Barbeau, Jeffrey W.",BGC 136,,
+10223,BITH,675,0,,Adv Syst Theo:Christology,4,8:30 AM - 10:20 AM,T R,"Treier, Daniel J.",BGC 532,,
+10224,BITH,676,0,,Theo: Christology,4,8:30 AM - 10:20 AM,T R,"Treier, Daniel J.",BGC 532,,
+10227,BITH,683,0,B,Historiography,2,11:15 AM - 1:05 PM,T R,"McNutt, Jennifer P.",BGC 524,,
+10228,BITH,692,0,,Comprehensive Exam,0,TBA,,"Capes, David B.",,25,
+10230,BITH,696,0,,Internship,2 OR 4,TBA,,STAFF,,,
+10231,BITH,698,0,,Thesis,4,TBA,,STAFF,,,
+10232,BITH,699,0,,Thesis Continuation,0,TBA,,STAFF,,50,
+10233,BITH,793,0,,Directed Study,2 TO 4,TBA,,STAFF,,,
+10234,BITH,794,0,,Directed Study-Liberal Arts,2 TO 4,TBA,,STAFF,,,
+10235,BITH,795,0,,Guided Research,1 TO 4,TBA,,STAFF,,,
+10236,BITH,798,0,,Guided Pedagogical Experience,2,TBA,,STAFF,,,
+10237,BITH,882,0,,NT Ph.D. Kingdom of God,4,8:00 AM - 11:30 AM,M,"Perrin, Nicholas",BGC 569,,
+10239,BITH,898,0,,Dissertation,0,TBA,,"Treier, Daniel J.",,,
+10240,BITH,899,0,,Dissertation Continuation (FT),0,TBA,,"Treier, Daniel J.",,,
+10242,BITH,211,7,,OT Lit & Interpretation,4,6:30 PM - 10:00 PM,T,"Higginbotham, Lanc",BPG. C 136,,SHAR
+10254,BITH,639,0,,New Voices-OT Studies,2 OR 4,11:15 AM - 1:05 PM,T R,"Carroll, Mark D.",BGC 252,,
+10257,BITH,521,0,A,Theology Of Education,2,6:30 PM - 10:00 PM,M,"Baker, Mary J.",BLANCH 455,,
+10258,BITH,565,3,,Christian Theology,4,8:00 AM - 6:00 PM,MTWRF,"Bruce, Matthew J.",,,
+10259,BITH,679,2,,Theology & the Enlightenment,4,6:30 PM - 10:00 PM,R,"McNutt, Jennifer P.",BGC 569,,
+10261,CORE,312,0,,AIS Col & Redem:Native Chicago,4,12:55 PM - 2:05 PM,M W F,"Harkrider, Melissa",BLANCH 324,,"DUS, SI"
+10262,PSYC,701,0,,Foundations of Integration,3,1:00 PM - 3:50 PM,M,STAFF,BGC 254,,
+10264,PSYC,737,0,,Psychoanalytic/Psychodynamic,3,9:00 AM - 11:50 AM,M,STAFF,BGC 254,,
+10266,PSYC,744,0,,Psych Assessment II,3,8:20 AM - 11:10 AM,T,"Davis, Edward B.",BGC 254,,
+10271,PSYC,782,0,,Clinical Supervision/Consult,3,10:40 AM - 1:30 PM,M,"Watson, Terri S.",BGC M209,,
+10272,PSYC,796,0,,"Practica I, II, III, IV",2,TBA,,"Voytenko, Vitaliy L.",,,
+10280,PSYC,837,0,,Developmental Psychopathology,3,8:20 AM - 11:10 AM,T,"Canning, Sally S.",BGC M209,,
+10283,PSYC,891,1,,Advanced Clerkship,0,8:30 AM - 10:00 AM,M,"Voytenko, Vitaliy L.",BGC M209,,
+10284,PSYC,891,2,,Advanced Clerkship,0,8:30 AM - 10:00 AM,M,"Roth, Alana M.",BGC 002,,
+10285,PSYC,892,1,,Advanced Clerkship II,0,8:30 AM - 10:00 AM,M,"Voytenko, Vitaliy L.",BGC M209,,
+10286,PSYC,892,2,,Advanced Clerkship II,0,8:30 AM - 10:00 AM,M,"Roth, Alana M.",BGC 002,,
+10287,PSYC,894,1,,Clerkship,0,8:30 AM - 10:00 AM,M,"Voytenko, Vitaliy L.",BGC M209,,
+10288,PSYC,894,2,,Clerkship,0,8:30 AM - 10:00 AM,M,"Roth, Alana M.",BGC 002,,
+10289,PSYC,895,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10290,PSYC,896,0,,Clinical Internship,0,TBA,,STAFF,,,
+10291,PSYC,898,1,,Clinical Dissertation,1 TO 4,TBA,,STAFF,,,
+10292,PSYC,899,0,,Clinical Dissertation Contin,0,TBA,,STAFF,,50,
+10293,PSYC,991,0,,Comprehensive Exam,0,TBA,,"Kahn, Ted",,,
+10294,PSYC,992,0,,Professional Qualifying Exam,0,TBA,,"Kahn, Ted",,,
+10296,PSYC,999,0,,Disseration Continuation-PT,0,TBA,,STAFF,,50,
+10300,COMM,101,3,A,Public Speaking,2,11:15 AM - 1:05 PM,T R,"Robbins, Kelley K.",BGC 011,,COMP
+10301,COMM,101,4,B,Public Speaking,2,11:15 AM - 1:05 PM,T R,"Robbins, Kelley K.",BGC 011,,COMP
+10302,COMM,101,5,B,Public Speaking,2,8:30 AM - 10:20 AM,T R,"Bell, Kailey B.",BGC 011,,COMP
+10303,COMM,101,6,A,Public Speaking,2,11:35 AM - 12:45 PM,M W F,"Mangin, Katy A.",BGC 011,,COMP
+10304,COMM,101,7,A,Public Speaking,2,12:55 PM - 2:05 PM,M W F,"Mangin, Katy A.",BGC 011,,COMP
+10305,COMM,101,8,B,Public Speaking,2,12:55 PM - 2:05 PM,M W F,"Mangin, Katy A.",BGC 011,,COMP
+10306,COMM,101,9,A,Public Speaking,2,2:15 PM - 3:25 PM,M W F,"Liu, Esther H.",BGC 011,,COMP
+10307,COMM,101,10,B,Public Speaking,2,2:15 PM - 3:25 PM,M W F,"Liu, Esther H.",BGC 011,,COMP
+10308,COMM,101,11,A,Public Speaking,2,11:35 AM - 12:45 PM,M W F,"Schuchardt, Read M",BGC 010,,COMP
+10309,COMM,101,12,B,Public Speaking,2,11:35 AM - 12:45 PM,M W F,"Schuchardt, Read M",BGC 011,,COMP
+10310,COMM,101,13,A,Public Speaking,2,6:30 PM - 10:00 PM,R,"Rorvik, John G.",BGC 011,,COMP
+10311,COMM,101,14,B,Public Speaking,2,6:30 PM - 10:00 PM,R,"Rorvik, John G.",BGC 011,,COMP
+10312,COMM,101,1,A,Public Speaking,2,1:15 PM - 3:05 PM,T R,"Robbins, Kelley K.",BGC 011,,COMP
+10313,COMM,101,2,B,Public Speaking,2,1:15 PM - 3:05 PM,T R,"Robbins, Kelley K.",BGC 011,,COMP
+10314,COMM,171,0,A,Intro to Acting,2,8:30 AM - 10:20 AM,T R,"Bell, Kailey B.",JENKS STZN,,VPAT
+10315,COMM,201,0,,Fundmntls Oral Communication,4,8:30 AM - 10:20 AM,T R,"Hill, Theon E.",BGC 010,,COMP
+10316,COMM,219,0,,Journalism Co-Curricular,0,TBA,,"Morgan, Timothy C.",,,
+10317,COMM,221,0,,Interpersonal Comm,4,9:20 AM - 10:30 AM,M W F,"Liu, Esther H.",BGC 010,,
+10319,COMM,246,0,,Media Production,4,8:30 AM - 10:20 AM,T R,"Park, Joonhee",ADAMS 311,,
+10320,COMM,272,0,,Scenography,4,11:15 AM - 1:05 PM,T R,"Stauffer, Michael E.",JENKS 103,,
+10321,COMM,273,0,,Acting I,4,11:15 AM - 1:05 PM,T R,"Mangin, Andrew P.",JENKS STZN,,
+10322,COMM,296,0,,Journalism Practicum,2 TO 4,TBA,,"Morgan, Timothy C.",,,
+10325,COMM,311,0,,Human Communication Research,4,1:15 PM - 3:05 PM,T R,"Sietman, Rebecca B",BGC 010,,SI
+10326,COMM,312,0,,Communication Criticism,4,6:30 PM - 10:00 PM,W,"Hill, Theon E.",BGC 134,,
+10328,COMM,363,0,,Persuasion,4,9:20 AM - 10:30 AM,M W F,"Langan, Emily J.",BGC 263,,SI
+10329,COMM,373,0,,Theater Workout,0 OR 1,4:15 PM - 5:30 PM,T R,"Lewis, Mark N.",JENKS STZN,,
+10331,COMM,393,0,,Intercollegiate Debate,0 OR 1,TBA,,"Sietman, Rebecca B.",,,
+10333,COMM,424,0,A,Family Communication,2 OR 4,11:35 AM - 12:45 PM,M W F,"Langan, Emily J.",BGC 263,,
+10334,COMM,454,0,,Political Style,2 OR 4,1:15 PM - 3:05 PM,T R,"Hill, Theon E.",BGC 263,,
+10335,COMM,494,0,A,Senior Seminar,2,2:15 PM - 3:25 PM,M W F,"Chase, Kenneth R.",BGC 263,,
+10336,COMM,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10337,COMM,496,0,,Internship,2 TO 4,TBA,,STAFF,,,
+10338,COMM,498,0,,Journalism internship,2 OR 4,TBA,,"Morgan, Timothy C.",,,
+10339,EDUC,135,0,A,School & Society,2,11:35 AM - 12:45 PM,M W F,"Jonas, Mark E.",BLANCH 139,,
+10340,EDUC,136,0,B,Teaching Diverse Students,2,11:35 AM - 12:45 PM,M W F,"Vroom Fick, Sara J.",BLANCH 139,,
+10341,EDUC,136L,0,,Cross-cultural Tutoring,1,TBA,,"Vroom Fick, Sara J.",,,
+10342,EDUC,225,0,,Psych & Dev Contexts of Educ,4,11:15 AM - 1:05 PM,T R,"Kim, Il-Hee",JENKS 204,,
+10343,EDUC,225L,0,,Teacher Aiding Practicum,1,TBA,,Kim & Felker,,,
+10344,EDUC,305,0,A,Learning Differences,2,8:00 AM - 9:20 AM,M W F,"Boehm, Thomas L.",,,
+10345,EDUC,305L,0,,Learning Differences Practicum,1,TBA,,"Boehm, Thomas L.",,,
+10346,EDUC,306,0,,Classroom Comm & Curr Int,4,1:15 PM - 3:05 PM,T R,"Eckert, Jonathan M.",BLANCH 455,,
+10347,EDUC,311,1,,General Elem Middle Methods,2,8:20 AM - 10:20 AM,R,"Eckert, Jonathan M.",BLANCH 472,15,
+10348,EDUC,311,2,,General Elem Middle Methods,2,11:05 AM - 1:05 PM,R,"Eckert, Jonathan M.",BLANCH 472,15,
+10349,EDUC,311L,0,,General Methods Practicum,1,TBA,,Lederhouse & Vroom Fick,50,,
+10350,EDUC,312,1,,Rdg in Elem and Middle School,4,8:30 AM - 10:30 AM,M   F,"Morrison, Sally E.",BLANCH 472,,
+10351,EDUC,312,2,,Rdg in Elem and Middle School,4,11:35 AM - 1:35 PM,M   F,"Morrison, Sally E.",BLANCH 472,,
+10352,EDUC,315,1,,Elem/MS Math Methods,4,8:20 AM - 10:20 AM,T R,"Lederhouse, Jillian",BLANCH 455,,
+10353,EDUC,315,2,,Elem/MS Math Methods,4,11:05 AM - 1:05 PM,T R,"Lederhouse, Jillian",BLANCH 455,,
+10354,EDUC,317,1,,Elem/Midl:Lang Arts,2,8:30 AM - 10:30 AM,M,"Beitler, Brita E.",BLANCH 455,,
+10355,EDUC,317,2,,Elem/Midl:Lang Arts,2,11:35 AM - 1:35 PM,M,"Beitler, Brita E.",BLANCH 455,,
+10358,EDUC,324L,0,,Middle/HS:Meth Pract,1,TBA,,Lederhouse & Vandermeulen,50,,
+10359,EDUC,328,0,,Cross-Categorical Characterist,4,12:55 PM - 2:05 PM,M W F,"Boehm, Thomas L.",MSC 105,,
+10360,EDUC,328L,0,,LBS Practicum I-A,1,TBA,,"Boehm, Thomas L.",,,
+10363,EDUC,405L,0,,Middle Grade Practicum,1,TBA,,"Morrison, Sally E.",,,
+10364,EDUC,494,0,,Senior Seminar:Secondary,2,6:30 PM - 8:30 PM,T,"Jonas, Mark E.",BLANCH 472,300,
+10365,EDUC,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10367,EDUC,497,0,B,"Philosophy of EducationMeets on campus Apr 15-19, 29; atHR Apr 22-26",3,12:50 PM - 3:20 PM,MTWRF,"Jonas, Mark E.",JENKS 206,175,
+10368,EDUC,498,0,,Literacy Assessment,2,8:30 AM - 10:20 AM,R,"Morrison, Sally E.",MSC 124,,
+10369,EDUC,505L,0,,Learning Differences Practicum,0,TBA,,"Boehm, Thomas L.",,,
+10370,EDUC,506,0,,Classroom Comm & Curr Int,4,1:15 PM - 3:05 PM,T R,"Eckert, Jonathan M.",BLANCH 455,,
+10371,EDUC,511,0,,Elem/Middle Methods,2,11:05 AM - 1:05 PM,R,"Eckert, Jonathan M.",BLANCH 455,15,
+10372,EDUC,511L,0,,Elem/Mdl Meth Practicum,0,TBA,,Lederhouse & Vroom Fick,50,,
+10373,EDUC,515L,0,,Cross Cultural Tutoring,0,TBA,,"Vroom Fick, Sara J.",,,
+10374,EDUC,521L,0,,Teaching Aiding Practicum,0,TBA,,Kim & Felker,,,
+10376,EDUC,527L,0,,Second/Mid Educ Prac,0,TBA,,Lederhouse & Vandermeulen,50,,
+10377,EDUC,529,0,,Literacy Assessment,2,8:30 AM - 10:20 AM,R,"Morrison, Sally E.",MSC 124,,
+10378,EDUC,531,0,,Ethical Persp/Teachg,2,6:30 PM - 8:30 PM,W,"Jonas, Mark E.",BLANCH 472,,
+10379,EDUC,542,0,,Research Meth In Educ,2,4:00 PM - 5:50 PM,M,"Kim, Il-Hee",BLANCH 472,,
+10380,EDUC,587,0,B,"Phil Foundations Of EducationMeets on campus Apr15-19,29 atHR  Apr 22-26",3,12:50 PM - 3:20 PM,MTWRF,"Jonas, Mark E.",JENKS 206,175,
+10381,EDUC,594,0,,Craft Of Teaching,2,6:00 PM - 8:00 PM,T,"Jonas, Mark E.",BLANCH 472,300,
+10382,EDUC,595,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10383,EDUC,596,0,,Student Teaching,9,TBA,,"Lederhouse, Jillian N.",,,
+10384,EDUC,598,0,,Action Research Paper,2,TBA,,STAFF,,,
+10385,EDUC,599,0,,Action Research Continuation,0,TBA,,STAFF,,50,
+10386,EDUC,698,0,,Thesis,4,TBA,,STAFF,,,
+10387,EDUC,699,0,,Thesis Continuation,0,TBA,,STAFF,,50,
+10389,ASTR,305,2,,Astronomy,4,9:20 AM - 10:30 AM,M W F,"Blaauw, Rhiannon C",MEY 217,,SIP
+10390,ENGR,105,0,,Engineering Graphics,2,1:15 PM - 4:05 PM,R,"Pierson, Benjamin M",MEY 365,65,
+10391,ENGR,202,0,,ENGR Mechanics II - Dynamics,4,12:55 PM - 2:05 PM,M W F,"Hsu, David D.",MEY 357,,
+10392,ENGR,204,0,,Innovative Design-Engineering,4,1:15 PM - 3:05 PM,T R,"Hsu, David D.",MEY 014B,65,
+10393,ENGR,225,0,,Materials Science,4,9:20 AM - 10:30 AM,M W F,"Hsu, David D.",MEY 357,,
+10395,PHYS,222,0,,General Physics II,4,11:35 AM - 12:45 PM,M W F,"Whitney, Joshua F.",MEY 335,,
+10396,PHYS,222L,1,,General Physics Lab II,0,7:30 AM - 10:20 AM,T,"Whitney, Joshua F.",MEY 335,,
+10397,PHYS,222L,2,,General Physics Lab II,0,1:15 PM - 4:05 PM,T,"Whitney, Joshua F.",MEY 335,,
+10398,PHYS,232,2,,Introductory Physics II,4,9:20 AM - 10:30 AM,M W F,"Craig, Darren J.",MEY 335,,
+10399,PHYS,232L,1,,Introductory Physics Lab II,0,7:30 AM - 10:20 AM,R,"Schroeder, James",MEY 335,,
+10400,PHYS,232L,2,,Introductory Physics Lab II,0,1:15 PM - 4:05 PM,R,"Schroeder, James",MEY 335,,
+10408,PHYS,494,0,,Senior Seminar,2,7:00 PM - 8:50 PM,W,"Bishop, Robert C.",MEY 355,,
+10410,IR,155,1,,Comparative Politics,4,9:20 AM - 10:30 AM,M W F,"Alexander, Kathryn",MSC 202,,"GP, SI"
+10412,IR,175,0,,International Politics,4,11:35 AM - 12:45 PM,M W F,"McKoy, Michael K.",MSC 202,,SI
+10418,IR,494,0,A,Senior Seminar,2,6:30 PM - 10:00 PM,W,"Taylor, Timothy W.",MSC 204,,
+10420,IR,495,0,,Independent Study,2 TO 4,TBA,,STAFF,,,
+10421,IR,496,0,,Internship,4,TBA,,"McGraw, Bryan T.",,,
+10422,PSCI,135,0,,American Politics and Gov't,4,11:35 AM - 12:45 PM,M W F,"Garrett, Kristin N.",ARM 120,,SI
+10423,PSCI,145,0,,Political Philosophy,4,8:30 AM - 10:20 AM,T R,"McGraw, Bryan T.",MSC 202,,"PI, SI"
+10428,PSCI,495,0,,Independent Study,2 TO 4,TBA,,STAFF,,,
+10429,PSCI,496,0,,Internship,4,TBA,,"McGraw, Bryan T.",,,
+10430,CSCI,235,0,,Programming I: Problem Solving,4,11:35 AM - 12:45 PM,M W F,"Kim, Hyunju",MEY 133,,AAQR
+10431,CSCI,235L,0,,Programming I Lab,0,8:30 AM - 10:20 AM,T,"Kim, Hyunju",MEY 154,,
+10432,CSCI,235L,2,,Programming I Lab,0,1:15 PM - 3:05 PM,T,"Kim, Hyunju",MEY 154,,
+10433,CSCI,243,0,,Discrete Math/Functional Prog,4,2:15 PM - 3:25 PM,M W F,"VanDrunen, Thomas",M. EY 131,,AAQR
+10434,CSCI,245,0,,Programming II: OO Design,4,12:55 PM - 2:05 PM,M W F,"Pohly, Devin J.",MEY 184,,
+10435,C E,111,0,A,Foundations of Ministry,2,11:35 AM - 12:45 PM,M W F,"Root, Gerald R.",BGC 138,,
+10437,C E,222,0,,Transformational Education,4,9:20 AM - 10:30 AM,M W F,"Larson, Mimi L.",BGC 138,,
+10439,C E,232,0,,Spiritual Guide & Discern,2,7:00 PM - 9:00 PM,R,"Haase, Daniel T.",BGC 138,,
+10451,C E,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10452,C E,496,0,,Internship,0,TBA,,"Haase, Daniel T.",,,
+10456,CFM,517,0,B,Develop Theory & Spirit Form,2,8:30 AM - 10:20 AM,T R,"Larson, Mimi L.",BGC 140,,
+10457,CFM,518,0,A,Research Methods for Ministry,2,1:15 AM - 3:05 AM,T R,"Barwegen, Laura A.",BGC 140,,
+10458,CFM,522,0,,History/Trad of Spiritual Form,2,10:30 AM - 12:20 PM,R,"Schwanda, Tom",BGC 140,,
+10459,CFM,534,0,,Care & Counsel in Ministry,2,3:15 PM - 5:05 PM,R,"McRay, Barrett W.",BGC 253,,
+10460,CFM,546,0,,Facilitating Collegiate Learng,4,8:30 AM - 4:30 PM,MTWRF,"Ivester, Stephen B.",MEY 355,,
+10463,CFM,641,0,,College & Young Adult Ministry,4,3:35 PM - 6:50 PM,M,"Setran, David P.",BGC 253,,
+10464,CFM,662,0,,Theol/Pract of Outdoor Minist,4,8:30 AM - 5:00 PM,MTWRF,"Ribbe, Robert E.",,,
+10465,CFM,683,0,,"Integrative SeminarTeleconferenced with HoneyRock",0,2:15 PM - 3:25 PM,M,"Setran, David P.",BGC 253,150,
+10466,CFM,691,0,,Concentration Mentoring Grp,0,TBA,,"Setran, David P.",,,
+10467,CFM,692,0,,Creative Project,2,TBA,,STAFF,,,
+10468,CFM,693,0,,Ministry Practicum,0,TBA,,"Haase, Daniel T.",,,
+10470,CFM,695,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10471,CFM,698,0,,Applied Thesis/Thesis,2,TBA,,STAFF,,,
+10472,CFM,699,0,,Final Project Continuation,0,TBA,,STAFF,,50,
+10473,CMHC,612,0,,Foundations of Integration II,1,11:35 AM - 12:35 PM,W,"Butman, Richard E.",BGC 250,,
+10474,CMHC,613,0,,Foundations of Integration III,1,11:35 AM - 12:35 PM,W,"Schultz, Tammy",BGC 252,,
+10475,CMHC,614,0,,Group Counseling,2,8:30 AM - 10:20 AM,W,"Kiteki, Bellah N.",BGC 250,,
+10476,CMHC,614L,1,,Group Counseling Lab,1,9:00 AM - 10:30 AM,F,"Ramirez, Mark L.",,,
+10477,CMHC,614L,2,,Group Counseling Lab,1,9:30 AM - 11:00 AM,T,"Stoller-Schoff, Jane",.,,
+10478,CMHC,614L,3,,Group Counseling Lab,1,11:00 AM - 12:30 PM,T,"Gill, Thomas E.",,,
+10479,CMHC,614L,4,,Group Counseling Lab,1,11:30 AM - 1:00 PM,M,"Jones, Steven V.",BGC M231,,
+10480,CMHC,623,0,,Clin Coun Theory Practice II,3,1:30 PM - 4:20 PM,M,"Kiteki, Bellah N.",BGC 250,,
+10481,CMHC,632,0,,Crises & Community Counseling,3,12:00 PM - 2:50 PM,M,"Schultz, Tammy",BGC 252,,
+10482,CMHC,636,0,,Family Sys Theory & Counsel,3,8:30 AM - 11:20 AM,M,"Norton, David J.",BGC 250,,
+10483,CMHC,642,0,,Psychopathology,3,12:45 PM - 3:35 PM,W,"Butman, Richard E.",BGC 250,,
+10484,CMHC,651,0,,Substance Abuse,3,8:30 AM - 11:20 AM,M,"Brown, Eric M.",BGC 252,,
+10485,CMHC,691,0,,Comprehensive Exit Exam,0,TBA,,"Schultz, Tammy",,75,
+10486,CMHC,696,1,,Graduate Internship,3 OR 6,3:00 PM - 4:30 PM,M,"Butman, Richard E.",BGC M231,,
+10487,CMHC,696,2,,Graduate Internship,3 OR 6,3:00 PM - 4:30 PM,M,"Schultz, Tammy",BGC M229,,
+10489,CMHC,696,3,,Graduate Internship,3 OR 6,3:00 PM - 4:30 PM,M,"Brown, Eric M.",BGC M228,,
+10490,CMHC,696,4,,Graduate Internship,3 OR 6,1:00 PM - 2:30 PM,W,"Kiteki, Bellah N.",BGC M231,,
+10491,BIOL,242,1,,Diversity of Life,4,9:20 AM - 10:30 AM,M W F,"Lewis, Raymond J.",MEY 145,,
+10492,BIOL,242,2,,Diversity of Life,4,11:35 AM - 12:45 PM,M W F,"Scott, Rodney J.",MEY 145,,
+10493,BIOL,242L,1,,College Biology II Lab,0,7:30 AM - 10:20 AM,T,"Ogilvie, Coreen B.",MEY 203,,
+10494,BIOL,242L,2,,College Biology II Lab,0,1:15 PM - 4:05 PM,T,Rorem & Ogilvie,MEY 203,,
+10495,BIOL,242L,3,,College Biology II Lab,0,6:30 PM - 9:20 PM,T,"Secker, Heather L.",MEY 203,,
+10496,BIOL,242L,4,,College Biology II Lab,0,7:30 AM - 10:20 AM,R,"Ogilvie, Coreen B.",MEY 203,,
+10497,BIOL,242L,5,,College Biology II Lab,0,12:15 PM - 3:05 PM,R,"Burden, Lisa M.",MEY 203,,
+10498,BIOL,242L,6,,College Biology II Lab,0,6:30 PM - 9:20 PM,R,"Secker, Heather L.",MEY 203,,
+10499,BIOL,242L,7,,College Biology II Lab,0,2:15 PM - 5:05 PM,W,"Burden, Lisa M.",MEY 203,,
+10500,BIOL,252,1,,"Modeling Systems of LifeStudents must register for BIOL252L-1; crn 10502",4,9:20 AM - 10:30 AM,M W,"Koo, Jovanka T.",MEY 255,85,
+10501,BIOL,252,2,,"Modeling Systems of LifeStudents must register for Biol 252L",4,2:15 PM - 3:25 PM,M W,"Lewis, Raymond J.",MEY 255,85,
+10502,BIOL,252L,1,,Biol Systems Lab,0,7:30 AM - 10:20 AM,T R,"Koo, Jovanka T.",MEY 227,,
+10503,BIOL,252L,2,,Biol Systems Lab,0,1:15 PM - 4:05 PM,T R,"Lewis, Raymond J.",MEY 265,,
+10504,BIOL,332,0,,Anatomy & Physiology II,4,8:00 AM - 9:10 AM,M W F,"Busch, Jennifer L.",MEY 302,85,
+10505,BIOL,332L,1,,Anatomy & Physiology II Lab,0,7:30 AM - 10:20 AM,R,"Thom, Nathaniel J.",MEY 247,,
+10506,BIOL,332L,2,,Anatomy & Physiology II Lab,0,1:15 PM - 4:05 PM,R,"Thom, Nathaniel J.",MEY 247,,
+10507,BIOL,356,0,,Genetics,4,2:15 PM - 3:25 PM,M W F,"Scott, Rodney J.",MEY 217,85,
+10508,BIOL,356L,1,,Genetics Lab,0,7:30 AM - 10:20 AM,T,"Scott, Rodney J.",MEY 267,,
+10509,BIOL,356L,2,,Genetics Lab,0,1:15 PM - 4:05 PM,T,"Burden, Lisa M.",MEY 267,,
+10510,BIOL,356L,3,,Genetics Lab,0,7:30 AM - 10:20 AM,R,Burden & Scott,MEY 267,,
+10511,BIOL,461,0,,General Biochemistry,4,12:55 PM - 2:05 PM,M W F,"Eggimann, Becky L.",MEY 145,,
+10512,BIOL,494,1,,The Integrated Biologist,2,8:30 AM - 10:20 AM,T,"Page, L. Kristen",MEY 255,,
+10513,BIOL,494,2,,The Integrated Biologist,2,1:15 PM - 3:05 PM,T,"Page, L. Kristen",MEY 255,,
+10514,BIOL,495,0,,Biological Research,2 OR 4,TBA,,STAFF,,100,
+10515,BIOL,496,0,,Biology Internship,2 OR 4,TBA,,STAFF,,,
+10522,CORE,311,0,,AIS: Good in Great Plagues,4,1:15 PM - 3:05 PM,T R,"Koo, Jovanka T.",MEY 217,,SIP
+10523,HIST,102,2,,EGP: New Worlds:1450-1750,4,11:35 AM - 12:45 PM,M W F,"Harkrider, Melissa",BLANCH 324,,"GP, HP"
+10524,HIST,102,1,,EGP:Hist/HistFiction in Africa,4,9:20 AM - 10:30 AM,M W F,"Stringham, Noel C.",BLANCH 324,,"GP, HP"
+10525,HIST,102,3,,EGP:Memoir:Modern Mid East,4,12:55 PM - 2:05 PM,M W F,"Stringham, Noel C.",MSC 302,,"GP, HP"
+10526,HIST,102,4,,EGP: The Holocaust,4,1:15 PM - 3:05 PM,T R,"Lundin, Matthew D.",BLANCH 324,,"GP, HP"
+10530,HIST,103,1,,EAP:US Pop Culture Since 1900,4,6:30 PM - 10:00 PM,R,"Thomas, Amber R.",BLANCH 324,,"DUS, HP"
+10532,HIST,324,0,A,High School Hist/SSci Methods,2,6:30 PM - 10:00 PM,R,"Johnson, Karen J.",BLANCH 472,,
+10536,HIST,391,2,,Modern Korea Thru Korean War,4,11:35 AM - 12:45 PM,M W F,"Kim, Hanmee N.",BLANCH 223,,
+10537,HIST,391,3,,Medieval Saints & Sinners,4,9:20 AM - 10:30 AM,M W F,"Harkrider, Melissa",BLANCH 223,,
+10541,HIST,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10542,HIST,496,0,,Internship,4,TBA,,STAFF,,,
+10543,HIST,498,0,,Honors Tutorial,4,TBA,,STAFF,,,
+10544,HIST,499,0,,Honors Thesis,4,TBA,,STAFF,,,
+10545,MAFT,618,0,,Family Therapy Research,3,11:40 AM - 2:30 PM,W,"Yoo, Hana",BGC 254,,
+10547,MAFT,633,0,,Couple Therapy: Assmt & Interv,3,1:30 PM - 3:50 PM,R,"Van Dyke, David J.",BGC 250,,
+10548,MAFT,635,0,,MFT II: Assessment & Intervent,3,1:30 PM - 4:20 PM,W,"Norton, David J.",BGC 252,,
+10550,MAFT,656,0,,MFT Integration Seminar,3,4:00 PM - 6:50 PM,W,"Van Dyke, David J.",BGC M231,,
+10551,MAFT,662,1,,Personal/Prof Dev't Group II,0,10:10 AM - 11:30 AM,F,"Johnson, Jacob A.",BGC M231,,
+10552,MAFT,662,2,,Personal/Prof Dev't Group II,0,10:10 AM - 11:30 AM,F,"Yoo, Hana",BGC 252,,
+10553,MAFT,662,3,,Personal/Prof Dev't Group II,0,11:40 AM - 1:00 PM,W,"Norton, David J.",BGC M209,,
+10555,MAFT,664,1,,Personal/Prof Dev't Group IV,0,9:50 AM - 11:10 AM,T,"Johnson, Jacob A.",BGC M231,,
+10556,MAFT,664,2,,Personal/Prof Dev't Group IV,0,9:10 AM - 10:30 AM,W,"Norton, David J.",BGC M231,,
+10557,MAFT,664,3,,Personal/Prof Dev't Group IV,0,8:20 AM - 9:40 AM,T,"Hanlon, Matthew J.",BGC M231,,
+10558,MAFT,697,1,,Clinical Pre-Practicum II,1,1:10- PM - 2:20 PM,F,"Yoo, Hana",BGC M231,,
+10559,MAFT,697,2,,Clinical Pre-Practicum II,1,11:50 AM - 12:50 PM,F,"Van Dyke, David J.",BGC M231,,
+10560,MAFT,697,3,,Clinical Pre-Practicum II,1,1:10 PM - 2:10 PM,F,"Van Dyke, David J.",BGC 254,,
+10561,MAFT,699,1,,Clinical Practicum II,2,12:00 PM - 1:00 PM,F,"Johnson, Jacob A.",BGC 252,,
+10562,MAFT,699,2,,Clinical Practicum II,2,2:40 PM - 3:40 PM,W,"Yoo, Hana",BGC 254,,
+10563,MAFT,699,3,,Clinical Practicum II,2,12:00 PM - 1:00 PM,F,"Yoo, Hana",BGC M209,,
+10564,MAFT,699,4,,Clinical Practicum II,2,12:00 PM - 1:00 PM,F,"Watson, Terri S.",BGC M229,,
+10565,CSCI,245L,0,,Programming II Lab,0,1:15 PM - 3:05 PM,R,"Pohly, Devin J.",MEY 154,,
+10566,CSCI,335,0,,Software Development,4,9:20 AM - 10:30 AM,M W F,"Kim, Hyunju",MEY 143,,
+10567,CSCI,345,0,,Data Structures & Algorithms,4,11:35 AM - 12:45 PM,M W F,"VanDrunen, Thomas",M. EY 131,,
+10571,CSCI,494,0,,Soc/Ethical Issues,2,8:30 AM - 10:20 AM,R,"Pohly, Devin J.",MEY 181,,
+10573,MATH,107,0,,Finite Mathematics,4,11:35 AM - 12:45 PM,M W F,"Lovett, Stephen T.",MEY 184,,AAQR
+10574,MATH,221,0,,Applied Calculus,4,9:20 AM - 10:30 AM,M W F,"Isihara, Paul",MEY 184,,AAQR
+10575,MATH,221L,1,,Applied Calculus Lab,0,11:15 AM - 1:05 PM,R,"Isihara, Paul",MEY 131,,
+10576,MATH,221L,2,,Applied Calculus Lab,0,1:15 PM - 3:05 PM,R,"Brabenec, Robert L.",MEY 131,,
+10577,MATH,231,0,,Calculus I,4,2:15 PM - 3:25 PM,M W F,"Delzell, Darcie A.",MEY 143,,AAQR
+10578,MATH,231L,1,,Drill,0,8:30 AM - 10:20 AM,R,"Diedrichs, Danilo R.",MEY 131,,
+10579,MATH,232L,2,,Drill,0,11:15 AM - 1:05 PM,R,"Isihara, Paul",MEY 143,,
+10580,MATH,232,1,,Calculus II,4,12:55 PM - 2:05 PM,M W F,"Perciante, Terence",MEY 133,,
+10582,MATH,232L,1,,Drill,0,8:30 AM - 10:20 AM,R,"Diedrichs, Danilo R.",MEY 143,,
+10583,MATH,231L,2,,Drill,0,1:15 PM - 3:05 PM,R,"Brabenec, Robert L.",MEY 129,,
+10584,MATH,233,0,B,Calculus I B,2,2:15 PM - 3:25 PM,M W F,"Delzell, Darcie A.",MEY 143,,AAQR
+10585,MATH,233L,1,B,Drill,0,8:30 AM - 10:20 AM,R,"Diedrichs, Danilo R.",MEY 131,,
+10586,MATH,233L,2,B,Drill,0,1:15 PM - 3:05 PM,R,"Brabenec, Robert L.",MEY 129,,
+10587,MATH,234,1,B,Calculus II B,2,12:55 PM - 2:05 PM,M W F,"Perciante, Terence",MEY 133,,
+10589,MATH,234L,1,B,Drill,0,8:30 AM - 10:20 AM,R,"Diedrichs, Danilo R.",MEY 143,,
+10590,MATH,234L,2,B,Drill,0,11:15 AM - 1:05 PM,R,"Isihara, Paul",MEY 143,,
+10591,MATH,243,0,,Discrete Math & Funct Program,4,2:15 PM - 3:25 PM,M W F,"VanDrunen, Thomas",M. EY 131,,AAQR
+10592,MATH,245,0,,Linear Algebra,4,8:00 AM - 9:10 AM,M W F,"Vanderschoot, Mary",M. EY 133,,
+10593,MATH,263,1,,Introduction to Statistics,4,11:35 AM - 12:45 PM,M W F,"Delzell, Darcie A.",MEY 129,,AAQR
+10595,MATH,302,0,,Applied Project I,2,11:15 AM - 1:05 PM,R,"Diedrichs, Danilo R.",MEY 184,,
+10596,MATH,324,0,A,Meth of Teach High Sch Math,2,6:30 PM - 8:30 PM,M  R,"Vandermeulen, Judit",M ME.Y 129,,
+10597,MATH,325,0,B,Middle School Math Methods,2,6:30 PM - 8:30 PM,M  R,"Vandermeulen, Judit",M ME.Y 129,,
+10598,MATH,331,0,B,Vector Calculus,2,11:35 AM - 12:45 PM,M W F,"Isihara, Paul",MEY 143,,
+10599,MATH,341,0,,Modern Algebra,4,8:00 AM - 9:10 AM,M W F,"Lovett, Stephen T.",MEY 184,,
+10603,MATH,364,0,,Mathematical Modeling,4,2:15 PM - 3:25 PM,M W F,"Diedrichs, Danilo R.",MEY 184,,
+10604,MATH,485,0,,Dynamical Systems,4,12:55 PM - 2:05 PM,M W F,"Vanderschoot, Mary",M. EY 129,,
+10607,CHIN,102,1,,Elementary Chinese II,4,11:35 AM - 12:45 PM,M W F,"Wang, Rose",ARM 266,,COMP
+10610,CHIN,332,0,,Chinese Composition,4,11:15 AM - 1:05 PM,T R,"Wang, Rose",WYN 302,,
+10613,FREN,102,0,,Elementary French II,4,12:55 PM - 2:05 PM,M W F,"Forsberg, Amy Y.",JENKS 204,,COMP
+10614,FREN,103,0,,Accel Elem French,4,11:35 AM - 12:45 PM,M W F,"Forsberg, Amy Y.",JENKS 204,,COMP
+10615,FREN,201,0,,Intermediate French,4,8:00 AM - 9:10 AM,M W F,"Soerens, Diana M.",SCHELL 202,,COMP
+10616,FREN,331,0,,French Conversation,4,9:20 AM - 10:30 AM,M W F,"Soerens, Diana M.",SCHELL 202,25,
+10618,FREN,334,1,A,Translation,2,2:15 PM - 3:25 PM,M W F,"Savage, Alan D.",SCHELL 202,,
+10619,FREN,334,2,B,Advanced Conversation,2,2:15 PM - 3:25 PM,M W F,"Savage, Alan D.",SCHELL 202,,
+10620,FREN,494,0,,Senior Seminar,4,6:00 PM - 9:30 PM,M,"Savage, Alan D.",WYN 302,,
+10621,GREK,102,1,,Elementary Greek II,4,8:00 AM - 9:10 AM,M W F,"Penney, Douglas L.",MSC 103,,COMP
+10622,GREK,102,2,,Elementary Greek II,4,9:20 AM - 10:30 AM,M W F,"Laansma, Jon C.",MSC 120,,COMP
+10625,GREK,494,0,,Senior Capstone,4,2:15 PM - 3:25 PM,M W F,"Penney, Douglas L.",ARM 252,,
+10628,HEBR,302,2,,Elementary Hebrew II,4,12:55 PM - 2:05 PM,M W F,"Abernethy, Andrew",BGC 130,,COMP
+10629,HEBR,495,0,,Independent Reading/Rsrch,1 TO 4,TBA,,STAFF,,,
+10630,LATN,102,0,,Elementary Latin II,4,9:20 AM - 10:30 AM,M W F,"Loney, Alexander C.",SCHELL 201,,COMP
+10631,LATN,333,0,,Adv Latin: Ovid,2 OR 4,11:15 AM - 1:05 PM,T R,"Loney, Alexander C.",SCHELL 202,,
+10632,LATN,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10633,SPAN,102,1,,Elementary Spanish,4,11:35 AM - 12:45 PM,M W F,"Barlar, Sharenda H.",SCHELL 201,,COMP
+10634,SPAN,102,2,,Elementary Spanish,4,2:15 PM - 3:25 PM,M W F,"Barlar, Sharenda H.",SCHELL 201,,COMP
+10635,SPAN,103,1,,Accel Elem Spanish,4,8:00 AM - 9:10 AM,M W F,"Toly, Rebecca A.",JENKS 205,,COMP
+10636,SPAN,103,2,,Accel Elem Spanish,4,12:55 PM - 2:05 PM,M W F,"Townsend, Tamara",ARM 145,,COMP
+10637,SPAN,201,1,,Intermediate Spanish,4,8:00 AM - 9:10 AM,M W F,"Gates, Stephanie R.",SCHELL 201,,COMP
+10638,SPAN,201,2,,Intermediate Spanish,4,9:20 AM - 10:30 AM,M W F,"Toly, Rebecca A.",JENKS 205,,COMP
+10639,SPAN,201,3,,Intermediate Spanish,4,11:35 AM - 12:45 PM,M W F,"Gates, Stephanie R.",ARM 252,,COMP
+10640,SPAN,201,4,,Intermediate Spanish,4,11:35 AM - 12:45 PM,M W F,"Toly, Rebecca A.",JENKS 205,,COMP
+10641,SPAN,201,5,,Intermediate Spanish,4,12:55 PM - 2:05 PM,M W F,"Toly, Rebecca A.",JENKS 205,,COMP
+10642,SPAN,201,6,,Intermediate Spanish,4,12:55 PM - 2:05 PM,M W F,"Barlar, Sharenda H.",SCHELL 201,,COMP
+10643,SPAN,331,1,,Spanish Conversation,4,11:35 AM - 12:45 PM,M W F,"Quiroa, Nestor I.",JENKS 206,25,
+10646,SPAN,332,1,,Adv Grammar And Composition,4,9:20 AM - 10:30 AM,M W F,"Kepner, Christine G.",WYN 307,,
+10647,SPAN,332,2,,Adv Grammar And Composition,4,8:30 AM - 10:20 AM,T R,"Kepner, Christine G.",WYN 307,,
+10649,ANTH,116,1,,"Introduction to AnthropologyFreshmen & Sophomores only.",4,8:30 AM - 10:20 AM,T R,"Jeske, Christine R.",BLANCH 222,,"GP, SI"
+10650,ANTH,116,2,,"Introduction to AnthropologyFreshmen & Sophomores only.",4,1:15 PM - 3:05 PM,T R,"Howell, Brian M.",BLANCH 222,,"GP, SI"
+10651,ANTH,353,0,,Biculturalism,4,2:15 PM - 3:25 PM,M W F,"Sadiq, Yousaf",BLANCH 222,,"DUS, GP"
+10654,ANTH,385,0,,Field Research Methods,4,6:30 PM - 9:45 PM,T,Yoder & Huff,ARM 145,,
+10657,ANTH,482,0,,Ethnographic Theory and Method,4,11:15 AM - 1:05 PM,T R,"Howell, Brian M.",BLANCH 272,,
+10658,ANTH,494,0,,Senior Capstone,4,8:30 AM - 10:20 AM,T R,"Howell, Brian M.",BLANCH 273,,
+10659,ANTH,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10660,ANTH,496,0,,Internship,4 OR 8,TBA,,STAFF,,,
+10662,SOC,115,1,,Intro to Sociology,4,8:00 AM - 9:10 AM,M W F,"Kim, Henry H.",BLANCH 222,,"DUS, SI"
+10664,SOC,355,0,,Social Class & Inequality,4,8:30 AM - 10:20 AM,T R,"Kim, Henry H.",ADAMS 301,,
+10665,SOC,364,0,,Urban Sociology,4,11:15 AM - 1:05 PM,T R,"Miller, Brian J.",BLANCH 273,,
+10670,SOC,494,0,,Senior Capstone,4,TBA,,STAFF,,,
+10671,SOC,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10672,SOC,496,0,,Internship in Sociology,4 OR 8,TBA,,STAFF,,,
+10674,SWEL,496,0,,Social Work Internship,4 OR 8,TBA,,STAFF,,,
+10678,URBN,494,0,A,Advanced Urban Studies Seminar,2,11:15 AM - 1:05 PM,T R,"Toly, Noah J.",MSC 120,,
+10679,ENG,429,0,,Literacy Assessment,2,8:30 AM - 10:20 AM,R,"Morrison, Sally E.",MSC 124,,
+10680,ENGL,111,1,,Western Lit-The Four Loves,4,12:55 PM - 2:05 PM,M W F,"Lapeyre, Christophe",BAL. ANCH 139,,LE
+10683,ENGL,111,4,,West Lit:Spiritual Battles,4,9:20 AM - 10:30 AM,M W F,"Dunn-Hensley, Susa",B ML.ANCH 139,,LE
+10685,ENGL,115,1,,Global Lit: Culture Clash,4,2:15 PM - 3:25 PM,M W F,"Galbraith, Jeffrey R.",BLANCH 139,,LE
+10686,ENGL,115,2,,Global Lit:Echoes of Empire,4,12:55 PM - 2:05 PM,M W F,"Dunn-Hensley, Susa",B ML.ANCH 339,,LE
+10687,ENGL,215,0,,Classical/Early British Lit,4,9:20 AM - 10:30 AM,M W F,"Weber, Benjamin D.",BLANCH 322,,LE
+10688,ENGL,225,1,,Topical Seminar: Techno Texts,4,2:15 PM - 3:25 PM,M W F,"Gibson, Richard H.",BLANCH 323,,
+10689,ENGL,225,2,,Top Sem: Wrestle-God & Words,4,11:15 AM - 1:05 PM,T R,"Kriner, Tiffany E.",BLANCH 323,,
+10690,ENGL,225,3,,Topical Sem:Nobel Prize Winner,4,12:55 PM - 2:05 PM,M W F,"Gibson, Richard H.",BLANCH 323,,
+10695,ENGL,341,0,,Am Lit:Beginning - Romanticism,4,1:15 PM - 3:05 PM,T R,"Kriner, Tiffany E.",BLANCH 322,,
+10696,ENGL,343,0,,American Lit After 1945,4,11:35 AM - 12:45 PM,M W F,"Bieber Lake, Christin",MSC 122,,
+10700,ENGL,382,0,B,Amer Authors:Hughes & Hurston,2,8:30 AM - 10:20 AM,T R,"Kriner, Tiffany E.",BLANCH 322,,
+10701,ENGL,384,0,,Shakespeare,4,2:15 PM - 3:25 PM,M W F,"Weber, Benjamin D.",BLANCH 322,,
+10705,ENGL,494,0,,Senior Seminar,4,9:20 AM - 10:30 AM,M W F,"Sasser, Kimberly A.",BLANCH 323,,
+10706,ENGL,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10707,ENGL,496,0,,Literature Internship,1 TO 4,TBA,,STAFF,,,
+10708,ENGW,103,1,,Composition and Research,4,9:20 AM - 10:30 AM,M W F,"Galbraith, Jeffrey R.",BLANCH 272,,COMP
+10709,ENGW,103,2,,Composition and Research,4,11:15 AM - 1:05 PM,T R,"Long, Abigail H.",JENKS 206,,COMP
+10710,ENGW,103,3,,Composition and Research,4,11:35 AM - 12:45 PM,M W F,"Lapeyre, Christophe",SAC.HELL 202,,COMP
+10711,ENGW,103,4,,Composition and Research,4,2:15 PM - 3:25 PM,M W F,"Lapeyre, Christophe",BAL. ANCH 324,,COMP
+10712,ENGW,103,5,,Composition and Research,4,9:20 AM - 10:30 AM,M W F,"Bieber Lake, Christin",BLANCH 273,,COMP
+10714,ENGW,103,7,,Composition and Research,4,3:15 PM - 5:05 PM,T R,"Gibson, Alison R.",BLANCH 322,,COMP
+10715,ENGW,103,8,,Composition and Research,4,1:15 PM - 3:05 PM,T R,"Gibson, Alison R.",BLANCH 139,,COMP
+10717,ENGW,104,1,B,Composition and Research,2,11:15 AM - 1:05 PM,T R,"Mazzarella, Nicole",SCHELL 201,,COMP
+10719,ENGW,104,3,A,Composition and Research,2,11:35 AM - 12:45 PM,M W F,"Ryken, Leland",BLANCH 272,,COMP
+10721,ENGW,104,5,A,Composition and Research,2,2:15 PM - 3:25 PM,M W F,"Martindale, H. Wayn",BLANCH 273,,COMP
+10722,ENGW,104,6,A,Composition and Research,2,12:55 PM - 2:05 PM,M W F,"Martindale, H. Wayn",BLANCH 273,,COMP
+10723,ENGW,213,1,,Creative Writing,4,1:15 PM - 3:05 PM,T R,"Mazzarella, Nicole",SCHELL 201,,
+10727,ENGW,444,1,,Longer Works of Fiction,4,8:30 AM - 10:20 AM,T R,"Mazzarella, Nicole",MSC 120,,
+10729,ENGW,494,0,,Senior Seminar in Writing,4,11:15 AM - 1:05 PM,T R,"Nonaka, Miho",BLANCH 440,,
+10730,ENGW,495,0,,Writing Projects,1 TO 4,TBA,,STAFF,,,
+10731,MUCS,101,1,A,Intro To Music:Historical,2,8:00 AM - 9:10 AM,M W F,"Rakes, John P.",ARM 145,,VPAM
+10732,MUCS,101,2,A,Intro To Music:Historical,2,11:35 AM - 12:45 PM,M W F,"Yi, Gina J.",ARM 145,,VPAM
+10733,MUCS,101,3,A,Intro To Music:Historical,2,12:55 PM - 2:05 PM,M W F,"Griffin, Rose A.",ARM 246,,VPAM
+10734,MUCS,101,4,A,Intro To Music:Historical,2,2:15 PM - 3:25 PM,M W F,"Griffin, Rose A.",ARM 145,,VPAM
+10735,MUCS,101,5,B,Intro To Music:Historical,2,2:15 PM - 3:25 PM,M W F,"Griffin, Rose A.",ARM 145,,VPAM
+10736,MUCS,101,6,B,Intro To Music:Historical,2,11:35 AM - 12:45 PM,M W F,"Yi, Gina J.",ARM 145,,VPAM
+10737,MUCS,102,0,B,Intro To Music:Interdisc,2,8:00 AM - 9:10 AM,M W F,"Rakes, John P.",ARM 145,,VPAM
+10738,MUCS,103,1,A,Intro To Music:20C/World,2,8:30 AM - 10:20 AM,T R,"Buis, Johann S.",ARM 252,,VPAM
+10739,MUCS,103,2,B,Intro To Music:20C/World,2,8:30 AM - 10:20 AM,T R,"Buis, Johann S.",ARM 252,,VPAM
+10740,MUCS,261,0,,Music Before 1600,2,9:30 AM - 10:20 AM,T R,"Saylor, L. Jonathan",ARM 145,96,
+10741,MUCS,263,0,A,19th Century Music,2,12:55 PM - 2:05 PM,M W F,"Saylor, L. Jonathan",EDMAN 102,96,
+10745,MUCS,361,0,,20th Century Music,4,11:35 AM - 12:45 PM,M W F,"Kastner, Kathleen S.",EDMAN 102,192,
+10748,MUCS,495,0,,Directed Study,1 TO 4,TBA,,"Zimmerman, Edward",,96,
+10749,MUEP,213,0,,Women's Chorale,1,4:30 PM - 6:00 PM,M W,"Hopper, Mary",,180,
+10750,MUEP,214,0,,Men's Glee Club,1,4:30 PM - 6:00 PM,T R,"Hopper, Mary",,180,
+10751,MUEP,215,0,,Concert Choir,1,2:15 PM - 3:45 PM,M W F,"Trotter, John W.",,180,
+10752,MUEP,216,0,,Symphonic Band,1,3:45 PM - 5:15 PM,M W,"Sommerville, Daniel",E. DMAN 102,180,
+10753,MUEP,217,1,,Symphony Orchestra (Strings),1,4:45 PM - 6:15 PM,M,"Sommerville, Daniel",E. DMAN 102,180,
+10754,MUEP,217,2,,Symphony Orch (Winds/Percus),,,,,,,
+10755,MUEP,218,0,,Jazz Ensemble,,7:00 PM - 8:20 PM,T R,"Ernst, Kathryn A.",EDMAN 102,180,
+10756,MUEP,219,1,,Recital & Concert Attendance,0,1:15 PM - 2:05 PM,R,"Zimmerman, Edward",PIERCE CHAP,,
+10757,MUEP,311,0,,Studio Accompaniment,1 TO 2,TBA,,"Horn, Daniel P.",,48,
+10758,MUEP,321,0,,Recital Accompaniment,1 TO 2,TBA,,"Horn, Daniel P.",,48,
+10759,MUEP,356,0,,Opera Workshop,2,11:15 AM - 1:05 PM,T R,"Hart, Carolyn A.",ARM 046,365,
+10759,MUEP,356,0,,Opera Workshop,2,4:00 PM - 5:30 PM,F,"Hart, Carolyn A.",ARM 046,365,
+10760,MUEP,358,1,,Jazz Combo,1,6:30 PM - 7:25 PM,W,"Davis, James C.",EDMAN 102,180,
+10762,MUEP,371,0,,Chamber Music:Strings,1,TBA,,"Altino, Leonardo G.",,180,
+10763,MUEP,371,1,,Chamber Music: Brass,1,TBA,,"Altino, Leonardo G.",,180,
+10764,MUEP,371,2,,Chamber Music: Piano,1,TBA,,"Altino, Leonardo G.",,180,
+10765,MUEP,371,3,,Chamber Music: Winds,1,TBA,,"Altino, Leonardo G.",,180,
+10766,MUEP,371,5,,Percussion Ensemble,1,3:15 PM - 4:05 PM,T,"Kastner, Kathleen S.",EDMAN 101,180,
+10766,MUEP,371,5,,Percussion Ensemble,1,3:35 PM - 4:35 PM,F,"Kastner, Kathleen S.",EDMAN 101,180,
+10766,MUEP,371,5,,Percussion Ensemble,1,5:25 PM - 6:30 PM,M,"Kastner, Kathleen S.",EDMAN 101,180,
+10767,MUEP,371,6,,Piano Ensemble,1,3:15 PM - 4:05 PM,T R,"Edwards, Karin R.",ARM 346,180,
+10768,MUEP,371,7,,Mixed Ensemble,1,TBA,,"Altino, Leonardo G.",,180,
+10769,MUEP,371,1B,,Chamber Music: Guitar,1,TBA,,"Altino, Leonardo G.",,180,
+10770,MUIP,101,0,,Private Lessons: Piano,2,TBA,,"Horn, Daniel P.",,512,
+10771,MUIP,101,2,,Private Lessons: Jazz Piano,2,TBA,,Williams & Horn,,512,
+10772,MUIP,102,0,,Private Lessons: Organ,2,TBA,,"Zimmerman, Edward",,512,
+10773,MUIP,103,0,,Private Lessons: Harpsichord,2,TBA,,"Zimmerman, Edward",,512,
+10774,MUIP,104,1,,Private Lessons: Voice,2,TBA,,"Hart, Carolyn A.",,512,
+10775,MUIP,104,2,,Private Lessons: Jazz Voice,2,TBA,,Williams & Hart,,512,
+10776,MUIP,105,0,,Private Lessons: Violin,2,TBA,,Joiner & Zafer,,512,
+10777,MUIP,106,0,,Private Lessons: Viola,2,TBA,,Griffin & Joiner,,512,
+10778,MUIP,107,0,,Private Lessons: Cello,2,TBA,,Altino & Joiner,,512,
+10779,MUIP,108,0,,Private Lessons: String Bass,2,TBA,,"Anderson, Andrew L.",512,,
+10780,MUIP,108,2,,Private Lessons:Jazz Bass,2,TBA,,Ernst & Joiner,,512,
+10781,MUIP,109,1,,Private Lessons: Trumpet,2,TBA,,Saylor & Ridenour,,512,
+10782,MUIP,109,2,,Private Lessons: Jazz Trumpet,2,TBA,,Saylor & Davis,,512,
+10783,MUIP,110,0,,Private Lessons:  Horn,2,TBA,,Saylor & Cottle,,512,
+10784,MUIP,111,0,,Private Lessons: Trombone,2,TBA,,Saylor & Davis,,512,
+10785,MUIP,112,0,,Private Lessons: Euphonium,2,TBA,,"Saylor, L. Jonathan",,512,
+10786,MUIP,113,0,,Private Lessons: Tuba,2,TBA,,"Saylor, L. Jonathan",,512,
+10787,MUIP,114,0,,Private Lessons:  Flute,2,TBA,,Saylor & Brown,,512,
+10788,MUIP,115,0,,Private Lessons: Clarinet,2,TBA,,Saylor & O'Riordan,,512,
+10789,MUIP,116,0,,Private Lessons: Oboe,2,TBA,,"Saylor, L. Jonathan",,512,
+10790,MUIP,117,0,,Private Lessons: Bassoon,2,TBA,,"Saylor, L. Jonathan",,512,
+10791,MUIP,118,0,,Private Lessons: Saxophone,2,TBA,,Saylor & Black,,512,
+10792,MUIP,119,0,,Private Lessons: Harp,2,TBA,,Joiner & Seeman,,512,
+10793,MUIP,120,1,,Private Lessons: Percussion,2,TBA,,Kastner & Folker,,512,
+10795,MUIP,120,2,,Private Lessons: Jazz Drum,2,TBA,,Kastner & Gillan,,512,
+10796,MUIP,121,0,,Private Lessons:Classic Guitar,2,TBA,,Joiner & Torosian,,512,
+10797,MUIP,122,0,,Private Lessons: Jazz Guitar,2,TBA,,Joiner & Ramsdell,,512,
+10798,MUIP,131,1,,Small Group Piano Lessons,1,7:00 PM - 8:00 PM,M,Horn & Hollinger,ARM 124,245,
+10799,MUIP,141,0,,Small Group Voice Lessons,1,TBA,,Hart & Gamez,,245,
+10800,MUIP,150,0,,Small Grp Jazz Trumpet Lessons,1,TBA,,Saylor & Davis,,245,
+10801,MUIP,201,1,,Private Lessons: Piano,2 TO 4,TBA,,Horn & Stampfl,,770,
+10802,MUIP,201,2,,Private Less: Jazz Piano,2 TO 4,TBA,,Horn & Williams,,770,
+10803,MUIP,202,0,,Private Lessons: Organ,2 TO 4,TBA,,"Zimmerman, Edward",,770,
+10804,MUIP,203,0,,Private Lessons: Harpsichord,2 TO 4,TBA,,"Zimmerman, Edward",,770,
+10805,MUIP,204,2,,Private Lessons: Jazz Voice,2 TO 4,TBA,,Hart & Williams,,770,
+10807,MUIP,205,0,,Private Lessons: Violin,2 TO 4,TBA,,Joiner & Zafer,,770,
+10808,MUIP,206,0,,Private Lessons: Viola,2 TO 4,TBA,,Griffin & Joiner,,770,
+10809,MUIP,207,0,,Private Lessons: Cello,2 TO 4,TBA,,Joiner & Altino,,770,
+10810,MUIP,208,1,,Private Lessons: String Bass,2 TO 4,TBA,,Joiner & Anderson,,770,
+10811,MUIP,208,2,,Private Lessons: Jazz Bass,2 TO 4,TBA,,Joiner & Ernst,,770,
+10812,MUIP,209,1,,Private Lessons: Trumpet,2 TO 4,TBA,,Saylor & Ridenour,,770,
+10813,MUIP,209,2,,Private Lessons: Jazz Trumpet,2 TO 4,TBA,,Saylor & Davis,,770,
+10814,MUIP,211,0,,Private Lessons: Trombone,2 TO 4,TBA,,Saylor & Davis,,770,
+10815,MUIP,212,0,,Private Lessons: Euphonium,2 TO 4,TBA,,"Saylor, L. Jonathan",,770,
+10816,MUIP,213,0,,Private Lessons: Tuba,2 TO 4,TBA,,Saylor & Harrison,,770,
+10817,MUIP,214,0,,Private Lessons: Flute,2 TO 4,TBA,,Saylor & Brown,,770,
+10818,MUIP,215,0,,Private Lessons: Clarinet,2 TO 4,TBA,,Saylor & O'Riordan,,770,
+10819,MUIP,216,0,,Private Lessons: Oboe,2 TO 4,TBA,,Saylor & Stevenson,,770,
+10820,MUIP,217,0,,Private Lessons: Bassoon,2 TO 4,TBA,,"Saylor, L. Jonathan",,770,
+10821,MUIP,218,0,,Private Lessons: Saxophone,2 TO 4,TBA,,Saylor & Black,,770,
+10822,MUIP,219,0,,Private Lessons: Harp,2 TO 4,TBA,,Joiner & Seeman,,770,
+10823,MUIP,220,0,,Private Lessons: Percussion,2 TO 4,TBA,,"Kastner, Kathleen S.",,770,
+10824,MUIP,221,0,,Priv Lessons: Classical Guitar,2 TO 4,TBA,,Joiner & Torosian,,770,
+10825,MUIP,222,0,,Private Lessons: Jazz Guitar,2 TO 4,TBA,,Joiner & Ramsdell,,770,
+10826,MUIP,224,0,,Class Piano II,2,11:35 AM - 12:45 PM,M W,"Stampfl, Aaron J.",ARM 124,365,
+10827,MUIP,226,0,,Class Piano IV,2,2:15 PM - 3:05 PM,T R,"Stampfl, Aaron J.",ARM 124,365,
+10829,MUIP,328,0,,Organ Improvisation,2,TBA,,"Zimmerman, Edward",,512,
+10830,MUIP,394,0,,Junior Recital,0,TBA,,"Hopper, Mary",,,
+10831,MUIP,401,0,,Private Lessons: Piano,2 TO 4,TBA,,Horn & Stampfl,,770,
+10832,MUIP,402,0,,Private Lessons: Organ,2 TO 4,TBA,,"Zimmerman, Edward",,770,
+10833,MUIP,404,0,,Private Lessons: Voice,2 TO 4,TBA,,"Hart, Carolyn A.",,770,
+10835,MUIP,405,0,,Private Lessons: Violin,2 TO 4,TBA,,Joiner & Zafer,,770,
+10836,MUIP,406,0,,Private Lessons: Viola,2 TO 4,TBA,,Griffin & Joiner,,770,
+10837,MUIP,407,0,,Private Lessons: Cello,2 TO 4,TBA,,Altino & Joiner,,770,
+10838,MUIP,408,0,,Private Lessons: String Bass,2 TO 4,TBA,,Joiner & Anderson,,770,
+10839,MUIP,409,0,,Private Lessons: Trumpet,2 TO 4,TBA,,Saylor & Ridenour,,770,
+10840,MUIP,410,0,,Private Lessons: French Horn,2 TO 4,TBA,,Saylor & Cottle,,770,
+10841,MUIP,411,0,,Private Lessons: Trombone,2 TO 4,TBA,,Saylor & Davis,,770,
+10842,MUIP,412,0,,Private Lessons: Euphonium,2 TO 4,TBA,,"Saylor, L. Jonathan",,770,
+10843,MUIP,413,0,,Private Lessons: Tuba,2 TO 4,TBA,,Saylor & Harrison,,770,
+10844,MUIP,414,0,,Private Lessons: Flute,2 TO 4,TBA,,Saylor & Brown,,770,
+10845,MUIP,415,0,,Private Lessons: Clarinet,2 TO 4,TBA,,Saylor & O'Riordan,,770,
+10846,MUIP,416,0,,Private Lessons: Oboe,2 TO 4,TBA,,Saylor & Stevenson,,770,
+10847,MUIP,417,0,,Private Lessons: Bassoon,2 TO 4,TBA,,"Saylor, L. Jonathan",,770,
+10848,MUIP,418,0,,Private Lessons: Saxophone,2 TO 4,TBA,,Saylor & Black,,770,
+10849,MUIP,419,0,,Private Lessons: Harp,2 TO 4,TBA,,Joiner & Seeman,,770,
+10850,MUIP,420,0,,Private Lessons: Percussion,2 TO 4,TBA,,"Kastner, Kathleen S.",,770,
+10851,MUIP,421,0,,Priv Lessons: Classical Guitar,2 TO 4,TBA,,Joiner & Torosian,,770,
+10852,MUIP,422,0,,Private Lessons: Jazz Guitar,2 TO 4,TBA,,Joiner & Ramsdell,,770,
+10853,MUIP,492,0,,Half Senior Recital,0,TBA,,"Hopper, Mary",,,
+10855,MUMS,101,0,B,Music Performance Seminar,1,9:20 AM - 10:30 AM,M W,"Altino, Leonardo G.",ARM 252,,VPAM
+10856,MUMS,141,0,,English & Italian Diction,2,2:15 PM - 3:05 PM,T R,"Hueber, Thomas E.",ARM 266,96,
+10857,MUMS,243,0,,Italian Grammar for Singers,2,2:15 PM - 3:05 PM,T R,"Gamez, Denise",ARM 252,96,
+10858,MUMS,248,1,,"Basic ConductingRequires MUMS 346 Lab",3,9:20 AM - 10:30 AM,M W F,"Sommerville, Daniel",A. RM 046,144,
+10859,MUMS,248,2,,"Basic ConductingRequires MUMS 346 Lab",3,12:55 PM - 2:05 PM,M W F,"Rakes, John P.",ARM 046,144,
+10860,MUMS,311,0,,"Choral ConductingRequires MUMS 346 Lab",3,9:20 AM - 10:30 AM,M W F,"Trotter, John W.",EDMAN 102,144,
+10861,MUMS,321,0,,Principles Pedagogy II:Piano,1 OR 2,2:15 PM - 3:05 PM,T R,"Edwards, Karin R.",ARM 120,96,
+10862,MUMS,321,4,,Principles Pedagogy II:Trumpet,1 OR 2,TBA,,Ridenour & Saylor,,245,
+10863,MUMS,321,402,,Principles Pedagogy II:Horn,1 OR 2,TBA,,Cottle & Saylor,,245,
+10864,MUMS,321,403,,Princ Pedagogy II:Low Brass,1 OR 2,TBA,,Davis & Saylor,,245,
+10865,MUMS,321,501,,Prin of Pedagogy II:Percussion,1 OR 2,TBA,,"Kastner, Kathleen S.",EDMAN 101,245,
+10866,MUMS,321,502,,Prin of Pedagogy II:Percussion,1 OR 2,TBA,,"Kastner, Kathleen S.",EDMAN 101,245,
+10867,MUMS,321,601,,Principles Pedagogy II:Flute,1 OR 2,TBA,,Brown & Saylor,,245,
+10868,MUMS,321,602,,Prin of Pedagogy II:Sngl Reeds,1 OR 2,TBA,,"O'Riordan, Trevor P.",,245,
+10869,MUMS,321,603,,Princ of Pedagogy II:Dbl Reeds,1 OR 2,TBA,,"Stevenson, Deborah",.,245,
+10870,MUMS,321,2,,Princ of Pedagogy II:Voice,1 OR 2,9:30 AM - 10:20 AM,T R,"Hueber, Thomas E.",ARM 246,96,
+10871,MUMS,321,7,,Prin of Pedagogy II:Guitar,1 OR 2,TBA,,Joiner & Ramsdell,,245,
+10872,MUMS,330,0,,Acoustic Recording Techniques,3,6:45 PM - 10:00 PM,W,"Porick, Brian",ARM 340,353,
+10873,MUMS,333,1,,Music Outreach Practicum,0 TO 2,TBA,,"Bauer, Elizabeth A.",,180,
+10874,MUMS,341,3,,Woodwind Techniques,1 OR 2,12:15 PM - 1:05 PM,T R,Saylor & Black,ARM 124,96,
+10875,MUMS,341,5,,Percussion Techniques,1 OR 2,11:15 AM - 12:05 PM,T R,"Kastner, Kathleen S.",EDMAN 101,96,
+10876,MUMS,341,1,A,High String Techniques,1 OR 2,12:15 PM - 1:05 PM,T R,Sjobring & Peterson,ARM 120,48,
+10877,MUMS,341,2,B,Low Strings Techniques,1 OR 2,12:15 PM - 1:05 PM,T R,"Altino, Leonardo G.",ARM 120,48,
+10878,MUMS,346,0,,Conducting Lab,0,8:00 AM - 9:10 AM,W,"Sommerville, Daniel",A. RM 120,48,
+10880,MUMS,421,0,,Honors Conducting,0 TO 1,TBA,,Hopper & Trotter,,96,
+10881,MUMS,455,0,,Applied Pedagogy II,2,TBA,,"Bauer, Elizabeth A.",,96,
+10882,MUMS,473,0,,Elementary School Music,2,9:20 AM - 10:30 AM,M W,"Yi, Gina J.",ARM 120,96,
+10883,MUMS,473L,0,,Elem School Music Practicum,1,9:20 AM - 10:30 AM,F,"Yi, Gina J.",ARM 120,48,
+10884,MUMS,495,0,,Directed Study,1 TO 4,TBA,,"Zimmerman, Edward",,,
+10885,MUMS,496,0,,Internship,2 TO 4,TBA,,"Bauer, Elizabeth A.",,180,
+10886,MUTC,101,2,B,Intro to Music: Read/Analysis,2,9:20 AM - 10:30 AM,M W F,"Clark, Micah S.",ARM 145,,VPAM
+10887,MUTC,122,0,,Introduction to Composition,2,9:20 AM - 10:30 AM,M W F,"Okpebholo, Shawn",ARM 124,96,
+10888,MUTC,171,1,,Music Theory II,3,8:00 AM - 9:10 AM,M W F,"Wheatley, Gregory",ARM 266,144,
+10889,MUTC,171,2,,Music Theory II,3,9:20 AM - 10:30 AM,M W F,"Wheatley, Gregory",ARM 266,144,
+10892,MUTC,172,2,,Aural Skills II,1,12:15 PM - 1:05 PM,T R,"Okpebholo, Shawn",ARM 246,48,
+10893,MUTC,172,3,,Aural Skills II,1,2:15 PM - 3:05 PM,T R,"Okpebholo, Shawn",ARM 246,48,
+10894,MUTC,261,1,,Music Theory IV,3,8:00 AM - 9:10 AM,M W F,"Whitaker, Howard L.",ARM 246,144,
+10895,MUTC,261,2,,Music Theory IV,3,9:20 AM - 10:30 AM,M W F,"Whitaker, Howard L.",ARM 246,144,
+10896,MUTC,272,1,,Aural Skills IV,1,8:30 AM - 9:20 AM,T R,"Kim, Misook",ARM 266,48,
+10897,MUTC,272,2,,Aural Skills IV,1,11:15 AM - 12:05 PM,T R,"Kim, Misook",ARM 266,48,
+10898,MUTC,272,3,,Aural Skills IV,1,12:15 PM - 1:05 PM,T R,"Kim, Misook",ARM 266,48,
+10899,MUTC,331,0,,Intermediate Composition,2,TBA,,"Kim, Misook",,512,
+10900,MUTC,333,0,,Digital Music Technology II,2,7:00 PM - 8:50 PM,M,Baddorf & Okpebhol,ARM 317,96,
+10906,MUTC,451,0,,Advanced Composition,3,TBA,,"Okpebholo, Shawn E.",770,,
+10907,MUTC,495,0,,Directed Study,1 TO 4,TBA,,"Zimmerman, Edward",,,
+10908,PSYC,101,0,,"Introduction to PsychologyTuesday lecture 1/2 of period.",4,11:15 AM - 1:05 PM,R,"Callender, Aimee A.",BGC 105 AUD,,SI
+10909,PSYC,101L,1,,Intro To Psych Lab,0,12:15 PM - 1:05 PM,T,"Fort, Christin J.",BGC 105 AUD,,
+10910,PSYC,101L,2,,Intro To Psych Lab,0,12:15 PM - 1:05 PM,T,"Callender, Aimee A.",BGC 253,,
+10911,PSYC,101L,3,,Intro To Psych Lab,0,12:15 PM - 1:05 PM,T,"Hannah, Darlene B.",BGC 254,,
+10914,PSYC,235,0,,Cross-Cultural Psychology,2,2:15 PM - 4:05 PM,W,"Hannah, Darlene B.",BGC 132,,
+10915,PSYC,241,0,,Social Psychology,4,1:15 PM - 3:05 PM,T R,"Hannah, Darlene B.",BGC 140,,SI
+10917,PSYC,269,1,,Experimental Psychology,4,11:15 AM - 1:05 PM,T R,"Vessey, John T.",BGC M209,,
+10919,PSYC,317,1,,Developmental Psychology,4,9:20 AM - 10:30 AM,M W F,"Eveleigh, Elisha",BGC M228,,SI
+10920,PSYC,343,0,,Sensation & Perception,4,11:35 AM - 12:45 PM,M W F,"Phinney, Raymond",BGC M228,,
+10921,PSYC,348,0,,Abnormal Psychology,4,9:20 AM - 10:30 AM,M W F,"Hall, Sarah E.",BGC M229,,
+10923,PSYC,355,0,,Adv Statistics & Psyc Testing,4,11:35 AM - 12:45 PM,M W F,"Eveleigh, Elisha",MSC 103,,
+10924,PSYC,481,2,A,Advanced Abnormal Psyc,2,8:00 AM - 9:10 AM,M W F,"Hall, Sarah E.",BGC 134,,
+10926,PSYC,481,8,,Current Issues in School Psyc,2,1:15 PM - 3:05 PM,T,"Eveleigh, Elisha",MEY 131,,
+10927,PSYC,494,1,,Personality Psychology,4,12:55 PM - 2:05 PM,M W F,"Fort, Christin J.",BGC 012,,
+10928,PSYC,494,2,,Personality Psychology,4,9:20 AM - 10:30 AM,M W F,"Fort, Christin J.",BGC 011,,
+10929,PSYC,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10930,PSYC,496,0,,Internship,4 OR 8,TBA,,"Eveleigh, Elisha",,,
+10931,PSYC,497,0,,Collaborative Research Groups,2 OR 4,3:15 PM - 5:05 PM,T,"Eveleigh, Elisha",BGC M209,,
+10932,PSYC,499,0,,Honors Thesis,4 OR 8,TBA,,STAFF,,,
+10933,CORE,101,3,,FYS: Why Do We Suffer?,4,9:20 AM - 10:30 AM,M W F,"Borden, Sarah R.",BLANCH 124,,
+10936,INTR,531,1HY,,Theological Foundations,2,8:30 AM - 5:30 PM,W,"Gallagher, Robert L.",BGC 255,,
+10942,INTR,609,1,A,Linguistic Science,2,1:15 PM - 3:05 PM,T R,"Hackett, Robyn K.",MEY 133,,
+10943,INTR,613,0,,ESL/EFL Practicum,2,4:00 PM - 6:00 PM,M,"Pierson, Cheri L.",BGC 255,,
+10944,INTR,614,2,A,Curriculum/Materials Devlpmt,2,3:30 PM - 6:45 PM,W,"Pierson, Cheri L.",BGC 255,,
+10945,INTR,617,1,B,Principles ESL/EFL Testing,2,6:30 PM - 10:00 PM,W,"Seaman, Alan A.",BGC 250,,
+10949,INTR,692,2,,Comprehensive Examination,0,TBA,,Seaman & Pierson,,75,
+10950,INTR,695,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10951,INTR,696,0,,Internship,2 OR 4,TBA,,STAFF,,,
+10952,INTR,698,0,,Thesis/Applied Thesis,4,TBA,,STAFF,,,
+10953,INTR,699,0,,Thesis/Applied Thesis Contin,0,TBA,,STAFF,,50,
+10954,LING,321,1,A,Introduction to Linguistics,2,1:15 PM - 3:05 PM,T R,"Hackett, Robyn K.",MEY 133,,
+10955,LING,321,2,A,Introduction to Linguistics,2,11:15 AM - 1:05 PM,T R,"Mullen, Natalie J.",ARM 252,,
+10956,LING,222,0,B,English Grammar for Teachers,2,12:55 PM - 2:05 PM,M W F,"Vroom Fick, Sara J.",BLANCH 272,,
+10957,LING,325,0,B,Prin of Assessment for TESOL,2,6:30 PM - 10:00 PM,W,"Seaman, Alan A.",BGC 250,,
+10958,LING,326,0,,ELL Content Methods,2,6:30 PM - 8:20 PM,R,"Vroom Fick, Sara J.",BLANCH 455,,
+10959,LING,227,0,B,Cross-Cultural Teaching Learn,2,8:30 AM - 10:20 AM,T R,"Barger, R. Pam",BGC 255,,
+10960,HNGR,114,0,,"Poverty, Justice & Transform1st & 2nd year students only",4,11:15 AM - 1:05 PM,T R,"Huff, James G.",BLANCH 339,,"GP, SI"
+10961,HNGR,385,0,,Field Research Meth,4,6:30 PM - 10:00 PM,T,Yoder & Huff,ARM 145,,
+10962,HNGR,494,0,,HNGR Capstone Integration Sem,2,3:15 PM - 5:05 PM,R,"Yoder, Laura S.",ARM 145,,
+10963,IDS,494,0,,Senior Seminar,4,8:30 AM - 10:20 AM,T R,"Davis, Jeffry C.",BLANCH 440,,
+10964,MSCI,102,0,,Intro to Profession of Arms,2,6:30 PM - 10:00 PM,R,"Nigh, David A.",MEY 131,,
+10965,MSCI,123,0,,Leadership Laboratory,0,3:45 PM - 5:45 PM,R,Olson & Nigh,,,
+10966,MSCI,202,0,,Army Doctrine/Team Dev't,2,6:30 PM - 10:00 PM,R,Albuck & Frye,JENKS 205,,
+10967,MSCI,302,0,,Applied Leadership-Small Unit,4,6:30 PM - 10:00 PM,R,"Olson, Aaron M.",JENKS 206,,
+10968,MSCI,402,0,,Company Grade Leadership,4,6:30 PM - 10:00 PM,R,"Kurczak, Steven J.",JENKS 204,,
+10969,MSCI,494,0,,Leadership Principles,2,TBA,,"Kurczak, Steven J.",,,
+10973,EVAN,695,0,,Independent Study,1 TO 4,TBA,,STAFF,,,
+10974,EVAN,696,0,,Internship,2 OR 4,TBA,,STAFF,,,
+10975,EVAN,698,0,,Thesis/Applied Thesis,2 OR 4,TBA,,STAFF,,,
+10976,EVAN,699,0,,Thesis/Applied Thesis Contin,0,TBA,,STAFF,,50,
+10977,MISS,692,0,,Comprehensive Exam,0,TBA,,STAFF,,75,
+10978,EVAN,692,0,,Comprehensive Exam,0,TBA,,STAFF,,75,
+10982,CHEM,232,1,,General Chemistry II,4,8:00 AM - 9:05 AM,M W F,"Lane, Lori B.",MEY 021,,
+10984,CHEM,232,3,,General Chemistry II,4,2:15 PM - 3:25 PM,M W F,"Burden, Daniel L.",MEY 021,,
+10985,CHEM,232,2,,General Chemistry II,4,12:55 PM - 2:05 PM,M W F,"Lane, Lori B.",MEY 021,,
+10987,CHEM,232L,1,,General Chemistry II Lab,0,1:15 PM - 4:05 PM,T,"Burden, Daniel L.",MEY 311,,
+10988,CHEM,232L,2,,General Chemistry II Lab,0,6:45 PM - 9:35 PM,T,"Lane, Lori B.",MEY 311,,
+10989,CHEM,232L,3,,General Chemistry II Lab,0,2:15 PM - 5:05 PM,W,"Funck, Larry L.",MEY 311,,
+10990,CHEM,232L,4,,General Chemistry II Lab,0,6:45 PM - 9:35 PM,W,"Funck, Larry L.",MEY 311,,
+10991,CHEM,232L,5,,General Chemistry II Lab,0,7:30 AM - 10:20 AM,R,"Lane, Lori B.",MEY 311,,
+10992,CHEM,232L,6,,General Chemistry II Lab,0,12:15 PM - 3:05 PM,R,"Lane, Lori B.",MEY 311,,
+10993,CHEM,232L,7,,General Chemistry II Lab,0,6:45 PM - 9:35 PM,R,"Eggimann, Becky L.",MEY 311,,
+10996,CHEM,294,0,,Chemistry Colloquium,1,6:45 PM - 7:35 PM,T,"Burden, Daniel L.",MEY 302,,
+10997,CHEM,342,1,,Organic Chemistry II,4,8:00 AM - 9:10 AM,M W F,"Dick, Allison R.",MEY 217,95,
+10998,CHEM,342,2,,Organic Chemistry II,4,11:35 AM - 12:45 PM,M W F,"Umesiri, Francis E.",MEY 021,95,
+10999,CHEM,342L,2,,Organic II Lab,0,1:15 PM - 4:05 PM,T,"Umesiri, Francis E.",MEY 305,,
+11000,CHEM,342L,3,,Organic II Lab,0,2:15 PM - 5:05 PM,W,"David, Melody J.",MEY 305,,
+11002,CHEM,342L,4,,Organic II Lab,0,7:30 AM - 10:20 AM,R,"Sikkenga, David L.",MEY 305,,
+11003,CHEM,372,0,,Physical Chemistry II,2,9:20 AM - 10:30 AM,W F,"Walhout, Peter K.",MEY 302,,
+11004,CHEM,455,0,,Adv Analytcl Chem I,2,11:15 AM - 12:05 PM,R,"Burden, Daniel L.",MEY 302,95,
+11005,CHEM,455L,0,,Adv Analytical Chem I,0,1:15 PM - 2:00 PM,R,"Burden, Daniel L.",MEY 304,,
+11006,CHEM,461,0,,General Biochemistry,4,12:55 PM - 2:05 PM,M W F,"Eggimann, Becky L.",MEY 145,,
+11007,CHEM,463,0,,Biochemistry Analysis,2,11:15 AM - 12:05 PM,T,"Eggimann, Becky L.",MEY 331,95,
+11008,CHEM,463L,1,,Biochemistry Analysis Lab,0,1:15 PM - 4:05 PM,T,"Eggimann, Becky L.",MEY 331,,
+11010,CHEM,475,0,,Meth Physical Chem,2,9:20 AM - 10:30 AM,M,"Walhout, Peter K.",MEY 304,95,
+11011,CHEM,475L,0,,Meth Phys Chem Lab,0,7:30 AM - 10:20 AM,T,"Walhout, Peter K.",MEY 304,,
+11012,CHEM,485,0,,Synthesis And Analysis,2,2:15 PM - 5:05 PM,F,"Dick, Allison R.",MEY 304,95,
+11012,CHEM,485,0,,Synthesis And Analysis,2,2:15 PM - 5:05 PM,M,"Dick, Allison R.",MEY 304,95,
+11014,CHEM,495,0,,Independent Research,2 OR 4,TBA,,STAFF,,95,
+11015,CHEM,496,0,,Internship,1 TO 4,TBA,,STAFF,,,
+11016,SCI,321,0,,Sci-Middle/High School Teach,2,2:15 PM - 4:15 PM,W,"Leong, Elizabeth A.",MEY 205,20,
+11024,PSCI,236,0,,Intercollegiate Trial Advocacy,1,6:30 PM - 10:00 PM,T,Locke & Michalak,MSC 103,,
+11034,MAFT,697,4,,Clinical Pre-Practicum II,1,9:00 AM - 10:00 AM,F,"Yoo, Hana",BGC 254,,
+11042,MUIP,210,0,,Private Lessons: French Horn,2 TO 4,TBA,,Cottle & Saylor,,770,
+11043,MUTC,232,1,,Composition II,2,9:30 AM - 10:20 AM,T R,"Whitaker, Howard L.",ARM 266,96,
+11044,GERM,102,0,,Elementary German II,4,8:00 AM - 9:10 AM,M W F,"Shaffer, Clinton S.",MSC 105,,COMP
+11046,GERM,342,0,,Contemp Germ Pol Econ Events,4,8:00 AM - 9:10 AM,M W F,"Henley, Grant H.",WYN 302,,
+11048,GERM,373,0,,German for Reading II,0,3:45 PM - 4:45 PM,F,"Shaffer, Clinton S.",MSC 105,,
+11051,SPAN,352,1,,Camino de Santiago,2,6:30 PM - 8:20 PM,T,"Barlar, Sharenda H.",MSC 302,,
+11052,SPAN,357,0,,Latino Cultures in the US,4,9:20 AM - 10:30 AM,M W F,"Quiroa, Nestor I.",JENKS 206,,DUS
+11056,SPAN,493,0,,Mentor:Music & Protest,4,TBA,,"Klingler, Timothy M.",,,
+11057,SPAN,494,0,,Senior Seminar,4,11:15 AM - 1:05 PM,T R,"Townsend, Tamara",MEY 355,,
+11067,EDUC,348,0,,Special Education Assessment,4,12:55 PM - 2:05 PM,M W F,"Ruiz, Diane S.",MSC 103,,
+11068,SCI,322,1,,Science For Elem Tch,2,8:20 AM - 10:20 AM,T,"Eckert, Jonathan M.",BLANCH 472,10,
+11069,SCI,322,2,,Science For Elem Tch,2,11:05 AM - 1:05 PM,T,"Eckert, Jonathan M.",BLANCH 472,10,
+11070,HIST,325,0,B,Mid School Hist/SSci Methods,2,6:30 PM - 10:00 PM,R,"Johnson, Eric L.",BLANCH 472,,
+11071,HIST,349,0,,Origins of Contemporary Europe,4,6:30 PM - 10:00 PM,M,"Lundin, Matthew D.",BLANCH 223,,
+11073,PSYC,317,2,,Developmental Psychology,4,11:35 AM - 12:45 PM,M W F,"Hall, Sarah E.",BGC 012,,SI
+11079,INTR,616,OL1,,English Phonology,2,TBA,,STAFF,,,
+11080,INTR,617,OL,B,"Principles ESL/EFL TestingMeets online.  Dept's approvalrequired.",2,TBA,,"Seaman, Alan A.",,,
+11084,NEUR,241,0,,Foundations of Neuroscience,4,8:30 AM - 10:20 AM,T R,"Struthers, William M.",BGC 134,100,"SIP, SP"
+11087,AHS,141,0,A,Skiing - Cross Country,1,TBA,,"Kiley, Ashley P.",,,
+11088,CORE,306,0,,"AIS: Drugs, Society & Religion",4,6:30 PM - 10:00 PM,M,"Struthers, William M.",BGC 254,,SIP
+11096,PHIL,312,0,,Hist Of Philosophy,4,11:35 AM - 12:45 PM,M W F,"Borden, Sarah R.",BLANCH 339,,
+11098,SPAN,352,3,B,Spanish Film,2,11:15 AM - 1:05 PM,T R,"Kepner, Christine G.",WYN 307,,
+11100,CFM,696,0,,Internship,2 TO 4,TBA,,STAFF,,,
+11110,B EC,496,0,,Internship,1 TO 4,TBA,,"Bretsen, Stephen N.",,,
+11111,PSYC,762,10,,RLII:  Dr. Liu Lab,1,3:15 PM - 5:05 PM,T,"Liu, Tao",BGC M231,,
+11114,PSYC,762,4,,RLII: Neurocognitive Fcn Lab,1,3:15 PM - 4:45 PM,M,"Pyykkonen, Benjami",BAG. C M209,,
+11116,PSYC,762,6,,RLII: Urban Cmmty Health Lab,1,3:15 PM - 4:45 PM,T,"Canning, Sally S.",BGC 252,,
+11117,PSYC,762,7,,RLII: Yth Risk & Resiliance Lb,1,3:15 PM - 4:45 PM,T,"Rueger, Sandra Y.",BGC 254,,
+11118,PSYC,762,8,,RLII: Multi PJC Lab,1,3:15 PM - 4:45 PM,T,"McConnell, John M.",BGC M228,,
+11122,PHIL,243,0,A,Intro To Logic,2,9:20 AM - 10:30 AM,M W F,"O'Connor, Robert C.",BLANCH 222,,
+11123,PHIL,244,0,B,Symbolic Logic,2,9:20 AM - 10:30 AM,M W F,"O'Connor, Robert C.",BLANCH 222,,
+11133,PACS,496,0,,Internship,4,TBA,,"McGraw, Bryan T.",,,
+11158,HIST,312,0,,History of Philosophy,4,11:35 AM - 12:45 PM,M W F,"Borden, Sarah R.",BLANCH 339,,
+11217,MUEP,261,0,A,Opera Orchestra,0,TBA,,"Hopper, Mary",,,
+11254,PHYS,499,0,,Honors Thesis,2 TO 4,TBA,,STAFF,,,
+11301,SOC,482,0,,Social Research,4,8:30 AM - 10:20 AM,T R,"Miller, Brian J.",BLANCH 272,,
+11305,ENG,324,0,B,High School Methods-English,2,1:15 PM - 3:05 PM,T R,"Colon, Christine A.",BLANCH 472,,
+11306,ENG,325,0,A,Middle School Methods-English,2,1:15 PM - 3:05 PM,T R,"Colon, Christine A.",BLANCH 472,,
+11307,ENGL,112,1,,SWL: Comedy & Tragedy,4,8:30 AM - 10:20 AM,T R,"Gibson, Alison R.",BLANCH 139,,"LE, VPAT"
+11308,ENGL,112,2,,SWL: Comedy & Tragedy,4,11:15 AM - 1:05 PM,T R,"Gibson, Alison R.",BLANCH 139,,"LE, VPAT"
+11309,ENGL,202,0,,Japanese Literature,4,8:30 AM - 10:20 AM,T R,"Nonaka, Miho",MEY 129,,"GP, LE"
+11310,ENGL,328,0,,Young Adult Literature,4,6:30 PM - 10:00 PM,T,"Dunn-Hensley, Susa",B ML.ANCH 139,,
+11311,ENGL,365,0,,British Literature After 1939,4,6:30 PM - 10:00 PM,M,"Sasser, Kimberly A.",BLANCH 322,,
+11315,ENGL,385,0,A,Milton,2,12:55 PM - 2:05 PM,M W F,"Ryken, Leland",BLANCH 322,,
+11318,COMM,224,0,,Diversity-Intercultural Comm,4,12:55 PM - 2:05 PM,M W F,"Liu, Esther H.",BGC 010,,DUS
+11321,COMM,444,0,,Iconomy,2 TO 4,12:55 PM - 2:05 PM,M W F,"Schuchardt, Read M",BGC 263,,
+11323,CORE,101,4,,FYS: Living with More Rhythm,4,9:20 AM - 10:30 AM,M W F,"Chase, Kenneth R.",BGC 253,,
+11326,NEUR,241L,0,,Found of Neuroscience Lab,0,1:15 PM - 4:05 PM,T,Struthers & Thom,,,
+11327,NEUR,494,0,,Neuroscience Capstone,2,11:15 AM - 1:05 PM,T,"Struthers, William M.",BGC 140,,
+11328,PSYC,268,0,,Statistics,4,8:30 AM - 10:20 AM,T R,"Vessey, John T.",BGC 250,,AAQR
+11330,PSYC,481,5,A,History of Psychology,2,8:30 AM - 10:20 AM,T R,"Callender, Aimee A.",BGC 255,,
+11333,IR,175,2,,International Politics,4,11:15 AM - 1:05 PM,T R,"Taylor, Timothy W.",MSC 202,,SI
+11344,BITH,349,2,A,OT Topics: Ecclesiastes,2,9:20 AM - 10:30 AM,M W F,"Schultz, Richard L.",BGC 255,,
+11345,BITH,349,3,B,OT Topics: Judges,2,9:20 AM - 10:30 AM,M W F,"Schultz, Richard L.",BGC 255,,
+11354,BITH,449,0,,New Voices in the OT,4,11:15 AM - 1:05 PM,T R,"Carroll, Mark D.",BGC 252,,
+11357,BITH,506,0,,Language Study II,0,3:45 PM - 4:45 PM,F,"Shaffer, Clinton S.",MSC 105,,
+11362,BITH,648,0,,NT Theology,4,6:30 PM - 10:00 PM,T,"Moo, Douglas J.",BGC 130,,
+11363,BITH,332,0,,Ruth & Esther,4,6:30 PM - 10:00 PM,W,"Hill, Andrew E.",BGC 532,,LE
+11366,CHIN,102,2,,Elementary Chinese II,4,12:55 PM - 2:05 PM,M W F,"Wang, Rose",ARM 266,,COMP
+11367,CHIN,337,0,,Readings in Chinese Culture,4,12:55 PM - 2:05 PM,M W F,"Zhai, Wenyang",MSC 120,,GP
+11368,CORE,319,0,,AIS:  Epic & Philosophy,4,1:15 PM - 3:05 PM,T R,"Kemp, Ryan S.",MSC 103,,"LE, PI"
+11372,GREK,489,0,,Topics: Luke-Acts,4,8:00 AM - 9:10 AM,M W F,"Laansma, Jon C.",MSC 120,,
+11373,SPAN,352,2,A,Latin American Film,2,11:15 AM - 1:05 PM,T R,"Kepner, Christine G.",WYN 307,,
+11375,GEL,321,0,,Engaging Mexican Cultures,4,TBA,,"Wood, Adam N.",,,SI
+11377,SPAN,337,1,,Spanish American Literature,4,2:15 PM - 3:25 PM,M W F,"Klingler, Timothy M.",,,"GP, LE"
+11380,GEL,302,0,,Exploring Mexican History,4,TBA,,"Wood, Adam N.",,,HP
+11381,GEL,301,0,,Survey of Mexican Art,2,TBA,,"Wood, Adam N.",,,VPAV
+11385,PHYS,294,0,,Physics for the Future,2,8:30 AM - 10:20 AM,T,"Poelarends, Arend J",MEY 355,,
+11386,PHYS,341,0,,Analytical Mechanics,4,12:55 PM - 2:05 PM,M W F,"Whitney, Joshua F.",MEY 371,,
+11387,PHYS,353,0,A,Introductory Optics,2,11:35 AM - 12:45 PM,M W F,"Poelarends, Arend J",MEY 371,65,
+11389,PHYS,353L,2,A,Introductory Optics Lab,0,1:15 PM - 4:05 PM,T,"Schroeder, James",MEY 369,,
+11391,CORE,317,0,,AIS: Media Revolutions,4,11:15 AM - 1:05 PM,T R,"Lundin, Matthew D.",ARM 145,,"HP, SI"
+11396,HIST,494,0,,Senior Capstone,4,8:30 AM - 10:20 AM,T R,"McKenzie, Robert T.",BLANCH 223,,
+11397,HIST,391,6,,Majority World Indigenous Hist,4,2:15 PM - 3:25 PM,M W F,"Stringham, Noel C.",BLANCH 223,,
+11398,SSCI,321,1,,Elem & Middle Sch Curr Themes,2,8:30 AM - 10:30 AM,F,"Egeland, Paul C.",BLANCH 455,,
+11399,SSCI,321,2,,Elem & Middle Sch Curr Themes,2,11:35 AM - 1:35 PM,F,"Egeland, Paul C.",BLANCH 455,,
+11401,PHIL,101,2,,Introduction to Philosophy,4,2:15 PM - 3:25 PM,M W F,"Gordon, James R.",BLANCH 125,,PI
+11404,PHIL,341,0,,Nature Of Persons,4,11:15 AM - 1:05 PM,T R,"Talbot, Mark R.",BLANCH 125,,
+11408,MAFT,637,0,,Families in Context,3,9:00 AM - 11:50 AM,R,"Yoo, Hana",BGC 254,,
+11410,PSYC,762,9,,RL II:Religion/Health Lab,1,3:15 PM - 4:45 PM,T,"Voytenko, Vitaliy L.",BGC M229,,
+11411,PSYC,764,1,,RL IV: Dr. Liu Lab,1,3:15 PM - 5:05 PM,T,"Liu, Tao",BGC M231,,
+11413,PSYC,764,4,,RL IV: Neurocognitive Fcn Lab,1,3:15 PM - 4:45 PM,M,"Pyykkonen, Benjami",BAG. C M209,,
+11414,PSYC,764,6,,RL IV: Urban Cmmty Health Lab,1,3:15 PM - 4:45 PM,T,"Canning, Sally S.",BGC 252,,
+11415,PSYC,764,7,,RL IV: Yth Risk/Resiliance Lab,1,3:15 PM - 4:45 PM,T,"Rueger, Sandra Y.",BGC 254,,
+11416,PSYC,764,8,,RL IV: Multi PJC Lab,1,3:15 PM - 4:45 PM,T,"McConnell, John M.",BGC M228,,
+11417,PSYC,764,9,,RL IV: Religion/Health Lab,1,3:15 PM - 4:45 PM,T,"Voytenko, Vitaliy L.",BGC M229,,
+11421,ECON,326,2,,Intermediate Microeconomics,4,1:15 PM - 3:05 PM,T R,"Jankowski, Donald J",MSC 302,,
+11422,ECON,365,0,,Economic Growth & Development,4,11:35 AM - 12:45 PM,M W F,"Makaudze, Ephias",MSC 105,,
+11429,ART,241,0,,Sophomore Cornerstone,2,6:00 PM - 9:00 PM,T,"Schreck, Gregory H.",ADAMS 207,,
+11430,ART,351,0,,History-Art & Architecture II,4,9:20 AM - 10:30 AM,M W F,"Milliner, Matthew J.",ADAMS 301,,"DUS, VPAV"
+11439,CHEM,212,0,,Everyday Chemistry,4,2:15 PM - 3:25 PM,M W F,"Umesiri, Francis E.",MEY 133,,SP
+11441,CHEM,212L,2,,Everyday Chemistry Lab,0,6:45 PM - 9:35 PM,M,"Lovaasen, Benjamin",M.EY 311,,
+11443,CHEM,336,0,,Inorganic Chemistry,4,11:35 AM - 12:45 PM,M W F,"Lovaasen, Benjamin",M.EY 302,95,
+11444,CHEM,336L,0,,Inorganic Chem Lab,0,1:15 PM - 4:05 PM,R,"Lovaasen, Benjamin",M.EY 305,,
+11445,URBN,114,0,,Social Life of Cities,4,1:15 PM - 3:05 PM,T R,"Tooley, Christa B.",BLANCH 339,,"GP, SI"
+11447,C E,115,0,,Intro to Christian Formation,4,8:30 AM - 10:20 AM,T R,"McRay, Barrett W.",BGC 138,,
+11448,C E,226,0,,Christian Spiritual Practices,4,11:15 AM - 1:05 PM,T R,"Wilhoit, James C.",BGC 134,,
+11449,C E,251,0,,Ministry Practicum,0,TBA,,"Haase, Daniel T.",,,
+11451,C E,346,0,,Discipleship,4,6:30 PM - 10:00 PM,T,"Schwanda, Tom",BGC 250,,
+11452,C E,339,0,,Compassion & Crisis Ministry,4,11:15 AM - 1:05 PM,T R,"McRay, Barrett W.",BGC 012,,
+11454,C E,461,1,B,Leadership-Christian Ministry,2,11:15 AM - 1:05 PM,T R,"Sveen, David E.",BGC 255,,
+11455,C E,494,0,,Senior Capstone,4,1:15 PM - 3:05 PM,T R,Haase & Barwegen,BGC 253,,
+11458,CORE,329,0,,AIS:Neurobiol & Spiritual Form,4,11:35 AM - 12:45 PM,M W F,Barwegen & Townse,BdGC 134,,SIP
+11466,MATH,333,0,,Differential Equations,4,9:20 AM - 10:30 AM,M W F,"Diedrichs, Danilo R.",MEY 129,,
+11468,MATH,463,0,,Probability & Statistics II,4,1:15 PM - 3:05 PM,T R,"Delzell, Darcie A.",MEY 184,,
+11472,EDUC,507L,0,,Middle Grade Practicum,0,TBA,,"Morrison, Sally E.",,,
+11479,MUTC,101,1,A,Intro to Music: Read/Analysis,2,9:20 AM - 10:30 AM,M W F,"Clark, Micah S.",ARM 145,,VPAM
+11481,GEL,211,0,,Vocation Practicum,2 TO 4,7:00 PM - 9:00 PM,M,"Haase, Daniel T.",MSC 304,,
+11483,SCI,290,0,A,Health Professions Colloquim,1,8:30 AM - 10:20 AM,T,"Eisenhauer, Candice",MEY 143,,
+11490,ENVR,395,0,,Independent Study-Envr Science,2 TO 4,TBA,,STAFF,,25,
+11492,C E,474,0,,Integrative Leadership Seminar,2,8:00 AM - 4:00 PM,TWRF,"Robinson, Gregory S.",,,
+11493,CFM,512,0,B,Bible in Ministry,2,8:00 AM - 4:00 PM,MTWRF,"Polcaster, George",,,
+11496,B EC,377,0,,Marketing & Supply Chain Strat,4,11:35 AM - 12:45 PM,M W F,"Stolze, Hannah J.",MSC 204,,
+11498,ECON,492,0,,Senior Legacy Capstone,2,1:15 PM - 3:05 PM,T,"Forsstrom, Matthew",M. SC 304,,
+11499,BITH,349,4,A,OT Topics: Psalms,2,6:30 PM - 10:00 PM,T,"Buster, Aubrey E.",BGC 134,,
+11501,BITH,884,0,,Biblical/Theo Integration,2,2:00 PM - 4:00 PM,R,"Schultz, Richard L.",BGC 569,,
+11502,AHS,134,0,,Equestrian Skills,1,TBA,MTWRFS,STAFF,,300,
+11509,ASTR,305,1,,Astronomy,4,2:15 PM - 3:25 PM,M W F,"Poelarends, Arend J",MEY 302,,SIP
+11512,EVAN,573,1,,Evangelism Research Methods,2,8:30 AM - 5:30 PM,RFS,"Scheuermann, Roch",BlleG LC. 534,,
+11512,EVAN,573,1,,Evangelism Research Methods,2,TBA,,"Scheuermann, Roch",lle L.,,
+11514,HIST,391,4,A,Race/Reconciliation in U.S.,2,11:15 AM - 1:05 PM,T R,"Johnson, Karen J.",BLANCH 223,,
+11516,HIST,103,2,,EAP: Health & Medicine in US,4,6:30 PM - 10:00 PM,W,"Riddle, Jonathan D.",BLANCH 324,,"DUS, HP"
+11517,HIST,391,8,,Religion & Health in the U.S.,4,8:30 AM - 10:20 AM,T R,"Riddle, Jonathan D.",BLANCH 324,,
+11518,INTR,621,1HY,,Transformational Development,4,8:30 AM - 5:30 PM,MT,"Huff, James G.",BGC 255,,
+11519,PSYC,898,2,,Clinical Dissertation,1 TO 4,TBA,,STAFF,,,
+11520,SOC,115,2,,Intro to Sociology,4,11:35 AM - 12:45 PM,M W F,"Allen, Henry L.",BLANCH 222,,"DUS, SI"
+11562,BITH,211,8,,OT Lit & Interpretation,4,2:15 PM - 3:25 PM,M W F,"Buster, Aubrey E.",BGC 136,,SHAR
+11563,SCI,290,0,A,Health Professions Colloquim,1,11:15 AM - 1:05 PM,T,"Eisenhauer, Candice",MEY 184,,
+11574,MUIP,160,0,,Early Keyboard Lessons,1,TBA,,"Zimmerman, Edward",,245,
+11575,MUIP,260,0,,Early Keyboard Lessons,2,TBA,,"Zimmerman, Edward",,245,
+11617,CSCI,394,0,,Seminar: Machine Learning,4,12:55 PM - 2:05 PM,M W F,"VanDrunen, Thomas",M. EY 131,,
+11618,CSCI,455,0,,Operating Systems,4,9:20 AM - 10:30 AM,M W F,"Pohly, Devin J.",MEY 131,,
+11619,CSCI,493,0,,Mentoring: Adv CSCI Topics,2,11:15 AM - 1:05 PM,T,"Pohly, Devin J.",MEY 154,,
+11620,MATH,352,0,,Complex Analysis,4,2:15 PM - 3:25 PM,M W F,"Isihara, Paul",MEY 129,,
+11621,MATH,362,0,,Geometry,4,8:30 AM - 10:20 AM,T R,"Lovett, Stephen T.",MEY 184,,
+11622,MATH,494,1,,Senior Seminar,2,11:15 AM - 12:15 PM,T R,"Brabenec, Robert L.",MEY 129,,
+11624,IR,301,1,A,Religion & Foreign Policy,2,8:30 AM - 10:20 AM,T R,"Alexander, Kathryn",MSC 103,,
+11625,IR,302,1,,African Politics,4,1:15 PM - 3:05 PM,T R,"Alexander, Kathryn",MSC 202,,
+11626,PACS,494,0,B,Senior Seminar,2,2:15 PM - 3:25 PM,M W F,"McKoy, Michael K.",MSC 204,,
+11627,PSCI,494,0,A,Senior Seminar,2,9:20 AM - 10:30 AM,M W F,"Black, Amy E.",MSC 204,,
+11628,PSCI,245,0,B,Politics & Pop Culture,2,9:20 AM - 10:30 AM,M W F,"Black, Amy E.",MSC 204,,
+11629,PSCI,361,0,,Political Research,4,8:30 AM - 10:20 AM,T R,"Taylor, Timothy W.",MSC 204,,AAQR
+11630,PSCI,386,0,,Congress & Policy Process,4,11:35 AM - 12:45 PM,M W F,"Black, Amy E.",MSC 304,,
+11631,PSCI,271,0,A,Introduction to Law,2,12:55 PM - 2:05 PM,M W F,"Bretsen, Stephen N.",MSC 304,,
+11632,PSCI,374,0,,Political Psychology,4,11:15 AM - 1:05 PM,T R,"Garrett, Kristin N.",MSC 204,,SIP
+11633,PSCI,349,0,,Christian Political Thought,4,1:15 PM - 3:05 PM,T R,"McGraw, Bryan T.",MSC 120,,
+11634,PSCI,311,0,,Constitutional Law,4,1:15 PM - 3:05 PM,T R,"Bretsen, Stephen N.",MSC 204,,
+11635,PSCI,365,0,,Classical/Medieval Pol Thought,4,9:20 AM - 10:30 AM,M W F,"Cartagena, Nathan",BLANCH 125,,
+11636,PSYC,101L,4,,Intro To Psych Lab,0,12:15 PM - 1:05 PM,T,STAFF,BGC M228,,
+11637,PSYC,481,4,,Psychology of the Family,2,11:15 AM - 1:05 PM,T,"Van Dyke, David J.",MEY 143,,
+11638,ENGR,394,0,,Engineering Ethics Capstone,2,8:30 AM - 10:20 AM,T,"Hsu, David D.",MEY 014B,,
+11639,PHYS,331,0,,Spacetime & Quanta,4,2:15 PM - 3:25 PM,M W F,"Schroeder, James",MEY 371,,
+11640,PHYS,362,0,B,Plasma Physics,2,11:35 AM - 12:45 PM,M W F,"Schroeder, James",MEY 371,,
+11641,CORE,307,0,,AIS: Cosmology,4,1:15 PM - 3:05 PM,T R,O'Connor & Poelare,MsEY 143,,"PI, SIP"
+11642,CORE,336,0,,AIS: Energy for the Future,4,2:15 PM - 3:25 PM,M W F,"Craig, Darren J.",MEY 335,,SIP
+11643,SCI,302,0,,Origins of Scientific Thought,4,11:15 AM - 1:05 PM,T R,"Nelson, Gary B.",MEY 021,,"HP, SIP"
+11644,PHIL,105,2,,Race & Justice,4,12:55 PM - 2:05 PM,M W F,"Cartagena, Nathan",BLANCH 125,,"DUS, PI"
+11645,PHIL,205,1,,Ethics & Society,4,11:15 AM - 1:05 PM,T R,"Fletcher, David B.",MSC 103,,PI
+11646,PHIL,205,2,,Ethics & Society,4,1:15 PM - 3:05 PM,T R,"Fletcher, David B.",BLANCH 125,,PI
+11647,PHIL,206,0,,Philosophy & Spiritual Form,4,12:55 PM - 2:05 PM,M W F,"Gordon, James R.",BLANCH 222,,"PI, SI"
+11648,PHIL,328,1,A,Business Ethics,2,11:35 AM - 12:45 PM,M W F,"Gordon, James R.",BLANCH 273,,
+11649,PHIL,345,0,,Classical & Medieval Pol Thgt,4,9:20 AM - 10:30 AM,M W F,"Cartagena, Nathan",BLANCH 125,,
+11650,PHIL,349,0,,Christian Political Thought,4,1:15 PM - 3:05 PM,T R,"McGraw, Bryan T.",MSC 120,,
+11651,PHIL,448,3,,Ethical Theory,4,12:55 PM - 2:05 PM,M W F,"Fletcher, David B.",BLANCH 124,,
+11653,COMM,301,0,,Communication Theory,4,2:15 PM - 3:25 PM,M W F,"Langan, Emily J.",BGC 134,,
+11654,COMM,362,0,B,Group Dynamics,2,11:35 AM - 12:45 PM,M W F,"Langan, Emily J.",BGC 263,,
+11655,COMM,376,0,,Church And Theater,4,1:15 PM - 3:05 PM,T R,"Stauffer, Michael E.",JENKS 103,,
+11656,COMM,444,0,,"Media: Sex, Violence,Politics",2 TO 4,11:15 AM - 1:05 PM,T R,"Sietman, Rebecca B",BGC 010,,
+11657,COMM,494,2,B,Senior Seminar,2,8:30 AM -10:20 AM,T R,"Chase, Kenneth R.",BGC 263,,
+11658,GEOL,211L,6,,Dynamic Earth Lab,0,8:30 AM - 10:20 AM,R,"Heidlauf, Lisa E.",MEY 043,,
+11660,GEOL,437L,0,,Hydrogeology Lab,0,8:00 AM - 10:20 AM,T,"Luhmann, Andrew J.",MEY 049,,
+11662,CORE,101,5,,FYS:Where Do We Come From,4,2:15 PM - 3:25 PM,M W F,"Moshier, Stephen O.",MEY 045,,
+11663,SCI,311,0,,Theories of Origins,4,11:15 AM - 1:05 PM,T R,Moshier & Walton,MEY 145,30,SIP
+11664,HIST,201,0,,Why History?,4,6:30 PM - 10:00 PM,T,"Kim, Hanmee N.",BLANCH 223,,HP
+11665,HIST,251,0,,American History to 1865,4,11:15 AM - 1:05 PM,T R,"Riddle, Jonathan D.",BLANCH 324,,
+11666,HIST,334,0,,East Asian History,4,12:55 PM - 2:05 PM,M W F,"Kim, Hanmee N.",BLANCH 223,,
+11667,HIST,356,0,,American Revolution,4,1:15 PM - 3:05 PM,T R,"McKenzie, Robert T.",BLANCH 223,,
+11668,ARCH,365,0,,Statecraft & IR in the ANE,4,11:35 AM - 12:45 PM,M W F,"Miglio, Adam E.",BGC 534,,"HP, SI"
+11670,ARCH,494,0,B,Senior Seminar,2,6:30 PM - 10:00 PM,W,"Miglio, Adam E.",BGC 534,,
+11671,ARCH,554,0,A,Sem: Rise of Canaanites,2 OR 4,6:30 PM - 10:00 PM,W,"Master, Daniel M.",BGC 534,,
+11672,ARCH,565,0,,Statecraft & IR in ANE,4,11:35 AM - 12:45 PM,M W F,"Miglio, Adam E.",BGC 534,,
+11673,BITH,315,2,,Christian Thought,4,12:55 PM - 2:05 PM,M W F,"McGowin, Emily H.",BGC 140,,SHAR
+11674,BITH,221,0,,OT Lit in Three Traditions,4,8:30 AM - 10:20 AM,T R,"Hill, Andrew E.",BGC 012,,SHAR
+11675,BITH,443,1,,Hebrew Exegesis: Job,4,8:00 AM - 9:10 AM,M W F,"Walton, John H.",BGC 532,,
+11676,BITH,443,2,B,Hebrew Exegesis:1 & 2 Samuel,2,8:30 AM - 10:20 AM,T R,"Carroll, Mark D.",BGC 534,,
+11677,BITH,636,2,B,Hebrew Exegesis:1 & 2 Samuel,2,8:30 AM - 10:20 AM,T R,"Carroll, Mark D.",BGC 569,,
+11678,BITH,451,1,,Greek Exegesis,4,12:55 PM - 2:05 PM,M W F,"Sosa Siliezar, Carlos",B.GC 532,,
+11679,BITH,646,0,,Greek Exegesis,4,12:55 PM - 2:05 PM,M W F,"Sosa Siliezar, Carlos",B.GC 532,,
+11680,BITH,359,1,,NT Topics: James,4,6:30 PM - 10:00 PM,T,"Vlachos, Chris A.",BGC 140,,
+11681,BITH,359,2,A,NT Topics: 1 & 2 Thessalonians,2,9:20 AM - 10:30 AM,M W F,"Vlachos, Chris A.",BGC 130,,
+11682,BITH,359,3,B,NT Topics: Acts/Journeys of Paul,2,9:20 AM - 10:30 AM,M W F,"Vlachos, Chris A.",BGC 130,,
+11683,BITH,452,0,A,NT Criticism,2,12:55 PM - 2:05 PM,M W F,"Green, Gene L.",BGC 534,,
+11684,BITH,543,0,A,New Testament Criticism,2,12:55 PM - 2:05 PM,M W F,"Green, Gene L.",BGC 534,,
+11685,BITH,451,0,,Greek Exegesis:Hebrews,4,1:15 PM - 3:05 PM,T R,"Moo, Douglas J.",BGC 534,,
+11686,BITH,646,0,,Greek Exegesis: Hebrews,4,1:15 PM - 3:05 PM,T R,"Moo, Douglas J.",BGC 534,,
+11687,BITH,482,0,,Cappadocian Fathers,4,6:30 PM - 10:00 PM,M,"Bruce, Matthew J.",BGC 532,,
+11688,BITH,677,0,,Cappadocian Fathers,4,6:30 PM - 10:00 PM,M,"Bruce, Matthew J.",BGC 532,,
+11689,BITH,394,0,,Christian History:Calvin,4,1:15 PM - 3:05 PM,T R,"McNutt, Jennifer P.",BGC 524,,HP
+11690,BITH,376,0,,Theologies of Transformation,4,6:30 PM - 10:00 PM,T,"Bacote, Vincent E.",,,SHAR
+11691,BITH,566,0,,Foundations for Biblical Intrp,4,6:30 PM - 10:00 PM,T,"Ehorn, Seth M.",MSC 202,,
+11692,BITH,542,0,A,Old Testament Hermeneutics,2,11:15 AM - 1:05 PM,T R,"Schultz, Richard L.",BGC 250,,
+11693,BITH,377,2,A,God & Evil,2,8:30 AM - 10:20 AM,T R,"McGowin, Emily H.",BGC 534,,
+11695,BITH,393,3,,Liturgy & Worship,4,12:55 PM - 2:05 PM,M W F,"Peeler, Lance J.",BGC 132,,
+11696,RELI,362,0,B,Judaism,2,12:55 PM - 2:05 PM,M W F,"Graves, Michael W.",BGC 534,,
+11697,CORE,328,0,,"AIS: Mary, Mother of God",4,12:55 PM - 2:05 PM,M W F,Peeler & Milliner,ADAMS 301,,"HP, VPAV"
+11698,CORE,332,0,,AIS: Women Writing Theology,4,11:15 AM - 1:05 PM,T R,"Barbeau, Jeffrey W.",BGC 263,,LE
+11699,C E,414,0,A,Min with Children & Families,2,8:30 AM - 10:20 AM,T R,"Larson, Mimi L.",BGC 011,,
+11700,CFM,613,0,A,Ministry w/ Children/Families,2,8:30 AM - 10:20 AM,T R,"Larson, Mimi L.",BGC 011,,
+11701,C E,231,0,B,Evangelism,2,11:35 AM - 12:45 PM,M W F,"Root, Gerald R.",BGC 138,,
+11702,C E,223,0,,Human Development & Ministry,4,11:35 AM - 12:45 PM,M W F,"Larson, Mimi L.",BGC 132,,SI
+11704,CFM,525,1HY,,"Camp Ministry-Global ContextHybrid.  Meets 2/21-22; onlinemodules throughout semester",4,8:30 AM - 5:00 PM,RF,"Karianjahi, Muhia M.",,,
+11705,CFM,548,0,A,"Program Planning/LeadershipHybrid.  Meets 2/20 at HR.Online  modules through A quad",2,8:30 AM - 5:00 PM,W,"Karianjahi, Muhia M.",,,
+11706,CHEM,342L,1,,Organic II Lab,0,7:30 AM - 10:20 AM,T,"Dick, Allison R.",MEY 305,,
+11707,CHEM,436,0,B,Physical Inorganic Chemistry,2,12:55 PM - 2:05 PM,M W F,"Lovaasen, Benjamin",M.EY 302,,
+11708,CHEM,437,0,A,Organometallic Chemistry,2,12:55 PM - 2:05 PM,M W F,"Lovaasen, Benjamin",M.EY 302,,
+11709,CORE,101,2,,FYS: What is Matter?,4,12:55 PM - 2:05 PM,M W F,"Walhout, Peter K.",MEY 355,,
+11710,ENGL,338,0,,Restoration & 18th Century Lit,4,11:35 AM - 12:45 PM,M W F,"Galbraith, Jeffrey R.",BLANCH 322,,
+11711,ENGL,381,0,A,American Authors: Beginnings,2,8:30 AM - 10:20 AM,T R,"Kriner, Tiffany E.",BLANCH 322,,
+11712,ENGL,431,0,,Christianity and Fantasy,4,11:15 AM - 1:05 PM,T R,"Downing, David C.",BLANCH 322,,
+11713,ENGL,486,0,,Wade Center Authors,4,9:20 AM - 10:30 AM,M W F,"Colon, Christine A.",BLANCH 440,,
+11714,ENGW,104,2,B,Composition and Research,2,11:35 AM - 12:45 PM,M W F,"Ryken, Leland",BLANCH 272,,COMP
+11715,ENGW,104,0,A,Composition and Research,2,6:30 PM - 10:00 PM,M,"Beitler, James E.",BLANCH 124,,COMP
+11716,ENGW,233,0,,Writing Chicago,4,6:30 PM - 10:00 PM,R,Beitler & Toly,,,LE
+11717,ENGW,335,0,,Poetry Writing and Criticism,4,1:15 PM - 3:05 PM,T R,"Nonaka, Miho",BLANCH 323,,
+11718,ENGW,444,2,A,Special Topics-Flash Fiction,2,11:15 AM - 1:05 PM,T R,"Mazzarella, Nicole",SCHELL 201,,
+11719,ENGW,444,3,,Travel Writing,4,2:15 PM - 3:25 PM,M W F,"Bratcher, Andrew B.",BLANCH 472,,
+11720,ENGW,444,4,A,Writing About Culture,2,11:35 AM - 12:45 PM,M W F,"Bratcher, Andrew B.",BLANCH 440,,
+11721,CORE,342,0,,AIS: Dante's Commedia,4,6:00 PM - 9:30 PM,R,Gibson & Wood,BLANCH 125,,"LE, PI"
+11722,CHIN,302,0,,Chinese Through Scripture,4,9:20 AM - 10:30 AM,M W F,"Wang, Rose",WYN 302,,
+11723,CHIN,331,0,,Chinese Conversation,4,11:35 AM - 12:45 PM,M W F,"Zhai, Wenyang",MSC 120,,
+11725,FREN,333,0,,Intro to Francophone World,4,12:55 PM - 2:05 PM,M W F,"Savage, Alan D.",SCHELL 202,,
+11726,GERM,201,0,,Intermediate German,4,11:35 AM - 12:45 PM,M W F,"Gascho, Bethel L.",MSC 103,,COMP
+11727,GERM,494,2,,Senior Seminar: Faith & Lit,4,2:15 PM - 3:25 PM,M W F,"Henley, Grant H.",WYN 302,25,
+11728,SPAN,332,3,,Adv Grammar And Composition,4,12:55 PM - 2:05 PM,M W F,"Gates, Stephanie R.",MSC 122,,
+11729,SPAN,342,0,,Global Spain: Lit After 1800,4,11:35 AM - 12:45 PM,M W F,"Townsend, Tamara",ARM 246,,"GP, LE"
+11730,SPAN,352,4,B,Orientation to Costa Rica,2,12:55 PM - 2:05 PM,M W F,"Klingler, Timothy M.",MSC 202,,
+11731,SPAN,439,0,A,Church & Soc Latin America,2,12:55 PM - 2:05 PM,M W F,"Klingler, Timothy M.",MSC 202,,
+11732,CORE,333,0,,AIS:Country Behind Curtain-GDR,4,8:30 AM - 10:20 AM,T R,"Shaffer, Clinton S.",MSC 105,,"HP, LE"
+11733,PSYC,736,0,,Cognitive-Behavioral Thy/Prac,3,11:40 AM - 2:30 PM,W,"McConnell, John M.",BGC M229,,
+11734,PSYC,746,0,,Research/Stats I,3,10:40 AM - 1:30 PM,M,"Liu, Tao",BGC M229,,
+11735,PSYC,754,0,,Biological Bases of Behavior,3,8:20 AM - 11:10 AM,T,"Phinney, Raymond",BGC M228,,
+11736,PSYC,846,0,,Geropsychology,3,8:20 AM - 11:10 AM,T,"McConnell, John M.",BGC M229,,
+11737,PSYC,851,0,,Substance Abuse,3,6:00 PM - 8:50 PM,M,"Rueger, Sandra Y.",BGC 252,,
+11738,ANTH,361,0,B,Medical Anthropology,2,6:00 PM - 9:30 PM,W,"Jeske, Christine R.",BLANCH 272,,
+11739,ANTH,481,0,A,Anthropological Writing,2,6:00 PM - 9:30 PM,W,"Jeske, Christine R.",BLANCH 272,,
+11740,ANTH,310,0,,"Food, Farms, and Culture",4,1:15 PM - 3:05 PM,T R,"Jeske, Christine R.",BLANCH 273,,
+11741,SOC,115,3,,Intro to Sociology,4,11:15 AM - 1:05 PM,T R,"Allen, Henry L.",BLANCH 222,,"DUS, SI"
+11742,SOC,238,0,B,Contemporary Social Concerns,2,2:15 PM - 3:25 PM,M W F,"Allen, Henry L.",BLANCH 272,,
+11743,SOC,376,0,,Sociological Theory,4,1:15 PM - 3:05 PM,T R,"Kim, Henry H.",BLANCH 272,,
+11744,SOC,492,0,,Thesis Research,4,1:15 PM - 3:05 PM,T R,"Reynolds, Amy M.",MSC 105,,
+11745,GEND,494,0,,Gender Studies Capstone,2,11:15 AM - 1:05 PM,T,"Reynolds, Amy M.",MEY 131,,
+11746,SOC,228,0,A,Sociology of Sexuality,2,12:55 PM - 2:05 PM,M W F,"Reynolds, Amy M.",BLANCH 272,,
+11748,B EC,226,0,,Prin Of Accountng I,4,11:15 AM - 1:05 PM,T R,"Tomal, Annette H.",MSC 124,,
+11749,B EC,384,0,,Market Research,4,2:15 PM - 3:25 PM,M W F,"Stolze, Hannah J.",MSC 103,,
+11750,ECON,394,0,,Financial Economics,4,9:20 AM - 10:30 AM,M W F,"Guo, Nick L.",MSC 304,,
+11751,ECON,366,0,,International Economics,4,2:15 PM - 3:25 PM,M W F,"Hill, Enoch S.",MSC 122,,
+11752,B EC,382,0,,Employment Law,2,6:00 PM - 8:00 PM,M,"Favaro, Dennis R.",MSC 124,,
+11754,ART,492,0,,Comm Art Capstone/Internship,3,TBA,,"Samuelson, Leah M.",,,
+11755,ART,494,3,,Senior Capstone-Studio,2,6:00 PM - 9:00 PM,M W,"Hooker, David J.",ADAMS 207,,
+11756,ART,211,0,,Painting I,3,1:15 PM - 4:15 PM,T R,"Lundin, Cherith",ADAMS 111,,VPAV
+11757,ART,494,2,B,Senior Capstone: Art History,2,11:35 AM - 12:45 PM,M W F,"Milliner, Matthew J.",ADAMS 301,,
+11758,ART,101,5,B,Art Survey,2,1:15 PM - 3:05 PM,T R,"Thompson, Jeffrey P",ADAMS 301,,VPAV
+11759,ART,101,6,A,Art Survey,2,1:15 PM - 3:05 PM,T R,"Thompson, Jeffrey P",ADAMS 301,,VPAV
+11760,ENVR,381,0,,Envr Pollution & Toxicology,4,12:55 PM - 2:05 PM,M W F,"Keil, Charles B.",MEY 063,25,
+11761,BIOL,386,0,,Pharmacology,4,9:20 AM - 10:30 AM,M W F,"Busch, Jennifer L.",MEY 217,,
+11762,BIOL,368,0,,Invertebrate Zoology,4,9:20 AM - 10:30 AM,M W F,"Rorem, Nadine C.",MEY 355,85,
+11763,BIOL,368L,0,,Invertebrate Zoology Lab,0,7:30 AM - 10:20 AM,R,"Rorem, Nadine C.",MEY 245,,
+11764,CORE,341,0,,AIS: Stress and Flourishing,4,11:15 AM - 1:05 PM,T R,"Thom, Nathaniel J.",MEY 217,,SIP
+11765,MUCS,321,0,B,Church Music Practices,2,12:55 PM - 2:05 PM,M W F,"Zimmerman, Edward",ARM 120,96,
+11766,MUCS,336,0,A,Music of Oceania & Indonesia,2,9:20 AM - 10:30 AM,M W F,"Kastner, Kathleen S.",ARM 252,96,
+11767,MUCS,355,0,B,American Music,2,12:55 PM - 2:05 PM,M W F,"Buis, Johann S.",ARM 246,96,
+11768,MUCS,421,0,B,Chamber Literature,2,9:20 AM - 10:30 AM,M W F,"Saylor, L. Jonathan",BUS 133,96,
+11769,MUCS,434,0,,Seminar in Context Studies,2,11:15 AM - 12:05 PM,T R,"Saylor, L. Jonathan",ARM 246,96,
+11770,MUIP,131,2,,Small Group Piano Lessons,1,8:05 PM - 9:05 PM,M,Hart & Gamez,ARM 124,245,
+11771,MUMS,355,0,,Group Pedagogy,3,8:30 AM - 10:20 AM,T R,"Bauer, Elizabeth A.",ARM 120,144,
+11772,MUTC,343,0,B,Jazz Theory,2,8:30 PM - 10:30 PM,T R,"Ernst, Kathryn A.",EDMAN 102,96,
+11773,MUTC,353,0,,Modal Counterpoint,2,2:15 PM - 3:05 PM,T R,"Zimmerman, Edward",ARM 120,96,
+11774,MUTC,356,0,,Arranging,2,9:30 AM - 10:20 AM,T R,"Okpebholo, Shawn",ARM 222,96,
+11775,MUTC,364,0,,The Improvising Musician,2,8:30 AM - 9:20 AM,T R,"Whitaker, Howard L.",ARM 145,96,
+11776,URBN,373,0,A,City in Popular Culture,2,11:15 AM - 1:05 PM,T R,"Tooley, Christa B.",JENKS 205,,
+11777,URBN,393,0,B,Placemaking in Urban Contexts,2,11:15 AM - 1:05 PM,T R,"Tooley, Christa B.",JENKS 205,,
+11778,CORE,308,0,,"AIS: Engaging Arts in the CityWheaton in Chicago only",4,6:30 PM - 10:00 PM,F,Samuelson & Buis,,150,VPA
+11779,PSYC,481,1,,Theories of Integration,2,8:30 AM - 10:20 AM,T,"Fort, Christin J.",BGC 252,,
+11780,URBN,296,0,,Urban Studies Practicum,2 OR 4,TBA,,"Anderson, Jordan",,,
+11781,URBN,490,0,,Internship-Pending,4 TO 8,TBA,,"Anderson, Jordan",,,
+11782,URBN,496,0,,Internship,2 TO 8,TBA,,"Anderson, Jordan",,,
+11783,HDI,654,1OL,,"Disaster, Crisis, Trauma Inter",4,TBA,,STAFF,,,
+11784,HDI,624,1OL,,Refugee and Forced Migration,2,TBA,,STAFF,,,
+11785,HDI,654,0,,"Disaster, Crisis, Trauma Inter",4,1:15 PM - 5:15 PM,R,"Aten, Jamie D.",MSC 122,,
+11786,HDI,624,0,,Refugee and Forced Migration,2,1:00 PM - 2:50 PM,W,"Annan, Kent J.",BLANCH 440,,
+11787,HDI,544,0,,Organizing Emergency Assistanc,2,8:30 AM - 10:20 AM,R,"Yoder, Jeff T.",MSC 122,,
+11788,HDI,614,0,,Transformational Development,4,TBA,,STAFF,,,
+11789,C E,216,0,,Discipleship Practicum,1,TBA,,"Haase, Daniel T.",,,
+11790,INTR,561,0,,Intercultural Communication,4,8:00 AM - 1:00 PM,MTWRF,"Barger, R. Pam",,,
+11791,INTR,573,0,,Qualitative Research-SLE,2,11:15 AM - 1:05 PM,T R,"Pierson, Cheri L.",BGC 255,,
+11792,INTR,573,1OL,,Qualitative Research-SLE,2,TBA,,"Pierson, Cheri L.",,,
+11793,B EC,328,2,A,Business Ethics,2,11:35 AM - 12:45 PM,M W F,"Gordon, James R.",BLANCH 273,,
+11796,INTR,637,0,,Prob/Issues TESOL Mat Dev,2,8:00 AM - 1:00 PM,MTWRF,"Lewis, Marilyn N.",,,
+11797,INTR,643,1OL,,ELL Methods of Specialists,2,TBA,,"Root, Claudia A.",,,
+11798,INTR,521,1HY,,Historical Foundations,2,8:30 AM - 5:30 PM,W,"Gallagher, Robert L.",BGC 255,,
+11799,INTR,572,1HY,,Cross-Cultural Research,2 OR 4,8:30 AM - 5:30 PM,FS,"Mullen, Natalie J.",BGC 255,,
+11800,INTR,621,2HK,,Transformational Development,4,8:30 AM - 5:30 PM,FS,STAFF,,,
+11806,EVAN,694,0,,CS Lewis: Apologist,2,8:30 AM - 5:30 PM,MTW,"Root, Gerald R.",BGC 255,,
+11807,EVAN,534,0,,Apologetics in Global Contexts,2,8:30 AM - 5:30 PM,MTW,"Lee, Michael H.",BGC 534,,
+11807,EVAN,534,0,,Apologetics in Global Contexts,2,TBA,,"Lee, Michael H.",,,
+11808,EVAN,570,1OL,,Theology of Religions,4,TBA,,"Lee, Michael H.",,,
+11809,EVAN,545,1OL,,Culture: Emerging & Global,4,TBA,,"Lee, Michael H.",,,
+11811,ENVR,381L,0,,Env Pollution/Toxicology Lab,0,7:30 AM - 10:20 AM,R,"Keil, Charles B.",MEY 063,25,
+11812,ENVR,430,0,,Environmental Engineering,4,1:15 PM - 3:05 PM,T R,"Yoder, Jeff T.",MEY 063,,
+11813,ANTH,320,0,,Bollywood & Indian Society,4,6:30 PM - 10:00 PM,T,"Sadiq, Yousaf",BLANCH 222,,
+11814,SOC,450,0,A,"Males, Masculinity & Violence",2,2:15 PM - 3:25 PM,M W F,"Allen, Henry L.",BLANCH 272,,
+11815,URBN,233,0,,Chicago,4,6:30 PM - 10:00 PM,M,"Young, Sean L.",,,"DUS, SI"
+11816,C E,360,0,,Classics of Christian Devotion,4,1:15 PM - 3:05 PM,T R,"Schwanda, Tom",BGC 012,,
+11817,IR,318,0,,Environmental Politics,4,6:30 PM - 10:00 PM,T,"Toly, Noah J.",MSC 204,,
+11818,IR,302,0,,National Security,4,2:15 PM - 3:25 PM,M W F,"Iglesias, David C.",MSC 304,,
+11819,BITH,505,3,A,Adv. Greek: Luke,2,8:00 AM - 9:10 AM,M W F,"Laansma, Jon C.",MSC 120,,
+11821,MAFT,664,4,,Personal/Prof Dev't Group IV,0,9:50 AM - 11:10 AM,T,"Hanlon, Matthew J.",BGC 253,,
+11822,PSYC,762,5,,RL II:Psychology/Spirituality,1,3:15 PM - 5:05 PM,T,"Davis, Edward B.",BGC 250,,
+11823,PSYC,764,5,,RLIV:Psychology/Spirituality,1,3:15 PM - 5:05 PM,T,"Davis, Edward B.",BGC 250,,
+11824,SPAN,310,0,,Culture & Grammar Review,4,9:20 AM - 10:30 AM,M W F,"Klingler, Timothy M.",JENKS 204,,
+11825,PHIL,448,0,,Human & Divine Discourse,4,1:15 PM - 3:05 PM,T R,"Talbot, Mark R.",BLANCH 124,,
+11826,MUIP,403,0,,Private Lessons: Harpsichord,2 TO 4,TBA,,"Zimmerman, Edward",,770,
+11828,COMM,415,0,,Social Media/Mobile Journalism,4,8:00 AM - 9:10 AM,M W F,"Morgan, Timothy C.",BGC 011,,
+11830,HIST,391,5,B,Baseball & US History,2,11:15 AM - 1:05 PM,T R,"Blumhofer, Edith L.",BLANCH 223,,
+11831,INTR,563,0,B,Cross-Cultural Teachng/Learng,2,8:30 AM - 10:20 AM,T R,"Barger, R. Pam",BGC 255,,
+11832,BITH,322,0,,Theology & the Arts,4,6:30 PM - 10:00 PM,W,"McNutt, David W.",BGC 132,,VPA
+11835,BITH,647,0,,Greek Exegesis: Mark,2,3:15 PM - 5:15 PM,T,"Perrin, Nicholas",BGC 532,,
+11836,BITH,693,0,,Dossier for Biblical Exegesis,0,TBA,,"Abernethy, Andrew T.",,,
+11837,BITH,491,0,,Early Christianity Senior Sem,2,11:15 AM - 1:05 PM,R,"Lee, Gregory W.",BGC 253,,
+11839,ART,220,0,,Woodblock Printmaking,3,9:00 AM - 12:00 PM,T R,"Lundin, Cherith",ADAMS 201,,
+11840,ART,300,0,,Landscape Photography,2,9:00 AM - 10:30 AM,M W,"Schreck, Gregory H.",ADAMS 107,,
+11841,GERM,103,0,,Accel Elem German,4,8:00 AM - 9:10 AM,M W F,"Gascho, Bethel L.",MSC 122,,
+11843,GERM,361,0,,Terrorism in Lit and Film,4,11:35 AM - 12:45 PM,M W F,"Shaffer, Clinton S.",WYN 302,,
+11844,SPAN,332,0,,Adv Grammar And Composition,4,TBA,,"Wood, Adam N.",,,
+11845,SPAN,337,0,,Spanish American Literature,4,TBA,,"Wood, Adam N.",,,"GP, LE"
+11846,SPAN,338,0,,Intensive Advanced Spanish,4,TBA,,"Wood, Adam N.",,,
+11847,SPAN,489,1,,Topics in Mexican Literature,4,TBA,,"Wood, Adam N.",,,
