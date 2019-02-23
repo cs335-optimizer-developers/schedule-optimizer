@@ -1,18 +1,43 @@
 package info;
 
-public class CourseDetails {
+public class Details {
 	
-	public final String title;
-	public final String department;
-	public final String xl;
-	public final int number;
-	public final Tag[] tags;
+	private String title;
+	private CourseTime time;
+	private String prof;
+	private double fee;
+	private int credits;
 	
-	public CourseDetails(String title, Tag[] tags, String department, int number, String xl) {
-		this.title = title;
-		this.tags = tags;
-		this.department = department;
-		this.number = number;
-		this.xl = xl;
+	// If no fee is given, then assume section/lab costs no money
+	public Details(String title, CourseTime time, String prof, int credits) {
+		this(title,time,prof,credits,0);
 	}
+	
+	public Details(String title, CourseTime time, String prof, int credits, double fee) {
+		this.title = title;
+		this.time = time;
+		this.prof = prof;
+		this.credits = credits;
+		this.fee = fee;
+		validateDetails();
+	}
+
+	/**
+	 * Validate the creation parameters, if invalid then terminate.
+	 */
+	private void validateDetails() {
+		if(title == null)
+			System.out.println("Error creating new Details, title cannot be null, terminating...");
+		else if(time == null)
+			System.out.println("Error creating new Details, time cannot be null, terminating...");
+		else if(prof == null)
+			System.out.println("Error creating new Details, prof cannot be null, terminating...");
+		else if(credits < 0 || fee < 0)
+			System.out.println("Error creating new Details, credits or fee is invalid, terminating...");
+		else
+			return;
+		
+		System.exit(1);
+	}
+	
 }

@@ -1,18 +1,15 @@
 package info;
 
-public class CourseTime {
+enum Quad {A,B,LIN};
+// Assumed no Sunday classes
+enum Day {M,T,W,R,F,S};
 
-	public final int year;
-	public final String semester;
-	public final int time;
-	public final char[] days;
-	public final Quad quad;
+public class CourseTime {
+	private int year;
+	private String semester;
+	private int time;
+	private Day[] days;
+	private Quad quad;
 	
-	public CourseTime(int year, String semester, int time, char[] days, Quad quad) {
-		this.year = year;
-		this.semester = semester;
-		this.time = time;
-		this.days = days;
-		this.quad = quad;
-	}
+	
 }

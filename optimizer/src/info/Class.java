@@ -8,8 +8,6 @@ import java.util.ArrayList;
 
 // TODO add all the tags, no tag = null
 enum Tag {SHAR,SI,HP};
-// Quad a class can be in, full semester class = null
-enum Quad {A,B,LIN};
 // All the possible subjects a class can be in (taken from 2019 data)
 enum Subject { AHS,ANTH,ARCH,ART,ASTR,BEC,BIOL,BITH,CE,CHEM,CHIN,COMM,CORE,CSCI,
 	ECON,EDUC,ENG,ENGL,ENGR,ENGW,ENVR,FREN,GEL,GEND,GEOL,GERM,GREK,HEBR,HIST,HNGR,
