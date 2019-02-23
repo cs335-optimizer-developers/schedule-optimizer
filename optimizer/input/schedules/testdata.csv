@@ -1,0 +1,91 @@
+Subject,Number,Section,Quad,Title / Comment,Credits,Meeting Time,Days,Instructor(s),Fees,Attributes
+AHS,101,1,B,Wellness,2,11:15 AM - 1:05 PM,T R,"Penfound, Jean E.",,
+AHS,101,2,A,Wellness,2,11:35 AM - 12:45 PM,M W F,"Daly, Dana N.",,
+AHS,101,3,A,Wellness,2,8:00 AM - 9:10 AM,M W F,"Daly, Dana N.",,
+AHS,101,4,B,Wellness,2,8:30 AM - 10:20 AM,T R,"Daly, Dana N.",,
+AHS,101,5,B,Wellness,2,11:15 AM - 1:05 PM,T R,"Daly, Dana N.",,
+AHS,101,6,B,Wellness,2,11:35 AM - 12:45 PM,M W F,"Penfound, Jean E.",,
+AHS,101,7,A,Wellness,2,12:55 PM - 2:05 PM,M W F,"Daly, Dana N.",,
+AHS,134,0,,Equestrian Skills,1,TBA,,STAFF,300,
+AHS,141,0,A,Skiing - Cross Country,1,TBA,,"Kiley, Ashley P.",,
+AHS,273,0,A,Behavioral Medicine,2,11:15 AM - 1:05 PM,T R,"Penfound, Jean E.",,
+AHS,281,0,,Biostatistics,4,9:20 AM - 10:30 AM,M W F,"Hunt, Brian E.",,AAQR
+AHS,361,0,,Integrative Human Physiology,4,8:00 AM - 9:10 AM,M W F,"Hunt, Brian E.",75,
+AHS,368,0,,Concepts in Nutrition,4,1:15 PM - 3:05 PM,T R,"Ickes, Scott B.",,
+AHS,371,0,,Clinical Kinesiology,4,7:00 PM - 9:50 PM,M,"Alford, Micah L.",,
+AHS,451,0,A,Advanced Human Anatomy,2,8:30 AM - 10:20 AM,T R,"Townsend, Dana K.",,
+AHS,494,0,B,Integrative Seminar,2,6:30 PM - 10:00 PM,T,"Hunt, Brian E.",,
+AHS,361L,1,,Integrative Physiology Lab,0,7:30 AM - 10:20 AM,T,"Penfound, Jean E.",,
+AHS,361L,2,,Integrative Physiology Lab,0,1:15 PM - 4:05 PM,R,"Penfound, Jean E.",,
+AHS,361L,3,,Integrative Physiology Lab,0,7:30 AM - 10:20 AM,R,"Penfound, Jean E.",,
+AHS,361L,4,,Integrative Physiology Lab,0,1:15 PM - 4:05 PM,T,"Penfound, Jean E.",,
+AHS,371L,1,,Clinical Kinesiology Lab,0,5:00 PM - 6:50 PM,R,"Alford, Micah L.",,
+AHS,371L,2,,Clinical Kinesiology Lab,0,7:00 PM - 8:50 PM,R,"Alford, Micah L.",,
+ANTH,116,1,,"Introduction to Anthropology Freshmen & Sophomores only.",4,8:30 AM - 10:20 AM,T R,"Jeske, Christine R.",,"GP, SI"
+ANTH,116,2,,"Introduction to Anthropology Freshmen & Sophomores only.",4,1:15 PM - 3:05 PM,T R,"Howell, Brian M.",,"GP, SI"
+ANTH,310,0,,"Food, Farms, and Culture",4,1:15 PM - 3:05 PM,T R,"Jeske, Christine R.",,
+ANTH,320,0,,Bollywood & Indian Society,4,6:30 PM - 10:00 PM,T,"Sadiq, Yousaf",,
+ANTH,353,0,,Biculturalism,4,2:15 PM - 3:25 PM,M W F,"Sadiq, Yousaf",,"DUS, GP"
+ANTH,361,0,B,Medical Anthropology,2,6:00 PM - 9:30 PM,W,"Jeske, Christine R.",,
+ANTH,385,0,,Field Research Methods,4,6:30 PM - 9:45 PM,T,Yoder & Huff,,
+ANTH,481,0,A,Anthropological Writing,2,6:00 PM - 9:30 PM,W,"Jeske, Christine R.",,
+ANTH,482,0,,Ethnographic Theory and Method,4,11:15 AM - 1:05 PM,T R,"Howell, Brian M.",,
+ANTH,494,0,,Senior Capstone,4,8:30 AM - 10:20 AM,T R,"Howell, Brian M.",,
+ANTH,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+ANTH,496,0,,Internship,4 OR 8,TBA,,STAFF,,
+ARCH,211,0,,OT Archaeology,4,9:20 AM - 10:30 AM,M W F,"Miglio, Adam E.",,
+ARCH,365,0,,Statecraft & IR in the ANE,4,11:35 AM - 12:45 PM,M W F,"Miglio, Adam E.",,"HP, SI"
+ARCH,494,0,B,Senior Seminar,2,6:30 PM - 10:00 PM,W,"Miglio, Adam E.",,
+ARCH,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+ART,101,1,B,Art Survey,2,3:15 PM - 5:05 PM,T R,STAFF,,VPAV
+ART,101,2,A,Art Survey,2,11:35 AM - 12:45 PM,M W F,"Milliner, Matthew J.",,VPAV
+ART,101,3,A,Art Survey,2,11:15 AM - 1:05 PM,T R,"Thompson, Jeffrey P",,VPAV
+ART,101,4,B,Art Survey,2,11:15 AM - 1:05 PM,T R,"Thompson, Jeffrey P",,VPAV
+ART,101,5,B,Art Survey,2,1:15 PM - 3:05 PM,T R,"Thompson, Jeffrey P",,VPAV
+ART,101,6,A,Art Survey,2,1:15 PM - 3:05 PM,T R,"Thompson, Jeffrey P",,VPAV
+ART,211,0,,Painting I,3,1:15 PM - 4:15 PM,T R,"Lundin, Cherith",,VPAV
+ART,220,0,,Woodblock Printmaking,3,9:00 AM - 12:00 PM,T R,"Lundin, Cherith",,
+ART,221,0,,Taking Pictures,3,9:00 AM - 12:00 PM,T R,"Schreck, Gregory H.",,VPAV
+ART,231,0,,Sculpture I,3,1:15 PM - 4:15 PM,T R,"Woods, Sarah B.",,VPAV
+ART,232,0,,Drawing I,3,1:15 PM - 4:15 PM,T R,"Samuelson, Leah M.",,VPAV
+ART,233,0,,Creativity & Design,3,9:00 AM - 12:00 PM,T R,"Botts, Jeremy G.",,
+ART,234,0,,Digital Studio,3,1:15 PM - 4:15 PM,T R,"Park, Joonhee",,
+ART,241,0,,Sophomore Cornerstone,2,6:00 PM - 9:00 PM,T,"Schreck, Gregory H.",,
+ART,300,0,,Landscape Photography,2,9:00 AM - 10:30 AM,M W,"Schreck, Gregory H.",,
+ART,318,0,,Graphic Design I,3,12:55 PM - 3:55 PM,M W,"Botts, Jeremy G.",,
+ART,324,0,,Digital Photography II,3,12:55 PM - 3:55 PM,M W,"Schreck, Gregory H.",,
+ART,325,0,,Cinema,4,2:15 PM - 4:05 PM,M W,"Park, Joonhee",,
+ART,336,0,,Ceramics II,3,1:15 PM - 4:15 PM,T R,"Hooker, David J.",,
+ART,351,0,,History-Art & Architecture II,4,9:20 AM - 10:30 AM,M W F,"Milliner, Matthew J.",,"DUS, VPAV"
+ART,429,0,,Community Art II,3,2:00 PM - 8:00 PM,M,"Samuelson, Leah M.",,
+ART,492,0,,Comm Art Capstone/Internship,3,TBA,,"Samuelson, Leah M.",,
+ART,494,3,,Senior Capstone-Studio,2,6:00 PM - 9:00 PM,M W,"Hooker, David J.",,
+ART,494,2,B,Senior Capstone: Art History,2,11:35 AM - 12:45 PM,M W F,"Milliner, Matthew J.",,
+ART,495,0,,Independent Projects,1 TO 4,TBA,,STAFF,,
+ART,496,0,,Internship,2 TO 8,TBA,,STAFF,,
+ASTR,305,2,,Astronomy,4,9:20 AM - 10:30 AM,M W F,"Blaauw, Rhiannon C",,SIP
+ASTR,305,1,,Astronomy,4,2:15 PM - 3:25 PM,M W F,"Poelarends, Arend J",,SIP
+B EC,226,0,,Prin Of Accountng I,4,11:15 AM - 1:05 PM,T R,"Tomal, Annette H.",,
+B EC,227,0,,Principles of Accounting II,4,1:15 PM - 3:05 PM,T R,"Tomal, Annette H.",,
+B EC,321,1,,Statistics,4,11:15 AM - 1:05 PM,T R,"Makaudze, Ephias",,
+B EC,328,0,B,Business Ethics,2,11:35 AM - 12:45 PM,M W F,"Gordon, James R.",,
+B EC,328,2,A,Business Ethics,2,11:35 AM - 12:45 PM,M W F,"Gordon, James R.",,
+B EC,341,0,,Principles of Marketing,4,9:20 AM - 10:30 AM,M W F,"Stolze, Hannah J.",,
+B EC,342,1,,Principles of Management,4,9:20 AM - 10:30 AM,M W F,"Lee, Min-Dong Paul",,
+B EC,342,2,,Principles of Management,4,8:30 AM - 10:20 AM,T R,"Jackson, Christophe",,
+B EC,367,0,,Principles of Finance,4,8:00 AM - 9:10 AM,M W F,"Norton, Seth W.",,
+B EC,377,0,,Marketing & Supply Chain Strat,4,11:35 AM - 12:45 PM,M W F,"Stolze, Hannah J.",,
+B EC,382,0,,Employment Law,2,6:00 PM - 8:00 PM,M,"Favaro, Dennis R.",,
+B EC,384,0,,Market Research,4,2:15 PM - 3:25 PM,M W F,"Stolze, Hannah J.",,
+B EC,431,0,,Invest Analysis/Capital Mkts,4,9:20 AM - 10:30 AM,M W F,"Norton, Seth W.",,
+B EC,493,1,,Business Strategy,2,8:30 AM - 10:20 AM,R,"Norton, Seth W.",,
+B EC,493,2,,Business Strategy,2,11:15 AM - 1:05 PM,R,"Norton, Seth W.",,
+B EC,494,3,,Senior Seminar,2,11:15 AM - 1:05 PM,T,"Lee, Min-Dong Paul",,
+B EC,496,0,,Internship,1 TO 4,TBA,,"Bretsen, Stephen N.",,
+BIOL,242,1,,Diversity of Life,4,9:20 AM - 10:30 AM,M W F,"Lewis, Raymond J.",,
+BIOL,242,2,,Diversity of Life,4,11:35 AM - 12:45 PM,M W F,"Scott, Rodney J.",,
+BIOL,252,1,,"Modeling Systems of LifeStudents must register for BIOL252L-1; crn 10502",4,9:20 AM - 10:30 AM,M W,"Koo, Jovanka T.",85,
+BIOL,252,2,,"Modeling Systems of LifeStudents must register for Biol 252L",4,2:15 PM - 3:25 PM,M W,"Lewis, Raymond J.",85,
+BIOL,332,0,,Anatomy & Physiology II,4,8:00 AM - 9:10 AM,M W F,"Busch, Jennifer L.",85,
+BIOL,356,0,,Genetics,4,2:15 PM - 3:25 PM,M W F,"Scott, Rodney J.",85,
+BIOL,368,0,,Invertebrate Zoology,4,9:20 AM - 10:30 AM,M W F,"Rorem, Nadine C.",85,

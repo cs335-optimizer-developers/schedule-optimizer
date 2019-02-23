@@ -1,0 +1,841 @@
+Subject,Number,Section,Quad,Title / Comment,Credits,Meeting Time,Days,Instructor(s),Fees,Attributes
+AHS,101,1,B,Wellness,2,11:15 AM - 1:05 PM,T R,Penfound\ Jean E.,,
+AHS,101,2,A,Wellness,2,11:35 AM - 12:45 PM,M W F,Daly\ Dana N.,,
+AHS,101,3,A,Wellness,2,8:00 AM - 9:10 AM,M W F,Daly\ Dana N.,,
+AHS,101,4,B,Wellness,2,8:30 AM - 10:20 AM,T R,Daly\ Dana N.,,
+AHS,101,5,B,Wellness,2,11:15 AM - 1:05 PM,T R,Daly\ Dana N.,,
+AHS,101,6,B,Wellness,2,11:35 AM - 12:45 PM,M W F,Penfound\ Jean E.,,
+AHS,101,7,A,Wellness,2,12:55 PM - 2:05 PM,M W F,Daly\ Dana N.,,
+AHS,134,0,,Equestrian Skills,1,TBA,,STAFF,300,
+AHS,141,0,A,Skiing - Cross Country,1,TBA,,Kiley\ Ashley P.,,
+AHS,273,0,A,Behavioral Medicine,2,11:15 AM - 1:05 PM,T R,Penfound\ Jean E.,,
+AHS,281,0,,Biostatistics,4,9:20 AM - 10:30 AM,M W F,Hunt\ Brian E.,,AAQR
+AHS,361,0,,Integrative Human Physiology,4,8:00 AM - 9:10 AM,M W F,Hunt\ Brian E.,75,
+AHS,368,0,,Concepts in Nutrition,4,1:15 PM - 3:05 PM,T R,Ickes\ Scott B.,,
+AHS,371,0,,Clinical Kinesiology,4,7:00 PM - 9:50 PM,M,Alford\ Micah L.,,
+AHS,451,0,A,Advanced Human Anatomy,2,8:30 AM - 10:20 AM,T R,Townsend\ Dana K.,,
+AHS,494,0,B,Integrative Seminar,2,6:30 PM - 10:00 PM,T,Hunt\ Brian E.,,
+AHS,361L,1,,Integrative Physiology Lab,0,7:30 AM - 10:20 AM,T,Penfound\ Jean E.,,
+AHS,361L,2,,Integrative Physiology Lab,0,1:15 PM - 4:05 PM,R,Penfound\ Jean E.,,
+AHS,361L,3,,Integrative Physiology Lab,0,7:30 AM - 10:20 AM,R,Penfound\ Jean E.,,
+AHS,361L,4,,Integrative Physiology Lab,0,1:15 PM - 4:05 PM,T,Penfound\ Jean E.,,
+AHS,371L,1,,Clinical Kinesiology Lab,0,5:00 PM - 6:50 PM,R,Alford\ Micah L.,,
+AHS,371L,2,,Clinical Kinesiology Lab,0,7:00 PM - 8:50 PM,R,Alford\ Micah L.,,
+ANTH,116,1,,Introduction to Anthropology - Freshmen & Sophomores only.,4,8:30 AM - 10:20 AM,T R,Jeske\ Christine R.,,GP\ SI
+ANTH,116,2,,Introduction to Anthropology - Freshmen & Sophomores only.,4,1:15 PM - 3:05 PM,T R,Howell\ Brian M.,,GP\ SI
+ANTH,310,0,,Food\ Farms\ and Culture,4,1:15 PM - 3:05 PM,T R,Jeske\ Christine R.,,
+ANTH,320,0,,Bollywood & Indian Society,4,6:30 PM - 10:00 PM,T,Sadiq\ Yousaf,,
+ANTH,353,0,,Biculturalism,4,2:15 PM - 3:25 PM,M W F,Sadiq\ Yousaf,,DUS\ GP
+ANTH,361,0,B,Medical Anthropology,2,6:00 PM - 9:30 PM,W,Jeske\ Christine R.,,
+ANTH,385,0,,Field Research Methods,4,6:30 PM - 9:45 PM,T,Yoder & Huff,,
+ANTH,481,0,A,Anthropological Writing,2,6:00 PM - 9:30 PM,W,Jeske\ Christine R.,,
+ANTH,482,0,,Ethnographic Theory and Method,4,11:15 AM - 1:05 PM,T R,Howell\ Brian M.,,
+ANTH,494,0,,Senior Capstone,4,8:30 AM - 10:20 AM,T R,Howell\ Brian M.,,
+ANTH,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+ANTH,496,0,,Internship,4 OR 8,TBA,,STAFF,,
+ARCH,211,0,,OT Archaeology,4,9:20 AM - 10:30 AM,M W F,Miglio\ Adam E.,,
+ARCH,365,0,,Statecraft & IR in the ANE,4,11:35 AM - 12:45 PM,M W F,Miglio\ Adam E.,,HP\ SI
+ARCH,494,0,B,Senior Seminar,2,6:30 PM - 10:00 PM,W,Miglio\ Adam E.,,
+ARCH,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+ART,101,1,B,Art Survey,2,3:15 PM - 5:05 PM,T R,STAFF,,VPAV
+ART,101,2,A,Art Survey,2,11:35 AM - 12:45 PM,M W F,Milliner\ Matthew J.,,VPAV
+ART,101,3,A,Art Survey,2,11:15 AM - 1:05 PM,T R,Thompson\ Jeffrey P,,VPAV
+ART,101,4,B,Art Survey,2,11:15 AM - 1:05 PM,T R,Thompson\ Jeffrey P,,VPAV
+ART,101,5,B,Art Survey,2,1:15 PM - 3:05 PM,T R,Thompson\ Jeffrey P,,VPAV
+ART,101,6,A,Art Survey,2,1:15 PM - 3:05 PM,T R,Thompson\ Jeffrey P,,VPAV
+ART,211,0,,Painting I,3,1:15 PM - 4:15 PM,T R,Lundin\ Cherith,,VPAV
+ART,220,0,,Woodblock Printmaking,3,9:00 AM - 12:00 PM,T R,Lundin\ Cherith,,
+ART,221,0,,Taking Pictures,3,9:00 AM - 12:00 PM,T R,Schreck\ Gregory H.,,VPAV
+ART,231,0,,Sculpture I,3,1:15 PM - 4:15 PM,T R,Woods\ Sarah B.,,VPAV
+ART,232,0,,Drawing I,3,1:15 PM - 4:15 PM,T R,Samuelson\ Leah M.,,VPAV
+ART,233,0,,Creativity & Design,3,9:00 AM - 12:00 PM,T R,Botts\ Jeremy G.,,
+ART,234,0,,Digital Studio,3,1:15 PM - 4:15 PM,T R,Park\ Joonhee,,
+ART,241,0,,Sophomore Cornerstone,2,6:00 PM - 9:00 PM,T,Schreck\ Gregory H.,,
+ART,300,0,,Landscape Photography,2,9:00 AM - 10:30 AM,M W,Schreck\ Gregory H.,,
+ART,318,0,,Graphic Design I,3,12:55 PM - 3:55 PM,M W,Botts\ Jeremy G.,,
+ART,324,0,,Digital Photography II,3,12:55 PM - 3:55 PM,M W,Schreck\ Gregory H.,,
+ART,325,0,,Cinema,4,2:15 PM - 4:05 PM,M W,Park\ Joonhee,,
+ART,336,0,,Ceramics II,3,1:15 PM - 4:15 PM,T R,Hooker\ David J.,,
+ART,351,0,,History-Art & Architecture II,4,9:20 AM - 10:30 AM,M W F,Milliner\ Matthew J.,,DUS\ VPAV
+ART,429,0,,Community Art II,3,2:00 PM - 8:00 PM,M,Samuelson\ Leah M.,,
+ART,492,0,,Comm Art Capstone/Internship,3,TBA,,Samuelson\ Leah M.,,
+ART,494,3,,Senior Capstone-Studio,2,6:00 PM - 9:00 PM,M W,Hooker\ David J.,,
+ART,494,2,B,Senior Capstone: Art History,2,11:35 AM - 12:45 PM,M W F,Milliner\ Matthew J.,,
+ART,495,0,,Independent Projects,1 TO 4,TBA,,STAFF,,
+ART,496,0,,Internship,2 TO 8,TBA,,STAFF,,
+ASTR,305,2,,Astronomy,4,9:20 AM - 10:30 AM,M W F,Blaauw\ Rhiannon C,,SIP
+ASTR,305,1,,Astronomy,4,2:15 PM - 3:25 PM,M W F,Poelarends\ Arend J,,SIP
+B EC,226,0,,Prin Of Accountng I,4,11:15 AM - 1:05 PM,T R,Tomal\ Annette H.,,
+B EC,227,0,,Principles of Accounting II,4,1:15 PM - 3:05 PM,T R,Tomal\ Annette H.,,
+B EC,321,1,,Statistics,4,11:15 AM - 1:05 PM,T R,Makaudze\ Ephias,,
+B EC,328,0,B,Business Ethics,2,11:35 AM - 12:45 PM,M W F,Gordon\ James R.,,
+B EC,328,2,A,Business Ethics,2,11:35 AM - 12:45 PM,M W F,Gordon\ James R.,,
+B EC,341,0,,Principles of Marketing,4,9:20 AM - 10:30 AM,M W F,Stolze\ Hannah J.,,
+B EC,342,1,,Principles of Management,4,9:20 AM - 10:30 AM,M W F,Lee\ Min-Dong Paul,,
+B EC,342,2,,Principles of Management,4,8:30 AM - 10:20 AM,T R,Jackson\ Christophe,,
+B EC,367,0,,Principles of Finance,4,8:00 AM - 9:10 AM,M W F,Norton\ Seth W.,,
+B EC,377,0,,Marketing & Supply Chain Strat,4,11:35 AM - 12:45 PM,M W F,Stolze\ Hannah J.,,
+B EC,382,0,,Employment Law,2,6:00 PM - 8:00 PM,M,Favaro\ Dennis R.,,
+B EC,384,0,,Market Research,4,2:15 PM - 3:25 PM,M W F,Stolze\ Hannah J.,,
+B EC,431,0,,Invest Analysis/Capital Mkts,4,9:20 AM - 10:30 AM,M W F,Norton\ Seth W.,,
+B EC,493,1,,Business Strategy,2,8:30 AM - 10:20 AM,R,Norton\ Seth W.,,
+B EC,493,2,,Business Strategy,2,11:15 AM - 1:05 PM,R,Norton\ Seth W.,,
+B EC,494,3,,Senior Seminar,2,11:15 AM - 1:05 PM,T,Lee\ Min-Dong Paul,,
+B EC,496,0,,Internship,1 TO 4,TBA,,Bretsen\ Stephen N.,,
+BIOL,242,1,,Diversity of Life,4,9:20 AM - 10:30 AM,M W F,Lewis\ Raymond J.,,
+BIOL,242,2,,Diversity of Life,4,11:35 AM - 12:45 PM,M W F,Scott\ Rodney J.,,
+BIOL,252,1,,Modeling Systems of Life,4,9:20 AM - 10:30 AM,M W,Koo\ Jovanka T.,85,
+BIOL,252,2,,Modeling Systems of Life,4,2:15 PM - 3:25 PM,M W,Lewis\ Raymond J.,85,
+BIOL,332,0,,Anatomy & Physiology II,4,8:00 AM - 9:10 AM,M W F,Busch\ Jennifer L.,85,
+BIOL,356,0,,Genetics,4,2:15 PM - 3:25 PM,M W F,Scott\ Rodney J.,85,
+BIOL,368,0,,Invertebrate Zoology,4,9:20 AM - 10:30 AM,M W F,Rorem\ Nadine C.,85,
+BIOL,386,0,,Pharmacology,4,9:20 AM - 10:30 AM,M W F,Busch\ Jennifer L.,,
+BIOL,461,0,,General Biochemistry,4,12:55 PM - 2:05 PM,M W F,Eggimann\ Becky L.,,
+BIOL,494,1,,The Integrated Biologist,2,8:30 AM - 10:20 AM,T,Page\ L. Kristen,,
+BIOL,494,2,,The Integrated Biologist,2,1:15 PM - 3:05 PM,T,Page\ L. Kristen,,
+BIOL,495,0,,Biological Research,2 OR 4,TBA,,STAFF,100,
+BIOL,496,0,,Biology Internship,2 OR 4,TBA,,STAFF,,
+BIOL,242L,1,,College Biology II Lab,0,7:30 AM - 10:20 AM,T,Ogilvie\ Coreen B.,,
+BIOL,242L,2,,College Biology II Lab,0,1:15 PM - 4:05 PM,T,Rorem & Ogilvie,,
+BIOL,242L,3,,College Biology II Lab,0,6:30 PM - 9:20 PM,T,Secker\ Heather L.,,
+BIOL,242L,4,,College Biology II Lab,0,7:30 AM - 10:20 AM,R,Ogilvie\ Coreen B.,,
+BIOL,242L,5,,College Biology II Lab,0,12:15 PM - 3:05 PM,R,Burden\ Lisa M.,,
+BIOL,242L,6,,College Biology II Lab,0,6:30 PM - 9:20 PM,R,Secker\ Heather L.,,
+BIOL,242L,7,,College Biology II Lab,0,2:15 PM - 5:05 PM,W,Burden\ Lisa M.,,
+BIOL,252L,1,,Biol Systems Lab,0,7:30 AM - 10:20 AM,T R,Koo\ Jovanka T.,,
+BIOL,252L,2,,Biol Systems Lab,0,1:15 PM - 4:05 PM,T R,Lewis\ Raymond J.,,
+BIOL,332L,1,,Anatomy & Physiology II Lab,0,7:30 AM - 10:20 AM,R,Thom\ Nathaniel J.,,
+BIOL,332L,2,,Anatomy & Physiology II Lab,0,1:15 PM - 4:05 PM,R,Thom\ Nathaniel J.,,
+BIOL,356L,1,,Genetics Lab,0,7:30 AM - 10:20 AM,T,Scott\ Rodney J.,,
+BIOL,356L,2,,Genetics Lab,0,1:15 PM - 4:05 PM,T,Burden\ Lisa M.,,
+BIOL,356L,3,,Genetics Lab,0,7:30 AM - 10:20 AM,R,Burden & Scott,,
+BIOL,368L,0,,Invertebrate Zoology Lab,0,7:30 AM - 10:20 AM,R,Rorem\ Nadine C.,,
+BITH,211,1,,OT Lit & Interpretation,4,12:55 PM - 2:05 PM,M W F,Stanghelle\ Jason S.,,SHAR
+BITH,211,2,,OT Lit & Interpretation,4,1:15 PM - 3:05 PM,T R,Master\ Daniel M.,,SHAR
+BITH,211,3,,OT Lit & Interpretation,4,11:15 AM - 1:05 PM,T R,Hill\ Andrew E.,,SHAR
+BITH,211,4,,OT Lit & Interpretation,4,11:35 AM - 12:45 PM,M W F,Buster\ Aubrey E.,,SHAR
+BITH,211,5,,OT Lit & Interpretation,4,8:30 AM - 10:20 AM,T R,Haydon\ Ronald E.,,SHAR
+BITH,211,6,,OT Lit & Interpretation,4,9:20 AM - 10:30 AM,M W F,Walton\ John H.,,SHAR
+BITH,211,7,,OT Lit & Interpretation,4,6:30 PM - 10:00 PM,T,Higginbotham\ Lanc,,SHAR
+BITH,211,8,,OT Lit & Interpretation,4,2:15 PM - 3:25 PM,M W F,Buster\ Aubrey E.,,SHAR
+BITH,213,1,,NT Lit & Interpretation,4,8:30 AM - 10:20 AM,T R,Ehorn\ Seth M.,,SHAR
+BITH,213,3,,NT Lit & Interpretation,4,11:15 AM - 1:05 PM,T R,Ehorn\ Seth M.,,SHAR
+BITH,213,4,,NT Lit & Interpretation,4,12:55 PM - 2:05 PM,M W F,Vlachos\ Chris A.,,SHAR
+BITH,213,5,,NT Lit & Interpretation,4,1:15 PM - 3:05 PM,T R,Brendsel\ Daniel J.,,SHAR
+BITH,213,6,,NT Lit & Interpretation,4,9:20 AM - 10:30 AM,M W F,Sosa Siliezar\ Carlos,,SHAR
+BITH,213,7,,NT Lit & Interpretation,4,6:30 PM - 10:00 PM,T,LeMahieu\ Nathan,,SHAR
+BITH,221,0,,OT Lit in Three Traditions,4,8:30 AM - 10:20 AM,T R,Hill\ Andrew E.,,SHAR
+BITH,315,1,,Christian Thought,4,8:30 AM - 10:20 AM,T R,Bacote\ Vincent E.,,SHAR
+BITH,315,3,,Christian Thought,4,9:20 AM - 10:30 AM,M W F,McGowin\ Emily H.,,SHAR
+BITH,315,4,,Christian Thought,4,11:35 AM - 12:45 PM,M W F,Johnson\ Keith L.,,SHAR
+BITH,315,5,,Christian Thought,4,6:30 PM - 10:00 PM,R,Lee\ Gregory W.,,SHAR
+BITH,315,6,,Christian Thought,4,8:00 AM - 9:10 AM,M W F,McGowin\ Emily H.,,SHAR
+BITH,315,7,,Christian Thought,4,2:15 PM - 3:25 PM,M W F,Bruce\ Matthew J.,,SHAR
+BITH,315,8,,Christian Thought,4,1:15 PM - 3:05 PM,T R,Jones\ Beth F.,,SHAR
+BITH,315,2,,Christian Thought,4,12:55 PM - 2:05 PM,M W F,McGowin\ Emily H.,,SHAR
+BITH,322,0,,Theology & the Arts,4,6:30 PM - 10:00 PM,W,McNutt\ David W.,,VPA
+BITH,325,0,,Biblical Interp & Hermeneutics,4,11:15 AM - 1:05 PM,T R,Abernethy\ Andrew,,
+BITH,332,0,,Ruth & Esther,4,6:30 PM - 10:00 PM,W,Hill\ Andrew E.,,LE
+BITH,343,0,A,OT Cultural Environment,2,1:15 PM - 3:05 PM,T R,Walton\ John H.,,
+BITH,349,1,A,OT Topics: Christan Fathers,2,11:35 AM - 12:45 PM,M W F,Graves\ Michael W.,,
+BITH,349,2,A,OT Topics: Ecclesiastes,2,9:20 AM - 10:30 AM,M W F,Schultz\ Richard L.,,
+BITH,349,3,B,OT Topics: Judges,2,9:20 AM - 10:30 AM,M W F,Schultz\ Richard L.,,
+BITH,349,4,A,OT Topics: Psalms,2,6:30 PM - 10:00 PM,T,Buster\ Aubrey E.,,
+BITH,359,1,,NT Topics: James,4,6:30 PM - 10:00 PM,T,Vlachos\ Chris A.,,
+BITH,359,2,A,NT Topics: 1 & 2 Thessalonians,2,9:20 AM - 10:30 AM,M W F,Vlachos\ Chris A.,,
+BITH,359,3,B,NT Topics: Acts/Journeys of Paul,2,9:20 AM - 10:30 AM,M W F,Vlachos\ Chris A.,,
+BITH,372,0,,Historical Theology,4,1:15 AM - 3:05 PM,T R,Bruce\ Matthew J.,,
+BITH,373,0,,Marriage\ Sex and Family,4,11:15 AM - 1:05 PM,T R,Jones\ Beth F.,,
+BITH,374,0,,Systematic Theology,4,9:20 AM - 10:30 AM,M W F,Johnson\ Keith L.,,
+BITH,375,0,,Christian Ethics,4,2:15 PM - 3:25 PM,M W F,Johnson\ Keith L.,,
+BITH,376,0,,Theologies of Transformation,4,6:30 PM - 10:00 PM,T,Bacote\ Vincent E.,,SHAR
+BITH,377,2,A,God & Evil,2,8:30 AM - 10:20 AM,T R,McGowin\ Emily H.,,
+BITH,393,3,,Liturgy & Worship,4,12:55 PM - 2:05 PM,M W F,Peeler\ Lance J.,,
+BITH,394,0,,Christian History:Calvin,4,1:15 PM - 3:05 PM,T R,McNutt\ Jennifer P.,,HP
+BITH,443,1,,Hebrew Exegesis: Job,4,8:00 AM - 9:10 AM,M W F,Walton\ John H.,,
+BITH,443,2,B,Hebrew Exegesis:1 & 2 Samuel,2,8:30 AM - 10:20 AM,T R,Carroll\ Mark D.,,
+BITH,449,0,,New Voices in the OT,4,11:15 AM - 1:05 PM,T R,Carroll\ Mark D.,,
+BITH,451,1,,Greek Exegesis,4,12:55 PM - 2:05 PM,M W F,Sosa Siliezar\ Carlos,,
+BITH,451,0,,Greek Exegesis:Hebrews,4,1:15 PM - 3:05 PM,T R,Moo\ Douglas J.,,
+BITH,452,0,A,NT Criticism,2,12:55 PM - 2:05 PM,M W F,Green\ Gene L.,,
+BITH,482,0,,Cappadocian Fathers,4,6:30 PM - 10:00 PM,M,Bruce\ Matthew J.,,
+BITH,491,0,,Early Christianity Senior Sem,2,11:15 AM - 1:05 PM,R,Lee\ Gregory W.,,
+BITH,494,0,,Senior Seminar,2,8:00 AM - 1:00 PM,,Lee & Peeler,,
+BITH,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+BITH,496,0,,Internship,1 TO 4,TBA,,STAFF,,
+C E,111,0,A,Foundations of Ministry,2,11:35 AM - 12:45 PM,M W F,Root\ Gerald R.,,
+C E,115,0,,Intro to Christian Formation,4,8:30 AM - 10:20 AM,T R,McRay\ Barrett W.,,
+C E,216,0,,Discipleship Practicum,1,TBA,,Haase\ Daniel T.,,
+C E,222,0,,Transformational Education,4,9:20 AM - 10:30 AM,M W F,Larson\ Mimi L.,,
+C E,223,0,,Human Development & Ministry,4,11:35 AM - 12:45 PM,M W F,Larson\ Mimi L.,,SI
+C E,226,0,,Christian Spiritual Practices,4,11:15 AM - 1:05 PM,T R,Wilhoit\ James C.,,
+C E,231,0,B,Evangelism,2,11:35 AM - 12:45 PM,M W F,Root\ Gerald R.,,
+C E,232,0,,Spiritual Guide & Discern,2,7:00 PM - 9:00 PM,R,Haase\ Daniel T.,,
+C E,251,0,,Ministry Practicum,0,TBA,,Haase\ Daniel T.,,
+C E,339,0,,Compassion & Crisis Ministry,4,11:15 AM - 1:05 PM,T R,McRay\ Barrett W.,,
+C E,346,0,,Discipleship,4,6:30 PM - 10:00 PM,T,Schwanda\ Tom,,
+C E,360,0,,Classics of Christian Devotion,4,1:15 PM - 3:05 PM,T R,Schwanda\ Tom,,
+C E,414,0,A,Min with Children & Families,2,8:30 AM - 10:20 AM,T R,Larson\ Mimi L.,,
+C E,461,1,B,Leadership-Christian Ministry,2,11:15 AM - 1:05 PM,T R,Sveen\ David E.,,
+C E,474,0,,Integrative Leadership Seminar,2,8:00 AM - 4:00 PM,TWRF,Robinson\ Gregory S.,,
+C E,494,0,,Senior Capstone,4,1:15 PM - 3:05 PM,T R,Haase & Barwegen,,
+C E,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+C E,496,0,,Internship,0,TBA,,Haase\ Daniel T.,,
+CHEM,212,0,,Everyday Chemistry,4,2:15 PM - 3:25 PM,M W F,Umesiri\ Francis E.,,SP
+CHEM,232,1,,General Chemistry II,4,8:00 AM - 9:05 AM,M W F,Lane\ Lori B.,,
+CHEM,232,3,,General Chemistry II,4,2:15 PM - 3:25 PM,M W F,Burden\ Daniel L.,,
+CHEM,232,2,,General Chemistry II,4,12:55 PM - 2:05 PM,M W F,Lane\ Lori B.,,
+CHEM,294,0,,Chemistry Colloquium,1,6:45 PM - 7:35 PM,T,Burden\ Daniel L.,,
+CHEM,336,0,,Inorganic Chemistry,4,11:35 AM - 12:45 PM,M W F,Lovaasen\ Benjamin,95,
+CHEM,342,1,,Organic Chemistry II,4,8:00 AM - 9:10 AM,M W F,Dick\ Allison R.,95,
+CHEM,342,2,,Organic Chemistry II,4,11:35 AM - 12:45 PM,M W F,Umesiri\ Francis E.,95,
+CHEM,372,0,,Physical Chemistry II,2,9:20 AM - 10:30 AM,W F,Walhout\ Peter K.,,
+CHEM,436,0,B,Physical Inorganic Chemistry,2,12:55 PM - 2:05 PM,M W F,Lovaasen\ Benjamin,,
+CHEM,437,0,A,Organometallic Chemistry,2,12:55 PM - 2:05 PM,M W F,Lovaasen\ Benjamin,,
+CHEM,455,0,,Adv Analytcl Chem I,2,11:15 AM - 12:05 PM,R,Burden\ Daniel L.,95,
+CHEM,461,0,,General Biochemistry,4,12:55 PM - 2:05 PM,M W F,Eggimann\ Becky L.,,
+CHEM,463,0,,Biochemistry Analysis,2,11:15 AM - 12:05 PM,T,Eggimann\ Becky L.,95,
+CHEM,475,0,,Meth Physical Chem,2,9:20 AM - 10:30 AM,M,Walhout\ Peter K.,95,
+CHEM,485,0,,Synthesis And Analysis,2,2:15 PM - 5:05 PM,F,Dick\ Allison R.,95,
+CHEM,485,0,,Synthesis And Analysis,2,2:15 PM - 5:05 PM,M,Dick\ Allison R.,95,
+CHEM,495,0,,Independent Research,2 OR 4,TBA,,STAFF,95,
+CHEM,496,0,,Internship,1 TO 4,TBA,,STAFF,,
+CHEM,212L,2,,Everyday Chemistry Lab,0,6:45 PM - 9:35 PM,M,Lovaasen\ Benjamin,,
+CHEM,232L,1,,General Chemistry II Lab,0,1:15 PM - 4:05 PM,T,Burden\ Daniel L.,,
+CHEM,232L,2,,General Chemistry II Lab,0,6:45 PM - 9:35 PM,T,Lane\ Lori B.,,
+CHEM,232L,3,,General Chemistry II Lab,0,2:15 PM - 5:05 PM,W,Funck\ Larry L.,,
+CHEM,232L,4,,General Chemistry II Lab,0,6:45 PM - 9:35 PM,W,Funck\ Larry L.,,
+CHEM,232L,5,,General Chemistry II Lab,0,7:30 AM - 10:20 AM,R,Lane\ Lori B.,,
+CHEM,232L,6,,General Chemistry II Lab,0,12:15 PM - 3:05 PM,R,Lane\ Lori B.,,
+CHEM,232L,7,,General Chemistry II Lab,0,6:45 PM - 9:35 PM,R,Eggimann\ Becky L.,,
+CHEM,336L,0,,Inorganic Chem Lab,0,1:15 PM - 4:05 PM,R,Lovaasen\ Benjamin,,
+CHEM,342L,2,,Organic II Lab,0,1:15 PM - 4:05 PM,T,Umesiri\ Francis E.,,
+CHEM,342L,3,,Organic II Lab,0,2:15 PM - 5:05 PM,W,David\ Melody J.,,
+CHEM,342L,4,,Organic II Lab,0,7:30 AM - 10:20 AM,R,Sikkenga\ David L.,,
+CHEM,342L,1,,Organic II Lab,0,7:30 AM - 10:20 AM,T,Dick\ Allison R.,,
+CHEM,455L,0,,Adv Analytical Chem I,0,1:15 PM - 2:00 PM,R,Burden\ Daniel L.,,
+CHEM,463L,1,,Biochemistry Analysis Lab,0,1:15 PM - 4:05 PM,T,Eggimann\ Becky L.,,
+CHEM,475L,0,,Meth Phys Chem Lab,0,7:30 AM - 10:20 AM,T,Walhout\ Peter K.,,
+CHIN,102,1,,Elementary Chinese II,4,11:35 AM - 12:45 PM,M W F,Wang\ Rose,,COMP
+CHIN,102,2,,Elementary Chinese II,4,12:55 PM - 2:05 PM,M W F,Wang\ Rose,,COMP
+CHIN,302,0,,Chinese Through Scripture,4,9:20 AM - 10:30 AM,M W F,Wang\ Rose,,
+CHIN,331,0,,Chinese Conversation,4,11:35 AM - 12:45 PM,M W F,Zhai\ Wenyang,,
+CHIN,332,0,,Chinese Composition,4,11:15 AM - 1:05 PM,T R,Wang\ Rose,,
+CHIN,337,0,,Readings in Chinese Culture,4,12:55 PM - 2:05 PM,M W F,Zhai\ Wenyang,,GP
+COMM,101,3,A,Public Speaking,2,11:15 AM - 1:05 PM,T R,Robbins\ Kelley K.,,COMP
+COMM,101,4,B,Public Speaking,2,11:15 AM - 1:05 PM,T R,Robbins\ Kelley K.,,COMP
+COMM,101,5,B,Public Speaking,2,8:30 AM - 10:20 AM,T R,Bell\ Kailey B.,,COMP
+COMM,101,6,A,Public Speaking,2,11:35 AM - 12:45 PM,M W F,Mangin\ Katy A.,,COMP
+COMM,101,7,A,Public Speaking,2,12:55 PM - 2:05 PM,M W F,Mangin\ Katy A.,,COMP
+COMM,101,8,B,Public Speaking,2,12:55 PM - 2:05 PM,M W F,Mangin\ Katy A.,,COMP
+COMM,101,9,A,Public Speaking,2,2:15 PM - 3:25 PM,M W F,Liu\ Esther H.,,COMP
+COMM,101,10,B,Public Speaking,2,2:15 PM - 3:25 PM,M W F,Liu\ Esther H.,,COMP
+COMM,101,11,A,Public Speaking,2,11:35 AM - 12:45 PM,M W F,Schuchardt\ Read M,,COMP
+COMM,101,12,B,Public Speaking,2,11:35 AM - 12:45 PM,M W F,Schuchardt\ Read M,,COMP
+COMM,101,13,A,Public Speaking,2,6:30 PM - 10:00 PM,R,Rorvik\ John G.,,COMP
+COMM,101,14,B,Public Speaking,2,6:30 PM - 10:00 PM,R,Rorvik\ John G.,,COMP
+COMM,101,1,A,Public Speaking,2,1:15 PM - 3:05 PM,T R,Robbins\ Kelley K.,,COMP
+COMM,101,2,B,Public Speaking,2,1:15 PM - 3:05 PM,T R,Robbins\ Kelley K.,,COMP
+COMM,171,0,A,Intro to Acting,2,8:30 AM - 10:20 AM,T R,Bell\ Kailey B.,,VPAT
+COMM,201,0,,Fundmntls Oral Communication,4,8:30 AM - 10:20 AM,T R,Hill\ Theon E.,,COMP
+COMM,219,0,,Journalism Co-Curricular,0,TBA,,Morgan\ Timothy C.,,
+COMM,221,0,,Interpersonal Comm,4,9:20 AM - 10:30 AM,M W F,Liu\ Esther H.,,
+COMM,224,0,,Diversity-Intercultural Comm,4,12:55 PM - 2:05 PM,M W F,Liu\ Esther H.,,DUS
+COMM,246,0,,Media Production,4,8:30 AM - 10:20 AM,T R,Park\ Joonhee,,
+COMM,272,0,,Scenography,4,11:15 AM - 1:05 PM,T R,Stauffer\ Michael E.,,
+COMM,273,0,,Acting I,4,11:15 AM - 1:05 PM,T R,Mangin\ Andrew P.,,
+COMM,296,0,,Journalism Practicum,2 TO 4,TBA,,Morgan\ Timothy C.,,
+COMM,301,0,,Communication Theory,4,2:15 PM - 3:25 PM,M W F,Langan\ Emily J.,,
+COMM,311,0,,Human Communication Research,4,1:15 PM - 3:05 PM,T R,Sietman\ Rebecca B,,SI
+COMM,312,0,,Communication Criticism,4,6:30 PM - 10:00 PM,W,Hill\ Theon E.,,
+COMM,362,0,B,Group Dynamics,2,11:35 AM - 12:45 PM,M W F,Langan\ Emily J.,,
+COMM,363,0,,Persuasion,4,9:20 AM - 10:30 AM,M W F,Langan\ Emily J.,,SI
+COMM,373,0,,Theater Workout,0 OR 1,4:15 PM - 5:30 PM,T R,Lewis\ Mark N.,,
+COMM,376,0,,Church And Theater,4,1:15 PM - 3:05 PM,T R,Stauffer\ Michael E.,,
+COMM,393,0,,Intercollegiate Debate,0 OR 1,TBA,,Sietman\ Rebecca B.,,
+COMM,415,0,,Social Media/Mobile Journalism,4,8:00 AM - 9:10 AM,M W F,Morgan\ Timothy C.,,
+COMM,424,0,A,Family Communication,2 OR 4,11:35 AM - 12:45 PM,M W F,Langan\ Emily J.,,
+COMM,444,0,,Iconomy,2 TO 4,12:55 PM - 2:05 PM,M W F,Schuchardt\ Read M,,
+COMM,444,0,,Media: Sex\ Violence\Politics,2 TO 4,11:15 AM - 1:05 PM,T R,Sietman\ Rebecca B,,
+COMM,454,0,,Political Style,2 OR 4,1:15 PM - 3:05 PM,T R,Hill\ Theon E.,,
+COMM,494,0,A,Senior Seminar,2,2:15 PM - 3:25 PM,M W F,Chase\ Kenneth R.,,
+COMM,494,2,B,Senior Seminar,2,8:30 AM -10:20 AM,T R,Chase\ Kenneth R.,,
+COMM,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+COMM,496,0,,Internship,2 TO 4,TBA,,STAFF,,
+COMM,498,0,,Journalism internship,2 OR 4,TBA,,Morgan\ Timothy C.,,
+CORE,101,3,,FYS: Why Do We Suffer?,4,9:20 AM - 10:30 AM,M W F,Borden\ Sarah R.,,
+CORE,101,4,,FYS: Living with More Rhythm,4,9:20 AM - 10:30 AM,M W F,Chase\ Kenneth R.,,
+CORE,101,5,,FYS:Where Do We Come From,4,2:15 PM - 3:25 PM,M W F,Moshier\ Stephen O.,,
+CORE,101,2,,FYS: What is Matter?,4,12:55 PM - 2:05 PM,M W F,Walhout\ Peter K.,,
+CORE,306,0,,AIS: Drugs\ Society & Religion,4,6:30 PM - 10:00 PM,M,Struthers\ William M.,,SIP
+CORE,307,0,,AIS: Cosmology,4,1:15 PM - 3:05 PM,T R,O'Connor & Poelare,,PI\ SIP
+CORE,311,0,,AIS: Good in Great Plagues,4,1:15 PM - 3:05 PM,T R,Koo\ Jovanka T.,,SIP
+CORE,312,0,,AIS Col & Redem:Native Chicago,4,12:55 PM - 2:05 PM,M W F,Harkrider\ Melissa,,DUS\ SI
+CORE,317,0,,AIS: Media Revolutions,4,11:15 AM - 1:05 PM,T R,Lundin\ Matthew D.,,HP\ SI
+CORE,319,0,,AIS:  Epic & Philosophy,4,1:15 PM - 3:05 PM,T R,Kemp\ Ryan S.,,LE\ PI
+CORE,328,0,,AIS: Mary\ Mother of God,4,12:55 PM - 2:05 PM,M W F,Peeler & Milliner,,HP\ VPAV
+CORE,329,0,,AIS:Neurobiol & Spiritual Form,4,11:35 AM - 12:45 PM,M W F,Barwegen & Townse,,SIP
+CORE,332,0,,AIS: Women Writing Theology,4,11:15 AM - 1:05 PM,T R,Barbeau\ Jeffrey W.,,LE
+CORE,333,0,,AIS:Country Behind Curtain-GDR,4,8:30 AM - 10:20 AM,T R,Shaffer\ Clinton S.,,HP\ LE
+CORE,336,0,,AIS: Energy for the Future,4,2:15 PM - 3:25 PM,M W F,Craig\ Darren J.,,SIP
+CORE,341,0,,AIS: Stress and Flourishing,4,11:15 AM - 1:05 PM,T R,Thom\ Nathaniel J.,,SIP
+CORE,342,0,,AIS: Dante's Commedia,4,6:00 PM - 9:30 PM,R,Gibson & Wood,,LE\ PI
+CSCI,235,0,,Programming I: Problem Solving,4,11:35 AM - 12:45 PM,M W F,Kim\ Hyunju,,AAQR
+CSCI,243,0,,Discrete Math/Functional Prog,4,2:15 PM - 3:25 PM,M W F,VanDrunen\ Thomas,,AAQR
+CSCI,245,0,,Programming II: OO Design,4,12:55 PM - 2:05 PM,M W F,Pohly\ Devin J.,,
+CSCI,335,0,,Software Development,4,9:20 AM - 10:30 AM,M W F,Kim\ Hyunju,,
+CSCI,345,0,,Data Structures & Algorithms,4,11:35 AM - 12:45 PM,M W F,VanDrunen\ Thomas,,
+CSCI,394,0,,Seminar: Machine Learning,4,12:55 PM - 2:05 PM,M W F,VanDrunen\ Thomas,,
+CSCI,455,0,,Operating Systems,4,9:20 AM - 10:30 AM,M W F,Pohly\ Devin J.,,
+CSCI,493,0,,Mentoring: Adv CSCI Topics,2,11:15 AM - 1:05 PM,T,Pohly\ Devin J.,,
+CSCI,494,0,,Soc/Ethical Issues,2,8:30 AM - 10:20 AM,R,Pohly\ Devin J.,,
+CSCI,235L,0,,Programming I Lab,0,8:30 AM - 10:20 AM,T,Kim\ Hyunju,,
+CSCI,235L,2,,Programming I Lab,0,1:15 PM - 3:05 PM,T,Kim\ Hyunju,,
+CSCI,245L,0,,Programming II Lab,0,1:15 PM - 3:05 PM,R,Pohly\ Devin J.,,
+ECON,211,1,,Principles of Microeconomics,4,9:20 AM - 10:30 AM,M W F,Cook\ Jeremy A.,,SI
+ECON,211,2,,Principles of Microeconomics,4,11:35 AM - 12:45 PM,M W F,Cook\ Jeremy A.,,SI
+ECON,212,1,A,Principles of Macroeconomics,2,9:20 AM - 10:30 AM,M W F,Hill\ Enoch S.,,
+ECON,212,2,A,Principles of Macroeconomics,2,11:35 AM - 12:45 PM,M W F,Hill\ Enoch S.,,
+ECON,212,3,B,Principles of Macroeconomics,2,9:20 AM - 10:30 AM,M W F,Hill\ Enoch S.,,
+ECON,325,1,,Intermediate Macroeconomics,4,12:55 PM - 2:05 PM,M W F,Guo\ Nick L.,,
+ECON,325,2,,Intermediate Macroeconomics,4,2:15 PM - 3:25 PM,M W F,Guo\ Nick L.,,
+ECON,326,1,,Intermediate Microeconomics,4,11:15 AM - 1:05 PM,T R,Jankowski\ Donald J,,
+ECON,326,2,,Intermediate Microeconomics,4,1:15 PM - 3:05 PM,T R,Jankowski\ Donald J,,
+ECON,365,0,,Economic Growth & Development,4,11:35 AM - 12:45 PM,M W F,Makaudze\ Ephias,,
+ECON,366,0,,International Economics,4,2:15 PM - 3:25 PM,M W F,Hill\ Enoch S.,,
+ECON,375,1,,Econometrics,4,11:15 AM - 1:05 PM,T R,Forsstrom\ Matthew,,
+ECON,375,2,,Econometrics,4,2:15 PM - 3:25 PM,M W F,Makaudze\ Ephias,,
+ECON,394,0,,Financial Economics,4,9:20 AM - 10:30 AM,M W F,Guo\ Nick L.,,
+ECON,492,0,,Senior Legacy Capstone,2,1:15 PM - 3:05 PM,T,Forsstrom\ Matthew,,
+EDUC,135,0,A,School & Society,2,11:35 AM - 12:45 PM,M W F,Jonas\ Mark E.,,
+EDUC,136,0,B,Teaching Diverse Students,2,11:35 AM - 12:45 PM,M W F,Vroom Fick\ Sara J.,,
+EDUC,225,0,,Psych & Dev Contexts of Educ,4,11:15 AM - 1:05 PM,T R,Kim\ Il-Hee,,
+EDUC,305,0,A,Learning Differences,2,8:00 AM - 9:20 AM,M W F,Boehm\ Thomas L.,,
+EDUC,306,0,,Classroom Comm & Curr Int,4,1:15 PM - 3:05 PM,T R,Eckert\ Jonathan M.,,
+EDUC,311,1,,General Elem Middle Methods,2,8:20 AM - 10:20 AM,R,Eckert\ Jonathan M.,15,
+EDUC,311,2,,General Elem Middle Methods,2,11:05 AM - 1:05 PM,R,Eckert\ Jonathan M.,15,
+EDUC,312,1,,Rdg in Elem and Middle School,4,8:30 AM - 10:30 AM,M   F,Morrison\ Sally E.,,
+EDUC,312,2,,Rdg in Elem and Middle School,4,11:35 AM - 1:35 PM,M   F,Morrison\ Sally E.,,
+EDUC,315,1,,Elem/MS Math Methods,4,8:20 AM - 10:20 AM,T R,Lederhouse\ Jillian,,
+EDUC,315,2,,Elem/MS Math Methods,4,11:05 AM - 1:05 PM,T R,Lederhouse\ Jillian,,
+EDUC,317,1,,Elem/Midl:Lang Arts,2,8:30 AM - 10:30 AM,M,Beitler\ Brita E.,,
+EDUC,317,2,,Elem/Midl:Lang Arts,2,11:35 AM - 1:35 PM,M,Beitler\ Brita E.,,
+EDUC,328,0,,Cross-Categorical Characterist,4,12:55 PM - 2:05 PM,M W F,Boehm\ Thomas L.,,
+EDUC,348,0,,Special Education Assessment,4,12:55 PM - 2:05 PM,M W F,Ruiz\ Diane S.,,
+EDUC,494,0,,Senior Seminar:Secondary,2,6:30 PM - 8:30 PM,T,Jonas\ Mark E.,300,
+EDUC,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+EDUC,497,0,B,"Philosophy of Education - Meets on campus Apr 15-19\ 29; atHR Apr 22-26",3,12:50 PM - 3:20 PM,MTWRF,Jonas\ Mark E.,175,
+EDUC,498,0,,Literacy Assessment,2,8:30 AM - 10:20 AM,R,Morrison\ Sally E.,,
+EDUC,136L,0,,Cross-cultural Tutoring,1,TBA,,Vroom Fick\ Sara J.,,
+EDUC,225L,0,,Teacher Aiding Practicum,1,TBA,,Kim & Felker,,
+EDUC,305L,0,,Learning Differences Practicum,1,TBA,,Boehm\ Thomas L.,,
+EDUC,311L,0,,General Methods Practicum,1,TBA,,Lederhouse & Vroom Fick,,
+EDUC,324L,0,,Middle/HS:Meth Pract,1,TBA,,Lederhouse & Vandermeulen,,
+EDUC,328L,0,,LBS Practicum I-A,1,TBA,,Boehm\ Thomas L.,,
+EDUC,405L,0,,Middle Grade Practicum,1,TBA,,Morrison\ Sally E.,,
+ENG,324,0,B,High School Methods-English,2,1:15 PM - 3:05 PM,T R,Colon\ Christine A.,,
+ENG,325,0,A,Middle School Methods-English,2,1:15 PM - 3:05 PM,T R,Colon\ Christine A.,,
+ENG,429,0,,Literacy Assessment,2,8:30 AM - 10:20 AM,R,Morrison\ Sally E.,,
+ENGL,111,1,,Western Lit-The Four Loves,4,12:55 PM - 2:05 PM,M W F,Lapeyre\ Christophe,,LE
+ENGL,111,4,,West Lit:Spiritual Battles,4,9:20 AM - 10:30 AM,M W F,Dunn-Hensley\ Susa,,LE
+ENGL,112,1,,SWL: Comedy & Tragedy,4,8:30 AM - 10:20 AM,T R,Gibson\ Alison R.,,LE\ VPAT
+ENGL,112,2,,SWL: Comedy & Tragedy,4,11:15 AM - 1:05 PM,T R,Gibson\ Alison R.,,LE\ VPAT
+ENGL,115,1,,Global Lit: Culture Clash,4,2:15 PM - 3:25 PM,M W F,Galbraith\ Jeffrey R.,,LE
+ENGL,115,2,,Global Lit:Echoes of Empire,4,12:55 PM - 2:05 PM,M W F,Dunn-Hensley\ Susa,,LE
+ENGL,202,0,,Japanese Literature,4,8:30 AM - 10:20 AM,T R,Nonaka\ Miho,,GP\ LE
+ENGL,215,0,,Classical/Early British Lit,4,9:20 AM - 10:30 AM,M W F,Weber\ Benjamin D.,,LE
+ENGL,225,1,,Topical Seminar: Techno Texts,4,2:15 PM - 3:25 PM,M W F,Gibson\ Richard H.,,
+ENGL,225,2,,Top Sem: Wrestle-God & Words,4,11:15 AM - 1:05 PM,T R,Kriner\ Tiffany E.,,
+ENGL,225,3,,Topical Sem:Nobel Prize Winner,4,12:55 PM - 2:05 PM,M W F,Gibson\ Richard H.,,
+ENGL,328,0,,Young Adult Literature,4,6:30 PM - 10:00 PM,T,Dunn-Hensley\ Susa,,
+ENGL,338,0,,Restoration & 18th Century Lit,4,11:35 AM - 12:45 PM,M W F,Galbraith\ Jeffrey R.,,
+ENGL,341,0,,Am Lit:Beginning - Romanticism,4,1:15 PM - 3:05 PM,T R,Kriner\ Tiffany E.,,
+ENGL,343,0,,American Lit After 1945,4,11:35 AM - 12:45 PM,M W F,Bieber Lake\ Christin,,
+ENGL,365,0,,British Literature After 1939,4,6:30 PM - 10:00 PM,M,Sasser\ Kimberly A.,,
+ENGL,381,0,A,American Authors: Beginnings,2,8:30 AM - 10:20 AM,T R,Kriner\ Tiffany E.,,
+ENGL,382,0,B,Amer Authors:Hughes & Hurston,2,8:30 AM - 10:20 AM,T R,Kriner\ Tiffany E.,,
+ENGL,384,0,,Shakespeare,4,2:15 PM - 3:25 PM,M W F,Weber\ Benjamin D.,,
+ENGL,385,0,A,Milton,2,12:55 PM - 2:05 PM,M W F,Ryken\ Leland,,
+ENGL,431,0,,Christianity and Fantasy,4,11:15 AM - 1:05 PM,T R,Downing\ David C.,,
+ENGL,486,0,,Wade Center Authors,4,9:20 AM - 10:30 AM,M W F,Colon\ Christine A.,,
+ENGL,494,0,,Senior Seminar,4,9:20 AM - 10:30 AM,M W F,Sasser\ Kimberly A.,,
+ENGL,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+ENGL,496,0,,Literature Internship,1 TO 4,TBA,,STAFF,,
+ENGR,105,0,,Engineering Graphics,2,1:15 PM - 4:05 PM,R,Pierson\ Benjamin M,65,
+ENGR,202,0,,ENGR Mechanics II - Dynamics,4,12:55 PM - 2:05 PM,M W F,Hsu\ David D.,,
+ENGR,204,0,,Innovative Design-Engineering,4,1:15 PM - 3:05 PM,T R,Hsu\ David D.,65,
+ENGR,225,0,,Materials Science,4,9:20 AM - 10:30 AM,M W F,Hsu\ David D.,,
+ENGR,394,0,,Engineering Ethics Capstone,2,8:30 AM - 10:20 AM,T,Hsu\ David D.,,
+ENGW,103,1,,Composition and Research,4,9:20 AM - 10:30 AM,M W F,Galbraith\ Jeffrey R.,,COMP
+ENGW,103,2,,Composition and Research,4,11:15 AM - 1:05 PM,T R,Long\ Abigail H.,,COMP
+ENGW,103,3,,Composition and Research,4,11:35 AM - 12:45 PM,M W F,Lapeyre\ Christophe,,COMP
+ENGW,103,4,,Composition and Research,4,2:15 PM - 3:25 PM,M W F,Lapeyre\ Christophe,,COMP
+ENGW,103,5,,Composition and Research,4,9:20 AM - 10:30 AM,M W F,Bieber Lake\ Christin,,COMP
+ENGW,103,7,,Composition and Research,4,3:15 PM - 5:05 PM,T R,Gibson\ Alison R.,,COMP
+ENGW,103,8,,Composition and Research,4,1:15 PM - 3:05 PM,T R,Gibson\ Alison R.,,COMP
+ENGW,104,1,B,Composition and Research,2,11:15 AM - 1:05 PM,T R,Mazzarella\ Nicole,,COMP
+ENGW,104,3,A,Composition and Research,2,11:35 AM - 12:45 PM,M W F,Ryken\ Leland,,COMP
+ENGW,104,5,A,Composition and Research,2,2:15 PM - 3:25 PM,M W F,Martindale\ H. Wayn,,COMP
+ENGW,104,6,A,Composition and Research,2,12:55 PM - 2:05 PM,M W F,Martindale\ H. Wayn,,COMP
+ENGW,104,2,B,Composition and Research,2,11:35 AM - 12:45 PM,M W F,Ryken\ Leland,,COMP
+ENGW,104,0,A,Composition and Research,2,6:30 PM - 10:00 PM,M,Beitler\ James E.,,COMP
+ENGW,213,1,,Creative Writing,4,1:15 PM - 3:05 PM,T R,Mazzarella\ Nicole,,
+ENGW,233,0,,Writing Chicago,4,6:30 PM - 10:00 PM,R,Beitler & Toly,,LE
+ENGW,335,0,,Poetry Writing and Criticism,4,1:15 PM - 3:05 PM,T R,Nonaka\ Miho,,
+ENGW,444,1,,Longer Works of Fiction,4,8:30 AM - 10:20 AM,T R,Mazzarella\ Nicole,,
+ENGW,444,2,A,Special Topics-Flash Fiction,2,11:15 AM - 1:05 PM,T R,Mazzarella\ Nicole,,
+ENGW,444,3,,Travel Writing,4,2:15 PM - 3:25 PM,M W F,Bratcher\ Andrew B.,,
+ENGW,444,4,A,Writing About Culture,2,11:35 AM - 12:45 PM,M W F,Bratcher\ Andrew B.,,
+ENGW,494,0,,Senior Seminar in Writing,4,11:15 AM - 1:05 PM,T R,Nonaka\ Miho,,
+ENGW,495,0,,Writing Projects,1 TO 4,TBA,,STAFF,,
+ENVR,381,0,,Envr Pollution & Toxicology,4,12:55 PM - 2:05 PM,M W F,Keil\ Charles B.,25,
+ENVR,395,0,,Independent Study-Envr Science,2 TO 4,TBA,,STAFF,25,
+ENVR,430,0,,Environmental Engineering,4,1:15 PM - 3:05 PM,T R,Yoder\ Jeff T.,,
+ENVR,494,0,,Environmental Science Capstone,2,8:30 AM - 10:20 AM,T,Keil\ Charles B.,,
+ENVR,495,0,,Environmental Science Research,2 TO 4,TBA,,STAFF,,
+ENVR,381L,0,,Env Pollution/Toxicology Lab,0,7:30 AM - 10:20 AM,R,Keil\ Charles B.,25,
+FREN,102,0,,Elementary French II,4,12:55 PM - 2:05 PM,M W F,Forsberg\ Amy Y.,,COMP
+FREN,103,0,,Accel Elem French,4,11:35 AM - 12:45 PM,M W F,Forsberg\ Amy Y.,,COMP
+FREN,201,0,,Intermediate French,4,8:00 AM - 9:10 AM,M W F,Soerens\ Diana M.,,COMP
+FREN,331,0,,French Conversation,4,9:20 AM - 10:30 AM,M W F,Soerens\ Diana M.,25,
+FREN,333,0,,Intro to Francophone World,4,12:55 PM - 2:05 PM,M W F,Savage\ Alan D.,,
+FREN,334,1,A,Translation,2,2:15 PM - 3:25 PM,M W F,Savage\ Alan D.,,
+FREN,334,2,B,Advanced Conversation,2,2:15 PM - 3:25 PM,M W F,Savage\ Alan D.,,
+FREN,494,0,,Senior Seminar,4,6:00 PM - 9:30 PM,M,Savage\ Alan D.,,
+GEL,211,0,,Vocation Practicum,2 TO 4,7:00 PM - 9:00 PM,M,Haase\ Daniel T.,,
+GEL,301,0,,Survey of Mexican Art,2,TBA,,Wood\ Adam N.,,VPAV
+GEL,302,0,,Exploring Mexican History,4,TBA,,Wood\ Adam N.,,HP
+GEL,321,0,,Engaging Mexican Cultures,4,TBA,,Wood\ Adam N.,,SI
+GEND,494,0,,Gender Studies Capstone,2,11:15 AM - 1:05 PM,T,Reynolds\ Amy M.,,
+GEOL,211,1,,Exploring the Dynamic Earth,4,9:20 AM - 10:30 AM,M W F,Maneiro\ Kathryn A.,35,SP
+GEOL,211,2,,Exploring the Dynamic Earth,4,2:15 PM - 3:25 PM,M W F,Tagne\ Gilles V.,35,SP
+GEOL,308,0,,Energy & Climate Change,4,9:20 AM - 10:30 AM,M W F,Tagne\ Gilles V.,25,SIP
+GEOL,321,0,,Earth History Stratig,4,12:55 PM - 2:05 PM,M W F,Maneiro\ Kathryn A.,145,SIP
+GEOL,372,0,,GIS Practicum,2,8:30 AM - 10:20 AM,R,Tagne\ Gilles V.,,
+GEOL,495,0,,Problems In Geology,1 TO 4,TBA,,STAFF,,
+GEOL,496,0,,Internship,1 TO 4,TBA,,STAFF,,
+GEOL,211L,1,,Dynamic Earth Lab,0,8:30 AM - 10:20 AM,T,Heidlauf\ Lisa E.,,
+GEOL,211L,2,,Dynamic Earth Lab,0,11:15 AM - 1:05 PM,T,Heidlauf\ Lisa E.,,
+GEOL,211L,3,,Dynamic Earth Lab,0,1:15 PM - 3:05 PM,T,Heidlauf\ Lisa E.,,
+GEOL,211L,4,,Dynamic Earth Lab,0,11:15 AM - 1:05 PM,R,Heidlauf\ Lisa E.,,
+GEOL,211L,5,,Dynamic Earth Lab,0,1:15 PM - 3:05 PM,R,Tagne\ Gilles V.,,
+GEOL,211L,6,,Dynamic Earth Lab,0,8:30 AM - 10:20 AM,R,Heidlauf\ Lisa E.,,
+GEOL,321L,0,,Earth History Stratig Lab,0,1:15 PM - 3:05 PM,T,Maneiro\ Kathryn A.,,
+GEOL,437L,0,,Hydrogeology Lab,0,8:00 AM - 10:20 AM,T,Luhmann\ Andrew J.,,
+GERM,102,0,,Elementary German II,4,8:00 AM - 9:10 AM,M W F,Shaffer\ Clinton S.,,COMP
+GERM,103,0,,Accel Elem German,4,8:00 AM - 9:10 AM,M W F,Gascho\ Bethel L.,,
+GERM,201,0,,Intermediate German,4,11:35 AM - 12:45 PM,M W F,Gascho\ Bethel L.,,COMP
+GERM,342,0,,Contemp Germ Pol Econ Events,4,8:00 AM - 9:10 AM,M W F,Henley\ Grant H.,,
+GERM,361,0,,Terrorism in Lit and Film,4,11:35 AM - 12:45 PM,M W F,Shaffer\ Clinton S.,,
+GERM,373,0,,German for Reading II,0,3:45 PM - 4:45 PM,F,Shaffer\ Clinton S.,,
+GERM,494,2,,Senior Seminar: Faith & Lit,4,2:15 PM - 3:25 PM,M W F,Henley\ Grant H.,25,
+GREK,102,1,,Elementary Greek II,4,8:00 AM - 9:10 AM,M W F,Penney\ Douglas L.,,COMP
+GREK,102,2,,Elementary Greek II,4,9:20 AM - 10:30 AM,M W F,Laansma\ Jon C.,,COMP
+GREK,489,0,,Topics: Luke-Acts,4,8:00 AM - 9:10 AM,M W F,Laansma\ Jon C.,,
+GREK,494,0,,Senior Capstone,4,2:15 PM - 3:25 PM,M W F,Penney\ Douglas L.,,
+HEBR,302,2,,Elementary Hebrew II,4,12:55 PM - 2:05 PM,M W F,Abernethy\ Andrew,,COMP
+HEBR,495,0,,Independent Reading/Rsrch,1 TO 4,TBA,,STAFF,,
+HIST,102,2,,EGP: New Worlds:1450-1750,4,11:35 AM - 12:45 PM,M W F,Harkrider\ Melissa,,GP\ HP
+HIST,102,1,,EGP:Hist/HistFiction in Africa,4,9:20 AM - 10:30 AM,M W F,Stringham\ Noel C.,,GP\ HP
+HIST,102,3,,EGP:Memoir:Modern Mid East,4,12:55 PM - 2:05 PM,M W F,Stringham\ Noel C.,,GP\ HP
+HIST,102,4,,EGP: The Holocaust,4,1:15 PM - 3:05 PM,T R,Lundin\ Matthew D.,,GP\ HP
+HIST,103,1,,EAP:US Pop Culture Since 1900,4,6:30 PM - 10:00 PM,R,Thomas\ Amber R.,,DUS\ HP
+HIST,103,2,,EAP: Health & Medicine in US,4,6:30 PM - 10:00 PM,W,Riddle\ Jonathan D.,,DUS\ HP
+HIST,201,0,,Why History?,4,6:30 PM - 10:00 PM,T,Kim\ Hanmee N.,,HP
+HIST,251,0,,American History to 1865,4,11:15 AM - 1:05 PM,T R,Riddle\ Jonathan D.,,
+HIST,312,0,,History of Philosophy,4,11:35 AM - 12:45 PM,M W F,Borden\ Sarah R.,,
+HIST,324,0,A,High School Hist/SSci Methods,2,6:30 PM - 10:00 PM,R,Johnson\ Karen J.,,
+HIST,325,0,B,Mid School Hist/SSci Methods,2,6:30 PM - 10:00 PM,R,Johnson\ Eric L.,,
+HIST,334,0,,East Asian History,4,12:55 PM - 2:05 PM,M W F,Kim\ Hanmee N.,,
+HIST,349,0,,Origins of Contemporary Europe,4,6:30 PM - 10:00 PM,M,Lundin\ Matthew D.,,
+HIST,356,0,,American Revolution,4,1:15 PM - 3:05 PM,T R,McKenzie\ Robert T.,,
+HIST,391,2,,Modern Korea Thru Korean War,4,11:35 AM - 12:45 PM,M W F,Kim\ Hanmee N.,,
+HIST,391,3,,Medieval Saints & Sinners,4,9:20 AM - 10:30 AM,M W F,Harkrider\ Melissa,,
+HIST,391,6,,Majority World Indigenous Hist,4,2:15 PM - 3:25 PM,M W F,Stringham\ Noel C.,,
+HIST,391,4,A,Race/Reconciliation in U.S.,2,11:15 AM - 1:05 PM,T R,Johnson\ Karen J.,,
+HIST,391,8,,Religion & Health in the U.S.,4,8:30 AM - 10:20 AM,T R,Riddle\ Jonathan D.,,
+HIST,391,5,B,Baseball & US History,2,11:15 AM - 1:05 PM,T R,Blumhofer\ Edith L.,,
+HIST,494,0,,Senior Capstone,4,8:30 AM - 10:20 AM,T R,McKenzie\ Robert T.,,
+HIST,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+HIST,496,0,,Internship,4,TBA,,STAFF,,
+HIST,498,0,,Honors Tutorial,4,TBA,,STAFF,,
+HNGR,114,0,,Poverty\ Justice & Transform - 1st & 2nd year students only,4,11:15 AM - 1:05 PM,T R,Huff\ James G.,,GP\ SI
+HNGR,385,0,,Field Research Meth,4,6:30 PM - 10:00 PM,T,Yoder & Huff,,
+HNGR,494,0,,HNGR Capstone Integration Sem,2,3:15 PM - 5:05 PM,R,Yoder\ Laura S.,,
+IDS,494,0,,Senior Seminar,4,8:30 AM - 10:20 AM,T R,Davis\ Jeffry C.,,
+IR,155,1,,Comparative Politics,4,9:20 AM - 10:30 AM,M W F,Alexander\ Kathryn,,GP\ SI
+IR,175,0,,International Politics,4,11:35 AM - 12:45 PM,M W F,McKoy\ Michael K.,,SI
+IR,175,2,,International Politics,4,11:15 AM - 1:05 PM,T R,Taylor\ Timothy W.,,SI
+IR,301,1,A,Religion & Foreign Policy,2,8:30 AM - 10:20 AM,T R,Alexander\ Kathryn,,
+IR,302,1,,African Politics,4,1:15 PM - 3:05 PM,T R,Alexander\ Kathryn,,
+IR,302,0,,National Security,4,2:15 PM - 3:25 PM,M W F,Iglesias\ David C.,,
+IR,318,0,,Environmental Politics,4,6:30 PM - 10:00 PM,T,Toly\ Noah J.,,
+IR,494,0,A,Senior Seminar,2,6:30 PM - 10:00 PM,W,Taylor\ Timothy W.,,
+IR,495,0,,Independent Study,2 TO 4,TBA,,STAFF,,
+IR,496,0,,Internship,4,TBA,,McGraw\ Bryan T.,,
+LATN,102,0,,Elementary Latin II,4,9:20 AM - 10:30 AM,M W F,Loney\ Alexander C.,,COMP
+LATN,333,0,,Adv Latin: Ovid,2 OR 4,11:15 AM - 1:05 PM,T R,Loney\ Alexander C.,,
+LATN,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+LING,222,0,B,English Grammar for Teachers,2,12:55 PM - 2:05 PM,M W F,Vroom Fick\ Sara J.,,
+LING,227,0,B,Cross-Cultural Teaching Learn,2,8:30 AM - 10:20 AM,T R,Barger\ R. Pam,,
+LING,321,1,A,Introduction to Linguistics,2,1:15 PM - 3:05 PM,T R,Hackett\ Robyn K.,,
+LING,321,2,A,Introduction to Linguistics,2,11:15 AM - 1:05 PM,T R,Mullen\ Natalie J.,,
+LING,325,0,B,Prin of Assessment for TESOL,2,6:30 PM - 10:00 PM,W,Seaman\ Alan A.,,
+LING,326,0,,ELL Content Methods,2,6:30 PM - 8:20 PM,R,Vroom Fick\ Sara J.,,
+MATH,107,0,,Finite Mathematics,4,11:35 AM - 12:45 PM,M W F,Lovett\ Stephen T.,,AAQR
+MATH,221,0,,Applied Calculus,4,9:20 AM - 10:30 AM,M W F,Isihara\ Paul,,AAQR
+MATH,231,0,,Calculus I,4,2:15 PM - 3:25 PM,M W F,Delzell\ Darcie A.,,AAQR
+MATH,232,1,,Calculus II,4,12:55 PM - 2:05 PM,M W F,Perciante\ Terence,,
+MATH,233,0,B,Calculus I B,2,2:15 PM - 3:25 PM,M W F,Delzell\ Darcie A.,,AAQR
+MATH,234,1,B,Calculus II B,2,12:55 PM - 2:05 PM,M W F,Perciante\ Terence,,
+MATH,243,0,,Discrete Math & Funct Program,4,2:15 PM - 3:25 PM,M W F,VanDrunen\ Thomas,,AAQR
+MATH,245,0,,Linear Algebra,4,8:00 AM - 9:10 AM,M W F,Vanderschoot\ Mary,,
+MATH,263,1,,Introduction to Statistics,4,11:35 AM - 12:45 PM,M W F,Delzell\ Darcie A.,,AAQR
+MATH,302,0,,Applied Project I,2,11:15 AM - 1:05 PM,R,Diedrichs\ Danilo R.,,
+MATH,324,0,A,Meth of Teach High Sch Math,2,6:30 PM - 8:30 PM,M  R,Vandermeulen\ Judit,,
+MATH,325,0,B,Middle School Math Methods,2,6:30 PM - 8:30 PM,M  R,Vandermeulen\ Judit,,
+MATH,331,0,B,Vector Calculus,2,11:35 AM - 12:45 PM,M W F,Isihara\ Paul,,
+MATH,333,0,,Differential Equations,4,9:20 AM - 10:30 AM,M W F,Diedrichs\ Danilo R.,,
+MATH,341,0,,Modern Algebra,4,8:00 AM - 9:10 AM,M W F,Lovett\ Stephen T.,,
+MATH,352,0,,Complex Analysis,4,2:15 PM - 3:25 PM,M W F,Isihara\ Paul,,
+MATH,362,0,,Geometry,4,8:30 AM - 10:20 AM,T R,Lovett\ Stephen T.,,
+MATH,364,0,,Mathematical Modeling,4,2:15 PM - 3:25 PM,M W F,Diedrichs\ Danilo R.,,
+MATH,463,0,,Probability & Statistics II,4,1:15 PM - 3:05 PM,T R,Delzell\ Darcie A.,,
+MATH,485,0,,Dynamical Systems,4,12:55 PM - 2:05 PM,M W F,Vanderschoot\ Mary,,
+MATH,494,1,,Senior Seminar,2,11:15 AM - 12:15 PM,T R,Brabenec\ Robert L.,,
+MATH,221L,1,,Applied Calculus Lab,0,11:15 AM - 1:05 PM,R,Isihara\ Paul,,
+MATH,221L,2,,Applied Calculus Lab,0,1:15 PM - 3:05 PM,R,Brabenec\ Robert L.,,
+MATH,231L,1,,Drill,0,8:30 AM - 10:20 AM,R,Diedrichs\ Danilo R.,,
+MATH,231L,2,,Drill,0,1:15 PM - 3:05 PM,R,Brabenec\ Robert L.,,
+MATH,232L,2,,Drill,0,11:15 AM - 1:05 PM,R,Isihara\ Paul,,
+MATH,232L,1,,Drill,0,8:30 AM - 10:20 AM,R,Diedrichs\ Danilo R.,,
+MATH,233L,1,B,Drill,0,8:30 AM - 10:20 AM,R,Diedrichs\ Danilo R.,,
+MATH,233L,2,B,Drill,0,1:15 PM - 3:05 PM,R,Brabenec\ Robert L.,,
+MATH,234L,1,B,Drill,0,8:30 AM - 10:20 AM,R,Diedrichs\ Danilo R.,,
+MATH,234L,2,B,Drill,0,11:15 AM - 1:05 PM,R,Isihara\ Paul,,
+MSCI,102,0,,Intro to Profession of Arms,2,6:30 PM - 10:00 PM,R,Nigh\ David A.,,
+MSCI,123,0,,Leadership Laboratory,0,3:45 PM - 5:45 PM,R,Olson & Nigh,,
+MSCI,202,0,,Army Doctrine/Team Dev't,2,6:30 PM - 10:00 PM,R,Albuck & Frye,,
+MSCI,302,0,,Applied Leadership-Small Unit,4,6:30 PM - 10:00 PM,R,Olson\ Aaron M.,,
+MSCI,402,0,,Company Grade Leadership,4,6:30 PM - 10:00 PM,R,Kurczak\ Steven J.,,
+MSCI,494,0,,Leadership Principles,2,TBA,,Kurczak\ Steven J.,,
+MUCS,101,1,A,Intro To Music:Historical,2,8:00 AM - 9:10 AM,M W F,Rakes\ John P.,,VPAM
+MUCS,101,2,A,Intro To Music:Historical,2,11:35 AM - 12:45 PM,M W F,Yi\ Gina J.,,VPAM
+MUCS,101,3,A,Intro To Music:Historical,2,12:55 PM - 2:05 PM,M W F,Griffin\ Rose A.,,VPAM
+MUCS,101,4,A,Intro To Music:Historical,2,2:15 PM - 3:25 PM,M W F,Griffin\ Rose A.,,VPAM
+MUCS,101,5,B,Intro To Music:Historical,2,2:15 PM - 3:25 PM,M W F,Griffin\ Rose A.,,VPAM
+MUCS,101,6,B,Intro To Music:Historical,2,11:35 AM - 12:45 PM,M W F,Yi\ Gina J.,,VPAM
+MUCS,102,0,B,Intro To Music:Interdisc,2,8:00 AM - 9:10 AM,M W F,Rakes\ John P.,,VPAM
+MUCS,103,1,A,Intro To Music:20C/World,2,8:30 AM - 10:20 AM,T R,Buis\ Johann S.,,VPAM
+MUCS,103,2,B,Intro To Music:20C/World,2,8:30 AM - 10:20 AM,T R,Buis\ Johann S.,,VPAM
+MUCS,261,0,,Music Before 1600,2,9:30 AM - 10:20 AM,T R,Saylor\ L. Jonathan,96,
+MUCS,263,0,A,19th Century Music,2,12:55 PM - 2:05 PM,M W F,Saylor\ L. Jonathan,96,
+MUCS,321,0,B,Church Music Practices,2,12:55 PM - 2:05 PM,M W F,Zimmerman\ Edward,96,
+MUCS,336,0,A,Music of Oceania & Indonesia,2,9:20 AM - 10:30 AM,M W F,Kastner\ Kathleen S.,96,
+MUCS,355,0,B,American Music,2,12:55 PM - 2:05 PM,M W F,Buis\ Johann S.,96,
+MUCS,361,0,,20th Century Music,4,11:35 AM - 12:45 PM,M W F,Kastner\ Kathleen S.,192,
+MUCS,421,0,B,Chamber Literature,2,9:20 AM - 10:30 AM,M W F,Saylor\ L. Jonathan,96,
+MUCS,434,0,,Seminar in Context Studies,2,11:15 AM - 12:05 PM,T R,Saylor\ L. Jonathan,96,
+MUCS,495,0,,Directed Study,1 TO 4,TBA,,Zimmerman\ Edward,96,
+MUEP,213,0,,Women's Chorale,1,4:30 PM - 6:00 PM,M W,Hopper\ Mary,180,
+MUEP,214,0,,Men's Glee Club,1,4:30 PM - 6:00 PM,T R,Hopper\ Mary,180,
+MUEP,215,0,,Concert Choir,1,2:15 PM - 3:45 PM,M W F,Trotter\ John W.,180,
+MUEP,216,0,,Symphonic Band,1,3:45 PM - 5:15 PM,M W,Sommerville\ Daniel,180,
+MUEP,217,1,,Symphony Orchestra (Strings),1,4:45 PM - 6:15 PM,M,Sommerville\ Daniel,180,
+MUEP,217,2,,Symphony Orch (Winds/Percus),,,,,,
+MUEP,218,0,,Jazz Ensemble,,7:00 PM - 8:20 PM,T R,Ernst\ Kathryn A.,180,
+MUEP,219,1,,Recital & Concert Attendance,0,1:15 PM - 2:05 PM,R,Zimmerman\ Edward,,
+MUEP,261,0,A,Opera Orchestra,0,TBA,,Hopper\ Mary,,
+MUEP,311,0,,Studio Accompaniment,1 TO 2,TBA,,Horn\ Daniel P.,48,
+MUEP,321,0,,Recital Accompaniment,1 TO 2,TBA,,Horn\ Daniel P.,48,
+MUEP,356,0,,Opera Workshop,2,11:15 AM - 1:05 PM,T R,Hart\ Carolyn A.,365,
+MUEP,356,0,,Opera Workshop,2,4:00 PM - 5:30 PM,F,Hart\ Carolyn A.,365,
+MUEP,358,1,,Jazz Combo,1,6:30 PM - 7:25 PM,W,Davis\ James C.,180,
+MUEP,371,0,,Chamber Music:Strings,1,TBA,,Altino\ Leonardo G.,180,
+MUEP,371,1,,Chamber Music: Brass,1,TBA,,Altino\ Leonardo G.,180,
+MUEP,371,2,,Chamber Music: Piano,1,TBA,,Altino\ Leonardo G.,180,
+MUEP,371,3,,Chamber Music: Winds,1,TBA,,Altino\ Leonardo G.,180,
+MUEP,371,5,,Percussion Ensemble,1,3:15 PM - 4:05 PM,T,Kastner\ Kathleen S.,180,
+MUEP,371,5,,Percussion Ensemble,1,3:35 PM - 4:35 PM,F,Kastner\ Kathleen S.,180,
+MUEP,371,5,,Percussion Ensemble,1,5:25 PM - 6:30 PM,M,Kastner\ Kathleen S.,180,
+MUEP,371,6,,Piano Ensemble,1,3:15 PM - 4:05 PM,T R,Edwards\ Karin R.,180,
+MUEP,371,7,,Mixed Ensemble,1,TBA,,Altino\ Leonardo G.,180,
+MUEP,371,1B,,Chamber Music: Guitar,1,TBA,,Altino\ Leonardo G.,180,
+MUIP,101,0,,Private Lessons: Piano,2,TBA,,Horn\ Daniel P.,512,
+MUIP,101,2,,Private Lessons: Jazz Piano,2,TBA,,Williams & Horn,512,
+MUIP,102,0,,Private Lessons: Organ,2,TBA,,Zimmerman\ Edward,512,
+MUIP,103,0,,Private Lessons: Harpsichord,2,TBA,,Zimmerman\ Edward,512,
+MUIP,104,1,,Private Lessons: Voice,2,TBA,,Hart\ Carolyn A.,512,
+MUIP,104,2,,Private Lessons: Jazz Voice,2,TBA,,Williams & Hart,512,
+MUIP,105,0,,Private Lessons: Violin,2,TBA,,Joiner & Zafer,512,
+MUIP,106,0,,Private Lessons: Viola,2,TBA,,Griffin & Joiner,512,
+MUIP,107,0,,Private Lessons: Cello,2,TBA,,Altino & Joiner,512,
+MUIP,108,0,,Private Lessons: String Bass,2,TBA,,Anderson\ Andrew L.,,
+MUIP,108,2,,Private Lessons:Jazz Bass,2,TBA,,Ernst & Joiner,512,
+MUIP,109,1,,Private Lessons: Trumpet,2,TBA,,Saylor & Ridenour,512,
+MUIP,109,2,,Private Lessons: Jazz Trumpet,2,TBA,,Saylor & Davis,512,
+MUIP,110,0,,Private Lessons:  Horn,2,TBA,,Saylor & Cottle,512,
+MUIP,111,0,,Private Lessons: Trombone,2,TBA,,Saylor & Davis,512,
+MUIP,112,0,,Private Lessons: Euphonium,2,TBA,,Saylor\ L. Jonathan,512,
+MUIP,113,0,,Private Lessons: Tuba,2,TBA,,Saylor\ L. Jonathan,512,
+MUIP,114,0,,Private Lessons:  Flute,2,TBA,,Saylor & Brown,512,
+MUIP,115,0,,Private Lessons: Clarinet,2,TBA,,Saylor & O'Riordan,512,
+MUIP,116,0,,Private Lessons: Oboe,2,TBA,,Saylor\ L. Jonathan,512,
+MUIP,117,0,,Private Lessons: Bassoon,2,TBA,,Saylor\ L. Jonathan,512,
+MUIP,118,0,,Private Lessons: Saxophone,2,TBA,,Saylor & Black,512,
+MUIP,119,0,,Private Lessons: Harp,2,TBA,,Joiner & Seeman,512,
+MUIP,120,1,,Private Lessons: Percussion,2,TBA,,Kastner & Folker,512,
+MUIP,120,2,,Private Lessons: Jazz Drum,2,TBA,,Kastner & Gillan,512,
+MUIP,121,0,,Private Lessons:Classic Guitar,2,TBA,,Joiner & Torosian,512,
+MUIP,122,0,,Private Lessons: Jazz Guitar,2,TBA,,Joiner & Ramsdell,512,
+MUIP,131,1,,Small Group Piano Lessons,1,7:00 PM - 8:00 PM,M,Horn & Hollinger,245,
+MUIP,131,2,,Small Group Piano Lessons,1,8:05 PM - 9:05 PM,M,Hart & Gamez,245,
+MUIP,141,0,,Small Group Voice Lessons,1,TBA,,Hart & Gamez,245,
+MUIP,150,0,,Small Grp Jazz Trumpet Lessons,1,TBA,,Saylor & Davis,245,
+MUIP,160,0,,Early Keyboard Lessons,1,TBA,,Zimmerman\ Edward,245,
+MUIP,201,1,,Private Lessons: Piano,2 TO 4,TBA,,Horn & Stampfl,770,
+MUIP,201,2,,Private Less: Jazz Piano,2 TO 4,TBA,,Horn & Williams,770,
+MUIP,202,0,,Private Lessons: Organ,2 TO 4,TBA,,Zimmerman\ Edward,770,
+MUIP,203,0,,Private Lessons: Harpsichord,2 TO 4,TBA,,Zimmerman\ Edward,770,
+MUIP,204,2,,Private Lessons: Jazz Voice,2 TO 4,TBA,,Hart & Williams,770,
+MUIP,205,0,,Private Lessons: Violin,2 TO 4,TBA,,Joiner & Zafer,770,
+MUIP,206,0,,Private Lessons: Viola,2 TO 4,TBA,,Griffin & Joiner,770,
+MUIP,207,0,,Private Lessons: Cello,2 TO 4,TBA,,Joiner & Altino,770,
+MUIP,208,1,,Private Lessons: String Bass,2 TO 4,TBA,,Joiner & Anderson,770,
+MUIP,208,2,,Private Lessons: Jazz Bass,2 TO 4,TBA,,Joiner & Ernst,770,
+MUIP,209,1,,Private Lessons: Trumpet,2 TO 4,TBA,,Saylor & Ridenour,770,
+MUIP,209,2,,Private Lessons: Jazz Trumpet,2 TO 4,TBA,,Saylor & Davis,770,
+MUIP,210,0,,Private Lessons: French Horn,2 TO 4,TBA,,Cottle & Saylor,770,
+MUIP,211,0,,Private Lessons: Trombone,2 TO 4,TBA,,Saylor & Davis,770,
+MUIP,212,0,,Private Lessons: Euphonium,2 TO 4,TBA,,Saylor\ L. Jonathan,770,
+MUIP,213,0,,Private Lessons: Tuba,2 TO 4,TBA,,Saylor & Harrison,770,
+MUIP,214,0,,Private Lessons: Flute,2 TO 4,TBA,,Saylor & Brown,770,
+MUIP,215,0,,Private Lessons: Clarinet,2 TO 4,TBA,,Saylor & O'Riordan,770,
+MUIP,216,0,,Private Lessons: Oboe,2 TO 4,TBA,,Saylor & Stevenson,770,
+MUIP,217,0,,Private Lessons: Bassoon,2 TO 4,TBA,,Saylor\ L. Jonathan,770,
+MUIP,218,0,,Private Lessons: Saxophone,2 TO 4,TBA,,Saylor & Black,770,
+MUIP,219,0,,Private Lessons: Harp,2 TO 4,TBA,,Joiner & Seeman,770,
+MUIP,220,0,,Private Lessons: Percussion,2 TO 4,TBA,,Kastner\ Kathleen S.,770,
+MUIP,221,0,,Priv Lessons: Classical Guitar,2 TO 4,TBA,,Joiner & Torosian,770,
+MUIP,222,0,,Private Lessons: Jazz Guitar,2 TO 4,TBA,,Joiner & Ramsdell,770,
+MUIP,224,0,,Class Piano II,2,11:35 AM - 12:45 PM,M W,Stampfl\ Aaron J.,365,
+MUIP,226,0,,Class Piano IV,2,2:15 PM - 3:05 PM,T R,Stampfl\ Aaron J.,365,
+MUIP,260,0,,Early Keyboard Lessons,2,TBA,,Zimmerman\ Edward,245,
+MUIP,328,0,,Organ Improvisation,2,TBA,,Zimmerman\ Edward,512,
+MUIP,394,0,,Junior Recital,0,TBA,,Hopper\ Mary,,
+MUIP,401,0,,Private Lessons: Piano,2 TO 4,TBA,,Horn & Stampfl,770,
+MUIP,402,0,,Private Lessons: Organ,2 TO 4,TBA,,Zimmerman\ Edward,770,
+MUIP,403,0,,Private Lessons: Harpsichord,2 TO 4,TBA,,Zimmerman\ Edward,770,
+MUIP,404,0,,Private Lessons: Voice,2 TO 4,TBA,,Hart\ Carolyn A.,770,
+MUIP,405,0,,Private Lessons: Violin,2 TO 4,TBA,,Joiner & Zafer,770,
+MUIP,406,0,,Private Lessons: Viola,2 TO 4,TBA,,Griffin & Joiner,770,
+MUIP,407,0,,Private Lessons: Cello,2 TO 4,TBA,,Altino & Joiner,770,
+MUIP,408,0,,Private Lessons: String Bass,2 TO 4,TBA,,Joiner & Anderson,770,
+MUIP,409,0,,Private Lessons: Trumpet,2 TO 4,TBA,,Saylor & Ridenour,770,
+MUIP,410,0,,Private Lessons: French Horn,2 TO 4,TBA,,Saylor & Cottle,770,
+MUIP,411,0,,Private Lessons: Trombone,2 TO 4,TBA,,Saylor & Davis,770,
+MUIP,412,0,,Private Lessons: Euphonium,2 TO 4,TBA,,Saylor\ L. Jonathan,770,
+MUIP,413,0,,Private Lessons: Tuba,2 TO 4,TBA,,Saylor & Harrison,770,
+MUIP,414,0,,Private Lessons: Flute,2 TO 4,TBA,,Saylor & Brown,770,
+MUIP,415,0,,Private Lessons: Clarinet,2 TO 4,TBA,,Saylor & O'Riordan,770,
+MUIP,416,0,,Private Lessons: Oboe,2 TO 4,TBA,,Saylor & Stevenson,770,
+MUIP,417,0,,Private Lessons: Bassoon,2 TO 4,TBA,,Saylor\ L. Jonathan,770,
+MUIP,418,0,,Private Lessons: Saxophone,2 TO 4,TBA,,Saylor & Black,770,
+MUIP,419,0,,Private Lessons: Harp,2 TO 4,TBA,,Joiner & Seeman,770,
+MUIP,420,0,,Private Lessons: Percussion,2 TO 4,TBA,,Kastner\ Kathleen S.,770,
+MUIP,421,0,,Priv Lessons: Classical Guitar,2 TO 4,TBA,,Joiner & Torosian,770,
+MUIP,422,0,,Private Lessons: Jazz Guitar,2 TO 4,TBA,,Joiner & Ramsdell,770,
+MUIP,492,0,,Half Senior Recital,0,TBA,,Hopper\ Mary,,
+MUMS,101,0,B,Music Performance Seminar,1,9:20 AM - 10:30 AM,M W,Altino\ Leonardo G.,,VPAM
+MUMS,141,0,,English & Italian Diction,2,2:15 PM - 3:05 PM,T R,Hueber\ Thomas E.,96,
+MUMS,243,0,,Italian Grammar for Singers,2,2:15 PM - 3:05 PM,T R,Gamez\ Denise,96,
+MUMS,248,1,,"Basic ConductingRequires MUMS 346 Lab",3,9:20 AM - 10:30 AM,M W F,Sommerville\ Daniel,144,
+MUMS,248,2,,"Basic ConductingRequires MUMS 346 Lab",3,12:55 PM - 2:05 PM,M W F,Rakes\ John P.,144,
+MUMS,311,0,,Choral Conducting,3,9:20 AM - 10:30 AM,M W F,Trotter\ John W.,144,
+MUMS,321,0,,Principles Pedagogy II:Piano,1 OR 2,2:15 PM - 3:05 PM,T R,Edwards\ Karin R.,96,
+MUMS,321,4,,Principles Pedagogy II:Trumpet,1 OR 2,TBA,,Ridenour & Saylor,245,
+MUMS,321,402,,Principles Pedagogy II:Horn,1 OR 2,TBA,,Cottle & Saylor,245,
+MUMS,321,403,,Princ Pedagogy II:Low Brass,1 OR 2,TBA,,Davis & Saylor,245,
+MUMS,321,501,,Prin of Pedagogy II:Percussion,1 OR 2,TBA,,Kastner\ Kathleen S.,245,
+MUMS,321,502,,Prin of Pedagogy II:Percussion,1 OR 2,TBA,,Kastner\ Kathleen S.,245,
+MUMS,321,601,,Principles Pedagogy II:Flute,1 OR 2,TBA,,Brown & Saylor,245,
+MUMS,321,602,,Prin of Pedagogy II:Sngl Reeds,1 OR 2,TBA,,O'Riordan\ Trevor P.,245,
+MUMS,321,603,,Princ of Pedagogy II:Dbl Reeds,1 OR 2,TBA,,Stevenson\ Deborah,245,
+MUMS,321,2,,Princ of Pedagogy II:Voice,1 OR 2,9:30 AM - 10:20 AM,T R,Hueber\ Thomas E.,96,
+MUMS,321,7,,Prin of Pedagogy II:Guitar,1 OR 2,TBA,,Joiner & Ramsdell,245,
+MUMS,330,0,,Acoustic Recording Techniques,3,6:45 PM - 10:00 PM,W,Porick\ Brian,353,
+MUMS,333,1,,Music Outreach Practicum,0 TO 2,TBA,,Bauer\ Elizabeth A.,180,
+MUMS,341,3,,Woodwind Techniques,1 OR 2,12:15 PM - 1:05 PM,T R,Saylor & Black,96,
+MUMS,341,5,,Percussion Techniques,1 OR 2,11:15 AM - 12:05 PM,T R,Kastner\ Kathleen S.,96,
+MUMS,341,1,A,High String Techniques,1 OR 2,12:15 PM - 1:05 PM,T R,Sjobring & Peterson,48,
+MUMS,341,2,B,Low Strings Techniques,1 OR 2,12:15 PM - 1:05 PM,T R,Altino\ Leonardo G.,48,
+MUMS,346,0,,Conducting Lab,0,8:00 AM - 9:10 AM,W,Sommerville\ Daniel,48,
+MUMS,355,0,,Group Pedagogy,3,8:30 AM - 10:20 AM,T R,Bauer\ Elizabeth A.,144,
+MUMS,421,0,,Honors Conducting,0 TO 1,TBA,,Hopper & Trotter,96,
+MUMS,455,0,,Applied Pedagogy II,2,TBA,,Bauer\ Elizabeth A.,96,
+MUMS,473,0,,Elementary School Music,2,9:20 AM - 10:30 AM,M W,Yi\ Gina J.,96,
+MUMS,495,0,,Directed Study,1 TO 4,TBA,,Zimmerman\ Edward,,
+MUMS,496,0,,Internship,2 TO 4,TBA,,Bauer\ Elizabeth A.,180,
+MUMS,473L,0,,Elem School Music Practicum,1,9:20 AM - 10:30 AM,F,Yi\ Gina J.,48,
+MUTC,101,2,B,Intro to Music: Read/Analysis,2,9:20 AM - 10:30 AM,M W F,Clark\ Micah S.,,VPAM
+MUTC,101,1,A,Intro to Music: Read/Analysis,2,9:20 AM - 10:30 AM,M W F,Clark\ Micah S.,,VPAM
+MUTC,122,0,,Introduction to Composition,2,9:20 AM - 10:30 AM,M W F,Okpebholo\ Shawn,96,
+MUTC,171,1,,Music Theory II,3,8:00 AM - 9:10 AM,M W F,Wheatley\ Gregory,144,
+MUTC,171,2,,Music Theory II,3,9:20 AM - 10:30 AM,M W F,Wheatley\ Gregory,144,
+MUTC,172,2,,Aural Skills II,1,12:15 PM - 1:05 PM,T R,Okpebholo\ Shawn,48,
+MUTC,172,3,,Aural Skills II,1,2:15 PM - 3:05 PM,T R,Okpebholo\ Shawn,48,
+MUTC,232,1,,Composition II,2,9:30 AM - 10:20 AM,T R,Whitaker\ Howard L.,96,
+MUTC,261,1,,Music Theory IV,3,8:00 AM - 9:10 AM,M W F,Whitaker\ Howard L.,144,
+MUTC,261,2,,Music Theory IV,3,9:20 AM - 10:30 AM,M W F,Whitaker\ Howard L.,144,
+MUTC,272,1,,Aural Skills IV,1,8:30 AM - 9:20 AM,T R,Kim\ Misook,48,
+MUTC,272,2,,Aural Skills IV,1,11:15 AM - 12:05 PM,T R,Kim\ Misook,48,
+MUTC,272,3,,Aural Skills IV,1,12:15 PM - 1:05 PM,T R,Kim\ Misook,48,
+MUTC,331,0,,Intermediate Composition,2,TBA,,Kim\ Misook,512,
+MUTC,333,0,,Digital Music Technology II,2,7:00 PM - 8:50 PM,M,Baddorf & Okpebhol,96,
+MUTC,343,0,B,Jazz Theory,2,8:30 PM - 10:30 PM,T R,Ernst\ Kathryn A.,96,
+MUTC,353,0,,Modal Counterpoint,2,2:15 PM - 3:05 PM,T R,Zimmerman\ Edward,96,
+MUTC,356,0,,Arranging,2,9:30 AM - 10:20 AM,T R,Okpebholo\ Shawn,96,
+MUTC,364,0,,The Improvising Musician,2,8:30 AM - 9:20 AM,T R,Whitaker\ Howard L.,96,
+MUTC,451,0,,Advanced Composition,3,TBA,,Okpebholo\ Shawn E.,,
+MUTC,495,0,,Directed Study,1 TO 4,TBA,,Zimmerman\ Edward,,
+NEUR,241,0,,Foundations of Neuroscience,4,8:30 AM - 10:20 AM,T R,Struthers\ William M.,100,SIP\ SP
+NEUR,494,0,,Neuroscience Capstone,2,11:15 AM - 1:05 PM,T,Struthers\ William M.,,
+NEUR,241L,0,,Found of Neuroscience Lab,0,1:15 PM - 4:05 PM,T,Struthers & Thom,,
+PACS,494,0,B,Senior Seminar,2,2:15 PM - 3:25 PM,M W F,McKoy\ Michael K.,,
+PACS,496,0,,Internship,4,TBA,,McGraw\ Bryan T.,,
+PHIL,101,1,,Introduction to Philosophy,4,8:30 AM - 10:20 AM,T R,Wood\ W. Jay,,PI
+PHIL,101,2,,Introduction to Philosophy,4,2:15 PM - 3:25 PM,M W F,Gordon\ James R.,,PI
+PHIL,103,0,,Philosophy & the Sciences,4,11:35 AM - 12:45 PM,M W F,O'Connor\ Robert C.,,PI\ SIP
+PHIL,105,1,,Race & Justice,4,8:00 AM - 9:10 AM,M W F,Cartagena\ Nathan,,DUS\ PI
+PHIL,105,2,,Race & Justice,4,12:55 PM - 2:05 PM,M W F,Cartagena\ Nathan,,DUS\ PI
+PHIL,205,1,,Ethics & Society,4,11:15 AM - 1:05 PM,T R,Fletcher\ David B.,,PI
+PHIL,205,2,,Ethics & Society,4,1:15 PM - 3:05 PM,T R,Fletcher\ David B.,,PI
+PHIL,206,0,,Philosophy & Spiritual Form,4,12:55 PM - 2:05 PM,M W F,Gordon\ James R.,,PI\ SI
+PHIL,243,0,A,Intro To Logic,2,9:20 AM - 10:30 AM,M W F,O'Connor\ Robert C.,,
+PHIL,244,0,B,Symbolic Logic,2,9:20 AM - 10:30 AM,M W F,O'Connor\ Robert C.,,
+PHIL,245,0,,Logic,4,9:20 AM - 10:30 AM,M W F,O'Connor\ Robert C.,,AAQR
+PHIL,255,1,,Existentialism,4,6:30 AM - 1:05 PM,T,Kemp\ Ryan S.,,LE\ PI
+PHIL,255,2,,Existentialism,4,6:30 AM - 1:05 PM,R,Kemp\ Ryan S.,,LE\ PI
+PHIL,312,0,,Hist Of Philosophy,4,11:35 AM - 12:45 PM,M W F,Borden\ Sarah R.,,
+PHIL,315,0,,Philosophy of Religion,4,1:15 PM - 3:05 PM,T R,Wood\ W. Jay,,PI
+PHIL,328,2,B,Business Ethics,2,11:35 AM - 12:45 PM,M W F,Gordon\ James R.,,
+PHIL,328,1,A,Business Ethics,2,11:35 AM - 12:45 PM,M W F,Gordon\ James R.,,
+PHIL,341,0,,Nature Of Persons,4,11:15 AM - 1:05 PM,T R,Talbot\ Mark R.,,
+PHIL,345,0,,Classical & Medieval Pol Thgt,4,9:20 AM - 10:30 AM,M W F,Cartagena\ Nathan,,
+PHIL,349,0,,Christian Political Thought,4,1:15 PM - 3:05 PM,T R,McGraw\ Bryan T.,,
+PHIL,448,3,,Ethical Theory,4,12:55 PM - 2:05 PM,M W F,Fletcher\ David B.,,
+PHIL,448,0,,Human & Divine Discourse,4,1:15 PM - 3:05 PM,T R,Talbot\ Mark R.,,
+PHIL,496,0,,Internship,2 OR 4,TBA,,STAFF,,
+PHYS,222,0,,General Physics II,4,11:35 AM - 12:45 PM,M W F,Whitney\ Joshua F.,,
+PHYS,232,2,,Introductory Physics II,4,9:20 AM - 10:30 AM,M W F,Craig\ Darren J.,,
+PHYS,294,0,,Physics for the Future,2,8:30 AM - 10:20 AM,T,Poelarends\ Arend J,,
+PHYS,331,0,,Spacetime & Quanta,4,2:15 PM - 3:25 PM,M W F,Schroeder\ James,,
+PHYS,341,0,,Analytical Mechanics,4,12:55 PM - 2:05 PM,M W F,Whitney\ Joshua F.,,
+PHYS,353,0,A,Introductory Optics,2,11:35 AM - 12:45 PM,M W F,Poelarends\ Arend J,65,
+PHYS,362,0,B,Plasma Physics,2,11:35 AM - 12:45 PM,M W F,Schroeder\ James,,
+PHYS,494,0,,Senior Seminar,2,7:00 PM - 8:50 PM,W,Bishop\ Robert C.,,
+PHYS,222L,1,,General Physics Lab II,0,7:30 AM - 10:20 AM,T,Whitney\ Joshua F.,,
+PHYS,222L,2,,General Physics Lab II,0,1:15 PM - 4:05 PM,T,Whitney\ Joshua F.,,
+PHYS,232L,1,,Introductory Physics Lab II,0,7:30 AM - 10:20 AM,R,Schroeder\ James,,
+PHYS,232L,2,,Introductory Physics Lab II,0,1:15 PM - 4:05 PM,R,Schroeder\ James,,
+PHYS,353L,2,A,Introductory Optics Lab,0,1:15 PM - 4:05 PM,T,Schroeder\ James,,
+PSCI,135,0,,American Politics and Gov't,4,11:35 AM - 12:45 PM,M W F,Garrett\ Kristin N.,,SI
+PSCI,145,0,,Political Philosophy,4,8:30 AM - 10:20 AM,T R,McGraw\ Bryan T.,,PI\ SI
+PSCI,236,0,,Intercollegiate Trial Advocacy,1,6:30 PM - 10:00 PM,T,Locke & Michalak,,
+PSCI,245,0,B,Politics & Pop Culture,2,9:20 AM - 10:30 AM,M W F,Black\ Amy E.,,
+PSCI,271,0,A,Introduction to Law,2,12:55 PM - 2:05 PM,M W F,Bretsen\ Stephen N.,,
+PSCI,311,0,,Constitutional Law,4,1:15 PM - 3:05 PM,T R,Bretsen\ Stephen N.,,
+PSCI,349,0,,Christian Political Thought,4,1:15 PM - 3:05 PM,T R,McGraw\ Bryan T.,,
+PSCI,361,0,,Political Research,4,8:30 AM - 10:20 AM,T R,Taylor\ Timothy W.,,AAQR
+PSCI,365,0,,Classical/Medieval Pol Thought,4,9:20 AM - 10:30 AM,M W F,Cartagena\ Nathan,,
+PSCI,374,0,,Political Psychology,4,11:15 AM - 1:05 PM,T R,Garrett\ Kristin N.,,SIP
+PSCI,386,0,,Congress & Policy Process,4,11:35 AM - 12:45 PM,M W F,Black\ Amy E.,,
+PSCI,494,0,A,Senior Seminar,2,9:20 AM - 10:30 AM,M W F,Black\ Amy E.,,
+PSCI,495,0,,Independent Study,2 TO 4,TBA,,STAFF,,
+PSCI,496,0,,Internship,4,TBA,,McGraw\ Bryan T.,,
+PSYC,101,0,,Introduction to Psychology,4,11:15 AM - 1:05 PM,R,Callender\ Aimee A.,,SI
+PSYC,235,0,,Cross-Cultural Psychology,2,2:15 PM - 4:05 PM,W,Hannah\ Darlene B.,,
+PSYC,241,0,,Social Psychology,4,1:15 PM - 3:05 PM,T R,Hannah\ Darlene B.,,SI
+PSYC,268,0,,Statistics,4,8:30 AM - 10:20 AM,T R,Vessey\ John T.,,AAQR
+PSYC,269,1,,Experimental Psychology,4,11:15 AM - 1:05 PM,T R,Vessey\ John T.,,
+PSYC,317,1,,Developmental Psychology,4,9:20 AM - 10:30 AM,M W F,Eveleigh\ Elisha,,SI
+PSYC,317,2,,Developmental Psychology,4,11:35 AM - 12:45 PM,M W F,Hall\ Sarah E.,,SI
+PSYC,343,0,,Sensation & Perception,4,11:35 AM - 12:45 PM,M W F,Phinney\ Raymond,,
+PSYC,348,0,,Abnormal Psychology,4,9:20 AM - 10:30 AM,M W F,Hall\ Sarah E.,,
+PSYC,355,0,,Adv Statistics & Psyc Testing,4,11:35 AM - 12:45 PM,M W F,Eveleigh\ Elisha,,
+PSYC,481,2,A,Advanced Abnormal Psyc,2,8:00 AM - 9:10 AM,M W F,Hall\ Sarah E.,,
+PSYC,481,8,,Current Issues in School Psyc,2,1:15 PM - 3:05 PM,T,Eveleigh\ Elisha,,
+PSYC,481,5,A,History of Psychology,2,8:30 AM - 10:20 AM,T R,Callender\ Aimee A.,,
+PSYC,481,4,,Psychology of the Family,2,11:15 AM - 1:05 PM,T,Van Dyke\ David J.,,
+PSYC,481,1,,Theories of Integration,2,8:30 AM - 10:20 AM,T,Fort\ Christin J.,,
+PSYC,494,1,,Personality Psychology,4,12:55 PM - 2:05 PM,M W F,Fort\ Christin J.,,
+PSYC,494,2,,Personality Psychology,4,9:20 AM - 10:30 AM,M W F,Fort\ Christin J.,,
+PSYC,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+PSYC,496,0,,Internship,4 OR 8,TBA,,Eveleigh\ Elisha,,
+PSYC,497,0,,Collaborative Research Groups,2 OR 4,3:15 PM - 5:05 PM,T,Eveleigh\ Elisha,,
+PSYC,101L,1,,Intro To Psych Lab,0,12:15 PM - 1:05 PM,T,Fort\ Christin J.,,
+PSYC,101L,2,,Intro To Psych Lab,0,12:15 PM - 1:05 PM,T,Callender\ Aimee A.,,
+PSYC,101L,3,,Intro To Psych Lab,0,12:15 PM - 1:05 PM,T,Hannah\ Darlene B.,,
+PSYC,101L,4,,Intro To Psych Lab,0,12:15 PM - 1:05 PM,T,STAFF,,
+RELI,362,0,B,Judaism,2,12:55 PM - 2:05 PM,M W F,Graves\ Michael W.,,
+SCI,290,0,A,Health Professions Colloquim,1,8:30 AM - 10:20 AM,T,Eisenhauer\ Candice,,
+SCI,290,0,A,Health Professions Colloquim,1,11:15 AM - 1:05 PM,T,Eisenhauer\ Candice,,
+SCI,302,0,,Origins of Scientific Thought,4,11:15 AM - 1:05 PM,T R,Nelson\ Gary B.,,HP\ SIP
+SCI,311,0,,Theories of Origins,4,11:15 AM - 1:05 PM,T R,Moshier & Walton,30,SIP
+SCI,321,0,,Sci-Middle/High School Teach,2,2:15 PM - 4:15 PM,W,Leong\ Elizabeth A.,20,
+SCI,322,1,,Science For Elem Tch,2,8:20 AM - 10:20 AM,T,Eckert\ Jonathan M.,10,
+SCI,322,2,,Science For Elem Tch,2,11:05 AM - 1:05 PM,T,Eckert\ Jonathan M.,10,
+SOC,115,1,,Intro to Sociology,4,8:00 AM - 9:10 AM,M W F,Kim\ Henry H.,,DUS\ SI
+SOC,115,2,,Intro to Sociology,4,11:35 AM - 12:45 PM,M W F,Allen\ Henry L.,,DUS\ SI
+SOC,115,3,,Intro to Sociology,4,11:15 AM - 1:05 PM,T R,Allen\ Henry L.,,DUS\ SI
+SOC,228,0,A,Sociology of Sexuality,2,12:55 PM - 2:05 PM,M W F,Reynolds\ Amy M.,,
+SOC,238,0,B,Contemporary Social Concerns,2,2:15 PM - 3:25 PM,M W F,Allen\ Henry L.,,
+SOC,355,0,,Social Class & Inequality,4,8:30 AM - 10:20 AM,T R,Kim\ Henry H.,,
+SOC,364,0,,Urban Sociology,4,11:15 AM - 1:05 PM,T R,Miller\ Brian J.,,
+SOC,376,0,,Sociological Theory,4,1:15 PM - 3:05 PM,T R,Kim\ Henry H.,,
+SOC,450,0,A,Males\ Masculinity & Violence,2,2:15 PM - 3:25 PM,M W F,Allen\ Henry L.,,
+SOC,482,0,,Social Research,4,8:30 AM - 10:20 AM,T R,Miller\ Brian J.,,
+SOC,492,0,,Thesis Research,4,1:15 PM - 3:05 PM,T R,Reynolds\ Amy M.,,
+SOC,494,0,,Senior Capstone,4,TBA,,STAFF,,
+SOC,495,0,,Independent Study,1 TO 4,TBA,,STAFF,,
+SOC,496,0,,Internship in Sociology,4 OR 8,TBA,,STAFF,,
+SPAN,102,1,,Elementary Spanish,4,11:35 AM - 12:45 PM,M W F,Barlar\ Sharenda H.,,COMP
+SPAN,102,2,,Elementary Spanish,4,2:15 PM - 3:25 PM,M W F,Barlar\ Sharenda H.,,COMP
+SPAN,103,1,,Accel Elem Spanish,4,8:00 AM - 9:10 AM,M W F,Toly\ Rebecca A.,,COMP
+SPAN,103,2,,Accel Elem Spanish,4,12:55 PM - 2:05 PM,M W F,Townsend\ Tamara,,COMP
+SPAN,201,1,,Intermediate Spanish,4,8:00 AM - 9:10 AM,M W F,Gates\ Stephanie R.,,COMP
+SPAN,201,2,,Intermediate Spanish,4,9:20 AM - 10:30 AM,M W F,Toly\ Rebecca A.,,COMP
+SPAN,201,3,,Intermediate Spanish,4,11:35 AM - 12:45 PM,M W F,Gates\ Stephanie R.,,COMP
+SPAN,201,4,,Intermediate Spanish,4,11:35 AM - 12:45 PM,M W F,Toly\ Rebecca A.,,COMP
+SPAN,201,5,,Intermediate Spanish,4,12:55 PM - 2:05 PM,M W F,Toly\ Rebecca A.,,COMP
+SPAN,201,6,,Intermediate Spanish,4,12:55 PM - 2:05 PM,M W F,Barlar\ Sharenda H.,,COMP
+SPAN,310,0,,Culture & Grammar Review,4,9:20 AM - 10:30 AM,M W F,Klingler\ Timothy M.,,
+SPAN,331,1,,Spanish Conversation,4,11:35 AM - 12:45 PM,M W F,Quiroa\ Nestor I.,25,
+SPAN,332,1,,Adv Grammar And Composition,4,9:20 AM - 10:30 AM,M W F,Kepner\ Christine G.,,
+SPAN,332,2,,Adv Grammar And Composition,4,8:30 AM - 10:20 AM,T R,Kepner\ Christine G.,,
+SPAN,332,3,,Adv Grammar And Composition,4,12:55 PM - 2:05 PM,M W F,Gates\ Stephanie R.,,
+SPAN,332,0,,Adv Grammar And Composition,4,TBA,,Wood\ Adam N.,,
+SPAN,337,1,,Spanish American Literature,4,2:15 PM - 3:25 PM,M W F,Klingler\ Timothy M.,,GP\ LE
+SPAN,337,0,,Spanish American Literature,4,TBA,,Wood\ Adam N.,,GP\ LE
+SPAN,338,0,,Intensive Advanced Spanish,4,TBA,,Wood\ Adam N.,,
+SPAN,342,0,,Global Spain: Lit After 1800,4,11:35 AM - 12:45 PM,M W F,Townsend\ Tamara,,GP\ LE
+SPAN,352,1,,Camino de Santiago,2,6:30 PM - 8:20 PM,T,Barlar\ Sharenda H.,,
+SPAN,352,3,B,Spanish Film,2,11:15 AM - 1:05 PM,T R,Kepner\ Christine G.,,
+SPAN,352,2,A,Latin American Film,2,11:15 AM - 1:05 PM,T R,Kepner\ Christine G.,,
+SPAN,352,4,B,Orientation to Costa Rica,2,12:55 PM - 2:05 PM,M W F,Klingler\ Timothy M.,,
+SPAN,357,0,,Latino Cultures in the US,4,9:20 AM - 10:30 AM,M W F,Quiroa\ Nestor I.,,DUS
+SPAN,439,0,A,Church & Soc Latin America,2,12:55 PM - 2:05 PM,M W F,Klingler\ Timothy M.,,
+SPAN,489,1,,Topics in Mexican Literature,4,TBA,,Wood\ Adam N.,,
+SPAN,493,0,,Mentor:Music & Protest,4,TBA,,Klingler\ Timothy M.,,
+SPAN,494,0,,Senior Seminar,4,11:15 AM - 1:05 PM,T R,Townsend\ Tamara,,
+SSCI,321,1,,Elem & Middle Sch Curr Themes,2,8:30 AM - 10:30 AM,F,Egeland\ Paul C.,,
+SSCI,321,2,,Elem & Middle Sch Curr Themes,2,11:35 AM - 1:35 PM,F,Egeland\ Paul C.,,
+SWEL,496,0,,Social Work Internship,4 OR 8,TBA,,STAFF,,
+URBN,114,0,,Social Life of Cities,4,1:15 PM - 3:05 PM,T R,Tooley\ Christa B.,,GP\ SI
+URBN,233,0,,Chicago,4,6:30 PM - 10:00 PM,M,Young\ Sean L.,,DUS\ SI
+URBN,296,0,,Urban Studies Practicum,2 OR 4,TBA,,Anderson\ Jordan,,
+URBN,373,0,A,City in Popular Culture,2,11:15 AM - 1:05 PM,T R,Tooley\ Christa B.,,
+URBN,393,0,B,Placemaking in Urban Contexts,2,11:15 AM - 1:05 PM,T R,Tooley\ Christa B.,,
+URBN,490,0,,Internship-Pending,4 TO 8,TBA,,Anderson\ Jordan,,
+URBN,494,0,A,Advanced Urban Studies Seminar,2,11:15 AM - 1:05 PM,T R,Toly\ Noah J.,,
+URBN,496,0,,Internship,2 TO 8,TBA,,Anderson\ Jordan,,

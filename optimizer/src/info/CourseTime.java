@@ -1,6 +1,6 @@
 package info;
 
-enum Quad {A,B,LIN};
+enum Quad {A,B,NONE};
 // Assumed no Sunday classes
 enum Day {M,T,W,R,F,S};
 
