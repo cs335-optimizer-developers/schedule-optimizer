@@ -2,12 +2,12 @@ package info;
 
 import java.util.ArrayList;
 
-public class CourseTime {
+public class ClassTime {
 	private String time;
 	private ArrayList<Day> days;
 	private Quad quad;
 	
-	public CourseTime(String time, ArrayList<Day> days, Quad quad) {
+	public ClassTime(String time, ArrayList<Day> days, Quad quad) {
 		this.time = time;
 		if(days==null)
 			this.days = null;

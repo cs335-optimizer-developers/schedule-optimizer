@@ -11,12 +11,15 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import info.ClassType;
-import info.CourseTime;
+import info.Course;
+import info.ClassTime;
 import info.Day;
-import info.Details;
+import info.ClassDetails;
 import info.Lab;
 import info.Quad;
 import info.Section;
+import info.Subject;
+import info.Tag;
 
 public class ReadPopulateCSV {
 
@@ -30,9 +33,9 @@ public class ReadPopulateCSV {
 		try {
 			br = new BufferedReader(new FileReader(csvFile));
 			
-			CourseTime meetingTimes;
-			Details details;
-			Class c;
+			ClassTime meetingTimes;
+			ClassDetails details;
+			Course c;
 			
 			
 			/* Algorithm
@@ -48,33 +51,34 @@ public class ReadPopulateCSV {
 				String[] data = line.split(cvsSplitBy);
 				
 				// The CourseTime of this particular course (lab/section)
-				meetingTimes = new CourseTime(data[6], parseDays(data[7]), parseQuad(data[3]));
+				meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
 				// The Details object of this particular course (lab/section)
-				details = new Details(data[4], meetingTimes, data[8], data[5], data[9].equals("") ? 0.0 : Double.parseDouble(data[9]));
+				details = new ClassDetails(data[4], meetingTimes, data[8], data[5], data[9].equals("") ? 0.0 : Double.parseDouble(data[9]));
 				
 				ClassType type;
-				int classNumber;
+				int classNum;
 				
 				// Check if analyzing lab
 				if(data[1].length() == 4) {
 					type = new Lab(details);
-					classNumber = Integer.parseInt(data[1].substring(0, 3));
+					classNum = Integer.parseInt(data[1].substring(0, 3));
 				}
 				
 				// Else analyzing a section
 				else {
 					type = new Section(details, Integer.parseInt(data[2]));
-					classNumber = Integer.parseInt(data[1]);
+					classNum = Integer.parseInt(data[1]);
 				}
 				
-				// Check if the Section object is from a new Class, or an already instantiated Class
+				// TODO: Check if the Section object is from a new Class, or an already instantiated Class
 				
-
-				System.out.println("[sub= " + data[0] + " , num=" + data[1] + " , sec=" + data[2] + 
-						" , qud=" + data[3] + " , tit=" + data[4] + 
-						" , crd=" + data[5] + " , tim=" + data[6] + "]");
-
+				// Correct subject format (remove spaces)
+				String subj = data[0].replaceAll("\\s","");
+				
+				// New Class
+				c = new Course(Subject.valueOf(subj),classNum,(Section) type,parseTags(data[9]));
 			}
+			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -136,6 +140,10 @@ public class ReadPopulateCSV {
 		}
 		
 		return days;
+	}
+	
+	private static ArrayList<Tag> parseTags(String s) {
+		return null;
 	}
 
 }

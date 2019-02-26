@@ -1,9 +1,9 @@
 package info;
 
 public class Lab extends ClassType {
-	private Details internal;
+	private ClassDetails internal;
 	
-	public Lab(Details internal) {
+	public Lab(ClassDetails internal) {
 		super(internal);
 	}
 }

@@ -1,19 +1,19 @@
 package info;
 
-public class Details {
+public class ClassDetails {
 	
 	private String title;
-	private CourseTime time;
+	private ClassTime time;
 	private String prof;
 	private double fee;
 	private String credits;
 	
 	// If no fee is given, then assume section/lab costs no money
-	public Details(String title, CourseTime time, String prof, String credits) {
+	public ClassDetails(String title, ClassTime time, String prof, String credits) {
 		this(title,time,prof,credits,0);
 	}
 	
-	public Details(String title, CourseTime time, String prof, String credits, double fee) {
+	public ClassDetails(String title, ClassTime time, String prof, String credits, double fee) {
 		this.title = title;
 		this.time = time;
 		this.prof = prof;
