@@ -43,9 +43,23 @@ public class Class {
 			this.tags = new ArrayList<Tag>(tags);
 	}
 	
+	
+	/**
+	 * Add a new section to the sections list
+	 * @param s, a new section, not null
+	 */
+	public void addSection(Section s) {
+		if(s == null) {
+			System.out.println("Error in class when adding a new section...");
+			return;
+		}
+		
+		sections.add(s);
+	}
+	
 	/**
 	 * Add a new lab to the labs list
-	 * @param newLab, a new lab, not null or function exits before adding
+	 * @param newLab, a new lab, not null
 	 */
 	public void addLab(Lab newLab) {
 		if(newLab==null) {

@@ -1,15 +1,20 @@
 package info;
 
-enum Quad {A,B,NONE};
-// Assumed no Sunday classes
-enum Day {M,T,W,R,F,S};
+import java.util.ArrayList;
 
 public class CourseTime {
-	private int year;
-	private String semester;
-	private int time;
-	private Day[] days;
+	private String time;
+	private ArrayList<Day> days;
 	private Quad quad;
+	
+	public CourseTime(String time, ArrayList<Day> days, Quad quad) {
+		this.time = time;
+		if(days==null)
+			this.days = null;
+		else
+			this.days = new ArrayList<Day>(days);
+		this.quad = quad;
+	}
 	
 	
 }
