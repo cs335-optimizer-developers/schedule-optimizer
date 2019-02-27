@@ -57,9 +57,10 @@ public class ReadPopulateCSV {
 				String[] data = line.split(cvsSplitBy);
 				
 				// Check for irregular comma separation
-				System.out.println(data.length);
-				if (data.length > 11 | data.length < 10)
+				if (data.length > 11 || data.length < 10) {
+					System.out.printf("\nIrregular data length\n\n");
 					continue;
+				}
 				
 				meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
 				// The Details object of this particular course (lab/section)
