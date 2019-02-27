@@ -25,7 +25,7 @@ public class ReadPopulateCSV {
 
 	public static void main(String[] args) {
 
-		String csvFile = "input/schedules/2018csv.csv";
+		String csvFile = "input/schedules/fall-2018.csv";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
@@ -147,5 +147,3 @@ public class ReadPopulateCSV {
 	}
 
 }
-
-
