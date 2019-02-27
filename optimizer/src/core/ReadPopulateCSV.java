@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 import info.ClassType;
 import info.Course;
@@ -18,6 +19,7 @@ import info.ClassDetails;
 import info.Lab;
 import info.Quad;
 import info.Section;
+import info.Semester;
 import info.Subject;
 import info.Tag;
 
@@ -26,10 +28,22 @@ public class ReadPopulateCSV {
 	public static void main(String[] args) {
 
 		String csvFile = "input/schedules/testdata.csv";
+		Semester fall18 = createSemester(csvFile);
+		
+
+	}
+	
+	/**
+	 * Create a semester object from the given csv file
+	 * @param csvFile, a course schedule which will be parsed into a semester
+	 * @return a new semester object, filled with courses, sections, and labs
+	 */
+	private static Semester createSemester(String csvFile) {
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
-
+		List<Course> courses = new ArrayList<Course>();
+		
 		try {
 			br = new BufferedReader(new FileReader(csvFile));
 			
@@ -47,7 +61,6 @@ public class ReadPopulateCSV {
 			 * 		(Assumed class is created before labs are created)
 			*/
 			while ((line = br.readLine()) != null) {
-				
 				//TODO Skip first line for now.
 				line = br.readLine();
 				
@@ -63,13 +76,12 @@ public class ReadPopulateCSV {
 				}
 				
 				meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
-				// The Details object of this particular course (lab/section)
-				
-				//Fee
+				// Parse the fee
 				double fee = 0;
 				if (data.length > 10 && !data[10].isEmpty())
 					fee = Double.parseDouble(data[10]);
 				
+				// The Details object of this particular course (lab/section)
 				details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
 				
 				ClassType type;
@@ -89,7 +101,7 @@ public class ReadPopulateCSV {
 				
 				// TODO: Check if the Section object is from a new Class, or an already instantiated Class
 				
-				// Correct subject format (remove spaces)
+				// Correct subject format (remove spaces, C E = CE)
 				String subj = data[0].replaceAll("\\s","");
 				
 				// New Class
@@ -110,6 +122,7 @@ public class ReadPopulateCSV {
 			}
 		}
 
+		return new Semester(courses);
 	}
 	
 	/**
