@@ -15,9 +15,9 @@ public class Course {
 	// All possible tags a course can have
 	private List<Tag> tags;
 	// Each class has 0-many labs
-	private List<Lab> labs = new ArrayList<>();
+	private List<ClassType> labs = new ArrayList<>();
 	// Each class has 1-many sections
-	private List<Section> sections = new ArrayList<>();
+	private List<ClassType> sections = new ArrayList<>();
 	
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
 	public Course(Subject subj, int number, ClassType type, List<Tag> tags) {
@@ -43,7 +43,7 @@ public class Course {
 	 * Add a new section to the sections list
 	 * @param s, a new section, not null
 	 */
-	public void addSection(Section s) {
+	public void addSection(ClassType s) {
 		if(s == null) {
 			System.out.println("Error in class when adding a new section...");
 			return;
@@ -56,7 +56,7 @@ public class Course {
 	 * Add a new lab to the labs list
 	 * @param newLab, a new lab, not null
 	 */
-	public void addLab(Lab newLab) {
+	public void addLab(ClassType newLab) {
 		if(newLab==null) {
 			System.out.println("Error in class when adding a new lab...");
 			return;
@@ -80,7 +80,12 @@ public class Course {
 	public double[] computeProfProb() {
 		return null;
 	}
-
+	
+	// Key to distinguish between other courses
+	public String getKey() {
+		return subj.toString() + ":" + number;
+	}
+	
 }
 
 

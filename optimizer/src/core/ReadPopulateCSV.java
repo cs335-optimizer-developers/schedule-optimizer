@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import info.ClassType;
@@ -26,11 +27,10 @@ import info.Tag;
 public class ReadPopulateCSV {
 
 	public static void main(String[] args) {
-
-		String csvFile = "input/schedules/testdata.csv";
-		Semester fall18 = createSemester(csvFile);
 		
-
+		Semester fall18 = createSemester("input/schedules/fall-2018.csv");
+		fall18.setSemester("Fall");
+		fall18.setYear(2018);
 	}
 	
 	/**
@@ -78,34 +78,56 @@ public class ReadPopulateCSV {
 				meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
 				// Parse the fee
 				double fee = 0;
-				if (data.length > 10 && !data[10].isEmpty())
-					fee = Double.parseDouble(data[10]);
+				if (!data[9].isEmpty()) {
+					System.out.println(data[9]);
+					fee = Double.parseDouble(data[9]);
+				}
+					
 				
 				// The Details object of this particular course (lab/section)
 				details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
 				
 				ClassType type;
-				int classNum;
+				int number;
 				
 				// Check if analyzing lab
 				if(data[1].length() == 4) {
 					type = new Lab(details);
-					classNum = Integer.parseInt(data[1].substring(0, 3));
+					number = Integer.parseInt(data[1].substring(0, 3));
 				}
 				
 				// Else analyzing a section
 				else {
 					type = new Section(details, Integer.parseInt(data[2]));
-					classNum = Integer.parseInt(data[1]);
+					number = Integer.parseInt(data[1]);
 				}
-				
-				// TODO: Check if the Section object is from a new Class, or an already instantiated Class
 				
 				// Correct subject format (remove spaces, C E = CE)
 				String subj = data[0].replaceAll("\\s","");
+				String key = Subject.valueOf(subj).toString()+":"+number;
 				
-				// New Class
-				c = new Course(Subject.valueOf(subj),classNum,type,parseTags(data));
+				// TODO: Check if the Section object is from a new Class, or an already instantiated Class
+				boolean flag = false;
+				Iterator<Course> it = courses.iterator();
+				while(it.hasNext()) {
+					Course cr = it.next();
+					// Already Created... add lab/section
+					if(cr.getKey().equals(key)) {
+						// Lab
+						if(data[1].length() == 4)
+							cr.addLab(type);
+						// Section
+						else
+							cr.addSection(type);
+						flag = true;
+						break;
+					}
+				}
+				
+				if(flag)
+					continue;
+				// New Course is created for the section
+				c = new Course(Subject.valueOf(subj),number,type,parseTags(data));
 			}
 			
 		} catch (FileNotFoundException e) {
