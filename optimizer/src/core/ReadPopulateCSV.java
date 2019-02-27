@@ -25,7 +25,7 @@ public class ReadPopulateCSV {
 
 	public static void main(String[] args) {
 
-		String csvFile = "input/schedules/fall-2018.csv";
+		String csvFile = "input/schedules/testdata.csv";
 		BufferedReader br = null;
 		String line = "";
 		String cvsSplitBy = ",";
@@ -47,13 +47,27 @@ public class ReadPopulateCSV {
 			 * 		(Assumed class is created before labs are created)
 			*/
 			while ((line = br.readLine()) != null) {
+				
+				//TODO Skip first line for now.
+				line = br.readLine();
+				
+				System.out.println(line);
+				
 				// Use comma as separator
 				String[] data = line.split(cvsSplitBy);
 				
 				// The CourseTime of this particular course (lab/section)
 				meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
 				// The Details object of this particular course (lab/section)
-				details = new ClassDetails(data[4], meetingTimes, data[8], data[5], data[9].equals("") ? 0.0 : Double.parseDouble(data[9]));
+				
+				System.out.println(data[9]);
+				
+				//Fee
+				double fee = 0;
+				if (data.length > 10 && !data[10].isEmpty())
+					fee = Double.parseDouble(data[10]);
+				
+				details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
 				
 				ClassType type;
 				int classNum;

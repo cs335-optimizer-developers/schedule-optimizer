@@ -17,7 +17,7 @@ public class Course {
 	// Each class has 0-many labs
 	private ArrayList<Lab> labs;
 	// Each class has 1-many sections
-	private ArrayList<Section> sections;
+	private ArrayList<Section> sections = new ArrayList<>();
 	
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
 	public Course(Subject subj, int number, Section section, ArrayList<Tag> tags) {
