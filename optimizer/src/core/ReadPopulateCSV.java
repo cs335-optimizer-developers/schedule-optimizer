@@ -56,11 +56,13 @@ public class ReadPopulateCSV {
 				// Use comma as separator
 				String[] data = line.split(cvsSplitBy);
 				
-				// The CourseTime of this particular course (lab/section)
+				// Check for irregular comma separation
+				System.out.println(data.length);
+				if (data.length > 11 | data.length < 10)
+					continue;
+				
 				meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
 				// The Details object of this particular course (lab/section)
-				
-				System.out.println(data[9]);
 				
 				//Fee
 				double fee = 0;
@@ -90,7 +92,7 @@ public class ReadPopulateCSV {
 				String subj = data[0].replaceAll("\\s","");
 				
 				// New Class
-				c = new Course(Subject.valueOf(subj),classNum,(Section) type,parseTags(data[9]));
+				c = new Course(Subject.valueOf(subj),classNum,type,parseTags(data));
 			}
 			
 		} catch (FileNotFoundException e) {
@@ -156,8 +158,15 @@ public class ReadPopulateCSV {
 		return days;
 	}
 	
-	private static ArrayList<Tag> parseTags(String s) {
-		return null;
+	private static ArrayList<Tag> parseTags(String[] data) {
+		ArrayList<Tag> toReturn = new ArrayList<>();
+		for (int i=11;i<data.length;i++)
+			try {
+				toReturn.add(Tag.valueOf(data[i]));
+			} catch(IllegalArgumentException iae) {
+				toReturn.add(Tag.Unknown);
+			}
+		return toReturn;
 	}
 
 }

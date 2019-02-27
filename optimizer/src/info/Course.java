@@ -13,20 +13,22 @@ public class Course {
 	private int number;
 	// All possible tags a course can have
 	private ArrayList<Tag> tags;
-	
 	// Each class has 0-many labs
-	private ArrayList<Lab> labs;
+	private ArrayList<Lab> labs = new ArrayList<>();
 	// Each class has 1-many sections
 	private ArrayList<Section> sections = new ArrayList<>();
 	
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
-	public Course(Subject subj, int number, Section section, ArrayList<Tag> tags) {
-		if(section == null) {
+	public Course(Subject subj, int number, ClassType type, ArrayList<Tag> tags) {
+		if(type == null) {
 			System.out.println("Error when creating a new class, section cannot be null... *terminating*");
 			System.exit(1);
 		}
 		
-		sections.add(section);
+		if (type.getClass().equals(Lab.class))
+			labs.add((Lab) type);
+		else
+			sections.add((Section) type);
 		this.subj = subj;
 		this.number = number;
 		if(tags==null)
