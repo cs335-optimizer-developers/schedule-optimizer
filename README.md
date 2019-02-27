@@ -1,1 +1,1 @@
-![alt text](https://raw.githubusercontent.com/cs335-optimizer-developers/schedule-optimizer/branch/path/to/img.png)
+![alt text](https://raw.githubusercontent.com/cs335-optimizer-developers/blob/master/Class Diagram.jpg)
