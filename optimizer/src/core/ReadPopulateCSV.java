@@ -39,6 +39,13 @@ public class ReadPopulateCSV {
 	
 	/**
 	 * Create a semester object from the given csv file
+	 * 		Algorithm
+			 * 		1. Create CourseTime and Details object for each section
+			 * 		2. Create the Section object or Lab object accordingly
+			 * 		3. Check if the Section object is from a new Class, or an already instantiated Class
+			 * 			3.a If new Class, then create new Class object, then add the Section to it.
+			 * 			3.a Else add the section or lab to the correct class.
+			 * 		(Assumed class is created before labs are created)
 	 * @param csvFile, a course schedule which will be parsed into a semester
 	 * @return a new semester object, filled with courses, sections, and labs
 	 */
@@ -50,15 +57,6 @@ public class ReadPopulateCSV {
 		System.out.println("Starting parse of: " + csvFile);
 		try {
 			br = new BufferedReader(new FileReader(csvFile));
-			
-			/* Algorithm
-			 * 		1. Create CourseTime and Details object for each section
-			 * 		2. Create the Section object or Lab object accordingly
-			 * 		3. Check if the Section object is from a new Class, or an already instantiated Class
-			 * 			3.a If new Class, then create new Class object, then add the Section to it.
-			 * 			3.a Else add the section or lab to the correct class.
-			 * 		(Assumed class is created before labs are created)
-			*/
 			// Skip first line containing the heading
 			line = br.readLine();
 			while ((line = br.readLine()) != null) {
@@ -142,7 +140,7 @@ public class ReadPopulateCSV {
 		}
 		
 		System.out.println("Successful!\n");
-		System.out.println(courses.get(123).toString());
+		//System.out.println(courses.get(123).toString());
 		return new Semester(courses);
 	}
 	
