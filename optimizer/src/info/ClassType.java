@@ -10,4 +10,8 @@ public abstract class ClassType {
 		}
 		this.internal = internal;
 	}
+	
+	public String toString() {
+		return internal.toString();
+	}
 }

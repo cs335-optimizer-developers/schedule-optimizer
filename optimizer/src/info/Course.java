@@ -86,6 +86,20 @@ public class Course {
 		return subj.toString() + ":" + number;
 	}
 	
+	public String toString() {
+		String s = getKey() + "\nSections:\n";
+		for(ClassType t : sections) {
+			s += t.toString() + "\t\n";
+		}
+		
+		s += "Labs:\n";
+		for(ClassType t : labs) {
+			s += t.toString() + "\n";
+		}
+		
+		return s+"\n";
+	}
+	
 }
 
 

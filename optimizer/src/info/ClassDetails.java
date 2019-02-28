@@ -40,4 +40,8 @@ public class ClassDetails {
 		System.exit(1);
 	}
 	
+	public String toString() {
+		return "Title: " + title + "\nTime: " + time + "\nProf: " + prof;
+	}
+	
 }

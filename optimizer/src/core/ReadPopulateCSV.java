@@ -31,6 +31,10 @@ public class ReadPopulateCSV {
 		Semester fall18 = createSemester("input/schedules/fall-2018.csv");
 		fall18.setSemester("Fall");
 		fall18.setYear(2018);
+		
+		Semester spring19 = createSemester("input/schedules/spring-2019.csv");
+		spring19.setSemester("Spring");
+		spring19.setYear(2019);
 	}
 	
 	/**
@@ -61,10 +65,9 @@ public class ReadPopulateCSV {
 			 * 			3.a Else add the section or lab to the correct class.
 			 * 		(Assumed class is created before labs are created)
 			*/
+			//TODO Skip first line for now.
+			line = br.readLine();
 			while ((line = br.readLine()) != null) {
-				//TODO Skip first line for now.
-				line = br.readLine();
-				
 				//System.out.println(line);
 				
 				// Use comma as separator
@@ -72,7 +75,8 @@ public class ReadPopulateCSV {
 				
 				// Check for irregular comma separation
 				if (data.length > 11 || data.length < 10) {
-					System.out.printf("\nIrregular data length\n\n");
+					System.out.printf("Irregular data length\n\n");
+					System.exit(1);
 					continue;
 				}
 				
@@ -126,6 +130,7 @@ public class ReadPopulateCSV {
 					continue;
 				// New Course is created for the section
 				c = new Course(Subject.valueOf(subj),number,type,parseTags(data));
+				courses.add(c);
 			}
 			
 		} catch (FileNotFoundException e) {
