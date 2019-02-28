@@ -44,6 +44,7 @@ public class ReadPopulateCSV {
 		String cvsSplitBy = ",";
 		List<Course> courses = new ArrayList<Course>();
 		
+		System.out.println("Starting parse of: " + csvFile);
 		try {
 			br = new BufferedReader(new FileReader(csvFile));
 			
@@ -64,7 +65,7 @@ public class ReadPopulateCSV {
 				//TODO Skip first line for now.
 				line = br.readLine();
 				
-				System.out.println(line);
+				//System.out.println(line);
 				
 				// Use comma as separator
 				String[] data = line.split(cvsSplitBy);
@@ -78,11 +79,8 @@ public class ReadPopulateCSV {
 				meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
 				// Parse the fee
 				double fee = 0;
-				if (!data[9].isEmpty()) {
-					System.out.println(data[9]);
+				if (!data[9].isEmpty())
 					fee = Double.parseDouble(data[9]);
-				}
-					
 				
 				// The Details object of this particular course (lab/section)
 				details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
@@ -143,7 +141,8 @@ public class ReadPopulateCSV {
 				}
 			}
 		}
-
+		
+		System.out.println("Successful!");
 		return new Semester(courses);
 	}
 	
@@ -172,7 +171,7 @@ public class ReadPopulateCSV {
 	private static ArrayList<Day> parseDays(String s) {
 		ArrayList<Day> days = new ArrayList<Day>();
 		// If no day was provided in the data set for this particular class, then add blank day
-		if(s.length()==0) {
+		if((s.length()==0) || s.equals("TBA") || s.equals("BLANK")) {
 			days.add(Day.BLANK);
 			return days;
 		}
@@ -200,7 +199,7 @@ public class ReadPopulateCSV {
 			try {
 				toReturn.add(Tag.valueOf(data[i]));
 			} catch(IllegalArgumentException iae) {
-				toReturn.add(Tag.Unknown);
+				toReturn.add(Tag.NONE);
 			}
 		return toReturn;
 	}
