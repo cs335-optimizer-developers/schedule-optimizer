@@ -87,15 +87,18 @@ public class Course {
 	}
 	
 	public String toString() {
-		String s = getKey() + "\nSections:\n";
-		for(ClassType t : sections) {
+		String s = getKey();
+		s += "\nTags:";
+		for(Tag t : tags)
+			s += t + ", ";
+			
+		s += "\nSections:\n";
+		for(ClassType t : sections)
 			s += t.toString() + "\t\n";
-		}
 		
 		s += "Labs:\n";
-		for(ClassType t : labs) {
+		for(ClassType t : labs)
 			s += t.toString() + "\n";
-		}
 		
 		return s+"\n";
 	}

@@ -45,17 +45,11 @@ public class ReadPopulateCSV {
 	private static Semester createSemester(String csvFile) {
 		BufferedReader br = null;
 		String line = "";
-		String cvsSplitBy = ",";
 		List<Course> courses = new ArrayList<Course>();
 		
 		System.out.println("Starting parse of: " + csvFile);
 		try {
 			br = new BufferedReader(new FileReader(csvFile));
-			
-			ClassTime meetingTimes;
-			ClassDetails details;
-			Course c;
-			
 			
 			/* Algorithm
 			 * 		1. Create CourseTime and Details object for each section
@@ -65,13 +59,12 @@ public class ReadPopulateCSV {
 			 * 			3.a Else add the section or lab to the correct class.
 			 * 		(Assumed class is created before labs are created)
 			*/
-			//TODO Skip first line for now.
+			// Skip first line containing the heading
 			line = br.readLine();
 			while ((line = br.readLine()) != null) {
-				//System.out.println(line);
-				
+				// System.out.println(line);
 				// Use comma as separator
-				String[] data = line.split(cvsSplitBy);
+				String[] data = line.split(",");
 				
 				// Check for irregular comma separation
 				if (data.length > 11 || data.length < 10) {
@@ -79,15 +72,16 @@ public class ReadPopulateCSV {
 					System.exit(1);
 					continue;
 				}
+				Course c;
 				
-				meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
+				ClassTime meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
 				// Parse the fee
 				double fee = 0;
 				if (!data[9].isEmpty())
 					fee = Double.parseDouble(data[9]);
 				
 				// The Details object of this particular course (lab/section)
-				details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
+				ClassDetails details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
 				
 				ClassType type;
 				int number;
@@ -129,7 +123,7 @@ public class ReadPopulateCSV {
 				if(flag)
 					continue;
 				// New Course is created for the section
-				c = new Course(Subject.valueOf(subj),number,type,parseTags(data));
+				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]));
 				courses.add(c);
 			}
 			
@@ -147,7 +141,8 @@ public class ReadPopulateCSV {
 			}
 		}
 		
-		System.out.println("Successful!");
+		System.out.println("Successful!\n");
+		System.out.println(courses.get(123).toString());
 		return new Semester(courses);
 	}
 	
@@ -198,15 +193,40 @@ public class ReadPopulateCSV {
 		return days;
 	}
 	
-	private static ArrayList<Tag> parseTags(String[] data) {
-		ArrayList<Tag> toReturn = new ArrayList<>();
-		for (int i=11;i<data.length;i++)
+	/**
+	 * Parse the tags String from the schedule csv
+	 * @param s, a String, one tags list from the csv
+	 * @return ArrayList of tags from the String
+	 */
+	private static ArrayList<Tag> parseTags(String s) {
+		ArrayList<Tag> tags = new ArrayList<>();
+		String curr = "";
 			try {
-				toReturn.add(Tag.valueOf(data[i]));
+				for(int i = 0; i < s.length(); i++) {
+					char c = s.charAt(i);
+					if(c == '\'') {
+						tags.add(Tag.valueOf(curr));
+						curr = "";
+					}
+					else if(c == ' ') {
+						curr = "";
+						continue;
+					}
+					else
+						curr += c;
+				}
+				
+				tags.add(Tag.valueOf(curr));
+				
 			} catch(IllegalArgumentException iae) {
-				toReturn.add(Tag.NONE);
+				if(curr.equals("NONE") || tags.isEmpty())
+					tags.add(Tag.NONE);
+				else {
+					iae.printStackTrace();
+					System.exit(1);
+				}
 			}
-		return toReturn;
+		return tags;
 	}
 
 }
