@@ -1,5 +1,7 @@
 package algorithm;
 
+import info.Semester;
+
 public interface Algorithm {
-	String[][] build(String[] programs);
+	Semester[] build(Semester[] classes, String[] programs);
 }

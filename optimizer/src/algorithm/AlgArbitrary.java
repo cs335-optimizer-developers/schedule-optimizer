@@ -3,11 +3,15 @@ package algorithm;
 import java.util.ArrayList;
 import java.util.List;
 
+import info.Semester;
 import reader.ReadPrg;
 
 public class AlgArbitrary implements Algorithm {
 
-	public String[][] build(String[] programs) {
+	int year = 2019;
+	String sem = "fall";
+	
+	public Semester[] build(Semester[] classes, String[] programs) {
 		
 		ReadPrg rp = new ReadPrg();
 		
@@ -16,11 +20,26 @@ public class AlgArbitrary implements Algorithm {
 		for (String prog : programs)
 			toTake.addAll(rp.read(prog));
 		
-		String[][] toReturn = new String[toTake.size()/4+1][4];
+		Semester[] toReturn = new Semester[toTake.size()/4+1];
 		
-		for (int i=toTake.size()-1;i>=0;i--)
-			toReturn[i/4][i%4] = toTake.get(i);
+		while (!toTake.isEmpty()) {
+			Semester current = new Semester(year,sem);
+			
+			for (int i=toTake.size()-1;i>=0;i--)
+				current.addCourse(toTake.get(i));
+		
+			incSem();
+		}
 		
 		return toReturn;
+	}
+	
+	private void incSem(String sem) {
+		if (sem == "spring")
+			sem = "fall";
+		else {
+			year++;
+			sem = "fall";
+		}
 	}
 }

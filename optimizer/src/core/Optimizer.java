@@ -7,19 +7,24 @@ import java.nio.file.Paths;
 import java.util.Map;
 
 import algorithm.*;
+import info.Semester;
 import reader.ReadDet;
 
 public class Optimizer {
 
 	String input;
 	String output;
-	String[][] schedule;
+	Semester[] availableClasses;
 	
 	public Optimizer(String input, String output) {
 		this.input = input;
 		this.output = output;
 	}
 
+	/*
+	 *  Objects instantiated by this class take input and output folders,
+	 *  creating output from the input that was provided.
+	 */
 	public void generate() {
 		
 		Algorithm alg = new AlgArbitrary();
@@ -27,13 +32,13 @@ public class Optimizer {
 				"csci-major"
 		};
 		
-		schedule = alg.build(programs);
+		Semester[] newSchedule = alg.build(availableClasses,programs);
 		
 		//Writing schedule to local file.
-		writeSchedule();
+		writeSchedule(newSchedule);
 	}
 	
-	private void writeSchedule() {
+	private void writeSchedule(Semester[] schedule) {
 		String source = "./"+output+"/"+"generated-schedule.csv";
 		Path path = Paths.get(source);
 		
@@ -44,6 +49,7 @@ public class Optimizer {
 			toWrite += "Semester "+(i+1)+",";
 		toWrite += "\n";
 			
+		/*
 		for (int i=0;i<schedule[0].length;i++) {
 			for (int j=0;j<schedule.length;j++) {
 			String add = schedule[j][i];
@@ -53,7 +59,7 @@ public class Optimizer {
 			}
 			toWrite += "\n";
 		}
-		
+		*/
 		try {
 			//Make and write to the file.
 			Files.deleteIfExists(path);
@@ -61,17 +67,5 @@ public class Optimizer {
 			Files.write(path, toWrite.getBytes());
 		}
 		catch (IOException e) {e.printStackTrace();}
-	}
-	
-	@SuppressWarnings("unused")
-	private void testSchedule() {
-		schedule = new String[4][4];
-		for (int i = 0;i<4;i++)
-			for (int j=0;j<4;j++)
-				schedule[i][j] = i+j+" class";
-		schedule[3][0] = "Data Structures";
-		schedule[0][1] = "DMFP";
-		schedule[0][3] = "Programming I";
-		schedule[1][2] = "Programming II";
 	}
 }

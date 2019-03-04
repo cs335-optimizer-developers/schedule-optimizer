@@ -8,33 +8,36 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.FileVisitResult;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.SimpleFileVisitor;
+import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import info.ClassType;
-import info.Course;
-import info.ClassTime;
-import info.Day;
-import info.ClassDetails;
-import info.Lab;
-import info.Quad;
-import info.Section;
-import info.Semester;
-import info.Subject;
-import info.Tag;
+import info.*;
 
 public class ReadPopulateCSV {
-
+	
+	public static Semester[] buildSemesters(String sourceFolder) {
+		
+		Semester[] toReturn = new Semester[2];
+		toReturn[0] = createSemester(sourceFolder+"/schedules/fall-2018.csv");
+		toReturn[0].setSemester("Fall");
+		toReturn[0].setYear(2018);
+		
+		toReturn[1] = createSemester(sourceFolder+"/schedules/spring-2019.csv");
+		toReturn[1].setSemester("Spring");
+		toReturn[1].setYear(2019);
+		
+		return toReturn;
+	}
+	
 	public static void main(String[] args) {
-		
-		Semester fall18 = createSemester("input/schedules/fall-2018.csv");
-		fall18.setSemester("Fall");
-		fall18.setYear(2018);
-		
-		Semester spring19 = createSemester("input/schedules/spring-2019.csv");
-		spring19.setSemester("Spring");
-		spring19.setYear(2019);
+		buildSemesters("optimizer/input");
 	}
 	
 	/**
