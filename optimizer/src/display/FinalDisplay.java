@@ -27,7 +27,7 @@ public class FinalDisplay extends JFrame {
 	private JTextField txtEnterMajor;
 	private JLabel lblEnterMajorsAnd;
 	private JLabel lblSearchForClasses;
-	private JTextField textField;
+	private JTextField searchBar;
 	private JButton btnEnter;
 
 	/**
@@ -74,28 +74,28 @@ public class FinalDisplay extends JFrame {
 		
 		lblSearchForClasses = new JLabel("Search For Classes");
 		
-		textField = new JTextField();
-		textField.setColumns(10);
+		searchBar = new JTextField();
+		searchBar.setColumns(10);
 		
 		btnEnter = new JButton("Enter");
 		
 		btnAdvancedOptions = new JButton("Advanced Options");
 		
-		JTextArea textArea = new JTextArea();
+		JTextArea semOneText = new JTextArea();
 		
-		JTextArea textArea_1 = new JTextArea();
+		JTextArea semTwoText = new JTextArea();
 		
-		JTextArea textArea_2 = new JTextArea();
+		JTextArea SemThreeText = new JTextArea();
 		
-		JTextArea textArea_3 = new JTextArea();
+		JTextArea semFourText = new JTextArea();
 		
-		JTextArea textArea_4 = new JTextArea();
+		JTextArea semFiveText = new JTextArea();
 		
-		JTextArea textArea_5 = new JTextArea();
+		JTextArea semSixText = new JTextArea();
 		
-		JTextArea textArea_6 = new JTextArea();
+		JTextArea semSevenText = new JTextArea();
 		
-		JTextArea textArea_7 = new JTextArea();
+		JTextArea semEightText = new JTextArea();
 		
 		JLabel lblSemester = new JLabel("Semester 1");
 		
@@ -119,66 +119,76 @@ public class FinalDisplay extends JFrame {
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(214)
-							.addComponent(lblEnterMajorsAnd))
+							.addComponent(lblEnterMajorsAnd, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addGap(222))
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addComponent(majorOne, GroupLayout.PREFERRED_SIZE, 179, GroupLayout.PREFERRED_SIZE)
+							.addComponent(majorOne, GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
 							.addGap(5)
-							.addComponent(txtEnterMajor, GroupLayout.PREFERRED_SIZE, 213, GroupLayout.PREFERRED_SIZE)
+							.addComponent(txtEnterMajor, GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
 							.addGap(5)
-							.addComponent(minor, GroupLayout.PREFERRED_SIZE, 187, GroupLayout.PREFERRED_SIZE))
+							.addComponent(minor, GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(246)
-							.addComponent(submitButton))
+							.addComponent(submitButton, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addGap(255))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(184)
-							.addComponent(btnAdvancedOptions, GroupLayout.PREFERRED_SIZE, 213, GroupLayout.PREFERRED_SIZE))
+							.addComponent(btnAdvancedOptions, GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
+							.addGap(192))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(10)
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(textArea, Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE)
-								.addComponent(lblSearchForClasses, Alignment.TRAILING)
-								.addComponent(textArea_4, Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE))
+								.addComponent(semOneText, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+								.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+									.addGap(21)
+									.addComponent(lblSearchForClasses, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+								.addComponent(semFiveText, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_contentPane.createSequentialGroup()
 									.addGap(6)
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 										.addGroup(gl_contentPane.createSequentialGroup()
-											.addComponent(textArea_5, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE)
+											.addComponent(semSixText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
 											.addPreferredGap(ComponentPlacement.RELATED)
-											.addComponent(textArea_6, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE)
+											.addComponent(semSevenText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
 											.addPreferredGap(ComponentPlacement.RELATED)
-											.addComponent(textArea_7, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE))
+											.addComponent(semEightText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
 										.addGroup(gl_contentPane.createSequentialGroup()
-											.addComponent(textArea_1, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE)
+											.addComponent(semTwoText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
 											.addPreferredGap(ComponentPlacement.RELATED)
-											.addComponent(textArea_2, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE)
+											.addComponent(SemThreeText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
 											.addPreferredGap(ComponentPlacement.RELATED)
-											.addComponent(textArea_3, GroupLayout.PREFERRED_SIZE, 138, GroupLayout.PREFERRED_SIZE))))
+											.addComponent(semFourText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))))
 								.addGroup(gl_contentPane.createSequentialGroup()
 									.addGap(36)
-									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING, false)
+									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 										.addGroup(gl_contentPane.createSequentialGroup()
-											.addComponent(lblSemester_1, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE)
-											.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-											.addComponent(lblSemester_2, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE))
-										.addComponent(textField, GroupLayout.PREFERRED_SIZE, 213, GroupLayout.PREFERRED_SIZE))
+											.addComponent(lblSemester_1, GroupLayout.PREFERRED_SIZE, 35, Short.MAX_VALUE)
+											.addGap(75)
+											.addComponent(lblSemester_2, GroupLayout.PREFERRED_SIZE, 35, Short.MAX_VALUE))
+										.addComponent(searchBar, GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE))
 									.addGap(60)
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-										.addComponent(btnEnter)
-										.addComponent(lblSemester_3, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE)))))
+										.addComponent(btnEnter, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+										.addGroup(gl_contentPane.createSequentialGroup()
+											.addGap(7)
+											.addComponent(lblSemester_3, GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)))
+									.addGap(47)))
+							.addGap(9))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(48)
-							.addComponent(lblSemester)))
-					.addContainerGap(1, Short.MAX_VALUE))
+							.addComponent(lblSemester, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addGap(472)))
+					.addGap(1))
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGap(47)
-					.addComponent(lblSemester_4, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE)
+					.addComponent(lblSemester_4, GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
 					.addGap(73)
-					.addComponent(lblSemester_5, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE)
+					.addComponent(lblSemester_5, GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
 					.addGap(74)
-					.addComponent(lblSemester_6, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE)
-					.addPreferredGap(ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-					.addComponent(lblSemester_7, GroupLayout.PREFERRED_SIZE, 69, GroupLayout.PREFERRED_SIZE)
+					.addComponent(lblSemester_6, GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
+					.addGap(67)
+					.addComponent(lblSemester_7, GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
 					.addGap(53))
 		);
 		gl_contentPane.setVerticalGroup(
@@ -200,7 +210,7 @@ public class FinalDisplay extends JFrame {
 							.addComponent(lblSearchForClasses))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(1)
-							.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+							.addComponent(searchBar, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 						.addComponent(btnEnter))
 					.addGap(38)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
@@ -210,10 +220,10 @@ public class FinalDisplay extends JFrame {
 						.addComponent(lblSemester_3))
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(textArea, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
-						.addComponent(textArea_1, GroupLayout.PREFERRED_SIZE, 92, GroupLayout.PREFERRED_SIZE)
-						.addComponent(textArea_2, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
-						.addComponent(textArea_3, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE))
+						.addComponent(semOneText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
+						.addComponent(semTwoText, GroupLayout.PREFERRED_SIZE, 92, GroupLayout.PREFERRED_SIZE)
+						.addComponent(SemThreeText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
+						.addComponent(semFourText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE))
 					.addGap(13)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblSemester_4)
@@ -222,10 +232,10 @@ public class FinalDisplay extends JFrame {
 						.addComponent(lblSemester_7))
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
-						.addComponent(textArea_4, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
-						.addComponent(textArea_5, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
-						.addComponent(textArea_6, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
-						.addComponent(textArea_7, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE))
+						.addComponent(semFiveText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
+						.addComponent(semSixText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
+						.addComponent(semSevenText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
+						.addComponent(semEightText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE))
 					.addGap(135)
 					.addComponent(btnAdvancedOptions))
 		);
