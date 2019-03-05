@@ -5,8 +5,6 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public abstract class Reader {
-
-	protected static String SOURCE = "./input/";
 	
 	protected Scanner input;
 	protected String line;
@@ -15,7 +13,7 @@ public abstract class Reader {
 		Scanner scanner = null;
 		
 		try {
-			scanner = new Scanner(Paths.get(SOURCE+filename));
+			scanner = new Scanner(Paths.get(filename));
 		} 
 		catch (IOException e) {e.printStackTrace();}
 		

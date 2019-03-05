@@ -7,6 +7,7 @@ import java.nio.file.Paths;
 import java.util.Map;
 
 import algorithm.*;
+import info.Course;
 import info.Semester;
 import reader.ReadDet;
 
@@ -14,7 +15,6 @@ public class Optimizer {
 
 	String input;
 	String output;
-	Semester[] availableClasses;
 	
 	public Optimizer(String input, String output) {
 		this.input = input;
@@ -29,9 +29,12 @@ public class Optimizer {
 		
 		Algorithm alg = new AlgArbitrary();
 		String[] programs = {
-				"csci-major"
+				"csci-major",
+				"test-gen-ed"
 		};
-		
+				
+		Semester[] availableClasses = ReadPopulateCSV.buildSemesters(input);
+				
 		Semester[] newSchedule = alg.build(availableClasses,programs);
 		
 		//Writing schedule to local file.
@@ -39,27 +42,34 @@ public class Optimizer {
 	}
 	
 	private void writeSchedule(Semester[] schedule) {
-		String source = "./"+output+"/"+"generated-schedule.csv";
+		String source = "./optimizer/"+output+"/"+"generated-schedule.csv";
 		Path path = Paths.get(source);
 		
-		Map<String,String> desc = new ReadDet().read();
+		//Map<String,String> desc = new ReadDet().read();
 
 		String toWrite = "";
-		for (int i=0;i<schedule.length;i++)
-			toWrite += "Semester "+(i+1)+",";
+		for (Semester c : schedule) {
+			if (c != null) {
+				System.out.println(c.sem);
+				System.out.println(c.year);
+
+				toWrite += c.sem + " " + c.year;
+			}
+		}
 		toWrite += "\n";
 			
-		/*
-		for (int i=0;i<schedule[0].length;i++) {
-			for (int j=0;j<schedule.length;j++) {
-			String add = schedule[j][i];
-			if (add != null)
-				toWrite += add+" - "+desc.get(add);
-			toWrite += ",";
-			}
+		for (Semester s : schedule) {
+			if (s != null)
+				for (Course c : s.getCourses()) {
+					System.out.println(c.toTitle());
+					if (c != null) {
+						System.out.println(c.toTitle());
+						toWrite += c.toTitle() + ",";
+					}
+				}
 			toWrite += "\n";
 		}
-		*/
+
 		try {
 			//Make and write to the file.
 			Files.deleteIfExists(path);

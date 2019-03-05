@@ -1,8 +1,11 @@
 package algorithm;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
+import info.Course;
 import info.Semester;
 import reader.ReadPrg;
 
@@ -15,31 +18,41 @@ public class AlgArbitrary implements Algorithm {
 		
 		ReadPrg rp = new ReadPrg();
 		
-		List<String> toTake = new ArrayList<String>();
+		Set<String> toTake = new HashSet<String>();
 		
 		for (String prog : programs)
 			toTake.addAll(rp.read(prog));
 		
 		Semester[] toReturn = new Semester[toTake.size()/4+1];
 		
-		while (!toTake.isEmpty()) {
+		int j = 0;
+		int i = 0;
+		for (String c : toTake) {
 			Semester current = new Semester(year,sem);
+
+			Course toAdd = new Course(c);
+			current.addCourse(toAdd);
+			i++;
 			
-			for (int i=toTake.size()-1;i>=0;i--)
-				current.addCourse(toTake.get(i));
-		
-			incSem();
+			//New semester
+			if (i > 3) {
+				i = 0;
+				toReturn[j] = current;
+				incSem();
+				current = new Semester(year,sem);
+				j++;
+			}
 		}
 		
 		return toReturn;
 	}
 	
-	private void incSem(String sem) {
+	private void incSem() {
 		if (sem == "spring")
 			sem = "fall";
 		else {
 			year++;
-			sem = "fall";
+			sem = "spring";
 		}
 	}
 }

@@ -38,6 +38,15 @@ public class Course {
 			this.tags = new ArrayList<Tag>(tags);
 	}
 	
+	/**
+	 * For making stub classes within algorithms.
+	 * @param s, Data about a class.
+	 */
+	public Course(String s) {
+		String[] info = s.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
+		subj = Subject.valueOf(info[0]);
+		number = Integer.valueOf(info[1]);
+	}
 	
 	/**
 	 * Add a new section to the sections list
@@ -84,6 +93,10 @@ public class Course {
 	// Key to distinguish between other courses
 	public String getKey() {
 		return subj.toString() + ":" + number;
+	}
+	
+	public String toTitle() {
+		return subj + "" + number;
 	}
 	
 	public String toString() {

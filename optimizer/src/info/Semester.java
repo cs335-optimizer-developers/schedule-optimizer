@@ -5,13 +5,14 @@ import java.util.List;
 
 public class Semester {
 	
-	private int year;
-	private String sem;
+	public int year;
+	public String sem;
 	private List<Course> courses;
 	
 	public Semester(int year, String sem) {
 		this.year = year;
 		this.sem = sem;
+		courses = new ArrayList<Course>();
 	}
 	
 	public Semester(List<Course> courses) {
@@ -29,4 +30,8 @@ public class Semester {
 	public void addCourse(Course c) {courses.add(c);}
 
 	public void removeCourse(Course c) {courses.remove(c);}
+	
+	public List<Course> getCourses() {return courses;}
+	
+	public boolean isEmpty() {return courses.isEmpty();}
 }

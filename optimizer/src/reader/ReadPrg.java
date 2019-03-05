@@ -4,10 +4,10 @@ import java.util.Set;
 
 public class ReadPrg extends Reader {
 
-	private String source = "programs/";
+	private String source = "./optimizer/input/programs/";
 	
 	public Set<String> read(String prog) {
-		
+				
 		input = makeStream(source + prog + ".prg");
 		Set<String> toReturn = new java.util.HashSet<>();
 		

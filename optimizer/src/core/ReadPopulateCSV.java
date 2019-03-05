@@ -25,20 +25,20 @@ public class ReadPopulateCSV {
 	public static Semester[] buildSemesters(String sourceFolder) {
 		
 		Semester[] toReturn = new Semester[2];
-		toReturn[0] = createSemester(sourceFolder+"/schedules/fall-2018.csv");
+		toReturn[0] = createSemester("./optimizer/"+sourceFolder+"/schedules/fall-2018.csv");
 		toReturn[0].setSemester("Fall");
 		toReturn[0].setYear(2018);
 		
-		toReturn[1] = createSemester(sourceFolder+"/schedules/spring-2019.csv");
+		toReturn[1] = createSemester("./optimizer/"+sourceFolder+"/schedules/spring-2019.csv");
 		toReturn[1].setSemester("Spring");
 		toReturn[1].setYear(2019);
 		
 		return toReturn;
 	}
 	
-	public static void main(String[] args) {
-		buildSemesters("optimizer/input");
-	}
+	//public static void main(String[] args) {
+	//	buildSemesters("./optimizer/input");
+	//}
 	
 	/**
 	 * Create a semester object from the given csv file
