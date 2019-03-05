@@ -1,10 +1,12 @@
-package reader;
+package io;
 
 import java.util.Map;
 
+import core.Source;
+
 public class ReadDet extends Reader {
 
-	private String source = "details/";
+	private String source = Source.details_folder;
 	
 	public Map<String,String> read() {
 		

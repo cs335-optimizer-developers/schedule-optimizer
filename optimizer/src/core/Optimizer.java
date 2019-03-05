@@ -1,12 +1,8 @@
 package core;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import algorithm.*;
-import info.Course;
 import info.Semester;
+import io.Writer;
 
 /**
  * Class called by main - handles big picture functionality.
@@ -43,48 +39,13 @@ public class Optimizer {
 	}
 	
 	public void write() {
-		writeSchedule(newSchedule);
+		Writer.writeSchedule(newSchedule);
+		System.out.println("CSV generated!");
 	}
 	
 	public static Optimizer getInstance() {
 		if (one_optimizer == null)
 			one_optimizer = new Optimizer();
 		return one_optimizer;
-	}
-	
-	private void writeSchedule(Semester[] schedule) {
-		String source = Sources.generated_schedule;
-		Path path = Paths.get(source);
-		
-		String toWrite = "";
-		for (Semester c : schedule) {
-			if (c != null) {
-				System.out.println(c.sem);
-				System.out.println(c.year);
-
-				toWrite += c.sem + " " + c.year;
-			}
-		}
-		toWrite += "\n";
-			
-		for (Semester s : schedule) {
-			if (s != null)
-				for (Course c : s.getCourses()) {
-					System.out.println(c.toTitle());
-					if (c != null) {
-						System.out.println(c.toTitle());
-						toWrite += c.toTitle() + ",";
-					}
-				}
-			toWrite += "\n";
-		}
-
-		try {
-			//Make and write to the file.
-			Files.deleteIfExists(path);
-			Files.createFile(path);
-			Files.write(path, toWrite.getBytes());
-		}
-		catch (IOException e) {e.printStackTrace();}
 	}
 }

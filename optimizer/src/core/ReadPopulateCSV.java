@@ -19,11 +19,11 @@ public class ReadPopulateCSV {
 	public static Semester[] buildSemesters() {
 		
 		Semester[] toReturn = new Semester[2];
-		toReturn[0] = createSemester(Sources.fall_2018);
+		toReturn[0] = createSemester(Source.fall_2018);
 		toReturn[0].setSemester("Fall");
 		toReturn[0].setYear(2018);
 		
-		toReturn[1] = createSemester(Sources.spring_2019);
+		toReturn[1] = createSemester(Source.spring_2019);
 		toReturn[1].setSemester("Spring");
 		toReturn[1].setYear(2019);
 		

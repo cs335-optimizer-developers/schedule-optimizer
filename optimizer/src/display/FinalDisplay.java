@@ -17,9 +17,6 @@ import core.Optimizer;
 
 public class FinalDisplay extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField majorOne;
@@ -30,6 +27,7 @@ public class FinalDisplay extends JFrame {
 	private JLabel lblSearchForClasses;
 	private JTextField searchBar;
 	private JButton btnEnter;
+	JButton submitButton;
 	
 	/**
 	 * Launch the application.
@@ -47,11 +45,21 @@ public class FinalDisplay extends JFrame {
 				try {
 					FinalDisplay frame = new FinalDisplay();
 					frame.setVisible(true);
+					frame.connect();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
+	}
+	
+	/**
+	 * Connection of ActionListeners to the buttons.
+	 */
+	private void connect() {
+		
+		//Allows submit to write instances created by Optimizer.
+		submitButton.addActionListener(e -> Optimizer.getInstance().write());
 	}
 
 	/**
@@ -78,16 +86,14 @@ public class FinalDisplay extends JFrame {
 		minor.setText("Enter Minor");
 		minor.setColumns(10);
 		
-		//Allows submit to write instances created by Optimizer.
-		JButton submitButton = new JButton("Submit");
-		submitButton.addActionListener(e -> Optimizer.getInstance().write());
-		
 		lblSearchForClasses = new JLabel("Search For Classes");
 		
 		searchBar = new JTextField();
 		searchBar.setColumns(10);
 		
 		btnEnter = new JButton("Enter");
+		
+		submitButton = new JButton("Submit");
 		
 		btnAdvancedOptions = new JButton("Advanced Options");
 		

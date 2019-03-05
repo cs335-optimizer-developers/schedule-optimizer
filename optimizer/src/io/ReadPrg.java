@@ -1,10 +1,12 @@
-package reader;
+package io;
 
 import java.util.Set;
 
+import core.Source;
+
 public class ReadPrg extends Reader {
 
-	private String source = "./optimizer/input/programs/";
+	private String source = Source.programs_folder;
 	
 	public Set<String> read(String prog) {
 				

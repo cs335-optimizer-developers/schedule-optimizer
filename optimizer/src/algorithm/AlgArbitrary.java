@@ -1,56 +1,37 @@
 package algorithm;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import info.Course;
 import info.Semester;
-import reader.ReadPrg;
 
-public class AlgArbitrary implements Algorithm {
+/**
+ * Class that fills semesters arbitrarily, with no regard for prereqs or
+ * the author's inputted parameters for generation.
+ * 
+ * @author sirjwhite
+ *
+ */
+public class AlgArbitrary extends AlgZ {
 
-	int year = 2019;
-	String sem = "fall";
-	
-	public Semester[] build(Semester[] classes, String[] programs) {
-		
-		ReadPrg rp = new ReadPrg();
-		
-		Set<String> toTake = new HashSet<String>();
-		
-		for (String prog : programs)
-			toTake.addAll(rp.read(prog));
-		
-		Semester[] toReturn = new Semester[toTake.size()/4+1];
-		
+	public void distribute(Semester[] toFill) {
 		int j = 0;
 		int i = 0;
-		for (String c : toTake) {
+		
+		//One iteration for each course.
+		for (Course c : toTake) {
+			System.out.println(i);
 			Semester current = new Semester(year,sem);
-
-			Course toAdd = new Course(c);
-			current.addCourse(toAdd);
+			
+			current.addCourse(c);
 			i++;
 			
 			//New semester
 			if (i > 3) {
 				i = 0;
-				toReturn[j] = current;
+				toFill[j] = current;
 				incSem();
 				current = new Semester(year,sem);
 				j++;
 			}
-		}
-		
-		return toReturn;
-	}
-	
-	private void incSem() {
-		if (sem == "spring")
-			sem = "fall";
-		else {
-			year++;
-			sem = "spring";
 		}
 	}
 }

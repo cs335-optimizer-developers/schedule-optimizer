@@ -1,4 +1,4 @@
-package reader;
+package io;
 
 import java.io.IOException;
 import java.nio.file.Paths;
