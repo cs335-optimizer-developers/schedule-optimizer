@@ -18,14 +18,10 @@ import info.Semester;
  */
 public class Optimizer {
 
-	private String input;
-	private String output;
 	private static Optimizer one_optimizer;
 	Semester[] newSchedule;
 	
-	public Optimizer(String input, String output) {
-		this.input = input;
-		this.output = output;
+	private Optimizer() {
 		one_optimizer = this;
 	}
 
@@ -41,7 +37,7 @@ public class Optimizer {
 				"test-gen-ed"
 		};
 				
-		Semester[] availableClasses = ReadPopulateCSV.buildSemesters(input);
+		Semester[] availableClasses = ReadPopulateCSV.buildSemesters();
 				
 		newSchedule = alg.build(availableClasses,programs);
 	}
@@ -51,16 +47,15 @@ public class Optimizer {
 	}
 	
 	public static Optimizer getInstance() {
-		assert (one_optimizer != null);
+		if (one_optimizer == null)
+			one_optimizer = new Optimizer();
 		return one_optimizer;
 	}
 	
 	private void writeSchedule(Semester[] schedule) {
-		String source = "./optimizer/"+output+"/"+"generated-schedule.csv";
+		String source = Sources.generated_schedule;
 		Path path = Paths.get(source);
 		
-		//Map<String,String> desc = new ReadDet().read();
-
 		String toWrite = "";
 		for (Semester c : schedule) {
 			if (c != null) {
@@ -92,6 +87,4 @@ public class Optimizer {
 		}
 		catch (IOException e) {e.printStackTrace();}
 	}
-	
-	
 }

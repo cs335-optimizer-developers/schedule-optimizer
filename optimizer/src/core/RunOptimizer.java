@@ -8,7 +8,7 @@ public class RunOptimizer {
 		
 		System.out.println("Initialized");
 		
-		Optimizer opt = new Optimizer("input","output");
+		Optimizer opt = Optimizer.getInstance();
 		opt.generate();
 		
 		FinalDisplay.initDisplay();

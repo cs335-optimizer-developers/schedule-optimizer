@@ -8,12 +8,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.FileVisitResult;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.SimpleFileVisitor;
-import java.nio.file.attribute.BasicFileAttributes;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -22,14 +16,14 @@ import info.*;
 
 public class ReadPopulateCSV {
 	
-	public static Semester[] buildSemesters(String sourceFolder) {
+	public static Semester[] buildSemesters() {
 		
 		Semester[] toReturn = new Semester[2];
-		toReturn[0] = createSemester("./optimizer/"+sourceFolder+"/schedules/fall-2018.csv");
+		toReturn[0] = createSemester(Sources.fall_2018);
 		toReturn[0].setSemester("Fall");
 		toReturn[0].setYear(2018);
 		
-		toReturn[1] = createSemester("./optimizer/"+sourceFolder+"/schedules/spring-2019.csv");
+		toReturn[1] = createSemester(Sources.spring_2019);
 		toReturn[1].setSemester("Spring");
 		toReturn[1].setYear(2019);
 		
