@@ -16,7 +16,7 @@ public class Semester {
 	}
 	
 	public Semester(List<Course> courses) {
-		courses = new ArrayList<Course>(courses);
+		this.courses = courses;
 	}
 	
 	public void setYear(int year) {

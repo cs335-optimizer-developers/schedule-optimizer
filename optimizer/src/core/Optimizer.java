@@ -9,41 +9,46 @@ import io.Writer;
  * 
  * Currently contains pseudo-singleton pattern. Less than ideal, but it works.
  * 
- * @author sirjwhite
+ * @author jw-develop
  *
  */
 public class Optimizer {
 
 	private static Optimizer one_optimizer;
-	Semester[] newSchedule;
+	private static Semester[] availableClasses;
+	private Algorithm alg;
+	
+	private Semester[] newSchedule;
 	
 	private Optimizer() {
 		one_optimizer = this;
+		availableClasses = ReadPopulateCSV.buildSemesters();
+		
+		alg = new AlgMatch();
 	}
 
 	/*
 	 *  Objects instantiated by this class take input and output folders,
 	 *  creating output from the input that was provided.
+	 *  TODO Allow inputting of programs // specific classes.
 	 */
 	public void generate() {
+		long first = System.currentTimeMillis();
 		
-		Algorithm alg = new AlgArbitrary();
 		String[] programs = {
 				"csci-major",
 				"test-gen-ed"
 		};
-				
-		Semester[] availableClasses = ReadPopulateCSV.buildSemesters();
-				
-		newSchedule = alg.build(availableClasses,programs);
+
+		newSchedule = alg.build(programs);
+		
+		long last = System.currentTimeMillis();
+		System.out.printf("CSV generated in %s ms\n",last-first);
 	}
 	
 	public void write() {
-		long first = System.currentTimeMillis();
 		Writer.writeSchedule(newSchedule);
-		long last = System.currentTimeMillis();
-		System.out.printf("CSV generated in %s ms\n",last-first);
-		
+		System.out.println("Schedule written");
 	}
 	
 	public static Optimizer getInstance() {
@@ -51,4 +56,6 @@ public class Optimizer {
 			one_optimizer = new Optimizer();
 		return one_optimizer;
 	}
+	
+	public static Semester[] getAvailableClasses() {return availableClasses;}
 }

@@ -4,6 +4,11 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
+/**
+ * 
+ * @author jw-develop
+ *
+ */
 public abstract class Reader {
 	
 	protected Scanner input;

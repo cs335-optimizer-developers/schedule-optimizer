@@ -2,6 +2,11 @@ package algorithm;
 
 import info.Semester;
 
+/**
+ * 
+ * @author jw-develop
+ *
+ */
 public interface Algorithm {
-	Semester[] build(Semester[] classes, String[] programs);
+	Semester[] build(String[] programs);
 }

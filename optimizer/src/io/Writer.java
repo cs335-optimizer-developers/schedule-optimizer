@@ -11,6 +11,11 @@ import core.Source;
 import info.Course;
 import info.Semester;
 
+/**
+ * 
+ * @author jw-develop
+ *
+ */
 public class Writer {
 	
 	public static void writeSchedule(Semester[] schedule) {
@@ -21,9 +26,10 @@ public class Writer {
 		for (Semester s : schedule) {
 			//System.out.println("Schedule found");
 			if (s != null)
-				toWrite += s.sem + " " + s.year + ",";
+				if (!s.getCourses().isEmpty())
+					toWrite += s.sem + " " + s.year + ",";
 			else
-				System.out.println("Null semester detected - no bueno");
+				System.out.println("Null or empty semester detected - no bueno");
 		}
 		toWrite += "\n";
 		

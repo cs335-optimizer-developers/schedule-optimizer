@@ -8,14 +8,17 @@ import info.Semester;
  * the author's inputted parameters for generation, or the times that
  * courses are actually offered.
  * 
- * @author sirjwhite
+ * @author jw-develop
  *
  */
 public class AlgArbitrary extends AlgZ {
 
+	
+	
 	public void distribute(Semester[] toFill) {
 		int j = 0;
 		int i = 0;
+		
 		
 		//One iteration for each course.
 		Semester current = new Semester(year,sem);

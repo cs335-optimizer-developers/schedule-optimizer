@@ -2,6 +2,11 @@ package core;
 
 import display.FinalDisplay;
 
+/**
+ * 
+ * @author jw-develop
+ *
+ */
 public class RunOptimizer {
 	
 	public static void main(String[] args) {

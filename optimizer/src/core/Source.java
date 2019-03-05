@@ -1,5 +1,10 @@
 package core;
 
+/**
+ * 
+ * @author jw-develop
+ *
+ */
 public class Source {
 	public static String generated_schedule;
 	public static String testing_schedule;
