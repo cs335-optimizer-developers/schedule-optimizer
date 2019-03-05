@@ -19,7 +19,7 @@ public class Writer {
 		
 		String toWrite = "";
 		for (Semester s : schedule) {
-			System.out.println("Schedule found");
+			//System.out.println("Schedule found");
 			if (s != null)
 				toWrite += s.sem + " " + s.year + ",";
 			else
@@ -29,18 +29,15 @@ public class Writer {
 		
 		List<List<Course>> circuit = new ArrayList<>();
 		
-		for (Semester s : schedule) {
-			System.out.println(s.sem);
-			System.out.println(s.getCourses().size());
+		for (Semester s : schedule)
 			circuit.add(s.getCourses());
-		}
 		
 		boolean added = true;
 		for (int i=0;added;i++) {
 			for (List<Course> al : circuit) {
 				added = false;
 				if (i < al.size()) {
-					System.out.println(al.get(i).toTitle() + " added");
+					//System.out.println(al.get(i).toTitle() + " added");
 					toWrite += al.get(i).toTitle() + ",";
 					added = true;
 				}

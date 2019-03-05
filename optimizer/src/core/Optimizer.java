@@ -39,8 +39,11 @@ public class Optimizer {
 	}
 	
 	public void write() {
+		long first = System.currentTimeMillis();
 		Writer.writeSchedule(newSchedule);
-		System.out.println("CSV generated!");
+		long last = System.currentTimeMillis();
+		System.out.printf("CSV generated in %s ms\n",last-first);
+		
 	}
 	
 	public static Optimizer getInstance() {

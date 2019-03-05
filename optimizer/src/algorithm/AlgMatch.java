@@ -4,14 +4,13 @@ import info.Course;
 import info.Semester;
 
 /**
- * Class that fills semesters arbitrarily, with no regard for prereqs,
- * the author's inputted parameters for generation, or the times that
- * courses are actually offered.
+ * Algorithm based on AlgArbitrary. It honors when classes occur, but not
+ * their prerequisites.
  * 
- * @author sirjwhite
+ * @author jameswhite
  *
  */
-public class AlgArbitrary extends AlgZ {
+public class AlgMatch extends AlgZ {
 
 	public void distribute(Semester[] toFill) {
 		int j = 0;

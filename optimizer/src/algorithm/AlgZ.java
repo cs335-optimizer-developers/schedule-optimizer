@@ -7,15 +7,23 @@ import info.Course;
 import info.Semester;
 import io.ReadPrg;
 
+/**
+ * Abstract class for 
+ * 
+ * @author sirjwhite
+ *
+ */
 public abstract class AlgZ implements Algorithm {
 	
-	int year = 2019;
-	String sem = "fall";
-	Set<Course> toTake = new HashSet<Course>();
+	protected int year = 2019;
+	protected String sem = "fall";
+	protected Set<Course> toTake = new HashSet<Course>();
+	protected String[] programs;
 	
 	public abstract void distribute(Semester[] toFill);
 	
 	public Semester[] build(Semester[] classes, String[] programs) {
+		this.programs = programs;
 		ReadPrg rp = new ReadPrg();
 		
 		// TODO Less than ideal generation of basic courses.

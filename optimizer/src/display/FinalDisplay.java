@@ -93,7 +93,7 @@ public class FinalDisplay extends JFrame {
 		
 		btnEnter = new JButton("Enter");
 		
-		submitButton = new JButton("Submit");
+		submitButton = new JButton("Write");
 		
 		btnAdvancedOptions = new JButton("Advanced Options");
 		
