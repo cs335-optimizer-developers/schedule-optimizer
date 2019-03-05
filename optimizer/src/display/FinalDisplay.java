@@ -1,25 +1,26 @@
 package display;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import java.awt.GridBagLayout;
-import javax.swing.JTextField;
-import java.awt.GridBagConstraints;
-import java.awt.Insets;
-import javax.swing.JButton;
-import javax.swing.JScrollPane;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.border.EmptyBorder;
+
+import core.Optimizer;
 
 public class FinalDisplay extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField majorOne;
 	private JTextField minor;
@@ -29,11 +30,18 @@ public class FinalDisplay extends JFrame {
 	private JLabel lblSearchForClasses;
 	private JTextField searchBar;
 	private JButton btnEnter;
-
+	
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		initDisplay();
+	}
+	
+	/**
+	 * Display the frame.
+	 */
+	public static void initDisplay() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -70,7 +78,9 @@ public class FinalDisplay extends JFrame {
 		minor.setText("Enter Minor");
 		minor.setColumns(10);
 		
+		//Allows submit to write instances created by Optimizer.
 		JButton submitButton = new JButton("Submit");
+		submitButton.addActionListener(e -> Optimizer.getInstance().write());
 		
 		lblSearchForClasses = new JLabel("Search For Classes");
 		

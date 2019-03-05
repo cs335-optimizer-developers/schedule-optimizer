@@ -4,21 +4,29 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Map;
-
 import algorithm.*;
 import info.Course;
 import info.Semester;
-import reader.ReadDet;
 
+/**
+ * Class called by main - handles big picture functionality.
+ * 
+ * Currently contains pseudo-singleton pattern. Less than ideal, but it works.
+ * 
+ * @author sirjwhite
+ *
+ */
 public class Optimizer {
 
-	String input;
-	String output;
+	private String input;
+	private String output;
+	private static Optimizer one_optimizer;
+	Semester[] newSchedule;
 	
 	public Optimizer(String input, String output) {
 		this.input = input;
 		this.output = output;
+		one_optimizer = this;
 	}
 
 	/*
@@ -35,10 +43,16 @@ public class Optimizer {
 				
 		Semester[] availableClasses = ReadPopulateCSV.buildSemesters(input);
 				
-		Semester[] newSchedule = alg.build(availableClasses,programs);
-		
-		//Writing schedule to local file.
+		newSchedule = alg.build(availableClasses,programs);
+	}
+	
+	public void write() {
 		writeSchedule(newSchedule);
+	}
+	
+	public static Optimizer getInstance() {
+		assert (one_optimizer != null);
+		return one_optimizer;
 	}
 	
 	private void writeSchedule(Semester[] schedule) {
@@ -78,4 +92,6 @@ public class Optimizer {
 		}
 		catch (IOException e) {e.printStackTrace();}
 	}
+	
+	
 }

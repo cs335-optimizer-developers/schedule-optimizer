@@ -1,5 +1,7 @@
 package core;
 
+import display.FinalDisplay;
+
 public class RunOptimizer {
 	
 	public static void main(String[] args) {
@@ -8,6 +10,8 @@ public class RunOptimizer {
 		
 		Optimizer opt = new Optimizer("input","output");
 		opt.generate();
+		
+		FinalDisplay.initDisplay();
 		
 		System.out.println("Completed");
 	}
