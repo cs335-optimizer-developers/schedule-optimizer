@@ -17,9 +17,8 @@ public class AlgArbitrary extends AlgZ {
 		int i = 0;
 		
 		//One iteration for each course.
+		Semester current = new Semester(year,sem);
 		for (Course c : toTake) {
-			System.out.println(i);
-			Semester current = new Semester(year,sem);
 			
 			current.addCourse(c);
 			i++;

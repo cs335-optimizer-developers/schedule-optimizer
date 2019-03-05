@@ -19,7 +19,7 @@ public abstract class AlgZ implements Algorithm {
 		ReadPrg rp = new ReadPrg();
 		
 		// TODO Less than ideal generation of basic courses.
-		// May be better to keep them strings.
+		// May be better to keep them strings at parsing.
 		for (String prog : programs)
 			for (String s : rp.read(prog))
 				toTake.add(new Course(s));

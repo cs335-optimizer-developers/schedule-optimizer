@@ -15,7 +15,7 @@ public class Source {
 
 	static {
 		basic = "./optimizer/";
-		generated_schedule = basic + "output/generated-schedule";
+		generated_schedule = basic + "output/generated-schedule.csv";
 		testing_schedule = basic + "output/testing-schedule";
 		input = basic + "input/";
 		catalog_folder = input + "catalog/";
