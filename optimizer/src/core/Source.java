@@ -16,7 +16,7 @@ public class Source {
 	public static String spring_2019;
 
 	static {
-		String basic = "./optimizer/";
+		String basic = "";
 		generated_schedule = basic + "output/generated-schedule.csv";
 		testing_schedule = basic + "output/testing-schedule";
 		String input = basic + "input/";
