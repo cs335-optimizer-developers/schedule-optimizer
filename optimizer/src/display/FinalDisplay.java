@@ -14,6 +14,8 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class FinalDisplay extends JFrame {
 
@@ -88,7 +90,17 @@ public class FinalDisplay extends JFrame {
 		searchBar = new JTextField();
 		searchBar.setColumns(10);
 		
+		
+		/*
+		 * Event handler for when search button is pressed
+		 * do not forget to implement
+		 * 
+		 */
 		btnEnter = new JButton("Enter");
+		btnEnter.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		
 		submitButton = new JButton("Write");
 		
