@@ -32,9 +32,7 @@ public class FinalDisplay extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
-		initDisplay();
-	}
+	public static void main(String[] args) {initDisplay();}
 	
 	/**
 	 * Display the frame.
@@ -57,7 +55,6 @@ public class FinalDisplay extends JFrame {
 	 * Connection of ActionListeners to the buttons.
 	 */
 	private void connect() {
-		
 		//Allows submit to write instances created by Optimizer.
 		submitButton.addActionListener(e -> Optimizer.getInstance().write());
 	}

@@ -1,6 +1,5 @@
 package algorithm;
 
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,8 +26,10 @@ public abstract class AlgZ implements Algorithm {
 	protected Set<Course> sm2;
 	
 	public AlgZ() {
-		sm1 = new HashSet<Course>(Optimizer.getAvailableClasses()[0].getCourses());
-		sm2 = new HashSet<Course>(Optimizer.getAvailableClasses()[1].getCourses());
+		sm1 = new HashSet<Course>(Optimizer.getInstance()
+				.getAvailableClasses()[0].getCourses());
+		sm2 = new HashSet<Course>(Optimizer.getInstance()
+				.getAvailableClasses()[1].getCourses());
 	}
 	
 	public abstract void distribute(Semester[] toFill);
@@ -48,14 +49,5 @@ public abstract class AlgZ implements Algorithm {
 		distribute(toReturn);
 		
 		return toReturn;
-	}
-	
-	protected void incSem() {
-		if (sem == "spring")
-			sem = "fall";
-		else {
-			year++;
-			sem = "spring";
-		}
 	}
 }

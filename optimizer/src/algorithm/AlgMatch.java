@@ -21,7 +21,7 @@ public class AlgMatch extends AlgZ {
 		int fCurrent = 0;
 		int sCurrent = 1;
 		int fYear = 2019;
-		int sYear = 2019;
+		int sYear = 2020;
 		
 		Set<String> sem1 = new HashSet<String>();
 		Set<String> sem2 = new HashSet<String>();
@@ -31,24 +31,35 @@ public class AlgMatch extends AlgZ {
 		for (Course c : sm2)
 			sem2.add(c.toTitle());
 		
+		//To favor fall or spring, whichever is ahead.
+		int balance = 0;
+		
 		//One iteration for each course.
 		Semester fall = new Semester(fYear,"fall");
 		Semester spring = new Semester(sYear,"spring");
 		for (Course c : toTake) {
-			
-			if (sem1.contains(c.toTitle())) {
+			if (sem1.contains(c.toTitle()) && balance <= 0) {
 				fall.addCourse(c);
 				fCount++;
+				balance++;
 				System.out.println(c.toTitle() + " added from fall");
 			}
 			else if (sem2.contains(c.toTitle())) {
 				spring.addCourse(c);
 				sCount++;
+				balance--;
 				System.out.println(c.toTitle() + " added from spring");
 			}
-			else {
-				System.out.println("***" + c.toTitle() + " not found ***");
+			
+			//In case course is not offered in Spring.
+			else if (sem1.contains(c.toTitle())) {
+				fall.addCourse(c);
+				fCount++;
+				balance++;
+				System.out.println(c.toTitle() + " added from fall");
 			}
+			else
+				System.out.println("***" + c.toTitle() + " not found ***");
 			
 			//New semester
 			if (fCount > 3) {
@@ -66,7 +77,9 @@ public class AlgMatch extends AlgZ {
 				sCurrent += 2;
 			}
 		}
-		toFill[fCurrent] = fall;
-		toFill[sCurrent] = spring;
+		if (fall != null)
+			toFill[fCurrent] = fall;
+		if (spring != null)
+			toFill[sCurrent] = spring;
 	}
 }

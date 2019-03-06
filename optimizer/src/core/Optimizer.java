@@ -6,8 +6,8 @@ import io.Writer;
 
 /**
  * Class called by main - handles big picture functionality.
- * 
- * Currently contains pseudo-singleton pattern. Less than ideal, but it works.
+ * Currently contains pseudo-singleton pattern. 
+ * Less than ideal, but it works.
  * 
  * @author jw-develop
  *
@@ -15,7 +15,7 @@ import io.Writer;
 public class Optimizer {
 
 	private static Optimizer one_optimizer;
-	private static Semester[] availableClasses;
+	private Semester[] availableClasses;
 	private Algorithm alg;
 	
 	private Semester[] newSchedule;
@@ -51,11 +51,13 @@ public class Optimizer {
 		System.out.println("Schedule written");
 	}
 	
+	public Semester[] getAvailableClasses() {return availableClasses;}
+	
+	public void setAlgorithm(Algorithm a) {alg = a;}
+	
 	public static Optimizer getInstance() {
 		if (one_optimizer == null)
 			one_optimizer = new Optimizer();
 		return one_optimizer;
 	}
-	
-	public static Semester[] getAvailableClasses() {return availableClasses;}
 }

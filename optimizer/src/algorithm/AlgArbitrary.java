@@ -19,7 +19,6 @@ public class AlgArbitrary extends AlgZ {
 		int j = 0;
 		int i = 0;
 		
-		
 		//One iteration for each course.
 		Semester current = new Semester(year,sem);
 		for (Course c : toTake) {
@@ -35,6 +34,15 @@ public class AlgArbitrary extends AlgZ {
 				current = new Semester(year,sem);
 				j++;
 			}
+		}
+	}
+	
+	private void incSem() {
+		if (sem == "spring")
+			sem = "fall";
+		else {
+			year++;
+			sem = "spring";
 		}
 	}
 }
