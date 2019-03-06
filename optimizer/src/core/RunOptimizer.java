@@ -4,7 +4,7 @@ import display.FinalDisplay;
 
 /**
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public class RunOptimizer {
