@@ -23,8 +23,6 @@ public class CourseParser {
 			for (Element link: links) {
 				System.out.println("\nlink : " + link.attr("href"));
 				System.out.println("Text : " + link.text());
-				
-				
 			}*/
 			
 			//String html = "<div <p class = courseblocktitle noindent> <strong></strong> </p> ";

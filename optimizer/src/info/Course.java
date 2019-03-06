@@ -32,7 +32,7 @@ public class Course {
 			sections.add((Section) type);
 		this.subj = subj;
 		this.number = number;
-		if(tags==null)
+		if(tags == null)
 			this.tags = null;
 		else
 			this.tags = new ArrayList<Tag>(tags);
