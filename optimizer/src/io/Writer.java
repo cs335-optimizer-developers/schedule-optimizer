@@ -35,7 +35,7 @@ public class Writer {
 		List<List<Course>> circuit = new ArrayList<>();
 		
 		for (Semester s : schedule)
-			if (s != null)
+			if (!s.getCourses().isEmpty())
 				circuit.add(s.getCourses());
 		
 		boolean added = true;
@@ -43,6 +43,7 @@ public class Writer {
 			for (List<Course> al : circuit) {
 				added = false;
 				if (i < al.size()) {
+					System.out.println(al.get(i).toTitle());
 					//System.out.println(al.get(i).toTitle() + " added");
 					toWrite += al.get(i).toTitle() + ",";
 					added = true;
