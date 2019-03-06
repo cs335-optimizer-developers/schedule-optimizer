@@ -10,12 +10,14 @@ import info.Semester;
  * Algorithm based on AlgArbitrary. It honors when classes occur, but not
  * their prerequisites.
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public class AlgMatch extends AlgZ {
 
 	public void distribute(Semester[] toFill) {
+		System.out.println("AlgMatch");
+		
 		int fCount = 0;
 		int sCount = 0;
 		int fCurrent = 0;

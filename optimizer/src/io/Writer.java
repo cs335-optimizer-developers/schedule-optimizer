@@ -13,7 +13,7 @@ import info.Semester;
 
 /**
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public class Writer {
@@ -27,8 +27,8 @@ public class Writer {
 			//System.out.println("Schedule found");
 			if (!s.getCourses().isEmpty())
 				toWrite += s.sem + " " + s.year + ",";
-			else
-				System.out.println("Null or empty semester detected - no bueno");
+			else;
+				//System.out.println("Null or empty semester detected - no bueno");
 		}
 		toWrite += "\n";
 		
@@ -43,13 +43,13 @@ public class Writer {
 			for (List<Course> al : circuit) {
 				added = false;
 				if (i < al.size()) {
-					System.out.println(al.get(i).toTitle());
 					//System.out.println(al.get(i).toTitle() + " added");
 					toWrite += al.get(i).toTitle() + ",";
 					added = true;
 				}
 			}
-			toWrite += "\n";
+			if (added)
+				toWrite += "\n";
 		}
 
 		try {

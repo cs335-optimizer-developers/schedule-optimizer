@@ -2,8 +2,8 @@ package display;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
+
 import javax.swing.BorderFactory;
-import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.border.TitledBorder;
@@ -14,6 +14,7 @@ import javax.swing.border.TitledBorder;
  * @author Christian Cameron
  *
  */
+@SuppressWarnings("serial")
 public class CollapsiblePanel extends JPanel {
 
 	String title = "Advanced Options";

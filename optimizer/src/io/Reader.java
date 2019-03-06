@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public abstract class Reader {

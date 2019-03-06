@@ -9,9 +9,10 @@ import info.Semester;
 import io.ReadPrg;
 
 /**
- * Abstract class for 
+ * Abstract class for building algorithms that use a HashSet of
+ * classes to be taken.
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public abstract class AlgZ implements Algorithm {

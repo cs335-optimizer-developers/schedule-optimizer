@@ -8,14 +8,12 @@ import info.Semester;
  * the author's inputted parameters for generation, or the times that
  * courses are actually offered.
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public class AlgArbitrary extends AlgZ {
-
-	
-	
 	public void distribute(Semester[] toFill) {
+		System.out.println("AlgArbitrary");
 		int j = 0;
 		int i = 0;
 		

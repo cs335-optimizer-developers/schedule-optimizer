@@ -4,7 +4,7 @@ import info.Semester;
 
 /**
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public interface Algorithm {

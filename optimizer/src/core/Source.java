@@ -2,7 +2,7 @@ package core;
 
 /**
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public class Source {
@@ -14,15 +14,12 @@ public class Source {
 	public static String programs_folder;
 	public static String fall_2018;
 	public static String spring_2019;
-	
-	public static String basic;
-	public static String input;
 
 	static {
-		basic = "./optimizer/";
+		String basic = "././optimizer/";
 		generated_schedule = basic + "output/generated-schedule.csv";
 		testing_schedule = basic + "output/testing-schedule";
-		input = basic + "input/";
+		String input = basic + "input/";
 		catalog_folder = input + "catalog/";
 		curriculae_folder = input + "curriculae/";
 		details_folder = input + "details/";

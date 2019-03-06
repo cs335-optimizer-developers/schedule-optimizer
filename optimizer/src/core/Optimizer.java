@@ -9,7 +9,7 @@ import io.Writer;
  * Currently contains pseudo-singleton pattern. 
  * Less than ideal, but it works.
  * 
- * @author jw-develop
+ * @author James White
  *
  */
 public class Optimizer {
