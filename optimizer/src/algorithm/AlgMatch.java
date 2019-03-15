@@ -15,9 +15,7 @@ import info.Semester;
  */
 public class AlgMatch extends AlgZ {
 
-	public void distribute(Semester[] toFill) {
-		System.out.println("AlgMatch");
-		
+	public void distribute(Semester[] toFill) {		
 		int fCount = 0;
 		int sCount = 0;
 		int fCurrent = 0;

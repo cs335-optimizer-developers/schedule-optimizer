@@ -15,12 +15,14 @@ public abstract class Reader {
 	protected String line;
 	
 	protected Scanner makeStream(String filename) {
-		Scanner scanner = null;
+		Scanner scanner = new Scanner("");
 		
 		try {
 			scanner = new Scanner(Paths.get(filename));
 		} 
-		catch (IOException e) {e.printStackTrace();}
+		catch (IOException e) {//e.printStackTrace();
+			System.out.println("Requested: " + filename + " not found.");
+		}
 		
 		return scanner;
     }

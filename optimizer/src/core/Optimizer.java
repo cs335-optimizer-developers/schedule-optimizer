@@ -1,6 +1,8 @@
 package core;
 
 import algorithm.*;
+import display.DParam;
+import display.FinalDisplay;
 import info.Semester;
 import io.Writer;
 
@@ -35,12 +37,9 @@ public class Optimizer {
 	public void generate() {
 		long first = System.currentTimeMillis();
 		
-		String[] programs = {
-				"csci-major",
-				"test-gen-ed"
-		};
+		DParam dPar = FinalDisplay.getInstance().getParameters();
 
-		newSchedule = alg.build(programs);
+		newSchedule = alg.build(dPar);
 		
 		long last = System.currentTimeMillis();
 		System.out.printf("CSV generated in %s ms\n",last-first);

@@ -1,5 +1,6 @@
 package algorithm;
 
+import display.DParam;
 import info.Semester;
 
 /**
@@ -8,5 +9,5 @@ import info.Semester;
  *
  */
 public interface Algorithm {
-	Semester[] build(String[] programs);
+	Semester[] build(DParam dpar);
 }

@@ -1,9 +1,11 @@
 package algorithm;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import core.Optimizer;
+import display.DParam;
 import info.Course;
 import info.Semester;
 import io.ReadPrg;
@@ -21,7 +23,7 @@ public abstract class AlgZ implements Algorithm {
 	protected String sem = "fall";
 	protected Set<Course> toTake = new HashSet<Course>();
 	
-	protected String[] programs;
+	protected List<String> programs;
 	
 	protected Set<Course> sm1;
 	protected Set<Course> sm2;
@@ -35,8 +37,8 @@ public abstract class AlgZ implements Algorithm {
 	
 	public abstract void distribute(Semester[] toFill);
 	
-	public Semester[] build(String[] programs) {
-		this.programs = programs;
+	public Semester[] build(DParam dpar) {
+		this.programs = dpar.getPrograms();
 		ReadPrg rp = new ReadPrg();
 		
 		// TODO Less than ideal generation of basic courses.

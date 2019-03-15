@@ -17,14 +17,20 @@ import core.Optimizer;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+/**
+ * Class to handle primary display window.
+ * Follows singleton.
+ *
+ */
 public class FinalDisplay extends JFrame {
 
 	private static final long serialVersionUID = 1L;
+	private static FinalDisplay one_display;
 	private JPanel contentPane;
 	private JTextField majorOne;
 	private JTextField minor;
 	private JButton btnAdvancedOptions;
-	private JTextField txtEnterMajor;
+	private JTextField majorTwo;
 	private JLabel lblEnterMajorsAnd;
 	private JLabel lblSearchForClasses;
 	private JTextField searchBar;
@@ -32,7 +38,7 @@ public class FinalDisplay extends JFrame {
 	JButton submitButton;
 	
 	/**
-	 * Launch the application.
+	 * Individual main class.
 	 */
 	public static void main(String[] args) {initDisplay();}
 	
@@ -60,11 +66,40 @@ public class FinalDisplay extends JFrame {
 		//Allows submit to write instances created by Optimizer.
 		submitButton.addActionListener(e -> Optimizer.getInstance().write());
 	}
+	
+	/**
+	 * Contains all parameters to be received from display.
+	 * @return parameter object for generation.
+	 */
+	public DParam getParameters() {
+		DParam toReturn = new DParam();
+		
+		//TODO Check box for if to include gen-eds. Client may choose not to for experimentation.
+		boolean wantGenEd = true;
+		if (wantGenEd) {
+			System.out.println("test-gen-ed" + " requested");
+			toReturn.addProgram("test-gen-ed");
+		}
+		
+		//TODO a slider, higher number referring to higher preference to fill gen-eds early.
+		toReturn.setPreferGenEd(1);
+		
+		System.out.println(majorOne.getText() + " requested");
+		toReturn.addProgram(majorOne.getText());
+		
+		System.out.println(majorTwo.getText() + " requested");
+		toReturn.addProgram(majorTwo.getText());
+		
+		System.out.println(minor.getText() + " requested");
+		toReturn.addProgram(minor.getText());
+		
+		return toReturn;
+	}
 
 	/**
-	 * Create the frame.
+	 * Create the frame. Made externally, tf indecipherable.
 	 */
-	public FinalDisplay() {
+	private FinalDisplay() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 600);
 		contentPane = new JPanel();
@@ -74,15 +109,15 @@ public class FinalDisplay extends JFrame {
 		lblEnterMajorsAnd = new JLabel("Enter Major(s) and Minor");
 		
 		majorOne = new JTextField();
-		majorOne.setText("Enter Major 1");
+		majorOne.setText("math-major");
 		majorOne.setColumns(10);
 		
-		txtEnterMajor = new JTextField();
-		txtEnterMajor.setText("Enter Major 2");
-		txtEnterMajor.setColumns(10);
+		majorTwo = new JTextField();
+		majorTwo.setText("csci-major");
+		majorTwo.setColumns(10);
 		
 		minor = new JTextField();
-		minor.setText("Enter Minor");
+		minor.setText("econ-minor");
 		minor.setColumns(10);
 		
 		lblSearchForClasses = new JLabel("Search For Classes");
@@ -93,7 +128,7 @@ public class FinalDisplay extends JFrame {
 		
 		/*
 		 * Event handler for when search button is pressed
-		 * do not forget to implement
+		 * TODO do not forget to implement
 		 * 
 		 */
 		btnEnter = new JButton("Enter");
@@ -149,7 +184,7 @@ public class FinalDisplay extends JFrame {
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addComponent(majorOne, GroupLayout.DEFAULT_SIZE, 179, Short.MAX_VALUE)
 							.addGap(5)
-							.addComponent(txtEnterMajor, GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
+							.addComponent(majorTwo, GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
 							.addGap(5)
 							.addComponent(minor, GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
 						.addGroup(gl_contentPane.createSequentialGroup()
@@ -224,7 +259,7 @@ public class FinalDisplay extends JFrame {
 					.addGap(12)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addComponent(majorOne, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-						.addComponent(txtEnterMajor, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(majorTwo, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(minor, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addGap(5)
 					.addComponent(submitButton)
@@ -265,5 +300,11 @@ public class FinalDisplay extends JFrame {
 					.addComponent(btnAdvancedOptions))
 		);
 		contentPane.setLayout(gl_contentPane);
+	}
+	
+	public static FinalDisplay getInstance() {
+		if (one_display == null)
+			one_display = new FinalDisplay();
+		return one_display;
 	}
 }
