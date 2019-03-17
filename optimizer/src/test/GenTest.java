@@ -7,12 +7,15 @@ import java.io.FileNotFoundException;
 import java.lang.reflect.Field;
 
 import org.junit.*;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
 import algorithm.*;
 import core.Optimizer;
 import core.ReadPopulateCSV;
 import core.Source;
+import display.FinalDisplay;
 import info.Course;
 import info.Semester;
 
@@ -25,18 +28,9 @@ public class GenTest {
 		opt.setAlgorithm(new AlgMatch());
 	}
 	
-	//TODO I don't know why this doesn't work. Necessary to make generate() times accurate.
-	@BeforeClass
-	public static void init() {
-		System.out.println("I HAPPENED");
-		Optimizer opt = Optimizer.newInstance();
-		opt.generate();
-	}
-	
 	@Test
-	public void write() {
-		reset();
-		opt.write();
+	public void displayBoot() {
+		FinalDisplay.getInstance();
 	}
 	
 	@Test
@@ -46,9 +40,9 @@ public class GenTest {
 	}
 	
 	@Test
-	public void generate2() {
+	public void write() {
 		reset();
-		opt.generate();
+		opt.write();
 	}
 	
 	@Test

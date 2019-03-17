@@ -37,7 +37,7 @@ public class Optimizer {
 	public void generate() {
 		//long first = System.currentTimeMillis();
 		
-		DParam dPar = FinalDisplay.getInstance().getParameters();
+		DParam dPar = FinalDisplay.requestParameters();
 
 		newSchedule = alg.build(dPar);
 		

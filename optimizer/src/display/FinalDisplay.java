@@ -14,13 +14,10 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
 
 /**
  * Class to handle primary display window.
  * Follows singleton.
- *
  */
 public class FinalDisplay extends JFrame {
 
@@ -35,7 +32,7 @@ public class FinalDisplay extends JFrame {
 	private JLabel lblSearchForClasses;
 	private JTextField searchBar;
 	private JButton btnEnter;
-	JButton submitButton;
+	private JButton submitButton;
 	
 	/**
 	 * Individual main class.
@@ -46,16 +43,12 @@ public class FinalDisplay extends JFrame {
 	 * Display the frame.
 	 */
 	public static void initDisplay() {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					FinalDisplay frame = new FinalDisplay();
-					frame.setVisible(true);
-					frame.connect();
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
+		EventQueue.invokeLater(() -> {
+			try {
+				FinalDisplay frame = new FinalDisplay();
+				frame.setVisible(true);
+				frame.connect();
+			} catch (Exception e) {e.printStackTrace();}
 		});
 	}
 	
@@ -66,6 +59,23 @@ public class FinalDisplay extends JFrame {
 		//Allows submit to write instances created by Optimizer.
 		submitButton.addActionListener(e -> Optimizer.getInstance().write());
 		btnAdvancedOptions.addActionListener(e -> Optimizer.getInstance().generate());
+	}
+	
+	/**
+	 * Gate in case display has not been initialized, but parameters
+	 * are requested. Mostly for testing purposes.
+	 * @return
+	 */
+	public static DParam requestParameters() {
+		if (one_display == null) {
+			DParam toReturn = new DParam();
+			
+			toReturn.addProgram("test-gen-ed");
+			toReturn.addProgram("csci-major");
+			
+			return toReturn;
+		}
+		return one_display.getParameters();
 	}
 	
 	/**
@@ -133,9 +143,8 @@ public class FinalDisplay extends JFrame {
 		 * 
 		 */
 		btnEnter = new JButton("Enter");
-		btnEnter.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
+		btnEnter.addActionListener(e -> {
+			//syso("Enter pressed")
 		});
 		
 		submitButton = new JButton("Write");

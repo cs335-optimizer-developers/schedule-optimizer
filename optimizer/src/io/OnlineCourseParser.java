@@ -1,4 +1,4 @@
-package info;
+package io;
 
 import java.io.IOException;
 
@@ -6,14 +6,14 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
 
-public class CourseParser {
+public class OnlineCourseParser {
 	
 	public static void main(String[] args) {
 		Document doc = null;
 		
 		try {
 			doc = Jsoup.connect("https://catalog.wheaton.edu/course-descriptions/csci/").get();
-			
+						
 			String title = doc.title();
 			
 			System.out.println ("Title : " + title );
@@ -46,7 +46,6 @@ public class CourseParser {
 			
 		
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
