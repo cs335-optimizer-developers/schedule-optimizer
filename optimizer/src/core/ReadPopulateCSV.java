@@ -51,7 +51,7 @@ public class ReadPopulateCSV {
 		String line = "";
 		List<Course> courses = new ArrayList<Course>();
 		
-		System.out.println("Starting parse of: " + csvFile);
+		//System.out.println("Starting parse of: " + csvFile);
 		try {
 			br = new BufferedReader(new FileReader(csvFile));
 			// Skip first line containing the heading
@@ -63,7 +63,7 @@ public class ReadPopulateCSV {
 				
 				// Check for irregular comma separation
 				if (data.length > 11 || data.length < 10) {
-					System.out.printf("Irregular data length\n\n");
+					//System.out.printf("Irregular data length\n\n");
 					System.exit(1);
 					continue;
 				}
@@ -136,7 +136,7 @@ public class ReadPopulateCSV {
 			}
 		}
 		
-		System.out.println("Successful!\n");
+		//System.out.println("Successful!\n");
 		//System.out.println(courses.get(123).toString());
 		return new Semester(courses);
 	}

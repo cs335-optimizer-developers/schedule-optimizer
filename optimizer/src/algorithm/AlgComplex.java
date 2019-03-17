@@ -10,6 +10,5 @@ import info.Semester;
 public class AlgComplex extends AlgZ {
 
 	public void distribute(Semester[] toFill) {
-		System.out.println("AlgComplex");
 	}
 }

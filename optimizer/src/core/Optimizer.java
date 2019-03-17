@@ -35,19 +35,20 @@ public class Optimizer {
 	 *  TODO Allow inputting of programs // specific classes.
 	 */
 	public void generate() {
-		long first = System.currentTimeMillis();
+		//long first = System.currentTimeMillis();
 		
 		DParam dPar = FinalDisplay.getInstance().getParameters();
 
 		newSchedule = alg.build(dPar);
 		
-		long last = System.currentTimeMillis();
-		System.out.printf("CSV generated in %s ms\n",last-first);
+		//long last = System.currentTimeMillis();
+		//System.out.printf("CSV generated in %s ms\n",last-first);
 	}
 	
 	public void write() {
-		Writer.writeSchedule(newSchedule);
-		System.out.println("Schedule written");
+		if (newSchedule != null)
+			Writer.writeSchedule(newSchedule);
+		//System.out.println("Schedule written");
 	}
 	
 	public Semester[] getAvailableClasses() {return availableClasses;}

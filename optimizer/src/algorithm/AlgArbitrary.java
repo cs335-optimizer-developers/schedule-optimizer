@@ -13,7 +13,6 @@ import info.Semester;
  */
 public class AlgArbitrary extends AlgZ {
 	public void distribute(Semester[] toFill) {
-		System.out.println("AlgArbitrary");
 		int j = 0;
 		int i = 0;
 		

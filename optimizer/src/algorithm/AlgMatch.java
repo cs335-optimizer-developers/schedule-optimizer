@@ -42,13 +42,13 @@ public class AlgMatch extends AlgZ {
 				fall.addCourse(c);
 				fCount++;
 				balance++;
-				System.out.println(c.toTitle() + " added from fall");
+				//System.out.println(c.toTitle() + " added from fall");
 			}
 			else if (sem2.contains(c.toTitle())) {
 				spring.addCourse(c);
 				sCount++;
 				balance--;
-				System.out.println(c.toTitle() + " added from spring");
+				//System.out.println(c.toTitle() + " added from spring");
 			}
 			
 			//In case course is not offered in Spring.
@@ -56,10 +56,10 @@ public class AlgMatch extends AlgZ {
 				fall.addCourse(c);
 				fCount++;
 				balance++;
-				System.out.println(c.toTitle() + " added from fall");
+				//System.out.println(c.toTitle() + " added from fall");
 			}
 			else
-				System.out.println("***" + c.toTitle() + " not found ***");
+				//System.out.println("***" + c.toTitle() + " not found ***");
 			
 			//New semester
 			if (fCount > 3) {
