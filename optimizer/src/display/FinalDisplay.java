@@ -65,6 +65,7 @@ public class FinalDisplay extends JFrame {
 	private void connect() {
 		//Allows submit to write instances created by Optimizer.
 		submitButton.addActionListener(e -> Optimizer.getInstance().write());
+		btnAdvancedOptions.addActionListener(e -> Optimizer.getInstance().generate());
 	}
 	
 	/**
@@ -139,7 +140,7 @@ public class FinalDisplay extends JFrame {
 		
 		submitButton = new JButton("Write");
 		
-		btnAdvancedOptions = new JButton("Advanced Options");
+		btnAdvancedOptions = new JButton("Generate CSV");
 		
 		JTextArea semOneText = new JTextArea();
 		

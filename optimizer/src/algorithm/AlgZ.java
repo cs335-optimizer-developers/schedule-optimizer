@@ -21,7 +21,7 @@ public abstract class AlgZ implements Algorithm {
 	
 	protected int year = 2019;
 	protected String sem = "fall";
-	protected Set<Course> toTake = new HashSet<Course>();
+	protected Set<Course> toTake;
 	
 	protected List<String> programs;
 	
@@ -36,10 +36,12 @@ public abstract class AlgZ implements Algorithm {
 	}
 	
 	public abstract void distribute(Semester[] toFill);
-	
+		
 	public Semester[] build(DParam dpar) {
 		this.programs = dpar.getPrograms();
 		ReadPrg rp = new ReadPrg();
+		
+		toTake = new HashSet<Course>();
 		
 		// TODO Less than ideal generation of basic courses.
 		// May be better to keep them strings at parsing.
@@ -47,7 +49,7 @@ public abstract class AlgZ implements Algorithm {
 			for (String s : rp.read(prog))
 				toTake.add(new Course(s));
 		
-		Semester[] toReturn = new Semester[toTake.size()/4+2];
+		Semester[] toReturn = new Semester[toTake.size()/4 * 2];
 		
 		distribute(toReturn);
 		

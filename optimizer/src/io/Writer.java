@@ -25,8 +25,9 @@ public class Writer {
 		String toWrite = "";
 		for (Semester s : schedule) {
 			//System.out.println("Schedule found");
-			if (!s.getCourses().isEmpty())
-				toWrite += s.sem + " " + s.year + ",";
+			if (s != null)
+				if (!s.getCourses().isEmpty())
+					toWrite += s.sem + " " + s.year + ",";
 			else;
 				//System.out.println("Null or empty semester detected - no bueno");
 		}
@@ -35,8 +36,9 @@ public class Writer {
 		List<List<Course>> circuit = new ArrayList<>();
 		
 		for (Semester s : schedule)
-			if (!s.getCourses().isEmpty())
-				circuit.add(s.getCourses());
+			if (s != null)
+				if (!s.getCourses().isEmpty())
+					circuit.add(s.getCourses());
 		
 		boolean added = true;
 		for (int i=0;added;i++) {

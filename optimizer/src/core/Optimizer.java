@@ -59,4 +59,13 @@ public class Optimizer {
 			one_optimizer = new Optimizer();
 		return one_optimizer;
 	}
+	
+	/**
+	 * Breaks singleton, used for testing purposes.
+	 * @return new instance of optimizer.
+	 */
+	public static Optimizer newInstance() {
+		one_optimizer = new Optimizer();
+		return one_optimizer;
+	}
 }
