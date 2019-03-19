@@ -14,11 +14,13 @@ public class Source {
 	public static final String programs_folder;
 	public static final String fall_2018;
 	public static final String spring_2019;
+	public static final String error_log;
 
 	static {
 		String basic = "";
 		generated_schedule = basic + "output/generated-schedule.csv";
 		testing_schedule = basic + "output/testing-schedule.csv";
+		error_log = basic + "output/error-log.txt";
 		String input = basic + "input/";
 		catalog_folder = input + "catalog/";
 		curriculae_folder = input + "curriculae/";

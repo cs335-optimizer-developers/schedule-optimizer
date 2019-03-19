@@ -1,0 +1,14 @@
+**Start of Error Log**
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+Null or empty semester detected - no bueno
+**End of Error Log**

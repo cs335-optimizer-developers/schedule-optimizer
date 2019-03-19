@@ -2,12 +2,18 @@ package test;
 
 import static org.junit.Assert.assertNotNull;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import algorithm.AlgMatch;
 import core.Optimizer;
 import core.ReadPopulateCSV;
+import core.Source;
 import display.FinalDisplay;
 import info.Course;
 import info.Semester;
@@ -15,6 +21,25 @@ import info.Semester;
 public class GenTest {
 	
 	protected Optimizer opt;
+	
+	@BeforeAll
+	public static void errorLogRedirect() {
+		
+		FileOutputStream f;
+		try {
+			f = new FileOutputStream(Source.error_log);
+			System.setOut(new PrintStream(f));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		System.out.println("**Start of Error Log**");
+	}
+	
+	@AfterAll
+	public static void finishLog() {
+		System.out.println("**End of Error Log**");
+	}
 	
 	@BeforeEach
 	protected void reset() {

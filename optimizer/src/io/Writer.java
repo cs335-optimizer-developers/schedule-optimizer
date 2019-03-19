@@ -33,7 +33,7 @@ public class Writer {
 				if (!s.getCourses().isEmpty())
 					toWrite += s.sem + " " + s.year + ",";
 			else;
-				//System.out.println("Null or empty semester detected - no bueno");
+				System.out.println("Null or empty semester detected - no bueno");
 		}
 		toWrite += "\n";
 		
