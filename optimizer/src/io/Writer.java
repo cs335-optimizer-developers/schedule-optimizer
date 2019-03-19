@@ -18,6 +18,10 @@ import info.Semester;
  */
 public class Writer {
 	
+	/**
+	 * Converts a schedule to a .csv file.
+	 * @param schedule
+	 */
 	public static void writeSchedule(Semester[] schedule) {
 		String source = Source.generated_schedule;
 		Path path = Paths.get(source);
@@ -33,6 +37,7 @@ public class Writer {
 		}
 		toWrite += "\n";
 		
+		//The list of courses in each semester.
 		List<List<Course>> circuit = new ArrayList<>();
 		
 		for (Semester s : schedule)
@@ -40,6 +45,8 @@ public class Writer {
 				if (!s.getCourses().isEmpty())
 					circuit.add(s.getCourses());
 		
+		//Adding each course to the line it should be on.
+		//Done this way because lines must be written together.
 		boolean added = true;
 		for (int i=0;added;i++) {
 			for (List<Course> al : circuit) {
