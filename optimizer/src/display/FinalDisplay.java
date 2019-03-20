@@ -74,10 +74,19 @@ public class FinalDisplay extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Optimizer.getInstance().generate();
+				displaySchedule(Optimizer.getInstance().generate());
 			}
 		
 		});
+	}
+	
+	/**
+	 * Display the schedules, each semester has many courses- display each semester's courses in each
+	 * 	semester text area
+	 * @param s
+	 */
+	public void displaySchedule(Semester[] s) {
+		
 	}
 	
 	/**
@@ -124,10 +133,6 @@ public class FinalDisplay extends JFrame {
 		toReturn.addProgram(minor.getText());
 		
 		return toReturn;
-	}
-	
-	public static void displaySchedule(Semester[] s) {
-		//Displays schedule
 	}
 
 	/**

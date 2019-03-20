@@ -34,7 +34,7 @@ public class Optimizer {
 	 *  creating output from the input that was provided.
 	 *  TODO Allow inputting of programs // specific classes.
 	 */
-	public void generate() {
+	public Semester[] generate() {
 		//long first = System.currentTimeMillis();
 		
 		DParam dPar = FinalDisplay.requestParameters();
@@ -42,7 +42,7 @@ public class Optimizer {
 		newSchedule = alg.build(dPar);
 		
 		FinalDisplay.displaySchedule(newSchedule);
-		
+		return newSchedule;
 		//long last = System.currentTimeMillis();
 		//System.out.printf("CSV generated in %s ms\n",last-first);
 	}
