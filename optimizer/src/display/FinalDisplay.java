@@ -1,6 +1,8 @@
 package display;
 
 import java.awt.EventQueue;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -57,7 +59,13 @@ public class FinalDisplay extends JFrame {
 	 */
 	private void connect() {
 		//Allows submit to write instances created by Optimizer.
-		submitButton.addActionListener(e -> Optimizer.getInstance().write());
+		submitButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				Optimizer.getInstance().write();
+			}
+			
+		});
 		btnAdvancedOptions.addActionListener(e -> Optimizer.getInstance().generate());
 	}
 	
@@ -155,7 +163,7 @@ public class FinalDisplay extends JFrame {
 		
 		JTextArea semTwoText = new JTextArea();
 		
-		JTextArea SemThreeText = new JTextArea();
+		JTextArea semThreeText = new JTextArea();
 		
 		JTextArea semFourText = new JTextArea();
 		
@@ -226,7 +234,7 @@ public class FinalDisplay extends JFrame {
 										.addGroup(gl_contentPane.createSequentialGroup()
 											.addComponent(semTwoText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
 											.addPreferredGap(ComponentPlacement.RELATED)
-											.addComponent(SemThreeText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+											.addComponent(semThreeText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
 											.addPreferredGap(ComponentPlacement.RELATED)
 											.addComponent(semFourText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))))
 								.addGroup(gl_contentPane.createSequentialGroup()
@@ -292,7 +300,7 @@ public class FinalDisplay extends JFrame {
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(semOneText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
 						.addComponent(semTwoText, GroupLayout.PREFERRED_SIZE, 92, GroupLayout.PREFERRED_SIZE)
-						.addComponent(SemThreeText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
+						.addComponent(semThreeText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
 						.addComponent(semFourText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE))
 					.addGap(13)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
