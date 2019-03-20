@@ -38,7 +38,7 @@ public class GenTest {
 	
 	@AfterAll
 	public static void finishLog() {
-		System.out.println("**End of Error Log**");
+		System.out.print("**End of Error Log**");
 	}
 	
 	@BeforeEach
