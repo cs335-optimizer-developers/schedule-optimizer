@@ -70,14 +70,8 @@ public class FinalDisplay extends JFrame {
 	private void connect() {
 		//Allows submit to write instances created by Optimizer.
 		submitButton.addActionListener(e -> Optimizer.getInstance().write());
-		btnAdvancedOptions.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				displaySchedule(Optimizer.getInstance().generate());
-			}
-		
-		});
+		btnAdvancedOptions.addActionListener(
+				e -> displaySchedule(Optimizer.getInstance().generate()));
 	}
 	
 	/**
