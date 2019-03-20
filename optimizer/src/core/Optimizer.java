@@ -41,6 +41,8 @@ public class Optimizer {
 
 		newSchedule = alg.build(dPar);
 		
+		FinalDisplay.displaySchedule(newSchedule);
+		
 		//long last = System.currentTimeMillis();
 		//System.out.printf("CSV generated in %s ms\n",last-first);
 	}

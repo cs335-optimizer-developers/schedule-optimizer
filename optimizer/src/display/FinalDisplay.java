@@ -16,6 +16,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
+import info.Semester;
 
 /**
  * Class to handle primary display window.
@@ -123,6 +124,10 @@ public class FinalDisplay extends JFrame {
 		toReturn.addProgram(minor.getText());
 		
 		return toReturn;
+	}
+	
+	public static void displaySchedule(Semester[] s) {
+		//Displays schedule
 	}
 
 	/**
