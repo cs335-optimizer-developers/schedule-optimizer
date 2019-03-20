@@ -19,7 +19,7 @@ import info.Semester;
 public class Writer {
 	
 	/**
-	 * Converts a schedule to a .csv file.
+	 * Outputs a schedule to a .csv file.
 	 * @param schedule
 	 */
 	public static void writeSchedule(Semester[] schedule) {
@@ -33,7 +33,7 @@ public class Writer {
 				if (!s.getCourses().isEmpty())
 					toWrite += s.sem + " " + s.year + ",";
 			else;
-				System.out.println("Null or empty semester detected - no bueno");
+				//System.out.println("Null or empty semester detected - no bueno");
 		}
 		toWrite += "\n";
 		
