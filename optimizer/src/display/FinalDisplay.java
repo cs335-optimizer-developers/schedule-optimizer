@@ -36,6 +36,15 @@ public class FinalDisplay extends JFrame {
 	private JButton btnEnter;
 	private JButton submitButton;
 	
+	JTextArea semOneText;
+	JTextArea semTwoText;
+	JTextArea semThreeText;
+	JTextArea semFourText;
+	JTextArea semFiveText;
+	JTextArea semSixText;
+	JTextArea semSevenText;
+	JTextArea semEightText;
+	
 	/**
 	 * Individual main class.
 	 */
@@ -59,14 +68,15 @@ public class FinalDisplay extends JFrame {
 	 */
 	private void connect() {
 		//Allows submit to write instances created by Optimizer.
-		submitButton.addActionListener(new ActionListener() {
+		submitButton.addActionListener(e -> Optimizer.getInstance().write());
+		btnAdvancedOptions.addActionListener(new ActionListener() {
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				Optimizer.getInstance().write();
+				Optimizer.getInstance().generate();
 			}
-			
+		
 		});
-		btnAdvancedOptions.addActionListener(e -> Optimizer.getInstance().generate());
 	}
 	
 	/**
@@ -159,21 +169,14 @@ public class FinalDisplay extends JFrame {
 		
 		btnAdvancedOptions = new JButton("Generate CSV");
 		
-		JTextArea semOneText = new JTextArea();
-		
-		JTextArea semTwoText = new JTextArea();
-		
-		JTextArea semThreeText = new JTextArea();
-		
-		JTextArea semFourText = new JTextArea();
-		
-		JTextArea semFiveText = new JTextArea();
-		
-		JTextArea semSixText = new JTextArea();
-		
-		JTextArea semSevenText = new JTextArea();
-		
-		JTextArea semEightText = new JTextArea();
+		semOneText = new JTextArea();
+		semTwoText = new JTextArea();
+		semThreeText = new JTextArea();
+		semFourText = new JTextArea();
+		semFiveText = new JTextArea();
+		semSixText = new JTextArea();
+		semSevenText = new JTextArea();
+		semEightText = new JTextArea();
 		
 		JLabel lblSemester = new JLabel("Semester 1");
 		
