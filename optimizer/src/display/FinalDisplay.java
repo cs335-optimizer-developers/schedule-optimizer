@@ -1,9 +1,6 @@
 package display;
 
 import java.awt.EventQueue;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
@@ -36,6 +33,8 @@ public class FinalDisplay extends JFrame {
 	private JTextField searchBar;
 	private JButton btnEnter;
 	private JButton submitButton;
+	
+	private CSVPanel scheduleDisplay = new CSVPanel();
 	
 	JTextArea semOneText;
 	JTextArea semTwoText;
@@ -80,7 +79,7 @@ public class FinalDisplay extends JFrame {
 	 * @param s
 	 */
 	public void displaySchedule(Semester[] s) {
-		
+		scheduleDisplay.update(s);
 	}
 	
 	/**
@@ -110,20 +109,20 @@ public class FinalDisplay extends JFrame {
 		//TODO Check box for if to include gen-eds. Client may choose not to for experimentation.
 		boolean wantGenEd = true;
 		if (wantGenEd) {
-			//System.out.println("test-gen-ed" + " requested");
+			System.out.println("test-gen-ed" + " requested");
 			toReturn.addProgram("test-gen-ed");
 		}
 		
 		//TODO a slider, higher number referring to higher preference to fill gen-eds early.
 		toReturn.setPreferGenEd(1);
 		
-		//System.out.println(majorOne.getText() + " requested");
+		System.out.println(majorOne.getText() + " requested");
 		toReturn.addProgram(majorOne.getText());
 		
-		//System.out.println(majorTwo.getText() + " requested");
+		System.out.println(majorTwo.getText() + " requested");
 		toReturn.addProgram(majorTwo.getText());
 		
-		//System.out.println(minor.getText() + " requested");
+		System.out.println(minor.getText() + " requested");
 		toReturn.addProgram(minor.getText());
 		
 		return toReturn;
