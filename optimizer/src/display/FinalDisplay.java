@@ -112,6 +112,9 @@ public class FinalDisplay extends JFrame {
 			a.addMouseListener(new MouseListener() {
 				@Override
 				public void mouseReleased(MouseEvent e) {
+					if(s[j] == null) {
+						return;
+					}
 			        JFrame frame = new JFrame("Semester Information");
 			        
 			        // Create and set up the content pane.
