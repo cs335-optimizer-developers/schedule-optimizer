@@ -99,7 +99,14 @@ public class FinalDisplay extends JFrame {
 		}
 	}
 	
+	/**
+	 * Parse a semester's courses into a single string.
+	 * @param s
+	 * @return
+	 */
 	private String parseSemester(Semester s) {
+		if(s == null)
+			return "Empty";
 		List<Course> courses = s.getCourses();
 		String data = "";
 		for(int i = 0; i < courses.size(); i++) {
