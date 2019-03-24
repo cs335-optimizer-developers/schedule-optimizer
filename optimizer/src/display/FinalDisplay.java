@@ -84,16 +84,19 @@ public class FinalDisplay extends JFrame {
 	 * @param s
 	 */
 	public void displaySchedule(Semester[] s) {
-		semOneText.setText(parseSemester(s[0]));
+		List<JTextArea> semContainers = new ArrayList<>();
+		semContainers.add(semOneText);
+		semContainers.add(semTwoText);
+		semContainers.add(semThreeText);
+		semContainers.add(semFourText);
+		semContainers.add(semFiveText);
+		semContainers.add(semSixText);
+		semContainers.add(semSevenText);
+		semContainers.add(semEightText);
 		
-		
-//		JTextArea semTwoText;
-//		JTextArea semThreeText;
-//		JTextArea semFourText;
-//		JTextArea semFiveText;
-//		JTextArea semSixText;
-//		JTextArea semSevenText;
-//		JTextArea semEightText;
+		for(int i = 0; i < s.length; i++) {
+			semContainers.get(i).setText(parseSemester(s[i]));
+		}
 	}
 	
 	private String parseSemester(Semester s) {
