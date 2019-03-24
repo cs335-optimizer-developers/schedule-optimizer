@@ -137,7 +137,7 @@ public class ReadPopulateCSV {
 		}
 		
 		//System.out.println("Successful!\n");
-		//System.out.println(courses.get(123).toString());
+		//System.out.println(courses.get(1).toString());
 		return new Semester(courses);
 	}
 	

@@ -104,20 +104,27 @@ public class Course {
 	}
 	
 	public String toString() {
-		String s = getKey();
+		String s = getName();
 		s += "\nTags: ";
-		for(Tag t : tags)
-			s += t + " ";
+		
+		if(tags != null && tags.size() != 0)
+			for(Tag t : tags)
+				s += t + ", ";
 			
 		s += "\nSections:\n";
-		for(ClassType t : sections)
+		for(ClassType t : sections) {
 			s += t.toString() + "\n";
+		}
+			
+		
+		if(labs == null || labs.size() == 0)
+			return s;
 		
 		s += "Labs:\n";
 		for(ClassType t : labs)
 			s += t.toString() + "\n";
 		
-		return s+"\n";
+		return s;
 	}
 	
 }
