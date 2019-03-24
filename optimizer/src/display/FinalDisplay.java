@@ -1,6 +1,9 @@
 package display;
 
 import java.awt.EventQueue;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
@@ -13,6 +16,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
+import info.Course;
 import info.Semester;
 
 /**
@@ -68,9 +72,10 @@ public class FinalDisplay extends JFrame {
 	 */
 	private void connect() {
 		//Allows submit to write instances created by Optimizer.
-		submitButton.addActionListener(e -> Optimizer.getInstance().write());
+		submitButton.addActionListener(
+				e -> displaySchedule(Optimizer.getInstance().write()));
 		btnAdvancedOptions.addActionListener(
-				e -> displaySchedule(Optimizer.getInstance().generate()));
+				e -> scheduleDisplay.update((Optimizer.getInstance().generate())));
 	}
 	
 	/**
@@ -79,7 +84,25 @@ public class FinalDisplay extends JFrame {
 	 * @param s
 	 */
 	public void displaySchedule(Semester[] s) {
-		scheduleDisplay.update(s);
+		semOneText.setText(parseSemester(s[0]));
+		
+		
+//		JTextArea semTwoText;
+//		JTextArea semThreeText;
+//		JTextArea semFourText;
+//		JTextArea semFiveText;
+//		JTextArea semSixText;
+//		JTextArea semSevenText;
+//		JTextArea semEightText;
+	}
+	
+	private String parseSemester(Semester s) {
+		List<Course> courses = s.getCourses();
+		String data = "";
+		for(int i = 0; i < courses.size(); i++) {
+			data += courses.get(i).getName() + "\n";
+		}
+		return data;
 	}
 	
 	/**

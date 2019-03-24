@@ -99,6 +99,10 @@ public class Course {
 		return subj + "" + number;
 	}
 	
+	public String getName() {
+		return subj + " " + number;
+	}
+	
 	public String toString() {
 		String s = getKey();
 		s += "\nTags: ";

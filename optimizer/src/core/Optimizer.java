@@ -46,9 +46,16 @@ public class Optimizer {
 		//System.out.printf("CSV generated in %s ms\n",last-first);
 	}
 	
-	public void write() {
+	public Semester[] write() {
 		if (newSchedule != null)
 			Writer.writeSchedule(newSchedule);
+		
+		else {
+			DParam dPar = FinalDisplay.requestParameters();
+			newSchedule = alg.build(dPar);
+		}
+			
+		return newSchedule;
 		//System.out.println("Schedule written");
 	}
 	
