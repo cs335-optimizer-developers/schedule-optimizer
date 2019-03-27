@@ -1,7 +1,9 @@
 package algorithm;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import core.Optimizer;
@@ -42,12 +44,18 @@ public abstract class AlgZ implements Algorithm {
 		ReadPrg rp = new ReadPrg();
 		
 		toTake = new HashSet<Course>();
+		Map<String,Course> smT = new HashMap<>();
 		
 		// TODO Less than ideal generation of basic courses.
 		// May be better to keep them strings at parsing.
+		for (Course c : sm1)
+			smT.put(c.toTitle(),c);
+		for (Course c : sm1)
+			smT.put(c.toTitle(),c);
+		
 		for (String prog : programs)
 			for (String s : rp.read(prog))
-				toTake.add(new Course(s));
+				toTake.add(smT.get(s));
 		
 		Semester[] toReturn = new Semester[toTake.size()/4 * 2];
 		

@@ -38,6 +38,8 @@ public class AlgMatch extends AlgZ {
 		Semester fall = new Semester(fYear,"fall");
 		Semester spring = new Semester(sYear,"spring");
 		for (Course c : toTake) {
+			if (c == null)
+				continue;
 			if (sem1.contains(c.toTitle()) && balance <= 0) {
 				fall.addCourse(c);
 				fCount++;
