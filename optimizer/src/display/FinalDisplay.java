@@ -1,12 +1,6 @@
 package display;
 
 import java.awt.EventQueue;
-import java.awt.PopupMenu;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
@@ -17,10 +11,7 @@ import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JPopupMenu;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
@@ -126,7 +117,7 @@ public class FinalDisplay extends JFrame {
 			        		Course c = courses.get(i);
 			        		JTextArea text = new JTextArea();
 			        		text.setEditable(false);
-			        		text.setText(c.toString());
+			        		text.setText(c.toString().replaceAll("\\\\",","));
 			        		panel.add(text);
 			        		
 			        }
