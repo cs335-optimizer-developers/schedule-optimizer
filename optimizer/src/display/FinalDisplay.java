@@ -1,18 +1,33 @@
 package display;
 
 import java.awt.EventQueue;
+import java.awt.PopupMenu;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JPopupMenu;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
+import info.Course;
 import info.Semester;
 
 /**
@@ -68,9 +83,10 @@ public class FinalDisplay extends JFrame {
 	 */
 	private void connect() {
 		//Allows submit to write instances created by Optimizer.
-		submitButton.addActionListener(e -> Optimizer.getInstance().write());
+		submitButton.addActionListener(
+				e -> displaySchedule(Optimizer.getInstance().write()));
 		btnAdvancedOptions.addActionListener(
-				e -> displaySchedule(Optimizer.getInstance().generate()));
+				e -> scheduleDisplay.update((Optimizer.getInstance().generate())));
 	}
 	
 	/**
@@ -79,7 +95,73 @@ public class FinalDisplay extends JFrame {
 	 * @param s
 	 */
 	public void displaySchedule(Semester[] s) {
-		scheduleDisplay.update(s);
+		List<JTextArea> semContainers = new ArrayList<>();
+		semContainers.add(semOneText);
+		semContainers.add(semTwoText);
+		semContainers.add(semThreeText);
+		semContainers.add(semFourText);
+		semContainers.add(semFiveText);
+		semContainers.add(semSixText);
+		semContainers.add(semSevenText);
+		semContainers.add(semEightText);
+		
+		for(int i = 0; i < s.length; i++) {
+			JTextArea a = semContainers.get(i);
+			a.setText(parseSemester(s[i]));
+			final int j = i;
+			a.addMouseListener(new MouseListener() {
+				@Override
+				public void mouseReleased(MouseEvent e) {
+					if(s[j] == null) {
+						return;
+					}
+			        JFrame frame = new JFrame("Semester Information");
+			        
+			        // Create and set up the content pane.
+			        JPanel panel = new JPanel();
+			        frame.setContentPane(panel);
+			        
+			        List<Course> courses = s[j].getCourses();
+			        for(int i = 0; i < courses.size(); i++) {
+			        		Course c = courses.get(i);
+			        		JTextArea text = new JTextArea();
+			        		text.setEditable(false);
+			        		text.setText(c.toString());
+			        		panel.add(text);
+			        		
+			        }
+			        
+			        // Display the window.
+			        frame.pack();
+			        frame.setVisible(true);
+				}
+
+				@Override
+				public void mouseEntered(MouseEvent e) {}
+				@Override
+				public void mouseExited(MouseEvent e) {}
+				@Override
+				public void mouseClicked(MouseEvent e) {}
+				@Override
+				public void mousePressed(MouseEvent e) {}
+			});
+		}
+	}
+	
+	/**
+	 * Parse a semester's courses into a single string.
+	 * @param s, a semester- if null then return "Empty"
+	 * @return, single string derived from parsing a semester's courses.
+	 */
+	private String parseSemester(Semester s) {
+		if(s == null)
+			return "Empty";
+		List<Course> courses = s.getCourses();
+		String data = "";
+		for(int i = 0; i < courses.size(); i++) {
+			data += courses.get(i).getName() + "\n";
+		}
+		return data;
 	}
 	
 	/**
@@ -173,13 +255,21 @@ public class FinalDisplay extends JFrame {
 		btnAdvancedOptions = new JButton("Generate CSV");
 		
 		semOneText = new JTextArea();
+		semOneText.setEditable(false);
 		semTwoText = new JTextArea();
+		semTwoText.setEditable(false);
 		semThreeText = new JTextArea();
+		semThreeText.setEditable(false);
 		semFourText = new JTextArea();
+		semFourText.setEditable(false);
 		semFiveText = new JTextArea();
+		semFiveText.setEditable(false);
 		semSixText = new JTextArea();
+		semSixText.setEditable(false);
 		semSevenText = new JTextArea();
+		semSevenText.setEditable(false);
 		semEightText = new JTextArea();
+		semEightText.setEditable(false);
 		
 		JLabel lblSemester = new JLabel("Semester 1");
 		
