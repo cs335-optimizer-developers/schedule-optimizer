@@ -85,9 +85,10 @@ public class CSVPanel extends JPanel {
         }
     }
 
-    class Model extends AbstractTableModel {
+    private class Model extends AbstractTableModel {
 		private static final long serialVersionUID = 1L;
-		private final String[] columnNames = { "1", "2", "3" };
+		private final String[] columnNames = 
+			{"1","2","3",};
         private ArrayList<String[]> Data = new ArrayList<String[]>();
 
         public void AddCSVData(ArrayList<String[]> DataIn) {
