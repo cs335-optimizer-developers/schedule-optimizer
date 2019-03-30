@@ -13,7 +13,8 @@ import info.Semester;
 
 /**
  * 
- * @author James White
+ * Class to write a schedule to a .csv file, specifically outputted
+ * to the file at Source.generated_schedule.
  *
  */
 public class Writer {

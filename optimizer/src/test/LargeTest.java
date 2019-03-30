@@ -12,6 +12,12 @@ import algorithm.AlgArbitrary;
 import algorithm.AlgComplex;
 import core.Source;
 
+/**
+ * 
+ * Expanded test, to test for unlikely or strangely contingent
+ * bugs in object generation.
+ *
+ */
 public class LargeTest extends GenTest {
 	
 	@Test

@@ -9,9 +9,8 @@ import io.Writer;
 /**
  * Class called by main - handles big picture functionality.
  * Currently contains pseudo-singleton pattern. 
- * Less than ideal, but it works.
  * 
- * @author James White
+ * It is build in the main class of RunOptimizer.
  *
  */
 public class Optimizer {
@@ -46,6 +45,10 @@ public class Optimizer {
 		//System.out.printf("CSV generated in %s ms\n",last-first);
 	}
 	
+	/**
+	 * Writes an array of semesters through the Writer class.
+	 * @return
+	 */
 	public Semester[] write() {
 		if (newSchedule != null)
 			Writer.writeSchedule(newSchedule);

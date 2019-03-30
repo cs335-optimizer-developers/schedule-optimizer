@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * 
- * @author James White
+ * Abstract class to read in files to be used at runtime.
  *
  */
 public abstract class Reader {

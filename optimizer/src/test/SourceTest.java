@@ -11,9 +11,9 @@ import core.Source;
 
 /**
  * Test will pass if all public fields within Source are either "normal"
- * files or directories.
+ * files or directories. 
  * 
- * author James White
+ * @author James White
  */
 class SourceTest {
 

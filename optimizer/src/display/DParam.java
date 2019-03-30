@@ -3,6 +3,12 @@ package display;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * Class encapsulating all information to be retrieved from FinalDisplay
+ * to be used for algorithmic generation.
+ *
+ */
 public class DParam {
 
 	private List<String> programs = new ArrayList<>();

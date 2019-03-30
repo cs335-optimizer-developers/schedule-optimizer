@@ -18,6 +18,12 @@ import javax.swing.table.AbstractTableModel;
 import core.Source;
 import info.Semester;
 
+/**
+ * 
+ * Displays a csv as a pop-up. Will probably be outmoded as the display
+ * becomes interactive.
+ *
+ */
 public class CSVPanel extends JPanel {
 
 	private static final long serialVersionUID = 1L;

@@ -6,6 +6,17 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
 
+/**
+ * 
+ * Class to read in information from Wheaton's catalog, to generate
+ * .cur and .det files.
+ * 
+ * This file is not used at runtime, only to generate files that will
+ * be read in at runtime.
+ * 
+ * @author Naissa Charles
+ *
+ */
 public class OnlineCourseParser {
 	
 	public static void main(String[] args) {

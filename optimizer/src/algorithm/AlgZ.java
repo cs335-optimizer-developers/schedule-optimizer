@@ -10,11 +10,13 @@ import core.Optimizer;
 import display.DParam;
 import info.Course;
 import info.Semester;
+import io.ReadCur;
 import io.ReadPrg;
 
 /**
  * Abstract class for building algorithms that use a HashSet of
- * classes to be taken.
+ * classes to be taken. Used mostly for constructing many intermediate
+ * algorithms prior to arriving at an algorithm which is correct.
  * 
  * @author James White
  *
@@ -24,6 +26,7 @@ public abstract class AlgZ implements Algorithm {
 	protected int year = 2019;
 	protected String sem = "fall";
 	protected Set<Course> toTake;
+	protected Map<String,String> preReqs = new HashMap<>();
 	
 	protected List<String> programs;
 	
@@ -42,6 +45,7 @@ public abstract class AlgZ implements Algorithm {
 	public Semester[] build(DParam dpar) {
 		this.programs = dpar.getPrograms();
 		ReadPrg rp = new ReadPrg();
+		ReadCur rc = new ReadCur();
 		
 		toTake = new HashSet<Course>();
 		Map<String,Course> smT = new HashMap<>();
@@ -56,6 +60,9 @@ public abstract class AlgZ implements Algorithm {
 		for (String prog : programs)
 			for (String s : rp.read(prog))
 				toTake.add(smT.get(s));
+		
+		for (String prog : programs)
+			 preReqs.putAll(rc.read(prog));
 		
 		Semester[] toReturn = new Semester[toTake.size()/4 * 2];
 		

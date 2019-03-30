@@ -3,6 +3,12 @@ package info;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * Class to handle a list of courses associated with a certain year and
+ * semester.
+ *
+ */
 public class Semester {
 	
 	public int year;

@@ -18,6 +18,16 @@ import display.FinalDisplay;
 import info.Course;
 import info.Semester;
 
+/**
+ * 
+ * Primary test, ensuring that primary functionality is unbroken,
+ * as well as housing errorLogRedirect() to be used in RunOptimizer
+ * when debug is not active.
+ * 
+ * Tests focus especially on runtimes, showing how fast each core 
+ * functionality is.
+ *
+ */
 public class GenTest {
 	
 	protected Optimizer opt;

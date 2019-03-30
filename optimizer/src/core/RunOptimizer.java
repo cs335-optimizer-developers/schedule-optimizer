@@ -5,6 +5,12 @@ import test.GenTest;
 
 /**
  * 
+ * Main class - initiates optimizer and display to start.
+ * 
+ * Contains a boolean option for debugging. If set to false,
+ * System.out will be redirected to an error log, preventing 
+ * the program from printing to the console that it is ran from.
+ * 
  * @author James White
  *
  */

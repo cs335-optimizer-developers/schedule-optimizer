@@ -4,6 +4,12 @@ import java.util.Set;
 
 import core.Source;
 
+/**
+ * 
+ * Used by algorithm to produce list of classes that need to be taken
+ * in each possible program.
+ *
+ */
 public class ReadPrg extends Reader {
 
 	private String source = Source.programs_folder;

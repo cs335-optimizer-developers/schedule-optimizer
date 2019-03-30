@@ -1,8 +1,5 @@
 package core;
 
-/**
- * Reads the two CSV course files, then populates a new data file. Will be separated/removed in final ver.
- */
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -14,6 +11,14 @@ import java.util.List;
 
 import info.*;
 
+/**
+ * /**
+ * Reads the two CSV course files, then populates a new data 
+ * file. Will be separated/removed in final version.
+ * 
+ * @author Christian Cameron
+ *
+ */
 public class ReadPopulateCSV {
 	
 	public static Semester[] buildSemesters() {

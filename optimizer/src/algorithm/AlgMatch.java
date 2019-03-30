@@ -8,14 +8,15 @@ import info.Semester;
 
 /**
  * Algorithm based on AlgArbitrary. It honors when classes occur, but not
- * their prerequisites.
+ * their prerequisites. It is a middle ground between AlgArbitrary and
+ * AlgComplex.
  * 
  * @author James White
  *
  */
 public class AlgMatch extends AlgZ {
 	
-	public void distribute(Semester[] toFill) {		
+	public void distribute(Semester[] toFill) {	
 		int fCount = 0;
 		int sCount = 0;
 		int fCurrent = 0;
@@ -23,8 +24,8 @@ public class AlgMatch extends AlgZ {
 		int fYear = 2019;
 		int sYear = 2020;
 		
-		Set<String> sem1 = new HashSet<String>();
-		Set<String> sem2 = new HashSet<String>();
+		Set<String> sem1 = new HashSet<>();
+		Set<String> sem2 = new HashSet<>();
 		
 		for (Course c : sm1)
 			sem1.add(c.toTitle());

@@ -2,7 +2,8 @@ package core;
 
 /**
  * 
- * @author James White
+ * Class to model locations of files to be referenced throughout. Used
+ * especially if files move locations, and to keep the code organized.
  *
  */
 public class Source {

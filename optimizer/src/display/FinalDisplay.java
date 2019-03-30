@@ -23,7 +23,10 @@ import info.Semester;
 
 /**
  * Class to handle primary display window.
- * Follows singleton.
+ * 
+ * Follows singleton. TODO Should maybe be broken into a few classes for
+ * the sake of editing and clarity, especially insofar as there are
+ * different components to handle information.
  */
 public class FinalDisplay extends JFrame {
 

@@ -4,6 +4,12 @@ import java.util.Map;
 
 import core.Source;
 
+/**
+ * 
+ * Reads in course descriptions from .det files, probably to be used
+ * in FinalDisplay or in creation of files in ReadPopulateCSV.
+ *
+ */
 public class ReadDet extends Reader {
 
 	private String source = Source.details_folder;
