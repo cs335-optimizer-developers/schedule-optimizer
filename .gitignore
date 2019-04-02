@@ -1,4 +1,5 @@
 /bin/
-/optimizer/output/
+/optimizer/output/*
 /.classpath
 /.project
+/optimizer/project/
