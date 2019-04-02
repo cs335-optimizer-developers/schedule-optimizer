@@ -12,10 +12,7 @@ public class OnlineCourseParser {
 //import java.io.IOException;
 
 
-public class CourseParser {
-
-	
-	
+public static class CourseParser {
 	/*throw exception (declaration)*/
 	public static void main(String[] args) throws IOException {
 		
@@ -43,9 +40,6 @@ public class CourseParser {
 			//Document example = null;
 
 			//example = Jsoup.connect(links.attr("href").toString()).get();
-			
-			
-			
 		}
 	
 	
@@ -73,86 +67,19 @@ public class CourseParser {
 					
 				}
 				
-				
 				Elements paragraphs1 = doc.getElementsByClass("courseblocktitle noindent");
 				for (Element paragraph : paragraphs1 ) {
 					System.out.println("\n course name,number,and credits: " + paragraph.text());
 					 
 				}
-				
-			
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
-			
-			
-			
-		}
-	
-	
-	
-	}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//THIS SECTION SHOULD GO INTO  A METHOD
-		
-
-		//1. method parameters are courseDescrip(string links);
-		//2. the doc Jsoup.connect takes in (links)
-	
-		/*Document doc = null;
-		
-		try {
-			doc = Jsoup.connect("https://catalog.wheaton.edu/course-descriptions/csci/").get();
-						
-			String title = doc.title();
-			
-			System.out.println ("Title : " + title );
-			
-			/*Elements links = doc.select("a[href]");
-			
-			for (Element link: links) {
-				System.out.println("\nlink : " + link.attr("href"));
-				System.out.println("Text : " + link.text());
-			}*/
-			
-			//String html = "<div <p class = courseblocktitle noindent> <strong></strong> </p> ";
-			
-			//Document docs = Jsoup.parseBodyFragment(html);
-			
-			//Element body = docs.body(); */
-			
-			/*Elements paragraphs = doc.getElementsByClass("courseblockdesc noindent");
-			for (Element paragraph : paragraphs ) {
-				System.out.println("\n descriptions: " + paragraph.text());
 				
-			}
-			
-			
-			Elements paragraphs1 = doc.getElementsByClass("courseblocktitle noindent");
-			for (Element paragraph : paragraphs1 ) {
-				System.out.println("\n course name,number,and credits: " + paragraph.text());
-				 
-			}
-			
-		
-		} catch (IOException e) {
-			e.printStackTrace();
-		}*/
-		
+		}
+	}
+}
 
 
 		
