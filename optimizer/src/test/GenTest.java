@@ -31,11 +31,10 @@ import info.Semester;
  */
 public class GenTest {
 	
-	protected Optimizer opt;
+	protected Optimizer opt = Optimizer.newInstance();
 	
 	@BeforeAll
 	public static void errorLogRedirect() {
-		
 		FileOutputStream f;
 		try {
 			f = new FileOutputStream(Source.error_log);

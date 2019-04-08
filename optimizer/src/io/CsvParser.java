@@ -1,12 +1,11 @@
 package io;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import java.util.Scanner;
 
+import core.Source;
 import info.Course;
 
 
@@ -15,7 +14,7 @@ public class CsvParser {
 	public Map<String, Course> parseCsv() throws IOException {
 		Map<String, Course> cMap = new HashMap<String, Course>();
 
-		File file = new File("fall-2018.csv");
+		File file = new File(Source.fall_2018);
 		Scanner input = new Scanner(file);
 		input.nextLine();
 		int i = 1;
