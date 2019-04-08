@@ -19,6 +19,10 @@ public class Course {
 	// Each class has 1-many sections
 	private List<ClassType> sections = new ArrayList<>();
 	
+	//testing these variables for a constructor for the search functionality - nyameye
+	private String subject, num,Section,Quad,Title, credits, meetingTime,Days,instructor,fees,attributes;
+
+	
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
 	public Course(Subject subj, int number, ClassType type, List<Tag> tags) {
 		if(type == null) {
@@ -46,6 +50,32 @@ public class Course {
 		String[] info = s.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
 		subj = Subject.valueOf(info[0]);
 		number = Integer.valueOf(info[1]);
+	}
+	
+	
+	/**
+	 * testing this constructor to use when parsing 
+	 * csv files for the search functionality 
+	 * @param s
+	 * @param v
+	 */
+	public Course(String s, String v) {
+		String[] sinfo = s.split(" ");
+		String[] vinfo = v.split(" ");
+		
+		subject = sinfo[0];
+		num = sinfo[1];
+		Section = vinfo[0];
+		Quad = vinfo[1];
+		Title = vinfo[2];
+		credits= vinfo[3];
+		meetingTime= vinfo[4];
+		Days= vinfo[5];
+		instructor= vinfo[6];
+		fees= vinfo[7];
+		attributes= vinfo[8];
+		
+		
 	}
 	
 	/**
