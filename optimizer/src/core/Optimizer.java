@@ -4,6 +4,7 @@ import algorithm.*;
 import display.DParam;
 import display.FinalDisplay;
 import info.Semester;
+import io.ReadCur;
 import io.Writer;
 
 /**
@@ -23,7 +24,8 @@ public class Optimizer {
 	
 	private Optimizer() {
 		one_optimizer = this;
-		availableClasses = ReadPopulateCSV.buildSemesters();
+		availableClasses = 
+				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
 		
 		alg = new AlgMatch();
 	}

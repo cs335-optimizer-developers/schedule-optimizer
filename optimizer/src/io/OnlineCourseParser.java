@@ -1,10 +1,12 @@
 package io;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
+
 
 /**
  * 
@@ -17,19 +19,25 @@ import org.jsoup.select.Elements;
  * @author Naissa Charles
  *
  */
+
 public class OnlineCourseParser {
 
 	public static void main(String[] args) throws IOException {
 		
-		Document courseAZ = null;
+		/*Document courseAZ = null;
 		
-		courseAZ = Jsoup.connect("https://catalog.wheaton.edu/azindex/").get();
-			
-			
-		String titles = courseAZ.title();
-			
-		System.out.println ("Title : " + titles );
 		
+			courseAZ = Jsoup.connect("https://catalog.wheaton.edu/azindex/").get();
+				
+				
+			String titles = courseAZ.title();
+				
+			System.out.println ("Title : " + titles ); */
+		
+		File input = new File ("majorlinks.txt");
+			
+		Document courseAZ = Jsoup.parse(input, "majors", " ");
+
 		Elements links = courseAZ.select("a[href]");
 		
 		for (Element link: links) {
