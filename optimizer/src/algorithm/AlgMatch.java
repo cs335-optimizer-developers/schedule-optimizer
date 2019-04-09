@@ -62,7 +62,7 @@ public class AlgMatch extends AlgZ {
 				//System.out.println(c.toTitle() + " added from fall");
 			}
 			else
-				//System.out.println("***" + c.toTitle() + " not found ***");
+				System.err.println("***" + c.toTitle() + " not found ***");
 			
 			//New semester
 			if (fCount > 3) {

@@ -29,7 +29,7 @@ public class AlgComplex extends AlgZ {
 		
 		Set<String> sem1 = new HashSet<String>();
 		Set<String> sem2 = new HashSet<String>();
-		
+				
 		for (Course c : sm1)
 			sem1.add(c.toTitle());
 		for (Course c : sm2)
@@ -65,8 +65,7 @@ public class AlgComplex extends AlgZ {
 				//System.out.println(c.toTitle() + " added from fall");
 			}
 			else
-				//System.out.println("***" + c.toTitle() + " not found ***");
-			
+				System.err.println("***" + c.toTitle() + " not found ***");
 			//New semester
 			if (fCount > 3) {
 				fCount = 0;
@@ -83,6 +82,8 @@ public class AlgComplex extends AlgZ {
 				sCurrent += 2;
 			}
 		}
+		
+		// Clean up, adding final semester if there are straggling classes.
 		if (fall != null)
 			toFill[fCurrent] = fall;
 		if (spring != null)

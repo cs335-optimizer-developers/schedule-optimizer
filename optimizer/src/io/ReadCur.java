@@ -1,8 +1,10 @@
 package io;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 import core.Source;
+import info.Semester;
 
 /**
  * 
@@ -13,11 +15,16 @@ import core.Source;
 public class ReadCur extends Reader {
 
 private String source = Source.details_folder;
+
+	public static Semester[] addPrerequisites(Semester[] s) {
+		
+		return s;
+	}
 	
-	public Map<String,String> read(String program) {
+	public Map<String,ArrayList<String>> loadProgram(String program) {
 		
 		input = makeStream(source + program + ".cur");
-		Map<String,String> toReturn = new java.util.HashMap<>();
+		Map<String,ArrayList<String>> toReturn = new java.util.HashMap<>();
 		
 		String classNum = "XXX";
 		while (moveLine()) {
