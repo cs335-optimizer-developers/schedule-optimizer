@@ -44,4 +44,16 @@ public class ClassDetails {
 		return "Title: " + title + "\nTime: " + time + "\nProf: " + prof;
 	}
 	
+	public String getTime() {
+		return time.getTime();
+	}
+	
+	public String getProf() {
+		return prof;
+	}
+
+	public String getQuad() {
+		return time.getQuad();
+	}
+	
 }

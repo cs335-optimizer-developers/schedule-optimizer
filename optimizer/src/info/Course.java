@@ -133,6 +133,14 @@ public class Course {
 		return subj + " " + number;
 	}
 	
+	public List<ClassType> getSections() {
+		return sections;
+	}
+	
+	public List<ClassType> getLabs() {
+		return labs;
+	}
+	
 	public String toString() {
 		String s = getName();
 		s += "\nTags: ";
@@ -156,6 +164,7 @@ public class Course {
 		
 		return s;
 	}
+	
 	
 }
 

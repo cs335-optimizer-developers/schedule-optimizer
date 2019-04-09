@@ -1,6 +1,8 @@
 package display;
 
+import java.awt.Dimension;
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
@@ -9,16 +11,21 @@ import java.util.List;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
+import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
+import info.ClassType;
 import info.Course;
+import info.Section;
 import info.Semester;
 
 /**
@@ -117,11 +124,41 @@ public class FinalDisplay extends JFrame {
 			        
 			        List<Course> courses = s[j].getCourses();
 			        for(int i = 0; i < courses.size(); i++) {
-			        		Course c = courses.get(i);
-			        		JTextArea text = new JTextArea();
-			        		text.setEditable(false);
-			        		text.setText(c.toString().replaceAll("\\\\",","));
-			        		panel.add(text);
+			        		Course c = courses.get(i);	        		
+			        		String[] columnNames = {"Time","Professor","Quad","Section"};
+			        		
+			        		List<ClassType> sections = c.getSections();
+			        		Object[][] sectionTable = new Object[sections.size()][4];
+			        		for(int j = 0; j < sections.size(); j++) {
+			        			ClassType s = sections.get(j);
+			        			sectionTable[j][0] = s.getTime().replaceAll("\\\\",",");
+			        			sectionTable[j][1] = s.getProf().replaceAll("\\\\",",");
+			        			sectionTable[j][2] = s.getQuad();
+			        			sectionTable[j][3] = ((info.Section) s).getSection();
+			        		}
+			        		
+			        		
+			        		JTable table = new JTable(sectionTable, columnNames);	        		
+			        		
+			        		JScrollPane scrollPane = new JScrollPane(table);
+			        		scrollPane.setVerticalScrollBarPolicy(
+			        		                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+			        		scrollPane.setPreferredSize(new Dimension(250, 145));
+			        		scrollPane.setMinimumSize(new Dimension(10, 10));
+			        		
+			        		panel.add(scrollPane);
+			        		
+			        		//JTextArea text1 = new JTextArea();
+//			        		text1.setEditable(false);
+//			        		Font font = text1.getFont();  
+//			        		text1.setText(c.getKey());
+//			        		text1.setFont(font.deriveFont(Font.BOLD));
+//			        		panel.add(text1);
+//			        		JTextArea text2 = new JTextArea();
+//			        		text2.setText(c.toString().replaceAll("\\\\",","));
+//			        		text2.setEditable(false);
+//			        		panel.add(text2);
+			        		
 			        		
 			        }
 			        

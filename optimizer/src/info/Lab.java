@@ -7,4 +7,5 @@ public class Lab extends ClassType {
 	public Lab(ClassDetails internal) {
 		super(internal);
 	}
+	
 }
