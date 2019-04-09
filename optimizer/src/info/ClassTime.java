@@ -20,5 +20,20 @@ public class ClassTime {
 		this.quad = quad;
 	}
 	
+	private String daysToString() {
+		String s = "";
+		for(int i = 0; i < days.size(); i++) {
+			s += days.get(i);
+		}
+		return s;
+	}
+	
+	public String getTime() {
+		return time + " [" + daysToString() + "]";
+	}
+
+	public String getQuad() {
+		return quad + "";
+	}
 	
 }

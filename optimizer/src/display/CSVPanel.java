@@ -85,7 +85,7 @@ public class CSVPanel extends JPanel {
             }
             catch (Exception e) {
                 String errmsg = e.getMessage();
-                System.out.println(errmsg);
+                System.err.println(errmsg);
             }
             return Rs;
         }

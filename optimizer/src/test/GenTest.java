@@ -31,25 +31,24 @@ import info.Semester;
  */
 public class GenTest {
 	
-	protected Optimizer opt;
+	protected Optimizer opt = Optimizer.newInstance();
 	
 	@BeforeAll
 	public static void errorLogRedirect() {
-		
 		FileOutputStream f;
 		try {
 			f = new FileOutputStream(Source.error_log);
-			System.setOut(new PrintStream(f));
+			System.setErr(new PrintStream(f));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println("**Start of Error Log**");
+		System.err.println("**Start of Error Log**");
 	}
 	
 	@AfterAll
 	public static void finishLog() {
-		System.out.print("**End of Error Log**");
+		System.err.print("**End of Error Log**");
 	}
 	
 	@BeforeEach

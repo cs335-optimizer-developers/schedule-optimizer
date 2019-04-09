@@ -10,5 +10,9 @@ public class Section extends ClassType {
 		super(internal);
 		this.sectionNum = sectionNum;
 	}
+	
+	public int getSection() {
+		return sectionNum;
+	}
 
 }

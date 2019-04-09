@@ -1,6 +1,8 @@
 package display;
 
+import java.awt.Dimension;
 import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
@@ -9,16 +11,21 @@ import java.util.List;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
+import javax.swing.JEditorPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
+import info.ClassType;
 import info.Course;
+import info.Section;
 import info.Semester;
 
 /**
@@ -110,24 +117,45 @@ public class FinalDisplay extends JFrame {
 						return;
 					}
 			        JFrame frame = new JFrame("Semester Information");
-			        
+
 			        // Create and set up the content pane.
+			        JScrollPane scrollPanel = new JScrollPane();
 			        JPanel panel = new JPanel();
-			        frame.setContentPane(panel);
+			       
+			        frame.setContentPane(scrollPanel);
 			        
 			        List<Course> courses = s[j].getCourses();
 			        for(int i = 0; i < courses.size(); i++) {
-			        		Course c = courses.get(i);
-			        		JTextArea text = new JTextArea();
-			        		text.setEditable(false);
-			        		text.setText(c.toString().replaceAll("\\\\",","));
-			        		panel.add(text);
+			        		Course c = courses.get(i);	        		
+			        		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
+			        		
+			        		List<ClassType> sections = c.getSections();
+			        		Object[][] sectionTable = new Object[sections.size()][4];
+			        		for(int j = 0; j < sections.size(); j++) {
+			        			ClassType s = sections.get(j);
+			        			sectionTable[j][0] = s.getTime().replaceAll("\\\\",",");
+			        			sectionTable[j][1] = s.getProf().replaceAll("\\\\",",");
+			        			sectionTable[j][2] = s.getQuad();
+			        			sectionTable[j][3] = ((info.Section) s).getSection();
+			        		}
+			        		
+			        		JTable table = new JTable(sectionTable, columnNames);	        		
+			        		JScrollPane scrollPane = new JScrollPane(table);
+			        		table.setFillsViewportHeight(true);
+			        		scrollPane.setVerticalScrollBarPolicy(
+			        		                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+			        		scrollPane.setPreferredSize(new Dimension(400, 200));
+			        		scrollPane.setMinimumSize(new Dimension(30, 30));
+			        		panel.add(scrollPane);
+			        		scrollPanel.setViewportView(panel);
+			        		scrollPanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 			        		
 			        }
 			        
 			        // Display the window.
 			        frame.pack();
 			        frame.setVisible(true);
+			        frame.setBounds(900, 200, 900, 200);
 				}
 
 				@Override

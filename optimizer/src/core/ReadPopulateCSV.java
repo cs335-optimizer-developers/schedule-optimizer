@@ -157,7 +157,7 @@ public class ReadPopulateCSV {
 		try {
 			q = Quad.valueOf(s);
 		} catch(IllegalArgumentException iae) {
-			q = Quad.NONE;
+			q = Quad.FULL;
 		}
 		
 		return q;
