@@ -14,10 +14,12 @@ import info.Semester;
  * Reads in lists of prerequisites for courses from .cur files. To
  * be used by algorithms in generation of semesters.
  *
+ * @author James White
+ * 
  */
 public class ReadCur extends Reader {
 
-	private static String source = Source.details_folder;
+	private static String source = Source.curriculae_folder;
 	private static Map<String,ArrayList<String>> prereqs = new HashMap<>();
 
 	public static void main(String[] args) {
@@ -34,28 +36,43 @@ public class ReadCur extends Reader {
 				
 				ReadCur rC = new ReadCur();
 				
-				if (!prereqs.containsKey(t))
-					prereqs.put(t,rC.populateProgram(dept).get(t));
+				System.out.println(dept);
+				if (dept.contains("CSCI"));
+					System.out.println(c.toTitle());
 				
+				if (!prereqs.containsKey(t)) {
+					rC.populateProgram(dept);
+				}
+				if (prereqs.get(t) == null);
+//					System.err.println(t+" not found");
+				else
+					System.out.println(t+" found");
 				c.setPrerequisites(prereqs.get(t));
 			}
 		}
-		
 		return sems;
 	}
 	
-	public Map<String,ArrayList<String>> populateProgram(String program) {
+	public void populateProgram(String program) {
 		
 		input = makeStream(source + program + ".cur");
-		Map<String,ArrayList<String>> toReturn = new HashMap<>();
 		
 		String classNum = "XXX";
 		while (moveLine()) {
-			if (hasChar('+'))
-				classNum = line.substring(1);
-			//else
-				//toReturn.put(program.toUpperCase()+classNum,line);
+			String[] words = line.split(",");
+			classNum=words[0];
+			ArrayList<String> list = new ArrayList<>();
+			if (words.length>1)
+				prereqs.put(program+classNum,list);
+			for (int i=1;i<words.length;i++) {
+				System.out.println(program+words[i]);
+				list.add(program+words[i]);
+			}
 		}
-		return toReturn;
+	}
+
+	public Map<? extends String, ? extends String> read(String prog) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

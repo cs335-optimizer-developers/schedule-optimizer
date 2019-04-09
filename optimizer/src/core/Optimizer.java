@@ -19,8 +19,8 @@ public class Optimizer {
 	private static Optimizer one_optimizer;
 	private Semester[] availableClasses;
 	private Algorithm alg;
-	
 	private Semester[] newSchedule;
+	
 	
 	private Optimizer() {
 		one_optimizer = this;

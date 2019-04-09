@@ -18,7 +18,7 @@ import info.Semester;
  *
  */
 public class AlgComplex extends AlgZ {
-
+	
 	public void distribute(Semester[] toFill) {	
 		int fCount = 0;
 		int sCount = 0;
