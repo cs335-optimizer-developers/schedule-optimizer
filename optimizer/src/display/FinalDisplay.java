@@ -3,6 +3,7 @@ package display;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
+import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
@@ -20,7 +21,9 @@ import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
+import javax.swing.table.TableCellRenderer;
 
 import core.Optimizer;
 import info.ClassType;
@@ -117,6 +120,7 @@ public class FinalDisplay extends JFrame {
 						return;
 					}
 			        JFrame frame = new JFrame("Semester Information");
+			        frame.setBounds(900, 300, 900, 300);
 
 			        // Create and set up the content pane.
 			        JScrollPane scrollPanel = new JScrollPane();
@@ -136,10 +140,12 @@ public class FinalDisplay extends JFrame {
 			        			sectionTable[j][0] = s.getTime().replaceAll("\\\\",",");
 			        			sectionTable[j][1] = s.getProf().replaceAll("\\\\",",");
 			        			sectionTable[j][2] = s.getQuad();
-			        			sectionTable[j][3] = ((info.Section) s).getSection();
+			        			sectionTable[j][3] = (Integer) (((info.Section) s).getSection());
 			        		}
 			        		
-			        		JTable table = new JTable(sectionTable, columnNames);	        		
+			        		JTable table = new JTable(sectionTable, columnNames);	
+			        		table.setAutoCreateRowSorter(true);
+			        		table.add(new JLabel("Test"));
 			        		JScrollPane scrollPane = new JScrollPane(table);
 			        		table.setFillsViewportHeight(true);
 			        		scrollPane.setVerticalScrollBarPolicy(
@@ -153,9 +159,11 @@ public class FinalDisplay extends JFrame {
 			        }
 			        
 			        // Display the window.
+			        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 			        frame.pack();
 			        frame.setVisible(true);
-			        frame.setBounds(900, 200, 900, 200);
+			        frame.setSize(900,300);
+			        frame.setBounds(dim.width/2-frame.getSize().width/2, dim.height/2-frame.getSize().height/2, 900, 300);
 				}
 
 				@Override
