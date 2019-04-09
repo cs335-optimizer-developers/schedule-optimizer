@@ -2,7 +2,9 @@ package io;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
 
 import core.ReadPopulateCSV;
 import core.Source;
@@ -29,24 +31,29 @@ public class ReadCur extends Reader {
 	public static Semester[] addPrerequisites(Semester[] sems) {
 		for (Semester sem : sems) {
 			for (Course c : sem.getCourses()) {
-				
+
 				String t = c.toTitle();
 				String st[] = t.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
 				String dept = st[0];
-				
+
 				ReadCur rC = new ReadCur();
-				
-				System.out.println(dept);
-				if (dept.contains("CSCI"));
+
+				if (dept.contains("CSCI"))
 					System.out.println(c.toTitle());
 				
-				if (!prereqs.containsKey(t)) {
+				// Populate the var if it hasn't already been.
+				if (!prereqs.containsKey(t))
 					rC.populateProgram(dept);
-				}
-				if (prereqs.get(t) == null);
-//					System.err.println(t+" not found");
-				else
-					System.out.println(t+" found");
+				
+				List<String> toAdd = new ArrayList<String>();
+				PriorityQueue<String> wL = new PriorityQueue<String>();
+				
+				// If contained
+				if (prereqs.get(t) != null)
+					for (String s : prereqs.get(t)) {
+						System.out.println(s);
+						System.out.println("Another one");
+					}
 				c.setPrerequisites(prereqs.get(t));
 			}
 		}
@@ -55,7 +62,7 @@ public class ReadCur extends Reader {
 	
 	public void populateProgram(String program) {
 		
-		input = makeStream(source + program + ".cur");
+		input = makeStream(source + program.toLowerCase() + ".cur");
 		
 		String classNum = "XXX";
 		while (moveLine()) {
@@ -65,7 +72,6 @@ public class ReadCur extends Reader {
 			if (words.length>1)
 				prereqs.put(program+classNum,list);
 			for (int i=1;i<words.length;i++) {
-				System.out.println(program+words[i]);
 				list.add(program+words[i]);
 			}
 		}

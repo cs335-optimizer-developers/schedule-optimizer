@@ -21,7 +21,7 @@ public abstract class Reader {
 			scanner = new Scanner(Paths.get(filename));
 		} 
 		catch (IOException e) {//e.printStackTrace();
-			//System.out.println("Requested: " + filename + " not found.");
+//			System.out.println("Requested: " + filename + " not found.");
 		}
 		
 		return scanner;
