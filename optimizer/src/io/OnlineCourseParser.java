@@ -7,6 +7,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
 
+import core.Source;
+
 
 /**
  * 
@@ -33,8 +35,9 @@ public class OnlineCourseParser {
 			String titles = courseAZ.title();
 				
 			System.out.println ("Title : " + titles ); */
-		
-		File input = new File ("majorlinks.txt");
+		System.out.println(new File(".").getAbsoluteFile());
+	    File input = new File("./src/io/links.dat");
+	    System.out.println(input.exists());
 			
 		Document courseAZ = Jsoup.parse(input, "majors", " ");
 
