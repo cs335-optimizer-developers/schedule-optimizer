@@ -117,15 +117,17 @@ public class FinalDisplay extends JFrame {
 						return;
 					}
 			        JFrame frame = new JFrame("Semester Information");
-			        
+
 			        // Create and set up the content pane.
+			        JScrollPane scrollPanel = new JScrollPane();
 			        JPanel panel = new JPanel();
-			        frame.setContentPane(panel);
+			       
+			        frame.setContentPane(scrollPanel);
 			        
 			        List<Course> courses = s[j].getCourses();
 			        for(int i = 0; i < courses.size(); i++) {
 			        		Course c = courses.get(i);	        		
-			        		String[] columnNames = {"Time","Professor","Quad","Section"};
+			        		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
 			        		
 			        		List<ClassType> sections = c.getSections();
 			        		Object[][] sectionTable = new Object[sections.size()][4];
@@ -137,34 +139,23 @@ public class FinalDisplay extends JFrame {
 			        			sectionTable[j][3] = ((info.Section) s).getSection();
 			        		}
 			        		
-			        		
 			        		JTable table = new JTable(sectionTable, columnNames);	        		
-			        		
 			        		JScrollPane scrollPane = new JScrollPane(table);
+			        		table.setFillsViewportHeight(true);
 			        		scrollPane.setVerticalScrollBarPolicy(
 			        		                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-			        		scrollPane.setPreferredSize(new Dimension(250, 145));
-			        		scrollPane.setMinimumSize(new Dimension(10, 10));
-			        		
+			        		scrollPane.setPreferredSize(new Dimension(400, 200));
+			        		scrollPane.setMinimumSize(new Dimension(30, 30));
 			        		panel.add(scrollPane);
-			        		
-			        		//JTextArea text1 = new JTextArea();
-//			        		text1.setEditable(false);
-//			        		Font font = text1.getFont();  
-//			        		text1.setText(c.getKey());
-//			        		text1.setFont(font.deriveFont(Font.BOLD));
-//			        		panel.add(text1);
-//			        		JTextArea text2 = new JTextArea();
-//			        		text2.setText(c.toString().replaceAll("\\\\",","));
-//			        		text2.setEditable(false);
-//			        		panel.add(text2);
-			        		
+			        		scrollPanel.setViewportView(panel);
+			        		scrollPanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
 			        		
 			        }
 			        
 			        // Display the window.
 			        frame.pack();
 			        frame.setVisible(true);
+			        frame.setBounds(900, 200, 900, 200);
 				}
 
 				@Override

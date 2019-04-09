@@ -1,3 +1,3 @@
 package info;
 
-public enum Quad {A, B, NONE}
+public enum Quad {A, B, FULL}
