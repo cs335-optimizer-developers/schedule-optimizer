@@ -1,10 +1,13 @@
 package io;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
+
+
 
 
 public class OnlineCourseParser {
@@ -16,7 +19,7 @@ public static class CourseParser {
 	/*throw exception (declaration)*/
 	public static void main(String[] args) throws IOException {
 		
-		Document courseAZ = null;
+		/*Document courseAZ = null;
 		
 		
 			courseAZ = Jsoup.connect("https://catalog.wheaton.edu/azindex/").get();
@@ -24,13 +27,18 @@ public static class CourseParser {
 				
 			String titles = courseAZ.title();
 				
-			System.out.println ("Title : " + titles );
+			System.out.println ("Title : " + titles ); */
+		
+			File input = new File ("majorlinks.txt");
+			
+			Document courseAZ = Jsoup.parse(input, "majors", " ");
 			
 			Elements links = courseAZ.select("a[href]");
 			
 			for (Element link: links) {
+				
 				//method call to courseDescrip. Will look like courseDescrip(links.attr("href").toString());
-				courseDescrip(links.attr("href").toString());
+				//courseDescrip(links.attr("href").toString());
 							//maybe make a links.attr("href").toString() variable to keep clean
 				
 				System.out.println("\nlink : " + link.attr("href"));
