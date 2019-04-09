@@ -18,6 +18,8 @@ public class Course {
 	private List<ClassType> labs = new ArrayList<>();
 	// Each class has 1-many sections
 	private List<ClassType> sections = new ArrayList<>();
+	//PrerequisiteCourses.
+	private List<String> prerequisites = new ArrayList<>();
 	
 	//testing these variables for a constructor for the search functionality - nyameye
 	private String subject, num,Section,Quad,Title, credits, meetingTime,Days,instructor,fees,attributes;
@@ -139,6 +141,12 @@ public class Course {
 	
 	public List<ClassType> getLabs() {
 		return labs;
+	}
+	public List<String> getPrerequisites() {
+		return prerequisites;
+	}
+	public void setPrerequisites(List<String> p) {
+		this.prerequisites = p;
 	}
 	
 	public String toString() {
