@@ -1,7 +1,14 @@
 package io;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.util.Iterator;
+import java.util.Scanner;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
@@ -26,39 +33,26 @@ public class OnlineCourseParser {
 
 	public static void main(String[] args) throws IOException {
 		
-		/*Document courseAZ = null;
-		
-		
-			courseAZ = Jsoup.connect("https://catalog.wheaton.edu/azindex/").get();
-				
-				
-			String titles = courseAZ.title();
-				
-			System.out.println ("Title : " + titles ); */
+	    BufferedWriter writer = new BufferedWriter(new FileWriter("./src/io/descriptions.csv"));
+  		
 		System.out.println(new File(".").getAbsoluteFile());
 	    File input = new File("./src/io/links.dat");
 	    System.out.println(input.exists());
-			
-		Document courseAZ = Jsoup.parse(input, "majors", " ");
-
-		Elements links = courseAZ.select("a[href]");
+		Scanner scan = new Scanner(input);	
 		
-		for (Element link: links) {
-			//method call to courseDescrip. Will look like courseDescrip(links.attr("href").toString());
-			courseDescrip(links.attr("href").toString());
-						//maybe make a links.attr("href").toString() variable to keep clean
-			
-			System.out.println("\nlink : " + link.attr("href"));
-			System.out.println("Text : " + link.text());
+		while(scan.hasNextLine()) {
+			String link = scan.nextLine();
+			courseDescrip(writer, link);
 		}
 		
-		//Document example = null;
-
-		//example = Jsoup.connect(links.attr("href").toString()).get();
+	    writer.close();
+		
+		
+		
 	}
 	
 	
-	public static void courseDescrip (String info) {
+	public static void courseDescrip (BufferedWriter writer, String info) {
 		
 		Document doc = null;
 		
@@ -77,17 +71,26 @@ public class OnlineCourseParser {
 			@SuppressWarnings("unused")
 			Element body = docs.body(); 
 			
-			Elements paragraphs = doc.getElementsByClass("courseblockdesc noindent");
-			for (Element paragraph : paragraphs ) {
-				System.out.println("\n descriptions: " + paragraph.text());
+			Elements descriptions = doc.getElementsByClass("courseblockdesc noindent");
+			Elements metadata = doc.getElementsByClass("courseblocktitle noindent");
+
+			for (int i = 0; i < descriptions.size(); i++) {
+				Element datum = metadata.get(i);
+				String s = datum.text();
+				s = s.replaceAll(",", "");
+				s = s.replaceAll("\"", "");
+				s = s.replaceFirst(" ", "");
+				s = s.replaceFirst(" ", "");
+				s = s.replace('.', ',');
+				s = s.replaceAll(",,", ",");
+				writer.append(s);
 				
+				Element description = descriptions.get(i);
+				String d = description.text().replaceAll("\"","");
+				writer.append("," + "\"" + d + "\"" + '\n');
 			}
 			
-			Elements paragraphs1 = doc.getElementsByClass("courseblocktitle noindent");
-			for (Element paragraph : paragraphs1 ) {
-				System.out.println("\n course name,number,and credits: " + paragraph.text());
-				 
-			}
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
