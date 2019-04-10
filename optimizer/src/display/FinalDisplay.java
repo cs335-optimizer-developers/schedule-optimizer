@@ -5,8 +5,10 @@ import java.awt.EventQueue;
 import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -25,6 +27,7 @@ import core.Optimizer;
 import info.ClassType;
 import info.Course;
 import info.Semester;
+import io.CsvParser;
 
 /**
  * Class to handle primary display window.
@@ -49,6 +52,7 @@ public class FinalDisplay extends JFrame {
 	private JButton submitButton;
 	
 	private CSVPanel scheduleDisplay = new CSVPanel();
+	private Map<String, Course> courseMap;
 	
 	JTextArea semOneText;
 	JTextArea semTwoText;
@@ -86,6 +90,15 @@ public class FinalDisplay extends JFrame {
 				e -> displaySchedule(Optimizer.getInstance().write()));
 		btnAdvancedOptions.addActionListener(
 				e -> scheduleDisplay.update((Optimizer.getInstance().generate())));
+		btnEnter.addActionListener(
+				e -> {
+					try {
+						displaySearch();
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+				});
 	}
 	
 	/**
@@ -171,6 +184,32 @@ public class FinalDisplay extends JFrame {
 				public void mousePressed(MouseEvent e) {}
 			});
 		}
+	}
+	
+	
+	
+	/**
+	 * initiates a new window when the enter button is pressed, and 
+	 * displays the information about the course
+	 * that was searched for
+	 * @throws IOException 
+	 */
+	public void displaySearch() throws IOException {
+		CsvParser csv = new CsvParser();
+		courseMap = csv.parseCsv();
+		JFrame frame = new JFrame("Search Results");
+        frame.setBounds(300, 300, 500, 500);
+        frame.setVisible(true);
+        String key = searchBar.getText();
+        Course c = courseMap.get(key);
+        JTextArea j = new JTextArea();
+        frame.add(j);
+        j.setVisible(true);
+        j.setSize(200, 200);
+        j.setText(c.ctoString());
+        
+        
+        
 	}
 	
 	/**
