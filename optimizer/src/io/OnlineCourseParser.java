@@ -3,17 +3,14 @@ package io;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
-import java.util.Iterator;
 import java.util.Scanner;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
-
 import core.Source;
 
 
@@ -46,7 +43,7 @@ public class OnlineCourseParser {
 		}
 		
 	    writer.close();
-		
+		scan.close();
 		
 		
 	}
