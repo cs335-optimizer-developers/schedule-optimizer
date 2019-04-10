@@ -25,7 +25,7 @@ public class Optimizer {
 	private Optimizer() {
 		one_optimizer = this;
 		availableClasses = 
-				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
+				ReadPopulateCSV.buildSemesters();
 		
 		alg = new AlgMatch();
 	}

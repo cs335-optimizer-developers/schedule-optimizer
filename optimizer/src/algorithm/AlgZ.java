@@ -61,8 +61,8 @@ public abstract class AlgZ implements Algorithm {
 			for (String s : rp.read(prog))
 				toTake.add(smT.get(s));
 		
-		for (String prog : programs)
-			 preReqs.putAll(rc.read(prog));
+		//for (String prog : programs)
+			// preReqs.putAll(rc.read(prog));
 		
 		Semester[] toReturn = new Semester[toTake.size()/4 * 2];
 		
