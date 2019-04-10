@@ -62,8 +62,8 @@ public class Course {
 	 * @param v
 	 */
 	public Course(String s, String v) {
-		String[] sinfo = s.split(" ");
-		String[] vinfo = v.split(" ");
+		String[] sinfo = s.split("\\s+");
+		String[] vinfo = v.split(",");
 		
 		subject = sinfo[0];
 		num = sinfo[1];
@@ -79,6 +79,20 @@ public class Course {
 		
 		
 	}
+	
+	/**
+	 * toString method for 
+	 * the search function specifically
+	 * 
+	 * @return the string to display
+	 */
+	public String ctoString() {
+		return "Subject: " + subject +" " + num + "\n" + "Section: " +  Section+ "\n"
+				+ "Quad" + Quad + "\n" + "Title: " + Title + "\n" + "Credits: " + credits + "\n"
+				+ "MeetingTime: " + meetingTime + " " + Days + "\n" 
+				+ "Instructor: "  + instructor + "\n" + "Fees: " + 
+				fees + "\n" + "Attrobutes: " + attributes;
+				}
 	
 	/**
 	 * Add a new section to the sections list
