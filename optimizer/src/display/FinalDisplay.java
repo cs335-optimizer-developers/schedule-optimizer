@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.HashMap;
+import java.util.Iterator;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -21,6 +23,7 @@ import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
@@ -28,6 +31,7 @@ import info.ClassType;
 import info.Course;
 import info.Semester;
 import io.CsvParser;
+
 
 /**
  * Class to handle primary display window.
@@ -198,15 +202,24 @@ public class FinalDisplay extends JFrame {
 		CsvParser csv = new CsvParser();
 		courseMap = csv.parseCsv();
 		JFrame frame = new JFrame("Search Results");
-        frame.setBounds(300, 300, 500, 500);
-        frame.setVisible(true);
-        String key = searchBar.getText();
-        Course c = courseMap.get(key);
-        JTextArea j = new JTextArea();
-        frame.add(j);
-        j.setVisible(true);
-        j.setSize(200, 200);
-        j.setText(c.ctoString());
+		JTextArea j = new JTextArea();
+		JScrollPane pane = new JScrollPane(j, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, 
+				JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		frame.add(pane);
+		j.setVisible(true);
+		j.setSize(200, 200);
+		frame.setBounds(300, 300, 500, 500);
+		frame.setVisible(true);
+		String key = searchBar.getText();
+		String result = "";
+		Iterator<String> it = courseMap.keySet().iterator();
+		while(it.hasNext()) {
+    	   		String k =  it.next();
+    	   		Course val = courseMap.get(k);
+    	   		if(key.equals(k.substring(0,8)))
+    	   			result = result+ "\n" + "\n" + val.ctoString();	
+		}
+		j.setText(result);
         
         
         
@@ -301,6 +314,7 @@ public class FinalDisplay extends JFrame {
 		lblSearchForClasses = new JLabel("Search For Classes");
 		
 		searchBar = new JTextField();
+		searchBar.setText("COMM 101");
 		searchBar.setColumns(10);
 		
 		
