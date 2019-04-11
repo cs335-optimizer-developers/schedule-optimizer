@@ -2,3 +2,6 @@
 /ReadDet.class
 /ReadPrg.class
 /Reader.class
+/CsvParser.class
+/OnlineCourseParser.class
+/Writer.class

@@ -1,10 +1,10 @@
 package core;
 
-import algorithm.*;
+import algorithm.AlgMatch;
+import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
 import info.Semester;
-import io.ReadCur;
 import io.Writer;
 
 /**
