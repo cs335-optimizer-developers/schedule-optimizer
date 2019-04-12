@@ -45,6 +45,7 @@ public abstract class AlgZ implements Algorithm {
 	public Semester[] build(DParam dpar) {
 		this.programs = dpar.getPrograms();
 		ReadPrg rp = new ReadPrg();
+		@SuppressWarnings("unused")
 		ReadCur rc = new ReadCur();
 		
 		toTake = new HashSet<Course>();
