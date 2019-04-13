@@ -1,12 +1,14 @@
 package io;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
 import core.Source;
 import info.Course;
+
 
 
 public class CsvParser {
@@ -24,7 +26,7 @@ public class CsvParser {
 			String data = input.nextLine();
 			String [] values = data.split(",");
 			
-			 current = values[0] + " " + values [1];
+			 current = values[0] + " " + values [1]+ "  ";
 			 rest = values[2] + "," + values[3] + "," +  values[4] + "," + values[5] 
 					+ "," + values[6] + "," + values[7] +"," +  values[8] + "," + values[9] +"," + values[10]; 
 			
@@ -37,12 +39,11 @@ public class CsvParser {
 			}
 							
 		}
+		
 		input.close();	
 		return cMap;
 		}
 	
-	}
-	
-	
+}
 
 
