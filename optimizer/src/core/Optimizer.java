@@ -1,6 +1,6 @@
 package core;
 
-import algorithm.AlgMatch;
+import algorithm.AlgComplex;
 import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
@@ -27,7 +27,7 @@ public class Optimizer {
 		availableClasses = 
 				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
 		
-		alg = new AlgMatch();
+		alg = new AlgComplex();
 	}
 
 	/*
@@ -52,13 +52,10 @@ public class Optimizer {
 	 * @return
 	 */
 	public Semester[] write() {
-		if (newSchedule != null)
+		if (newSchedule != null) {
 			Writer.writeSchedule(newSchedule);
-		
-		else {
-			System.out.println("1");
+		} else {
 			DParam dPar = FinalDisplay.requestParameters();
-			System.out.println("2");
 			newSchedule = alg.build(dPar);
 		}
 			

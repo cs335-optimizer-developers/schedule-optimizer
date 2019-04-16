@@ -1,6 +1,7 @@
 package test;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -18,6 +19,7 @@ import core.Source;
 import display.FinalDisplay;
 import info.Course;
 import info.Semester;
+import io.ReadCur;
 
 /**
  * 
@@ -64,7 +66,25 @@ public class GenTest {
 	
 	@Test
 	public void generate() {
-		opt.generate();
+		Semester[] s = opt.generate();
+		assertNotNull(s);
+		assertTrue(s.length > 0);
+		assertNotNull(s[0].getCourses());
+		assertTrue(s[0].getCourses().size() > 0);
+
+	}
+	
+	@Test
+	public void addPrerequisites() {
+		Semester[] s = opt.generate();
+		System.out.println("Babs ...");
+		for (Semester sem : s)
+			if (sem != null)
+				for (Course c : sem.getCourses())
+					System.out.println(c.toTitle());
+		s = ReadCur.addPrerequisites(s);
+		assertTrue(s.length > 0);
+		assertNotNull(s);
 	}
 	
 	@Test

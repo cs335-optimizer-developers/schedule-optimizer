@@ -27,6 +27,7 @@ public class Writer {
 		String source = Source.generated_schedule;
 		Path path = Paths.get(source);
 		
+		
 		String toWrite = "";
 		for (Semester s : schedule) {
 			//System.out.println("Schedule found");
@@ -46,10 +47,12 @@ public class Writer {
 				if (!s.getCourses().isEmpty())
 					circuit.add(s.getCourses());
 		
+		
 		//Adding each course to the line it should be on.
 		//Done this way because lines must be written together.
 		boolean added = true;
-		for (int i=0;added;i++) {
+		for (int i=0;added && circuit.size() > 0;i++) {
+//			System.err.println(i);
 			for (List<Course> al : circuit) {
 				added = false;
 				if (i < al.size()) {
@@ -61,7 +64,8 @@ public class Writer {
 			if (added)
 				toWrite += "\n";
 		}
-
+		
+		
 		try {
 			//Make and write to the file.
 			Files.deleteIfExists(path);

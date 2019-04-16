@@ -1,10 +1,11 @@
 package io;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.Queue;
 
 import core.ReadPopulateCSV;
 import core.Source;
@@ -31,32 +32,41 @@ public class ReadCur extends Reader {
 	public static Semester[] addPrerequisites(Semester[] sems) {
 				
 		for (Semester sem : sems) {
-			for (Course c : sem.getCourses()) {
+			if (sem != null)
+				for (Course c : sem.getCourses()) {
 
-				String t = c.toTitle();
-				String st[] = t.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
-				String dept = st[0];
+					String t = c.toTitle();
+					String st[] = t.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
+					String dept = st[0];
 
-				ReadCur rC = new ReadCur();
+					ReadCur rC = new ReadCur();
 
-				if (dept.contains("CSCI"))
-					System.err.println(c.toTitle());
-				
-				// Populate the var if it hasn't already been.
-				if (!prereqs.containsKey(t))
-					rC.populateProgram(dept);
-				
-				List<String> toAdd = new ArrayList<String>();
-				PriorityQueue<String> wL = new PriorityQueue<String>();
-				
-				// If contained
-//				if (prereqs.get(t) != null)
-//					for (String s : prereqs.get(t)) {
-//						System.out.println(s);
-//						System.out.println("Another one");
-//					}
-				c.setPrerequisites(prereqs.get(t));
-			}
+					//				if (dept.contains("CSCI"))
+					//					System.err.println(c.toTitle());
+
+					// Populate the var if it hasn't already been.
+					if (!prereqs.containsKey(t))
+						rC.populateProgram(dept);
+
+					List<String> toAdd = prereqs.get(t);
+					Queue<String> wL = new ArrayDeque<String>();
+					if (toAdd != null)
+						wL.addAll(toAdd);
+
+					// If contained
+					while (!wL.isEmpty()) {
+						String cur = wL.remove();
+						if (prereqs.get(cur) != null) {
+							//						System.out.println(cur);
+							for (String pR : prereqs.get(cur))
+								if (!toAdd.contains(pR)) {
+									toAdd.add(pR);
+									//								System.out.println(pR);
+								}
+						}
+					}
+					c.setPrerequisites(toAdd);
+				}
 		}
 		return sems;
 	}

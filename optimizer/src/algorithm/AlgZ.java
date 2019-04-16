@@ -10,7 +10,6 @@ import core.Optimizer;
 import display.DParam;
 import info.Course;
 import info.Semester;
-import io.ReadCur;
 import io.ReadPrg;
 
 /**
@@ -60,7 +59,7 @@ public abstract class AlgZ implements Algorithm {
 			for (String s : rp.read(prog))
 				toTake.add(smT.get(s));
 		
-		Semester[] toReturn = new Semester[8+toTake.size()/4 * 4];
+		Semester[] toReturn = new Semester[10+toTake.size()/4 * 4];
 		
 		distribute(toReturn);
 		
