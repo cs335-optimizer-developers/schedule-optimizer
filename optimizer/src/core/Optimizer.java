@@ -5,6 +5,10 @@ import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
 import info.Semester;
+
+import java.io.IOException;
+import java.util.Map;
+import info.Course;
 import io.Writer;
 
 /**
@@ -20,6 +24,7 @@ public class Optimizer {
 	private Semester[] availableClasses;
 	private Algorithm alg;
 	private Semester[] newSchedule;
+	private static Map<String, Course> courseMap;
 	
 	
 	private Optimizer() {
@@ -28,6 +33,11 @@ public class Optimizer {
 				ReadPopulateCSV.buildSemesters();
 		
 		alg = new AlgMatch();
+		try {
+			courseMap = ReadPopulateCSV.buildMap();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	/*
@@ -65,6 +75,8 @@ public class Optimizer {
 	}
 	
 	public Semester[] getAvailableClasses() {return availableClasses;}
+	
+	public static Map<String, Course> getCourseMap(){return courseMap;}
 	
 	public void setAlgorithm(Algorithm a) {alg = a;}
 	

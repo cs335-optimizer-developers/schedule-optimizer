@@ -2,12 +2,16 @@ package core;
 
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 import info.*;
 
@@ -33,6 +37,12 @@ public class ReadPopulateCSV {
 		toReturn[1].setYear(2019);
 		
 		return toReturn;
+	}
+	
+	public static Map<String, Course> buildMap() throws IOException{
+		Map<String, Course> toReturn = makeMap(Source.fall_2018);
+		return toReturn;
+		
 	}
 	
 	//public static void main(String[] args) {
@@ -228,5 +238,68 @@ public class ReadPopulateCSV {
 			}
 		return tags;
 	}
+	
+	
+
+	public static Map<String, Course> makeMap(String f) throws IOException {
+		Map<String, Course> cMap = new HashMap<String, Course>();
+		List<Course> courses = new ArrayList<Course>();
+
+
+		File file = new File(f);
+		Scanner input = new Scanner(file);
+		input.nextLine();
+		int i = 1;
+		String current= "";
+		String rest = "";
+		while(input.hasNext()) {
+			String values = input.nextLine();
+			String [] data = values.split(",");
+			
+			 current = data[0] + " " + data [1]+ "  ";
+			 Course c;
+				
+				ClassTime meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
+				// Parse the fee
+				double fee = 0;
+				if (!data[9].isEmpty())
+					fee = Double.parseDouble(data[9]);
+				
+				// The Details object of this particular course (lab/section)
+				ClassDetails details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
+				
+				ClassType type;
+				int number;
+				
+				// Check if analyzing lab
+				if(data[1].length() == 4) {
+					type = new Lab(details);
+					number = Integer.parseInt(data[1].substring(0, 3));
+				}
+				
+				// Else analyzing a section
+				else {
+					type = new Section(details, Integer.parseInt(data[2]));
+					number = Integer.parseInt(data[1]);
+				}
+				
+				// Correct subject format (remove spaces, C E = CE)
+				String subj = data[0].replaceAll("\\s","");
+				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]));
+				
+			
+			if(cMap.containsKey(current)) {
+				if(data[1].length() == 4)
+					cMap.get(current).addLab(type);
+				else
+					cMap.get(current).addSection(type);
+			}else {
+				cMap.put(current, c);
+			}					
+		}
+		
+		input.close();	
+		return cMap;
+		}
 
 }
