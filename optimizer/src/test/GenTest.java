@@ -77,11 +77,6 @@ public class GenTest {
 	@Test
 	public void addPrerequisites() {
 		Semester[] s = opt.generate();
-		System.out.println("Babs ...");
-		for (Semester sem : s)
-			if (sem != null)
-				for (Course c : sem.getCourses())
-					System.out.println(c.toTitle());
 		s = ReadCur.addPrerequisites(s);
 		assertTrue(s.length > 0);
 		assertNotNull(s);
