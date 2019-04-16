@@ -29,6 +29,7 @@ public class ReadCur extends Reader {
 	}
 	
 	public static Semester[] addPrerequisites(Semester[] sems) {
+				
 		for (Semester sem : sems) {
 			for (Course c : sem.getCourses()) {
 
@@ -39,7 +40,7 @@ public class ReadCur extends Reader {
 				ReadCur rC = new ReadCur();
 
 				if (dept.contains("CSCI"))
-					System.out.println(c.toTitle());
+					System.err.println(c.toTitle());
 				
 				// Populate the var if it hasn't already been.
 				if (!prereqs.containsKey(t))
@@ -49,11 +50,11 @@ public class ReadCur extends Reader {
 				PriorityQueue<String> wL = new PriorityQueue<String>();
 				
 				// If contained
-				if (prereqs.get(t) != null)
-					for (String s : prereqs.get(t)) {
-						System.out.println(s);
-						System.out.println("Another one");
-					}
+//				if (prereqs.get(t) != null)
+//					for (String s : prereqs.get(t)) {
+//						System.out.println(s);
+//						System.out.println("Another one");
+//					}
 				c.setPrerequisites(prereqs.get(t));
 			}
 		}
@@ -75,10 +76,5 @@ public class ReadCur extends Reader {
 				list.add(program+words[i]);
 			}
 		}
-	}
-
-	public Map<? extends String, ? extends String> read(String prog) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

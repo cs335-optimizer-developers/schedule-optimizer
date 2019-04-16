@@ -5,6 +5,7 @@ import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
 import info.Semester;
+import io.ReadCur;
 import io.Writer;
 
 /**
@@ -21,11 +22,10 @@ public class Optimizer {
 	private Algorithm alg;
 	private Semester[] newSchedule;
 	
-	
 	private Optimizer() {
 		one_optimizer = this;
 		availableClasses = 
-				ReadPopulateCSV.buildSemesters();
+				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
 		
 		alg = new AlgMatch();
 	}
@@ -56,7 +56,9 @@ public class Optimizer {
 			Writer.writeSchedule(newSchedule);
 		
 		else {
+			System.out.println("1");
 			DParam dPar = FinalDisplay.requestParameters();
+			System.out.println("2");
 			newSchedule = alg.build(dPar);
 		}
 			
