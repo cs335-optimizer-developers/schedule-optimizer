@@ -13,7 +13,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-import info.*;
+import info.ClassDetails;
+import info.ClassTime;
+import info.ClassType;
+import info.Course;
+import info.Day;
+import info.Lab;
+import info.Quad;
+import info.Section;
+import info.Semester;
+import info.Subject;
+import info.Tag;
 
 /**
  * /**

@@ -160,7 +160,10 @@ public class Course {
 		return prerequisites;
 	}
 	public void setPrerequisites(List<String> p) {
-		this.prerequisites = p;
+		if (p != null)
+			for (String s :p)
+				if (s != null)
+					prerequisites.add(s);
 	}
 	
 	public String toString() {

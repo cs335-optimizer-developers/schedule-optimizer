@@ -35,7 +35,6 @@ public class Optimizer {
 		availableClasses = 
 				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
 		alg = new AlgMatch();
-		alg = new AlgComplex();
 		try {
 			courseMap = ReadPopulateCSV.buildMap();
 		} catch (IOException e) {
