@@ -1,14 +1,18 @@
 package core;
 
+import algorithm.AlgComplex;
 import algorithm.AlgMatch;
 import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
 import info.Semester;
 
+
 import java.io.IOException;
 import java.util.Map;
 import info.Course;
+import io.ReadCur;
+
 import io.Writer;
 
 /**
@@ -26,18 +30,13 @@ public class Optimizer {
 	private Semester[] newSchedule;
 	private static Map<String, Course> courseMap;
 	
-	
 	private Optimizer() {
 		one_optimizer = this;
 		availableClasses = 
-				ReadPopulateCSV.buildSemesters();
-		
+				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
 		alg = new AlgMatch();
-		try {
-			courseMap = ReadPopulateCSV.buildMap();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		alg = new AlgComplex();
+
 	}
 
 	/*
@@ -62,10 +61,9 @@ public class Optimizer {
 	 * @return
 	 */
 	public Semester[] write() {
-		if (newSchedule != null)
+		if (newSchedule != null) {
 			Writer.writeSchedule(newSchedule);
-		
-		else {
+		} else {
 			DParam dPar = FinalDisplay.requestParameters();
 			newSchedule = alg.build(dPar);
 		}

@@ -7,10 +7,9 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.HashMap;
-import java.util.Iterator;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -23,7 +22,6 @@ import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
-import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
@@ -121,7 +119,7 @@ public class FinalDisplay extends JFrame {
 		semContainers.add(semSevenText);
 		semContainers.add(semEightText);
 		
-		for(int i = 0; i < s.length; i++) {
+		for(int i = 0; i < semContainers.size(); i++) {
 			JTextArea a = semContainers.get(i);
 			a.setText(parseSemester(s[i]));
 			final int j = i;

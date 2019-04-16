@@ -16,7 +16,7 @@ public class ReadPrg extends Reader {
 	
 	public Set<String> read(String prog) {
 				
-		input = makeStream(source + prog + ".prg");
+		input = makeStream(source + prog + ".pr");
 		Set<String> toReturn = new java.util.HashSet<>();
 		
 		String prgName = "";

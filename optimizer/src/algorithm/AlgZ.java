@@ -10,7 +10,6 @@ import core.Optimizer;
 import display.DParam;
 import info.Course;
 import info.Semester;
-import io.ReadCur;
 import io.ReadPrg;
 
 /**
@@ -43,10 +42,8 @@ public abstract class AlgZ implements Algorithm {
 	public abstract void distribute(Semester[] toFill);
 		
 	public Semester[] build(DParam dpar) {
-		this.programs = dpar.getPrograms();
+		programs = dpar.getPrograms();
 		ReadPrg rp = new ReadPrg();
-		@SuppressWarnings("unused")
-		ReadCur rc = new ReadCur();
 		
 		toTake = new HashSet<Course>();
 		Map<String,Course> smT = new HashMap<>();
@@ -62,10 +59,7 @@ public abstract class AlgZ implements Algorithm {
 			for (String s : rp.read(prog))
 				toTake.add(smT.get(s));
 		
-		//for (String prog : programs)
-			// preReqs.putAll(rc.read(prog));
-		
-		Semester[] toReturn = new Semester[toTake.size()/4 * 2];
+		Semester[] toReturn = new Semester[toTake.size()/3];
 		
 		distribute(toReturn);
 		
