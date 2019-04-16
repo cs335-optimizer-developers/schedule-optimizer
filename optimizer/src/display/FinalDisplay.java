@@ -197,8 +197,6 @@ public class FinalDisplay extends JFrame {
 	 * @throws IOException 
 	 */
 	public void displaySearch() throws IOException {
-		CsvParser csv = new CsvParser();
-		courseMap = csv.parseCsv();
 		JFrame frame = new JFrame("Search Results");
 		JTextArea j = new JTextArea();
 		JScrollPane pane = new JScrollPane(j, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, 
@@ -210,13 +208,25 @@ public class FinalDisplay extends JFrame {
 		frame.setVisible(true);
 		String key = searchBar.getText();
 		String result = "";
-		Iterator<String> it = courseMap.keySet().iterator();
+		List<ClassType> sections = courseMap.get(key).getSections();
+		String time, prof, quad, section;
+		time = prof = quad = section = "";
+		System.out.println(sections.size());
+		for(int i = 0; i < sections.size(); i++) {
+			ClassType s = sections.get(i);
+			time += s.getTime() + "\n";
+			prof += s.getProf() + "\n";
+			quad += s.getQuad() + "\n";
+			result += time + prof + quad + "\n";
+		}
+
+		/*Iterator<String> it = courseMap.keySet().iterator();
 		while(it.hasNext()) {
     	   		String k =  it.next();
     	   		Course val = courseMap.get(k);
     	   		if(key.equals(k.substring(0,8)))
     	   			result = result+ "\n" + "\n" + val.ctoString();	
-		}
+		}*/
 		j.setText(result);
         
         
@@ -322,9 +332,8 @@ public class FinalDisplay extends JFrame {
 		 * 
 		 */
 		btnEnter = new JButton("Enter");
-		btnEnter.addActionListener(e -> {
-			//syso("Enter pressed")
-		});
+		
+		courseMap = Optimizer.getCourseMap();
 		
 		submitButton = new JButton("Write");
 		
