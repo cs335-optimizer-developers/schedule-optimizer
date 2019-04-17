@@ -202,39 +202,26 @@ public class FinalDisplay extends JFrame {
 	public void displaySearch() throws IOException {
 		CsvParser csv = new CsvParser();
 		cMap = csv.parseCsv();
-		System.out.println(cMap.containsKey("MUMS 472"));
 		JFrame frame = new JFrame("Search Results");
-		JTextArea j = new JTextArea();
-		JScrollPane pane = new JScrollPane(j, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, 
-				JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-		frame.add(pane);
-		j.setVisible(true);
-		j.setSize(200, 200);
-		frame.setBounds(300, 300, 500, 500);
+		frame.setBounds(300, 300, 700, 500);
 		frame.setVisible(true);
 		String key = searchBar.getText();
-		String result = "";
-		System.out.println(cMap.get(key).toString());
+
 		List<ClassType> sections = cMap.get(key).getSections();
-		String time, prof, quad, section;
-		time = prof = quad = section = "";
-		System.out.println(sections.size());
+		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
+		Object[][] sectionTable = new Object[sections.size()][4];
 		for(int i = 0; i < sections.size(); i++) {
 			ClassType s = sections.get(i);
-			time += s.getTime() + "\n";
-			prof += s.getProf() + "\n";
-			quad += s.getQuad() + "\n";
-			result += time + prof + quad + "\n";
+			sectionTable[i][0] = s.getTime().replaceAll("\\\\",",");
+			sectionTable[i][1] = s.getProf().replaceAll("\\\\",",");
+			sectionTable[i][2] = s.getQuad();
+			sectionTable[i][3] = (Integer) (((info.Section) s).getSection());
 		}
-
-		/*Iterator<String> it = courseMap.keySet().iterator();
-		while(it.hasNext()) {
-    	   		String k =  it.next();
-    	   		Course val = courseMap.get(k);
-    	   		if(key.equals(k.substring(0,8)))
-    	   			result = result+ "\n" + "\n" + val.ctoString();	
-		}*/
-		j.setText(result);
+		
+		JTable table = new JTable(sectionTable, columnNames);	
+		table.setAutoCreateRowSorter(true);
+		table.add(new JLabel("Test"));
+		frame.add(table);
 	}
         
         

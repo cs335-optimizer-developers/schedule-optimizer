@@ -21,8 +21,7 @@ public class Course {
 	//PrerequisiteCourses.
 	private List<String> prerequisites = new ArrayList<>();
 	
-	//testing these variables for a constructor for the search functionality - nyameye
-	private String subject, num,Section,Quad,Title, credits, meetingTime,Days,instructor,fees,attributes;
+	
 
 	
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
@@ -53,46 +52,6 @@ public class Course {
 		subj = Subject.valueOf(info[0]);
 		number = Integer.valueOf(info[1]);
 	}
-	
-	
-	/**
-	 * testing this constructor to use when parsing 
-	 * csv files for the search functionality 
-	 * @param s
-	 * @param v
-	 */
-	public Course(String s, String v) {
-		String[] sinfo = s.split("\\s+");
-		String[] vinfo = v.split(",");
-		
-		subject = sinfo[0];
-		num = sinfo[1];
-		Section = vinfo[0];
-		Quad = vinfo[1];
-		Title = vinfo[2];
-		credits= vinfo[3];
-		meetingTime= vinfo[4];
-		Days= vinfo[5];
-		instructor= vinfo[6];
-		fees= vinfo[7];
-		attributes= vinfo[8];
-		
-		
-	}
-	
-	/**
-	 * toString method for 
-	 * the search function specifically
-	 * 
-	 * @return the string to display
-	 */
-	public String ctoString() {
-		return "Subject: " + subject +" " + num + "\n" + "Section: " +  Section+ "\n"
-				+ "Quad" + Quad + "\n" + "Title: " + Title + "\n" + "Credits: " + credits + "\n"
-				+ "MeetingTime: " + meetingTime + " " + Days + "\n" 
-				+ "Instructor: "  + instructor + "\n" + "Fees: " + 
-				fees + "\n" + "Attrobutes: " + attributes;
-				}
 	
 	/**
 	 * Add a new section to the sections list
