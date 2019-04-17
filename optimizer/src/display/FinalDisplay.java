@@ -30,7 +30,6 @@ import core.Source;
 import info.ClassType;
 import info.Course;
 import info.Semester;
-import io.CsvParser;
 
 
 /**
@@ -200,12 +199,12 @@ public class FinalDisplay extends JFrame {
 	 * @throws IOException 
 	 */
 	public void displaySearch() throws IOException {
-		CsvParser csv = new CsvParser();
-		cMap = csv.parseCsv();
+		
 		JFrame frame = new JFrame("Search Results");
 		frame.setBounds(300, 300, 700, 500);
 		frame.setVisible(true);
 		String key = searchBar.getText();
+		key = key.toUpperCase();
 
 		List<ClassType> sections = cMap.get(key).getSections();
 		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
@@ -328,6 +327,13 @@ public class FinalDisplay extends JFrame {
 		 */
 		btnEnter = new JButton("Enter");
 		
+		ReadPopulateCSV csv = new ReadPopulateCSV();
+		try {
+			cMap = csv.makeMap();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		submitButton = new JButton("Write");
 		

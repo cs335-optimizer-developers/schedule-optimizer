@@ -21,9 +21,7 @@ public class Course {
 	//PrerequisiteCourses.
 	private List<String> prerequisites = new ArrayList<>();
 	
-	
 
-	
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
 	public Course(Subject subj, int number, ClassType type, List<Tag> tags) {
 		if(type == null) {
