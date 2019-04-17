@@ -7,7 +7,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -270,20 +269,20 @@ public class FinalDisplay extends JFrame {
 		//TODO Check box for if to include gen-eds. Client may choose not to for experimentation.
 		boolean wantGenEd = true;
 		if (wantGenEd) {
-			System.out.println("test-gen-ed" + " requested");
+//			System.err.println("test-gen-ed" + " requested");
 			toReturn.addProgram("test-gen-ed");
 		}
 		
 		//TODO a slider, higher number referring to higher preference to fill gen-eds early.
 		toReturn.setPreferGenEd(1);
 		
-		System.out.println(majorOne.getText() + " requested");
+//		System.err.println(majorOne.getText() + " requested");
 		toReturn.addProgram(majorOne.getText());
 		
-		System.out.println(majorTwo.getText() + " requested");
+//		System.err.println(majorTwo.getText() + " requested");
 		toReturn.addProgram(majorTwo.getText());
 		
-		System.out.println(minor.getText() + " requested");
+//		System.err.println(minor.getText() + " requested");
 		toReturn.addProgram(minor.getText());
 		
 		return toReturn;

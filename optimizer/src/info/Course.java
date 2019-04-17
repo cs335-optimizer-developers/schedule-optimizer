@@ -19,7 +19,7 @@ public class Course {
 	// Each class has 1-many sections
 	private List<ClassType> sections = new ArrayList<>();
 	//PrerequisiteCourses.
-	private List<String> prerequisites = new ArrayList<>();
+	private List<Course> prerequisites = new ArrayList<>();
 	
 
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
@@ -113,11 +113,14 @@ public class Course {
 	public List<ClassType> getLabs() {
 		return labs;
 	}
-	public List<String> getPrerequisites() {
+	public List<Course> getPrerequisites() {
 		return prerequisites;
 	}
-	public void setPrerequisites(List<String> p) {
-		this.prerequisites = p;
+	public void setPrerequisites(List<Course> p) {
+		if (p != null)
+			for (Course c : p)
+				if (c != null)
+					prerequisites.add(c);
 	}
 	
 	public String toString() {
