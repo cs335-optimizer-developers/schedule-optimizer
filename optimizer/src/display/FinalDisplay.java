@@ -25,6 +25,8 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
+import core.ReadPopulateCSV;
+import core.Source;
 import info.ClassType;
 import info.Course;
 import info.Semester;
@@ -54,7 +56,7 @@ public class FinalDisplay extends JFrame {
 	private JButton submitButton;
 	
 	private CSVPanel scheduleDisplay = new CSVPanel();
-	private Map<String, Course> courseMap;
+	private Map<String, Course> cMap;
 	
 	JTextArea semOneText;
 	JTextArea semTwoText;
@@ -81,6 +83,7 @@ public class FinalDisplay extends JFrame {
 				frame.connect();
 			} catch (Exception e) {e.printStackTrace();}
 		});
+
 	}
 	
 	/**
@@ -197,6 +200,9 @@ public class FinalDisplay extends JFrame {
 	 * @throws IOException 
 	 */
 	public void displaySearch() throws IOException {
+		CsvParser csv = new CsvParser();
+		cMap = csv.parseCsv();
+		System.out.println(cMap.containsKey("MUMS 472"));
 		JFrame frame = new JFrame("Search Results");
 		JTextArea j = new JTextArea();
 		JScrollPane pane = new JScrollPane(j, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, 
@@ -208,7 +214,8 @@ public class FinalDisplay extends JFrame {
 		frame.setVisible(true);
 		String key = searchBar.getText();
 		String result = "";
-		List<ClassType> sections = courseMap.get(key).getSections();
+		System.out.println(cMap.get(key).toString());
+		List<ClassType> sections = cMap.get(key).getSections();
 		String time, prof, quad, section;
 		time = prof = quad = section = "";
 		System.out.println(sections.size());
@@ -228,10 +235,11 @@ public class FinalDisplay extends JFrame {
     	   			result = result+ "\n" + "\n" + val.ctoString();	
 		}*/
 		j.setText(result);
-        
-        
-        
 	}
+        
+        
+        
+	
 	
 	/**
 	 * Parse a semester's courses into a single string.
@@ -333,7 +341,6 @@ public class FinalDisplay extends JFrame {
 		 */
 		btnEnter = new JButton("Enter");
 		
-		courseMap = Optimizer.getCourseMap();
 		
 		submitButton = new JButton("Write");
 		

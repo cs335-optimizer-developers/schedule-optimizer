@@ -33,15 +33,13 @@ public class CsvParser {
 		Scanner input = new Scanner(file);
 		input.nextLine();
 		int i = 1;
-		String current= "";
+		//String current= "";
 		String rest = "";
 		while(input.hasNext()) {
 			String values = input.nextLine();
 			String [] data = values.split(",");
 			
-			 current = data[0] + " " + data [1]+ "  ";
-			// rest = values[2] + "," + values[3] + "," +  values[4] + "," + values[5] 
-					//+ "," + values[6] + "," + values[7] +"," +  values[8] + "," + values[9] +"," + values[10]; 
+			 String current = data[0] + " " + data [1];
 			 
 			 Course c;
 				
@@ -71,45 +69,19 @@ public class CsvParser {
 				
 				// Correct subject format (remove spaces, C E = CE)
 				String subj = data[0].replaceAll("\\s","");
-				String key = Subject.valueOf(subj).toString()+":"+number;
 				
-				// TODO: Check if the Section object is from a new Class, or an already instantiated Class
-				boolean flag = false;
-				Iterator<Course> it = courses.iterator();
-				while(it.hasNext()) {
-					Course cr = it.next();
-					// Already Created... add lab/section
-					if(cr.getKey().equals(key)) {
-						// Lab
-						if(data[1].length() == 4)
-							cr.addLab(type);
-						// Section
-						else
-							cr.addSection(type);
-						flag = true;
-						break;
-					}
-				}
-				
-				if(flag)
-					continue;
-				// New Course is created for the section
-				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]));
-				courses.add(c);
-			
 			if(cMap.containsKey(current)) {
-				//cMap.put(current + "(" + i + ")", c);
-				//i ++;
 				if(data[1].length() == 4)
 					cMap.get(current).addLab(type);
 				else
 					cMap.get(current).addSection(type);
 			}else {
+				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]));
 				cMap.put(current, c);
-			}					
+			}	
 		}
 		
-		input.close();	
+		input.close();
 		return cMap;
 		}
 	

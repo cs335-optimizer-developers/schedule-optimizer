@@ -28,7 +28,6 @@ public class Optimizer {
 	private Semester[] availableClasses;
 	private Algorithm alg;
 	private Semester[] newSchedule;
-	private static Map<String, Course> courseMap;
 	
 	private Optimizer() {
 		one_optimizer = this;
@@ -36,11 +35,7 @@ public class Optimizer {
 				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
 		alg = new AlgMatch();
 		alg = new AlgComplex();
-		try {
-			courseMap = ReadPopulateCSV.buildMap();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		
 
 	}
 
@@ -79,7 +74,6 @@ public class Optimizer {
 	
 	public Semester[] getAvailableClasses() {return availableClasses;}
 	
-	public static Map<String, Course> getCourseMap(){return courseMap;}
 	
 	public void setAlgorithm(Algorithm a) {alg = a;}
 	
