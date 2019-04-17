@@ -49,6 +49,10 @@ public class ReadPopulateCSV {
 		return toReturn;
 	}
 	
+	public static Map<String, Course> getMap() throws IOException{
+		return makeMap();
+	}
+	
 	
 	//public static void main(String[] args) {
 	//	buildSemesters("./optimizer/input");
@@ -161,7 +165,7 @@ public class ReadPopulateCSV {
 		return new Semester(courses);
 	}
 	
-	public static Map<String, Course> makeMap() throws IOException {
+	private static Map<String, Course> makeMap() throws IOException {
 		Map<String, Course> cMap = new HashMap<String, Course>();
 		File file = new File(Source.fall_2018);
 		Scanner input = new Scanner(file);
