@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
+import core.Optimizer;
 import core.ReadPopulateCSV;
 import core.Source;
 import info.Course;
@@ -24,6 +25,7 @@ public class ReadCur extends Reader {
 
 	private static String source = Source.curriculae_folder;
 	private static Map<String,ArrayList<String>> prereqs = new HashMap<>();
+	private static Map<String,Course> cMap = Optimizer.getCourseMap();
 
 	public static void main(String[] args) {
 		ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
@@ -65,7 +67,15 @@ public class ReadCur extends Reader {
 								}
 						}
 					}
-					c.setPrerequisites(toAdd);
+					
+					List<Course> tR = new ArrayList<>();
+					
+					System.out.println(cMap == null);
+					if (toAdd != null)
+						for (String s : toAdd)
+							tR.add(cMap.get(s));
+
+					c.setPrerequisites(tR);
 				}
 		}
 		return sems;

@@ -34,7 +34,7 @@ import info.Tag;
  *
  */
 public class ReadPopulateCSV {
-	
+		
 	public static Semester[] buildSemesters() {
 		
 		Semester[] toReturn = new Semester[2];

@@ -1,18 +1,15 @@
 package core;
 
+import java.io.IOException;
+import java.util.Map;
+
 import algorithm.AlgComplex;
-import algorithm.AlgMatch;
 import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
-import info.Semester;
-
-
-import java.io.IOException;
-import java.util.Map;
 import info.Course;
+import info.Semester;
 import io.ReadCur;
-
 import io.Writer;
 
 /**
@@ -34,7 +31,7 @@ public class Optimizer {
 		one_optimizer = this;
 		availableClasses = 
 				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
-		alg = new AlgMatch();
+		alg = new AlgComplex();
 		try {
 			courseMap = ReadPopulateCSV.buildMap();
 		} catch (IOException e) {

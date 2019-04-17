@@ -7,7 +7,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -28,7 +27,6 @@ import core.Optimizer;
 import info.ClassType;
 import info.Course;
 import info.Semester;
-import io.CsvParser;
 
 
 /**
