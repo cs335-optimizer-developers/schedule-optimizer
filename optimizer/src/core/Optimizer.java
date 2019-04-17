@@ -74,7 +74,6 @@ public class Optimizer {
 	
 	public Semester[] getAvailableClasses() {return availableClasses;}
 	
-	
 	public void setAlgorithm(Algorithm a) {alg = a;}
 	
 	public static Optimizer getInstance() {

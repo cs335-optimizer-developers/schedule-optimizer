@@ -151,7 +151,7 @@ public class ReadPopulateCSV {
 		return new Semester(courses);
 	}
 	
-	public Map<String, Course> makeMap() throws IOException {
+	public static Map<String, Course> makeMap() throws IOException {
 		Map<String, Course> cMap = new HashMap<String, Course>();
 		File file = new File(Source.fall_2018);
 		Scanner input = new Scanner(file);
@@ -159,36 +159,31 @@ public class ReadPopulateCSV {
 		while(input.hasNext()) {
 			String values = input.nextLine();
 			String [] data = values.split(",");
-			
-			 String current = data[0] + " " + data [1];
+			String current = data[0] + " " + data [1];
 			 
-			 Course c;
+			Course c;
 				
 				ClassTime meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
-				// Parse the fee
+				
 				double fee = 0;
 				if (!data[9].isEmpty())
 					fee = Double.parseDouble(data[9]);
 				
-				// The Details object of this particular course (lab/section)
 				ClassDetails details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
 				
 				ClassType type;
 				int number;
 				
-				// Check if analyzing lab
 				if(data[1].length() == 4) {
 					type = new Lab(details);
 					number = Integer.parseInt(data[1].substring(0, 3));
 				}
 				
-				// Else analyzing a section
 				else {
 					type = new Section(details, Integer.parseInt(data[2]));
 					number = Integer.parseInt(data[1]);
 				}
 				
-				// Correct subject format (remove spaces, C E = CE)
 				String subj = data[0].replaceAll("\\s","");
 				
 			if(cMap.containsKey(current)) {

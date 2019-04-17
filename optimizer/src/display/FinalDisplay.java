@@ -327,9 +327,8 @@ public class FinalDisplay extends JFrame {
 		 */
 		btnEnter = new JButton("Enter");
 		
-		ReadPopulateCSV csv = new ReadPopulateCSV();
 		try {
-			cMap = csv.makeMap();
+			cMap = ReadPopulateCSV.makeMap();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
