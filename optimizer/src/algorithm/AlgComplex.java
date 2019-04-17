@@ -61,15 +61,17 @@ public class AlgComplex extends AlgZ {
 		while (!pq.isEmpty()) {
 			Course c = pq.poll();
 			
-			System.out.println(c.toTitle() + " is of length " + c.getPrerequisites().size());
+			System.out.println("\n"+c.toTitle() + " is of length " + c.getPrerequisites().size());
 			
 			boolean gtg = true;
-			for (String pre : c.getPrerequisites())
+			for (Course temp : c.getPrerequisites()) {
+				String pre = temp.toTitle();
+				System.out.println(pre + " check being made");
 				if (!verPrereq(c,pre)) {
-					System.err.printf("\n"+c.toTitle() + " can't be added\n");
-					System.err.println(pre);
+					System.err.printf(""+c.toTitle() + " can't be added: " +pre+"\n");
 					gtg = false;
 				}
+			}
 
 			if (gtg) {
 				// Three options to add courses to fall or spring.
@@ -124,12 +126,14 @@ public class AlgComplex extends AlgZ {
 	public boolean verPrereq(Course c,String pre) {
 		for (int i = Math.max(fCurrent, sCurrent);i>=0;i--) {
 			if (toFill[i] != null)
-				for (Course check : toFill[i].getCourses())
-					if (check.toTitle() == pre) {
-						System.out.println(c.toTitle() +" verified and added");
+				for (Course check : toFill[i].getCourses()) {
+					if (check.toTitle().equals(pre)) {
+						System.out.println(c.toTitle() +" verified from " + pre + " and added");
 						return true;
 					}
+				}
 		}
+		System.err.println("Returning false");
 		return false;
 	}
 }

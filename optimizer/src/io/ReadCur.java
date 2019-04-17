@@ -24,6 +24,7 @@ public class ReadCur extends Reader {
 
 	private static String source = Source.curriculae_folder;
 	private static Map<String,ArrayList<String>> prereqs = new HashMap<>();
+	private static Map<String,Course> cMap = ReadPopulateCSV.getMap();
 
 	public static void main(String[] args) {
 		ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
@@ -65,7 +66,14 @@ public class ReadCur extends Reader {
 								}
 						}
 					}
-					c.setPrerequisites(toAdd);
+					
+					List<Course> tR = new ArrayList<>();
+					
+					if (toAdd != null)
+						for (String s : toAdd)
+							tR.add(cMap.get(s));
+
+					c.setPrerequisites(tR);
 				}
 		}
 		return sems;

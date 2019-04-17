@@ -7,7 +7,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -25,10 +24,10 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
+import core.ReadPopulateCSV;
 import info.ClassType;
 import info.Course;
 import info.Semester;
-import io.CsvParser;
 
 
 /**
@@ -54,7 +53,7 @@ public class FinalDisplay extends JFrame {
 	private JButton submitButton;
 	
 	private CSVPanel scheduleDisplay = new CSVPanel();
-	private Map<String, Course> courseMap;
+	private Map<String, Course> cMap;
 	
 	JTextArea semOneText;
 	JTextArea semTwoText;
@@ -81,6 +80,7 @@ public class FinalDisplay extends JFrame {
 				frame.connect();
 			} catch (Exception e) {e.printStackTrace();}
 		});
+
 	}
 	
 	/**
@@ -197,41 +197,33 @@ public class FinalDisplay extends JFrame {
 	 * @throws IOException 
 	 */
 	public void displaySearch() throws IOException {
+		
 		JFrame frame = new JFrame("Search Results");
-		JTextArea j = new JTextArea();
-		JScrollPane pane = new JScrollPane(j, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, 
-				JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-		frame.add(pane);
-		j.setVisible(true);
-		j.setSize(200, 200);
-		frame.setBounds(300, 300, 500, 500);
+		frame.setBounds(300, 300, 700, 500);
 		frame.setVisible(true);
 		String key = searchBar.getText();
-		String result = "";
-		List<ClassType> sections = courseMap.get(key).getSections();
-		String time, prof, quad, section;
-		time = prof = quad = section = "";
-		System.out.println(sections.size());
+		key = key.toUpperCase();
+
+		List<ClassType> sections = cMap.get(key).getSections();
+		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
+		Object[][] sectionTable = new Object[sections.size()][4];
 		for(int i = 0; i < sections.size(); i++) {
 			ClassType s = sections.get(i);
-			time += s.getTime() + "\n";
-			prof += s.getProf() + "\n";
-			quad += s.getQuad() + "\n";
-			result += time + prof + quad + "\n";
+			sectionTable[i][0] = s.getTime().replaceAll("\\\\",",");
+			sectionTable[i][1] = s.getProf().replaceAll("\\\\",",");
+			sectionTable[i][2] = s.getQuad();
+			sectionTable[i][3] = (Integer) (((info.Section) s).getSection());
 		}
-
-		/*Iterator<String> it = courseMap.keySet().iterator();
-		while(it.hasNext()) {
-    	   		String k =  it.next();
-    	   		Course val = courseMap.get(k);
-    	   		if(key.equals(k.substring(0,8)))
-    	   			result = result+ "\n" + "\n" + val.ctoString();	
-		}*/
-		j.setText(result);
-        
-        
-        
+		
+		JTable table = new JTable(sectionTable, columnNames);	
+		table.setAutoCreateRowSorter(true);
+		table.add(new JLabel("Test"));
+		frame.add(table);
 	}
+        
+        
+        
+	
 	
 	/**
 	 * Parse a semester's courses into a single string.
@@ -333,7 +325,7 @@ public class FinalDisplay extends JFrame {
 		 */
 		btnEnter = new JButton("Enter");
 		
-		courseMap = Optimizer.getCourseMap();
+		cMap = ReadPopulateCSV.getMap();
 		
 		submitButton = new JButton("Write");
 		

@@ -43,7 +43,6 @@ public class OnlineCourseParser {
 	    writer.close();
 		scan.close();
 		
-		
 	}
 	
 	
