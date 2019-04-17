@@ -25,7 +25,6 @@ import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
 import core.ReadPopulateCSV;
-import core.Source;
 import info.ClassType;
 import info.Course;
 import info.Semester;
@@ -326,12 +325,7 @@ public class FinalDisplay extends JFrame {
 		 */
 		btnEnter = new JButton("Enter");
 		
-		try {
-			cMap = ReadPopulateCSV.makeMap();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		cMap = ReadPopulateCSV.getMap();
 		
 		submitButton = new JButton("Write");
 		

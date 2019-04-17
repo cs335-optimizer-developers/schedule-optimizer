@@ -34,6 +34,8 @@ import info.Tag;
  *
  */
 public class ReadPopulateCSV {
+	
+	private static Map<String, Course> one_map;
 		
 	public static Semester[] buildSemesters() {
 		
@@ -48,9 +50,16 @@ public class ReadPopulateCSV {
 		
 		return toReturn;
 	}
-	
-	public static Map<String, Course> getMap() throws IOException{
-		return makeMap();
+
+	public static Map<String, Course> getMap() {
+		if (one_map == null)
+			try {
+				one_map = makeMap();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		return one_map;
 	}
 	
 	
