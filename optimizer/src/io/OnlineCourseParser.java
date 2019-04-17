@@ -68,6 +68,7 @@ public class OnlineCourseParser {
 			
 			Elements descriptions = doc.getElementsByClass("courseblockdesc noindent");
 			Elements metadata = doc.getElementsByClass("courseblocktitle noindent");
+			
 
 			for (int i = 0; i < descriptions.size(); i++) {
 				Element datum = metadata.get(i);
@@ -80,7 +81,12 @@ public class OnlineCourseParser {
 				s = s.replaceAll(",,", ",");
 				writer.append(s);
 				
+
 				Element description = descriptions.get(i);
+				Elements prereqs = description.getElementsByClass("bubblelink code");
+				for(Element p: prereqs) {
+					System.out.println("prereq found for course "+ s + "prereq= " + p.attr("title"));
+				}
 				String d = description.text().replaceAll("\"","");
 				writer.append("," + "\"" + d + "\"" + '\n');
 			}
