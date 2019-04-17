@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
-import core.Optimizer;
 import core.ReadPopulateCSV;
 import core.Source;
 import info.Course;

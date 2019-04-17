@@ -1,13 +1,9 @@
 package core;
 
-import java.io.IOException;
-import java.util.Map;
-
 import algorithm.AlgComplex;
 import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
-import info.Course;
 import info.Semester;
 import io.ReadCur;
 import io.Writer;
