@@ -28,7 +28,8 @@ public class OnlineCourseParser {
 
 	public static void main(String[] args) throws IOException {
 		
-	    BufferedWriter writer = new BufferedWriter(new FileWriter("./src/io/descriptions.csv"));
+	    BufferedWriter writer = new BufferedWriter(new FileWriter("./src/io/descriptions.txt"));
+	    BufferedWriter pwriter = new BufferedWriter(new FileWriter("./src/io/prereqs.txt"));
   		
 		System.out.println(new File(".").getAbsoluteFile());
 	    File input = new File("./src/io/links.dat");
@@ -37,16 +38,17 @@ public class OnlineCourseParser {
 		
 		while(scan.hasNextLine()) {
 			String link = scan.nextLine();
-			courseDescrip(writer, link);
+			courseDescrip(pwriter, writer, link);
 		}
 		
 	    writer.close();
+	    pwriter.close();
 		scan.close();
 		
 	}
 	
 	
-	public static void courseDescrip (BufferedWriter writer, String info) {
+	public static void courseDescrip (BufferedWriter pwriter, BufferedWriter writer, String info) {
 		
 		Document doc = null;
 		
@@ -78,16 +80,19 @@ public class OnlineCourseParser {
 				s = s.replaceFirst(" ", "");
 				s = s.replace('.', ',');
 				s = s.replaceAll(",,", ",");
-				writer.append(s);
+				writer.append(s + "| ");
+				pwriter.append(s.substring(0, s.indexOf(',')) + ", ");
 				
-
 				Element description = descriptions.get(i);
 				Elements prereqs = description.getElementsByClass("bubblelink code");
 				for(Element p: prereqs) {
-					System.out.println("prereq found for course "+ s + "prereq= " + p.attr("title"));
+					String pre = p.attr("title").replaceAll("\\s", "");
+					String space = (char)160 + "";
+					pwriter.append(pre.replaceAll(space, "") + " ");
 				}
 				String d = description.text().replaceAll("\"","");
-				writer.append("," + "\"" + d + "\"" + '\n');
+				writer.append(d + '\n');
+				pwriter.append("\n");
 			}
 			
 			
