@@ -36,7 +36,7 @@ public class ReadCur extends Reader {
 			if (sem != null)
 				for (Course c : sem.getCourses().values()) {
 
-					String t = c.toTitle();
+					String t = c.getCourseKey();
 					String st[] = t.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
 					String dept = st[0];
 

@@ -49,9 +49,9 @@ public abstract class AlgZ implements Algorithm {
 		// TODO Less than ideal generation of basic courses.
 		// May be better to keep them strings at parsing.
 		for (Course c : sm1)
-			smT.put(c.toTitle(),c);
+			smT.put(c.getCourseKey(),c);
 		for (Course c : sm1)
-			smT.put(c.toTitle(),c);
+			smT.put(c.getCourseKey(),c);
 		
 		for (String prog : programs)
 			for (String s : rp.read(prog))

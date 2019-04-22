@@ -59,7 +59,7 @@ public class Writer {
 				added = false;
 				if (i < al.size()) {
 					//System.out.println(al.get(i).toTitle() + " added");
-					toWrite += al.get(i).toTitle() + ",";
+					toWrite += al.get(i).getCourseKey() + ",";
 					added = true;
 				}
 			}

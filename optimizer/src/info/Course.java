@@ -103,20 +103,16 @@ public class Course {
 	}
 	
 	// Key to distinguish between other courses
-	public String getKey() {
+	public String parseKey() {
 		return subj.toString() + ":" + number;
 	}
 	
-	public String toTitle() {
+	public String getCourseKey() {
 		return subj + "" + number;
 	}
 	
 	public String getName() {
 		return subj + " " + number;
-	}
-	
-	public CourseKey getCourseKey() {
-		return new CourseKey(subj, number);
 	}
 	
 	public List<ClassType> getSections() {

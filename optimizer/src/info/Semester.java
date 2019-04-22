@@ -15,15 +15,15 @@ public class Semester {
 	
 	public int year;
 	public String sem;
-	private Map<CourseKey, Course> courses;
+	private Map<String, Course> courses;
 	
 	public Semester(int year, String sem) {
 		this.year = year;
 		this.sem = sem;
-		courses = new HashMap<CourseKey, Course>();
+		courses = new HashMap<String, Course>();
 	}
 	
-	public Semester(Map<CourseKey, Course> courses) {
+	public Semester(Map<String, Course> courses) {
 		this.courses = courses;
 	}
 	
@@ -43,7 +43,7 @@ public class Semester {
 //		courses.remove();
 //	}
 	
-	public Map<CourseKey, Course> getCourses() {return courses;}
+	public Map<String, Course> getCourses() {return courses;}
 	
 	public boolean isEmpty() {return courses.isEmpty();}
 }

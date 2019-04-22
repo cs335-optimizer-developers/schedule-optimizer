@@ -27,7 +27,6 @@ import core.Optimizer;
 import core.ReadPopulateCSV;
 import info.ClassType;
 import info.Course;
-import info.CourseKey;
 import info.Semester;
 
 
@@ -144,6 +143,7 @@ public class FinalDisplay extends JFrame {
 			        for(int i = 0; i < courses.size(); i++) {
 			        		Course c = courses.get(i);	        		
 			        		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
+			     
 			        		
 			        		List<ClassType> sections = c.getSections();
 			        		Object[][] sectionTable = new Object[sections.size()][4];

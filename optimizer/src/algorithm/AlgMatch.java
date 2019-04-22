@@ -28,9 +28,9 @@ public class AlgMatch extends AlgZ {
 		Set<String> sem2 = new HashSet<String>();
 				
 		for (Course c : sm1)
-			sem1.add(c.toTitle());
+			sem1.add(c.getCourseKey());
 		for (Course c : sm2)
-			sem2.add(c.toTitle());
+			sem2.add(c.getCourseKey());
 		
 		//To favor fall or spring, whichever is ahead.
 		int balance = 0;
@@ -41,28 +41,28 @@ public class AlgMatch extends AlgZ {
 		for (Course c : toTake) {
 			if (c == null)
 				continue;
-			if (sem1.contains(c.toTitle()) && balance <= 0) {
+			if (sem1.contains(c.getCourseKey()) && balance <= 0) {
 				fall.addCourse(c);
 				fCount++;
 				balance++;
-				System.out.println(c.toTitle() + " added from fall");
+				System.out.println(c.getCourseKey() + " added from fall");
 			}
-			else if (sem2.contains(c.toTitle())) {
+			else if (sem2.contains(c.getCourseKey())) {
 				spring.addCourse(c);
 				sCount++;
 				balance--;
-				System.out.println(c.toTitle() + " added from spring");
+				System.out.println(c.getCourseKey() + " added from spring");
 			}
 			
 			//In case course is not offered in Spring.
-			else if (sem1.contains(c.toTitle())) {
+			else if (sem1.contains(c.getCourseKey())) {
 				fall.addCourse(c);
 				fCount++;
 				balance++;
-				System.out.println(c.toTitle() + " added from fall");
+				System.out.println(c.getCourseKey() + " added from fall");
 			}
 			else
-				System.err.println("***" + c.toTitle() + " not found ***");
+				System.err.println("***" + c.getCourseKey() + " not found ***");
 			//New semester
 			if (fCount > 3) {
 				fCount = 0;

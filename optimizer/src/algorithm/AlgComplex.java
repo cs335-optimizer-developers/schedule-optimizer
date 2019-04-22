@@ -40,9 +40,9 @@ public class AlgComplex extends AlgZ {
 		Set<String> sem2 = new HashSet<String>();
 				
 		for (Course c : sm1)
-			sem1.add(c.toTitle());
+			sem1.add(c.getCourseKey());
 		for (Course c : sm2)
-			sem2.add(c.toTitle());
+			sem2.add(c.getCourseKey());
 		
 		// Comparator which favors courses with few prerequisites.
 		Comparator<Course> comp = (o1,o2) -> {
@@ -63,42 +63,42 @@ public class AlgComplex extends AlgZ {
 		while (!pq.isEmpty()) {
 			Course c = pq.poll();
 			
-			System.out.println("\n"+c.toTitle() + " is of length " + c.getPrerequisites().size());
+			System.out.println("\n"+c.getCourseKey() + " is of length " + c.getPrerequisites().size());
 			
 			boolean gtg = true;
 			for (Course temp : c.getPrerequisites()) {
-				String pre = temp.toTitle();
+				String pre = temp.getCourseKey();
 				System.out.println(pre + " check being made");
 				if (!verPrereq(c,pre)) {
-					System.err.printf(""+c.toTitle() + " can't be added: " +pre+"\n");
+					System.err.printf(""+c.getCourseKey() + " can't be added: " +pre+"\n");
 					gtg = false;
 				}
 			}
 
 			if (gtg) {
 				// Three options to add courses to fall or spring.
-				if (sem1.contains(c.toTitle()) && balance <= 0) {
+				if (sem1.contains(c.getCourseKey()) && balance <= 0) {
 					fall.addCourse(c);
 					fCount++;
 					balance++;
-					System.out.println(c.toTitle() + " added from fall");
+					System.out.println(c.getCourseKey() + " added from fall");
 				}
-				else if (sem2.contains(c.toTitle())) {
+				else if (sem2.contains(c.getCourseKey())) {
 					spring.addCourse(c);
 					sCount++;
 					balance--;
-					System.out.println(c.toTitle() + " added from spring");
+					System.out.println(c.getCourseKey() + " added from spring");
 				}
 
 				//In case course is not offered in Spring.
-				else if (sem1.contains(c.toTitle())) {
+				else if (sem1.contains(c.getCourseKey())) {
 					fall.addCourse(c);
 					fCount++;
 					balance++;
-					System.out.println(c.toTitle() + " added from fall");
+					System.out.println(c.getCourseKey() + " added from fall");
 				}
 				else
-					System.err.println("***" + c.toTitle() + " not found ***");
+					System.err.println("***" + c.getCourseKey() + " not found ***");
 				//New semester
 				if (fCount > 3) {
 					fCount = 0;
@@ -130,8 +130,8 @@ public class AlgComplex extends AlgZ {
 			if (toFill[i] != null) {
 				List<Course> courses = new ArrayList<Course>(toFill[i].getCourses().values());
 				for (Course check : courses) {
-					if (check.toTitle().equals(pre)) {
-						System.out.println(c.toTitle() +" verified from " + pre + " and added");
+					if (check.getCourseKey().equals(pre)) {
+						System.out.println(c.getCourseKey() +" verified from " + pre + " and added");
 						return true;
 					}
 				}

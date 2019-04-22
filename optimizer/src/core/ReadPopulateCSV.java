@@ -17,7 +17,6 @@ import info.ClassDetails;
 import info.ClassTime;
 import info.ClassType;
 import info.Course;
-import info.CourseKey;
 import info.Day;
 import info.Lab;
 import info.Quad;
@@ -137,7 +136,7 @@ public class ReadPopulateCSV {
 				while(it.hasNext()) {
 					Course cr = it.next();
 					// Already Created... add lab/section
-					if(cr.getKey().equals(key)) {
+					if(cr.parseKey().equals(key)) {
 						// Lab
 						if(data[1].length() == 4)
 							cr.addLab(type);
@@ -175,8 +174,8 @@ public class ReadPopulateCSV {
 		return new Semester(convertListMap(courses));
 	}
 	
-	private static Map<CourseKey, Course> convertListMap(List<Course> crs) {
-		Map<CourseKey, Course> map = new HashMap<CourseKey, Course>();
+	private static Map<String, Course> convertListMap(List<Course> crs) {
+		Map<String, Course> map = new HashMap<String, Course>();
 		for(Course c : crs) {
 			map.put(c.getCourseKey(), c);
 		}

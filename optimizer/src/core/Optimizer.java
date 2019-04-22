@@ -10,8 +10,8 @@ import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
 import info.Course;
-import info.CourseKey;
 import info.Semester;
+import info.Subject;
 import io.ParsePrereq;
 import io.ReadCur;
 import io.Writer;
@@ -31,28 +31,25 @@ public class Optimizer {
 	private Semester[] newSchedule;
 	
 	private Optimizer() {
-		one_optimizer = this;
-		availableClasses = 
-				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
+		availableClasses = ReadPopulateCSV.buildSemesters();
 		
-		HashMap<CourseKey, List<CourseKey>> coursePre = ParsePrereq.parsePrereq();
+		HashMap<String, List<String>> coursePre = ParsePrereq.parsePrereq();
 		
 		// Look up every course key in the courses hashmap, then add to prereq list.
-		
 		for(int i = 0; i < availableClasses.length; i++) {
 			Semester s = availableClasses[i];
-			Map<CourseKey, Course> courses = s.getCourses();
+			Map<String, Course> courses = s.getCourses();
 			List<Course> values = new ArrayList<Course>(courses.values());
 			for(Course advCourse : values) {
 				// Look up every prereq and map to correct course, then add to advanced course prereqs.
 				List<Course> prereqs = new ArrayList<Course>();
-				List<CourseKey> unmapPre = coursePre.get(advCourse.getCourseKey());
+				List<String> unmapPre = coursePre.get(advCourse.getCourseKey());
 				
 				// Current course has no prereqs
 				if(unmapPre == null)
 					continue;
 				
-				for(CourseKey ck : unmapPre) {
+				for(String ck : unmapPre) {
 					prereqs.add(courses.get(ck));
 				}
 				
@@ -61,8 +58,8 @@ public class Optimizer {
 			
 		}
 		
+		one_optimizer = this;
 		alg = new AlgComplex();
-
 	}
 
 	/*
@@ -74,8 +71,6 @@ public class Optimizer {
 		//long first = System.currentTimeMillis();
 		
 		DParam dPar = FinalDisplay.requestParameters();
-
-		newSchedule = alg.build(dPar);
 
 		return newSchedule;
 		//long last = System.currentTimeMillis();
