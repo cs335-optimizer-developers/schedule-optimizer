@@ -1,5 +1,7 @@
 package core;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -10,6 +12,7 @@ import display.FinalDisplay;
 import info.Course;
 import info.CourseKey;
 import info.Semester;
+import io.ParsePrereq;
 import io.ReadCur;
 import io.Writer;
 
@@ -32,15 +35,33 @@ public class Optimizer {
 		availableClasses = 
 				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
 		
+		HashMap<CourseKey, List<CourseKey>> coursePre = ParsePrereq.parsePrereq();
+		
+		// Look up every course key in the courses hashmap, then add to prereq list.
+		
 		for(int i = 0; i < availableClasses.length; i++) {
 			Semester s = availableClasses[i];
-//			Map<CourseKey, Course> courses = s.getCourses();
-//			for(Course c : courses) {
-//				
-//			}
+			Map<CourseKey, Course> courses = s.getCourses();
+			List<Course> values = new ArrayList<Course>(courses.values());
+			for(Course advCourse : values) {
+				// Look up every prereq and map to correct course, then add to advanced course prereqs.
+				List<Course> prereqs = new ArrayList<Course>();
+				List<CourseKey> unmapPre = coursePre.get(advCourse.getCourseKey());
+				
+				// Current course has no prereqs
+				if(unmapPre == null)
+					continue;
+				
+				for(CourseKey ck : unmapPre) {
+					prereqs.add(courses.get(ck));
+				}
+				
+				advCourse.setPrerequisites(prereqs);
+			}
+			
 		}
-		alg = new AlgComplex();
 		
+		alg = new AlgComplex();
 
 	}
 
