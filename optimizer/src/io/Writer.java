@@ -42,10 +42,12 @@ public class Writer {
 		//The list of courses in each semester.
 		List<List<Course>> circuit = new ArrayList<>();
 		
+		
+		
 		for (Semester s : schedule)
 			if (s != null)
 				if (!s.getCourses().isEmpty())
-					circuit.add(s.getCourses());
+					circuit.add(new ArrayList<Course>(s.getCourses().values()));
 		
 		
 		//Adding each course to the line it should be on.

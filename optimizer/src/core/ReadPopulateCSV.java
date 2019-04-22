@@ -17,6 +17,7 @@ import info.ClassDetails;
 import info.ClassTime;
 import info.ClassType;
 import info.Course;
+import info.CourseKey;
 import info.Day;
 import info.Lab;
 import info.Quad;
@@ -171,7 +172,16 @@ public class ReadPopulateCSV {
 		
 		//System.out.println("Successful!\n");
 		//System.out.println(courses.get(1).toString());
-		return new Semester(courses);
+		return new Semester(convertListMap(courses));
+	}
+	
+	private static Map<CourseKey, Course> convertListMap(List<Course> crs) {
+		Map<CourseKey, Course> map = new HashMap<CourseKey, Course>();
+		for(Course c : crs) {
+			map.put(c.getCourseKey(), c);
+		}
+		return map;
+		
 	}
 	
 	private static Map<String, Course> makeMap() throws IOException {

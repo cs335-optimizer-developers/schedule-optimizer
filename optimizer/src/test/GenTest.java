@@ -87,16 +87,16 @@ public class GenTest {
 		opt.write();
 	}
 	
-	@Test
-	public void populateCSVTest() {
-		Semester[] semesters = ReadPopulateCSV.buildSemesters();
-		
-		for (Semester s : semesters)
-			assertNotNull(s);
-
-		for (Semester s : semesters)
-			if (s != null)
-				for (Course c : s.getCourses())
-					assertNotNull(c);
-	}
+//	@Test
+//	public void populateCSVTest() {
+//		Semester[] semesters = ReadPopulateCSV.buildSemesters();
+//		
+//		for (Semester s : semesters)
+//			assertNotNull(s);
+//
+//		for (Semester s : semesters)
+//			if (s != null)
+//				for (Course c : s.getCourses())
+//					assertNotNull(c);
+//	}
 }

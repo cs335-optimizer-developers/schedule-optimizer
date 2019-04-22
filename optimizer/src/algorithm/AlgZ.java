@@ -33,10 +33,8 @@ public abstract class AlgZ implements Algorithm {
 	protected Set<Course> sm2;
 	
 	public AlgZ() {
-		sm1 = new HashSet<Course>(Optimizer.getInstance()
-				.getAvailableClasses()[0].getCourses());
-		sm2 = new HashSet<Course>(Optimizer.getInstance()
-				.getAvailableClasses()[1].getCourses());
+		sm1 = new HashSet<Course>(Optimizer.getInstance().getAvailableClasses()[0].getCourses().values());
+		sm2 = new HashSet<Course>(Optimizer.getInstance().getAvailableClasses()[1].getCourses().values());
 	}
 	
 	public abstract void distribute(Semester[] toFill);

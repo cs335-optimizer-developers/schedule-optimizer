@@ -51,6 +51,15 @@ public class Course {
 		number = Integer.valueOf(info[1]);
 	}
 	
+	public void addPrereq(Course c) {
+		if(c == null) {
+			System.out.println("Error in class when adding a new prereq...");
+			return;
+		}
+			
+		this.prerequisites.add(c);
+	}
+	
 	/**
 	 * Add a new section to the sections list
 	 * @param s, a new section, not null
@@ -104,6 +113,10 @@ public class Course {
 	
 	public String getName() {
 		return subj + " " + number;
+	}
+	
+	public CourseKey getCourseKey() {
+		return new CourseKey(subj, number);
 	}
 	
 	public List<ClassType> getSections() {

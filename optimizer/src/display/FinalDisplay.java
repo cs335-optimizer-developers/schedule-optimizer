@@ -27,6 +27,7 @@ import core.Optimizer;
 import core.ReadPopulateCSV;
 import info.ClassType;
 import info.Course;
+import info.CourseKey;
 import info.Semester;
 
 
@@ -138,7 +139,8 @@ public class FinalDisplay extends JFrame {
 			       
 			        frame.setContentPane(scrollPanel);
 			        
-			        List<Course> courses = s[j].getCourses();
+			        List<Course> courses = new ArrayList<Course>(s[j].getCourses().values());
+			        
 			        for(int i = 0; i < courses.size(); i++) {
 			        		Course c = courses.get(i);	        		
 			        		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
@@ -233,7 +235,7 @@ public class FinalDisplay extends JFrame {
 	private String parseSemester(Semester s) {
 		if(s == null)
 			return "Empty";
-		List<Course> courses = s.getCourses();
+		List<Course> courses = new ArrayList<Course>(s.getCourses().values());
 		String data = "";
 		for(int i = 0; i < courses.size(); i++) {
 			data += courses.get(i).getName() + "\n";

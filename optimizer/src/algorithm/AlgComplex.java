@@ -1,7 +1,9 @@
 package algorithm;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Set;
 
@@ -125,13 +127,15 @@ public class AlgComplex extends AlgZ {
 
 	public boolean verPrereq(Course c,String pre) {
 		for (int i = Math.max(fCurrent, sCurrent);i>=0;i--) {
-			if (toFill[i] != null)
-				for (Course check : toFill[i].getCourses()) {
+			if (toFill[i] != null) {
+				List<Course> courses = new ArrayList<Course>(toFill[i].getCourses().values());
+				for (Course check : courses) {
 					if (check.toTitle().equals(pre)) {
 						System.out.println(c.toTitle() +" verified from " + pre + " and added");
 						return true;
 					}
 				}
+			}
 		}
 		System.err.println("Returning false");
 		return false;

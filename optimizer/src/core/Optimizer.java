@@ -1,9 +1,14 @@
 package core;
 
+import java.util.List;
+import java.util.Map;
+
 import algorithm.AlgComplex;
 import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
+import info.Course;
+import info.CourseKey;
 import info.Semester;
 import io.ReadCur;
 import io.Writer;
@@ -26,6 +31,14 @@ public class Optimizer {
 		one_optimizer = this;
 		availableClasses = 
 				ReadCur.addPrerequisites(ReadPopulateCSV.buildSemesters());
+		
+		for(int i = 0; i < availableClasses.length; i++) {
+			Semester s = availableClasses[i];
+//			Map<CourseKey, Course> courses = s.getCourses();
+//			for(Course c : courses) {
+//				
+//			}
+		}
 		alg = new AlgComplex();
 		
 

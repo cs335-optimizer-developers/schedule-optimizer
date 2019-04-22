@@ -1,7 +1,9 @@
 package info;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * 
@@ -13,15 +15,15 @@ public class Semester {
 	
 	public int year;
 	public String sem;
-	private List<Course> courses;
+	private Map<CourseKey, Course> courses;
 	
 	public Semester(int year, String sem) {
 		this.year = year;
 		this.sem = sem;
-		courses = new ArrayList<Course>();
+		courses = new HashMap<CourseKey, Course>();
 	}
 	
-	public Semester(List<Course> courses) {
+	public Semester(Map<CourseKey, Course> courses) {
 		this.courses = courses;
 	}
 	
@@ -33,11 +35,15 @@ public class Semester {
 		this.sem = sem;
 	}
 	
-	public void addCourse(Course c) {courses.add(c);}
-
-	public void removeCourse(Course c) {courses.remove(c);}
+	public void addCourse(Course c) {
+		courses.put(c.getCourseKey(), c);
+	}
+//
+//	public void removeCourse(Course c) {
+//		courses.remove();
+//	}
 	
-	public List<Course> getCourses() {return courses;}
+	public Map<CourseKey, Course> getCourses() {return courses;}
 	
 	public boolean isEmpty() {return courses.isEmpty();}
 }

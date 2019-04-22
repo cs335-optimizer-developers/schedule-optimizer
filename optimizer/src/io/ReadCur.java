@@ -34,7 +34,7 @@ public class ReadCur extends Reader {
 				
 		for (Semester sem : sems) {
 			if (sem != null)
-				for (Course c : sem.getCourses()) {
+				for (Course c : sem.getCourses().values()) {
 
 					String t = c.toTitle();
 					String st[] = t.split("(?<=\\D)(?=\\d)|(?<=\\d)(?=\\D)");
