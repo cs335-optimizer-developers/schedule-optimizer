@@ -1,8 +1,6 @@
 package info;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -37,6 +35,10 @@ public class Semester {
 	
 	public void addCourse(Course c) {
 		courses.put(c.getCourseKey(), c);
+	}
+	
+	public int size() {
+		return courses.size();
 	}
 //
 //	public void removeCourse(Course c) {
