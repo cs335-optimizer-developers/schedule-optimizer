@@ -3,7 +3,7 @@ package display;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Dimension;
-import java.awt.EventQueue;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.util.List;
 
@@ -19,7 +19,7 @@ import info.ClassType;
 import info.Course;
 
 public class SectionPanel extends JPanel {
-
+	
 	private JPanel cards = new JPanel(new CardLayout());
 	List<Course> courses;
 
@@ -30,22 +30,30 @@ public class SectionPanel extends JPanel {
 		create();
 	}
 	
-	class SingularPanel extends JPanel {
+	// Each page of the semester view
+	class Page extends JPanel {
 		Course c;
-		SingularPanel(Course c) {
+		Page(Course c, int num) {
 			this.c = c;
-			this.setPreferredSize(new Dimension(320, 240));
-			this.add(new JLabel(c.getName()));
+			JLabel name = new JLabel(c.getName());
+			this.add(name);
+			Font f = name.getFont();
+			name.setFont(f.deriveFont(f.getStyle() | Font.BOLD));
+			this.add(new JLabel(("[" + num + "/" + courses.size() + "]")));
 		}
 	}
 
+	// Create a list of pages
 	private void create() {
+		// No courses are in the semester
+		if(courses == null || courses.size() == 0)
+			return;
 		JFrame f = new JFrame();
 		JScrollPane scrollPanel = new JScrollPane();
 		f.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
+		int pageNum = 1;
 		for (Course c : courses) {
-			System.out.println(c.getName());
-			SingularPanel panel = new SingularPanel(c);
+			Page panel = new Page(c, pageNum++);
 			String[] columnNames = { "TIME", "PROFESSOR", "QUAD", "SECTION" };
 
 			List<ClassType> sections = c.getSections();
@@ -73,7 +81,7 @@ public class SectionPanel extends JPanel {
 		}
 		
 		JPanel control = new JPanel();
-		control.add(new JButton(new AbstractAction("\u22b2Prev") {
+		control.add(new JButton(new AbstractAction("Prev") {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -81,20 +89,21 @@ public class SectionPanel extends JPanel {
 				cl.previous(cards);
 			}
 		}));
-		control.add(new JButton(new AbstractAction("Next\u22b3") {
+
+		control.add(new JButton(new AbstractAction("Next") {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				CardLayout cl = (CardLayout) cards.getLayout();
-				
 				cl.next(cards);
 			}
 		}));
+		
 		f.add(cards, BorderLayout.CENTER);
 		f.add(control, BorderLayout.SOUTH);
 		f.pack();
 		f.setLocationRelativeTo(null);
 		f.setVisible(true);
-        f.setSize(600,300);
+        f.setSize(450,300);
 	}
 }
