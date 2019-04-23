@@ -1,7 +1,9 @@
 package info;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  *	Class defines a specific class, each class has 0-many labs, and 1-many sections.
@@ -20,7 +22,8 @@ public class Course {
 	private List<ClassType> sections = new ArrayList<>();
 	//PrerequisiteCourses.
 	private List<Course> prerequisites = new ArrayList<>();
-	
+	// Postrequisites, used only in AlgFinal.
+	private Set<Course> postrequisites = new HashSet<>();
 
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
 	public Course(Subject subj, int number, ClassType type, List<Tag> tags) {
@@ -56,8 +59,15 @@ public class Course {
 			System.out.println("Error in class when adding a new prereq...");
 			return;
 		}
-			
 		this.prerequisites.add(c);
+	}
+	public void addPostreq(Course c) {
+		if(c == null) {
+			System.out.println("Error in class when adding a new postreq...");
+			return;
+		}
+			
+		this.postrequisites.add(c);
 	}
 	
 	/**
@@ -131,6 +141,16 @@ public class Course {
 				if (c != null)
 					prerequisites.add(c);
 	}
+	public Set<Course> getPostrequisites() {
+		return postrequisites;
+	}
+	public void setPostrequisites(List<Course> p) {
+		if (p != null)
+			for (Course c : p)
+				if (c != null)
+					postrequisites.add(c);
+	}
+	public void rmPrq(Course c) {prerequisites.remove(c);}
 	
 	public String toString() {
 		String s = getName();

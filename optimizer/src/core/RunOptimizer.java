@@ -1,6 +1,5 @@
 package core;
 
-import display.FinalDisplay;
 import test.GenTest;
 
 /**
@@ -27,6 +26,6 @@ public class RunOptimizer {
 		Optimizer opt = Optimizer.getInstance();
 		opt.generate();
 		
-		FinalDisplay.initDisplay();
+//		FinalDisplay.initDisplay();
 	}
 }

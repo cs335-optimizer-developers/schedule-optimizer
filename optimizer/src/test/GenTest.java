@@ -14,12 +14,9 @@ import org.junit.jupiter.api.BeforeEach;
 
 import algorithm.AlgMatch;
 import core.Optimizer;
-import core.ReadPopulateCSV;
 import core.Source;
 import display.FinalDisplay;
-import info.Course;
 import info.Semester;
-import io.ReadCur;
 
 /**
  * 
@@ -77,7 +74,6 @@ public class GenTest {
 	@Test
 	public void addPrerequisites() {
 		Semester[] s = opt.generate();
-		s = ReadCur.addPrerequisites(s);
 		assertTrue(s.length > 0);
 		assertNotNull(s);
 	}

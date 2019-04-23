@@ -25,7 +25,6 @@ public abstract class AlgZ implements Algorithm {
 	protected int year = 2019;
 	protected String sem = "fall";
 	protected Set<Course> toTake;
-	protected Map<String,String> preReqs = new HashMap<>();
 	
 	protected List<String> programs;
 	

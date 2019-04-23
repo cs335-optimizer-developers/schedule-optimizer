@@ -26,7 +26,7 @@ public class AlgComplex extends AlgZ {
 	private Semester[] toFill;
 	private int fCurrent;
 	private int sCurrent;
-
+	
 	public void distribute(Semester[] toFill) {
 		this.toFill = toFill;
 		int fCount = 0;
@@ -51,8 +51,11 @@ public class AlgComplex extends AlgZ {
 		
 		PriorityQueue<Course> pq = new PriorityQueue<>(comp);
 		for (Course c : toTake)
-			if (c != null)
+			if (c != null) {
+				
 				pq.add(c);
+				
+			}
 		
 		//To favor fall or spring, whichever is ahead.
 		int balance = 0;

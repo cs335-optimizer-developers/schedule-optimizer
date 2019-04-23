@@ -5,15 +5,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import algorithm.AlgComplex;
+import algorithm.AlgFinal;
 import algorithm.Algorithm;
 import display.DParam;
 import display.FinalDisplay;
 import info.Course;
 import info.Semester;
-import info.Subject;
 import io.ParsePrereq;
-import io.ReadCur;
 import io.Writer;
 
 /**
@@ -49,9 +47,8 @@ public class Optimizer {
 				if(unmapPre == null)
 					continue;
 				
-				for(String ck : unmapPre) {
+				for(String ck : unmapPre)
 					prereqs.add(courses.get(ck));
-				}
 				
 				advCourse.setPrerequisites(prereqs);
 			}
@@ -59,7 +56,7 @@ public class Optimizer {
 		}
 		
 		one_optimizer = this;
-		alg = new AlgComplex();
+		alg = new AlgFinal();
 	}
 
 	/*
@@ -71,6 +68,7 @@ public class Optimizer {
 		//long first = System.currentTimeMillis();
 		
 		DParam dPar = FinalDisplay.requestParameters();
+		newSchedule = alg.build(dPar);
 
 		return newSchedule;
 		//long last = System.currentTimeMillis();
