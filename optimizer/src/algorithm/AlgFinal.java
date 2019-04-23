@@ -62,9 +62,10 @@ public class AlgFinal extends AlgZ {
 						}
 					}
 					if (safe) {
-						System.out.println(c.getName()+" written with:");
+						System.out.print(c.getName()+" written with:");
 						for (Course p : c.getPrerequisites())
-							System.out.println(p.getName());
+							System.out.print(" "+p.getName());
+						System.out.println();
 						taken.add(c);
 						addCourse(c);
 						toRm.add(c);
