@@ -87,8 +87,8 @@ public class Optimizer {
 			newSchedule = alg.build(dPar);
 		}
 			
+		System.out.println("Schedule written");
 		return newSchedule;
-		//System.out.println("Schedule written");
 	}
 	
 	public Semester[] getAvailableClasses() {return availableClasses;}
