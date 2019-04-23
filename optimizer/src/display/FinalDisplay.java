@@ -1,5 +1,7 @@
 package display;
 
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Toolkit;
@@ -129,53 +131,8 @@ public class FinalDisplay extends JFrame {
 					if(s[j] == null) {
 						return;
 					}
-			        JFrame frame = new JFrame("Semester Information");
-			        frame.setBounds(900, 300, 900, 300);
-
-			        // Create and set up the content pane.
-			        JScrollPane scrollPanel = new JScrollPane();
-			        JPanel panel = new JPanel();
-			       
-			        frame.setContentPane(scrollPanel);
-			        
-			        List<Course> courses = new ArrayList<Course>(s[j].getCourses().values());
-			        
-			        for(int i = 0; i < courses.size(); i++) {
-			        		Course c = courses.get(i);	        		
-			        		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
-			     
-			        		
-			        		List<ClassType> sections = c.getSections();
-			        		Object[][] sectionTable = new Object[sections.size()][4];
-			        		for(int j = 0; j < sections.size(); j++) {
-			        			ClassType s = sections.get(j);
-			        			sectionTable[j][0] = s.getTime().replaceAll("\\\\",",");
-			        			sectionTable[j][1] = s.getProf().replaceAll("\\\\",",");
-			        			sectionTable[j][2] = s.getQuad();
-			        			sectionTable[j][3] = (Integer) (((info.Section) s).getSection());
-			        		}
-			        		
-			        		JTable table = new JTable(sectionTable, columnNames);	
-			        		table.setAutoCreateRowSorter(true);
-			        		table.add(new JLabel("Test"));
-			        		JScrollPane scrollPane = new JScrollPane(table);
-			        		table.setFillsViewportHeight(true);
-			        		scrollPane.setVerticalScrollBarPolicy(
-			        		                JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-			        		scrollPane.setPreferredSize(new Dimension(400, 200));
-			        		scrollPane.setMinimumSize(new Dimension(30, 30));
-			        		panel.add(scrollPane);
-			        		scrollPanel.setViewportView(panel);
-			        		scrollPanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
-			        		
-			        }
-			        
-			        // Display the window.
-			        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-			        frame.pack();
-			        frame.setVisible(true);
-			        frame.setSize(900,300);
-			        frame.setBounds(dim.width/2-frame.getSize().width/2, dim.height/2-frame.getSize().height/2, 900, 300);
+					
+			        SectionPanel panel = new SectionPanel(new ArrayList<Course>(s[j].getCourses().values()));
 				}
 
 				@Override
@@ -189,6 +146,10 @@ public class FinalDisplay extends JFrame {
 			});
 		}
 	}
+	
+    private void displaySemesterPages() {
+    		SectionPanel[] semesters = null;
+    }
 	
 	
 	
