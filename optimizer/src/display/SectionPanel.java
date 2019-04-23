@@ -40,6 +40,11 @@ public class SectionPanel extends JPanel {
 			Font f = name.getFont();
 			name.setFont(f.deriveFont(f.getStyle() | Font.BOLD));
 			this.add(new JLabel(("[" + num + "/" + courses.size() + "]")));
+			String prereqs = "\n";
+			for(Course pr : c.getPrerequisites()) {
+				prereqs += pr.getName();
+			}
+			this.add("Prereqs", new JLabel(prereqs));
 		}
 	}
 
