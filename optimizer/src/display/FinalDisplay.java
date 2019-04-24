@@ -198,7 +198,7 @@ public class FinalDisplay extends JFrame {
 			ScrollPane.setMinimumSize(new Dimension(30, 30));
 			panel.add(ScrollPane);
 			frame.getContentPane().add(panel, BorderLayout.CENTER);
-			JButton addButton = new JButton("Add to Semester");
+			JButton addButton = new JButton("Add Class to Semester");
 			frame.getContentPane().add(addButton, BorderLayout.SOUTH);
 		}
 	}
