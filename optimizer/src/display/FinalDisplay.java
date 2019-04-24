@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import javax.swing.BoxLayout;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
@@ -30,6 +31,8 @@ import core.ReadPopulateCSV;
 import info.ClassType;
 import info.Course;
 import info.Semester;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 /**
@@ -161,27 +164,43 @@ public class FinalDisplay extends JFrame {
 	 */
 	public void displaySearch() throws IOException {
 		
-		JFrame frame = new JFrame("Search Results");
-		frame.setBounds(300, 300, 700, 500);
-		frame.setVisible(true);
 		String key = searchBar.getText();
 		key = key.toUpperCase();
-
-		List<ClassType> sections = cMap.get(key).getSections();
-		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
-		Object[][] sectionTable = new Object[sections.size()][4];
-		for(int i = 0; i < sections.size(); i++) {
-			ClassType s = sections.get(i);
-			sectionTable[i][0] = s.getTime().replaceAll("\\\\",",");
-			sectionTable[i][1] = s.getProf().replaceAll("\\\\",",");
-			sectionTable[i][2] = s.getQuad();
-			sectionTable[i][3] = (Integer) (((info.Section) s).getSection());
-		}
 		
-		JTable table = new JTable(sectionTable, columnNames);	
-		table.setAutoCreateRowSorter(true);
-		table.add(new JLabel("Test"));
-		frame.add(table);
+		if(!cMap.containsKey(key)) {
+			JFrame f = new JFrame("Error");
+			f.setBounds(300, 300, 300,100);
+			f.setVisible(true);
+			JLabel errorLabel = new JLabel();
+			errorLabel.setText("Invalid Course. Enter a New Course");
+			f.getContentPane().add(errorLabel);
+		}else{
+			JFrame frame = new JFrame(key);
+			JPanel panel = new JPanel();
+			frame.setBounds(300, 300, 500, 400);
+			frame.setVisible(true);
+			List<ClassType> sections = cMap.get(key).getSections();
+			String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
+			Object[][] sectionTable = new Object[sections.size()][4];
+			for(int i = 0; i < sections.size(); i++) {
+				ClassType s = sections.get(i);
+				sectionTable[i][0] = s.getTime().replaceAll("\\\\",",");
+				sectionTable[i][1] = s.getProf().replaceAll("\\\\",",");
+				sectionTable[i][2] = s.getQuad();
+				sectionTable[i][3] = (Integer) (((info.Section) s).getSection());
+			}
+			JTable table = new JTable(sectionTable, columnNames);	
+			table.setAutoCreateRowSorter(true);
+			table.add(new JLabel("Test"));
+			table.setFillsViewportHeight(true);
+			JScrollPane ScrollPane = new JScrollPane(table);
+			ScrollPane.setPreferredSize(new Dimension(400, 200));
+			ScrollPane.setMinimumSize(new Dimension(30, 30));
+			panel.add(ScrollPane);
+			frame.getContentPane().add(panel, BorderLayout.CENTER);
+			JButton addButton = new JButton("Add Class to Semester");
+			frame.getContentPane().add(addButton, BorderLayout.SOUTH);
+		}
 	}
         
         
@@ -287,6 +306,10 @@ public class FinalDisplay extends JFrame {
 		 * 
 		 */
 		btnEnter = new JButton("Enter");
+		btnEnter.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		
 		cMap = ReadPopulateCSV.getMap();
 		
