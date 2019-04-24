@@ -91,6 +91,12 @@ public class Optimizer {
 		return newSchedule;
 	}
 	
+	public Semester[] getSemesters() {
+		if(newSchedule == null)
+			return write();
+		return newSchedule;
+	}
+	
 	public Semester[] getAvailableClasses() {return availableClasses;}
 	
 	public void setAlgorithm(Algorithm a) {alg = a;}
