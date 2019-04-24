@@ -1,14 +1,14 @@
 package io;
 
 import java.io.BufferedWriter;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
+import org.jsoup.nodes.*;
 import org.jsoup.select.Elements;
 
 
@@ -84,11 +84,19 @@ public class OnlineCourseParser {
 				pwriter.append(s.substring(0, s.indexOf(',')) + ", ");
 				
 				Element description = descriptions.get(i);
-				Elements prereqs = description.getElementsByClass("bubblelink code");
-				for(Element p: prereqs) {
-					String pre = p.attr("title").replaceAll("\\s", "");
-					String space = (char)160 + "";
-					pwriter.append(pre.replaceAll(space, "") + " ");
+				//Nodes prereqs = description.getElementsByClass("bubblelink code");
+				boolean hasPrereq = false;
+				for(org.jsoup.nodes.Node p: description.childNodes()) {
+					if(p instanceof TextNode) {
+						if(((TextNode) p).text().contains("Prerequisite:")) {
+							hasPrereq = true;
+						}
+					} else if(p instanceof Element && hasPrereq) {
+						String pre = p.attr("title").replaceAll("\\s", "");
+						String space = (char)160 + "";
+						pwriter.append(pre.replaceAll(space, "") + " ");
+					}
+
 				}
 				String d = description.text().replaceAll("\"","");
 				writer.append(d + '\n');
