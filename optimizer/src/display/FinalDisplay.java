@@ -118,13 +118,11 @@ public class FinalDisplay extends JFrame {
 		if(c!=null) {
 			int min = 0;
 			for(int i = 0; i < s.length; i++) {
-				System.out.println("Size[" + i + "] = " + s[i].getCourses().size());
 				if(s[i].getCourses().size() < s[min].getCourses().size()) {
 					min = i;
 				}
 			}
 			s[min].addCourse(c);
-			System.out.println("Add to: " + min);
 		}
 		
 		List<JTextArea> semContainers = new ArrayList<>();
