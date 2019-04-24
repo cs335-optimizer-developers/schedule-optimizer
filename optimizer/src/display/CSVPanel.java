@@ -31,7 +31,7 @@ public class CSVPanel extends JPanel {
 	public void update(Semester[] schedule) {
 		// Create and set up the window.
         JFrame frame = new JFrame("Generated_Schedule");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         
         // Create and set up the content pane.
         CSVPanel newContentPane = new CSVPanel();
