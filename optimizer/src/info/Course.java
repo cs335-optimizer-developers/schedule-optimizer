@@ -164,6 +164,7 @@ public class Course {
 				if (c != null)
 					descriptions.add(c);
 	}
+	
 	public void rmPrq(Course c) {prerequisites.remove(c);}
 	
 	public String toString() {

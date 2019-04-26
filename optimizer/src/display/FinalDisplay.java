@@ -2,8 +2,10 @@ package display;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
+import java.awt.FlowLayout;
 import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -34,6 +36,8 @@ import info.Semester;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+import java.awt.color.*;
+
 
 /**
  * Class to handle primary display window.
@@ -56,6 +60,9 @@ public class FinalDisplay extends JFrame {
 	private JTextField searchBar;
 	private JButton btnEnter;
 	private JButton submitButton;
+	
+	
+	
 	
 	private CSVPanel scheduleDisplay = new CSVPanel();
 	private Map<String, Course> cMap;
@@ -194,7 +201,7 @@ public class FinalDisplay extends JFrame {
 			table.add(new JLabel("Test"));
 			table.setFillsViewportHeight(true);
 			JScrollPane ScrollPane = new JScrollPane(table);
-			ScrollPane.setPreferredSize(new Dimension(400, 200));
+			ScrollPane.setPreferredSize(new Dimension(400, 200));   
 			ScrollPane.setMinimumSize(new Dimension(30, 30));
 			panel.add(ScrollPane);
 			frame.getContentPane().add(panel, BorderLayout.CENTER);
@@ -477,6 +484,18 @@ public class FinalDisplay extends JFrame {
 					.addComponent(btnAdvancedOptions))
 		);
 		contentPane.setLayout(gl_contentPane);
+		
+		
+		//this.getContentPane().setLayout(new FlowLayout());
+		
+		JLabel label = new JLabel();
+		
+		label.setOpaque(true);
+		
+		label.setBackground(Color.GREEN);
+		
+		add(label);
+		
 	}
 	
 	public static FinalDisplay getInstance() {
@@ -484,4 +503,17 @@ public class FinalDisplay extends JFrame {
 			one_display = new FinalDisplay();
 		return one_display;
 	}
+	
+	
+	/*public SetBackgroundColor() {
+		
+		this.getContentPane().setLayout(new FlowLayout());
+		
+		JLabel label = new JLabel();
+		
+		label.setOpaque(true);
+		
+		label.setBackground(Color.BLUE);
+		
+	}*/
 }
