@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+
 import info.ClassDetails;
 import info.ClassTime;
 import info.ClassType;
@@ -185,8 +186,16 @@ public class ReadPopulateCSV {
 	
 	private static Map<String, Course> makeMap() throws IOException {
 		Map<String, Course> cMap = new HashMap<String, Course>();
-		File file = new File(Source.fall_2018);
-		Scanner input = new Scanner(file);
+		File file1 = new File(Source.fall_2018);
+		File file2 = new File(Source.spring_2019);
+		List<File> files = new ArrayList<File>();
+		files.add(file1);
+		files.add(file2);
+		
+		Iterator<File> it = files.iterator();
+		while (it.hasNext()){
+		
+		Scanner input = new Scanner(it.next());
 		input.nextLine();
 		while(input.hasNext()) {
 			String values = input.nextLine();
@@ -227,9 +236,9 @@ public class ReadPopulateCSV {
 				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]));
 				cMap.put(current, c);
 			}	
-		}
-		
+			}
 		input.close();
+		}
 		return cMap;
 		}
 	
