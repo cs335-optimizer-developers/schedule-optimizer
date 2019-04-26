@@ -101,7 +101,7 @@ public class FinalDisplay extends JFrame {
 	private void connect() {
 		//Allows submit to write instances created by Optimizer.
 		submitButton.addActionListener(
-				e -> displaySchedule(Optimizer.getInstance().write()));
+				e -> displaySchedule(Optimizer.getInstance().write(), null));
 		btnAdvancedOptions.addActionListener(
 				e -> scheduleDisplay.update((Optimizer.getInstance().generate())));
 		btnEnter.addActionListener(
@@ -118,9 +118,20 @@ public class FinalDisplay extends JFrame {
 	/**
 	 * Display the schedules, each semester has many courses- display each semester's courses in each
 	 * 	semester text area
-	 * @param s
+	 * @param s, an array of Semesters. Course c a course to be added.
 	 */
-	public void displaySchedule(Semester[] s) {
+	public void displaySchedule(Semester[] s, Course c) {
+		// Add Course c to the smallest semester
+		if(c!=null) {
+			int min = 0;
+			for(int i = 0; i < s.length; i++) {
+				if(s[i].getCourses().size() < s[min].getCourses().size()) {
+					min = i;
+				}
+			}
+			s[min].addCourse(c);
+		}
+		
 		List<JTextArea> semContainers = new ArrayList<>();
 		semContainers.add(semOneText);
 		semContainers.add(semTwoText);
@@ -157,12 +168,6 @@ public class FinalDisplay extends JFrame {
 		}
 	}
 	
-    private void displaySemesterPages() {
-    		SectionPanel[] semesters = null;
-    }
-	
-	
-	
 	/**
 	 * initiates a new window when the enter button is pressed, and 
 	 * displays the information about the course
@@ -186,7 +191,8 @@ public class FinalDisplay extends JFrame {
 			JPanel panel = new JPanel();
 			frame.setBounds(300, 300, 500, 400);
 			frame.setVisible(true);
-			List<ClassType> sections = cMap.get(key).getSections();
+			final Course c = cMap.get(key);
+			List<ClassType> sections = c.getSections();
 			String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
 			Object[][] sectionTable = new Object[sections.size()][4];
 			for(int i = 0; i < sections.size(); i++) {
@@ -206,6 +212,14 @@ public class FinalDisplay extends JFrame {
 			panel.add(ScrollPane);
 			frame.getContentPane().add(panel, BorderLayout.CENTER);
 			JButton addButton = new JButton("Add Class to Semester");
+			addButton.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					displaySchedule(Optimizer.getInstance().getSemesters(), c);
+				}
+				
+			});
+			
 			frame.getContentPane().add(addButton, BorderLayout.SOUTH);
 		}
 	}
