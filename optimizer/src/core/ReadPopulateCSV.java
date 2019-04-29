@@ -110,7 +110,7 @@ public class ReadPopulateCSV {
 					fee = Double.parseDouble(data[9]);
 				
 				// The Details object of this particular course (lab/section)
-				ClassDetails details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
+				ClassDetails details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], fee);
 				
 				ClassType type;
 				int number;
@@ -152,7 +152,7 @@ public class ReadPopulateCSV {
 				if(flag)
 					continue;
 				// New Course is created for the section
-				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]));
+				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]),data[5]);
 				courses.add(c);
 			}
 			
@@ -210,7 +210,7 @@ public class ReadPopulateCSV {
 				if (!data[9].isEmpty())
 					fee = Double.parseDouble(data[9]);
 				
-				ClassDetails details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], data[5], fee);
+				ClassDetails details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], fee);
 				
 				ClassType type;
 				int number;
@@ -233,7 +233,7 @@ public class ReadPopulateCSV {
 				else
 					cMap.get(current).addSection(type);
 			}else {
-				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]));
+				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]),data[5]);
 				cMap.put(current, c);
 			}	
 			}
