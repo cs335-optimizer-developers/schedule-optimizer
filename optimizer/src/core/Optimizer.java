@@ -11,6 +11,7 @@ import display.DParam;
 import display.FinalDisplay;
 import info.Course;
 import info.Semester;
+import io.ParseDescrip;
 import io.ParsePrereq;
 import io.Writer;
 
@@ -55,6 +56,34 @@ public class Optimizer {
 			
 		}
 		
+		//add description stuff
+		HashMap<String, List<String>> courseDescrip = ParseDescrip.parseDescrip();
+		
+		for(int i = 0; i < availableClasses.length; i++) {
+			Semester s = availableClasses[i];
+			Map<String, Course> courses = s.getCourses();
+			List<Course> values = new ArrayList<Course>(courses.values());
+			for(Course advCourse : values) {
+				// Look up every descrips and map to correct course, then add to advanced course descrips.
+				List<Course> descrips = new ArrayList<Course>();
+				List<String> unmapPre = courseDescrip.get(advCourse.getCourseKey());
+				
+				// Current course has no descrips
+				if(unmapPre == null)
+					continue;
+				
+				for(String ck : unmapPre)
+					descrips.add(courses.get(ck));
+				
+				advCourse.setDescription(descrips);
+			}
+			
+		}
+		
+		
+		
+		
+		
 		one_optimizer = this;
 		alg = new AlgFinal();
 	}
@@ -88,6 +117,12 @@ public class Optimizer {
 		}
 			
 		System.out.println("Schedule written");
+		return newSchedule;
+	}
+	
+	public Semester[] getSemesters() {
+		if(newSchedule == null)
+			return write();
 		return newSchedule;
 	}
 	

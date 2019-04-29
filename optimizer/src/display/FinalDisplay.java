@@ -1,6 +1,16 @@
 package display;
 
+<<<<<<< HEAD
 import java.awt.EventQueue;
+=======
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.FlowLayout;
+import java.awt.Toolkit;
+>>>>>>> c0f953c60a85852fde6e3066b0adcc9dd01032c8
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
@@ -8,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import javax.swing.BoxLayout;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
@@ -25,6 +36,10 @@ import core.ReadPopulateCSV;
 import info.ClassType;
 import info.Course;
 import info.Semester;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+import java.awt.color.*;
 
 
 /**
@@ -48,6 +63,9 @@ public class FinalDisplay extends JFrame {
 	private JTextField searchBar;
 	private JButton btnEnter;
 	private JButton submitButton;
+	
+	
+	
 	
 	private CSVPanel scheduleDisplay = new CSVPanel();
 	private Map<String, Course> cMap;
@@ -86,7 +104,7 @@ public class FinalDisplay extends JFrame {
 	private void connect() {
 		//Allows submit to write instances created by Optimizer.
 		submitButton.addActionListener(
-				e -> displaySchedule(Optimizer.getInstance().write()));
+				e -> displaySchedule(Optimizer.getInstance().write(), null));
 		btnAdvancedOptions.addActionListener(
 				e -> scheduleDisplay.update((Optimizer.getInstance().generate())));
 		btnEnter.addActionListener(
@@ -103,9 +121,20 @@ public class FinalDisplay extends JFrame {
 	/**
 	 * Display the schedules, each semester has many courses- display each semester's courses in each
 	 * 	semester text area
-	 * @param s
+	 * @param s, an array of Semesters. Course c a course to be added.
 	 */
-	public void displaySchedule(Semester[] s) {
+	public void displaySchedule(Semester[] s, Course c) {
+		// Add Course c to the smallest semester
+		if(c!=null) {
+			int min = 0;
+			for(int i = 0; i < s.length; i++) {
+				if(s[i].getCourses().size() < s[min].getCourses().size()) {
+					min = i;
+				}
+			}
+			s[min].addCourse(c);
+		}
+		
 		List<JTextArea> semContainers = new ArrayList<>();
 		semContainers.add(semOneText);
 		semContainers.add(semTwoText);
@@ -142,12 +171,6 @@ public class FinalDisplay extends JFrame {
 		}
 	}
 	
-    private void displaySemesterPages() {
-    		SectionPanel[] semesters = null;
-    }
-	
-	
-	
 	/**
 	 * initiates a new window when the enter button is pressed, and 
 	 * displays the information about the course
@@ -156,27 +179,52 @@ public class FinalDisplay extends JFrame {
 	 */
 	public void displaySearch() throws IOException {
 		
-		JFrame frame = new JFrame("Search Results");
-		frame.setBounds(300, 300, 700, 500);
-		frame.setVisible(true);
 		String key = searchBar.getText();
 		key = key.toUpperCase();
-
-		List<ClassType> sections = cMap.get(key).getSections();
-		String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
-		Object[][] sectionTable = new Object[sections.size()][4];
-		for(int i = 0; i < sections.size(); i++) {
-			ClassType s = sections.get(i);
-			sectionTable[i][0] = s.getTime().replaceAll("\\\\",",");
-			sectionTable[i][1] = s.getProf().replaceAll("\\\\",",");
-			sectionTable[i][2] = s.getQuad();
-			sectionTable[i][3] = (Integer) (((info.Section) s).getSection());
-		}
 		
-		JTable table = new JTable(sectionTable, columnNames);	
-		table.setAutoCreateRowSorter(true);
-		table.add(new JLabel("Test"));
-		frame.add(table);
+		if(!cMap.containsKey(key)) {
+			JFrame f = new JFrame("Error");
+			f.setBounds(300, 300, 300,100);
+			f.setVisible(true);
+			JLabel errorLabel = new JLabel();
+			errorLabel.setText("Invalid Course. Enter a New Course");
+			f.getContentPane().add(errorLabel);
+		}else{
+			JFrame frame = new JFrame(key);
+			JPanel panel = new JPanel();
+			frame.setBounds(300, 300, 500, 400);
+			frame.setVisible(true);
+			final Course c = cMap.get(key);
+			List<ClassType> sections = c.getSections();
+			String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
+			Object[][] sectionTable = new Object[sections.size()][4];
+			for(int i = 0; i < sections.size(); i++) {
+				ClassType s = sections.get(i);
+				sectionTable[i][0] = s.getTime().replaceAll("\\\\",",");
+				sectionTable[i][1] = s.getProf().replaceAll("\\\\",",");
+				sectionTable[i][2] = s.getQuad();
+				sectionTable[i][3] = (Integer) (((info.Section) s).getSection());
+			}
+			JTable table = new JTable(sectionTable, columnNames);	
+			table.setAutoCreateRowSorter(true);
+			table.add(new JLabel("Test"));
+			table.setFillsViewportHeight(true);
+			JScrollPane ScrollPane = new JScrollPane(table);
+			ScrollPane.setPreferredSize(new Dimension(400, 200));   
+			ScrollPane.setMinimumSize(new Dimension(30, 30));
+			panel.add(ScrollPane);
+			frame.getContentPane().add(panel, BorderLayout.CENTER);
+			JButton addButton = new JButton("Add Class to Semester");
+			addButton.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					displaySchedule(Optimizer.getInstance().getSemesters(), c);
+				}
+				
+			});
+			
+			frame.getContentPane().add(addButton, BorderLayout.SOUTH);
+		}
 	}
         
         
@@ -282,6 +330,10 @@ public class FinalDisplay extends JFrame {
 		 * 
 		 */
 		btnEnter = new JButton("Enter");
+		btnEnter.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		
 		cMap = ReadPopulateCSV.getMap();
 		
@@ -449,6 +501,18 @@ public class FinalDisplay extends JFrame {
 					.addComponent(btnAdvancedOptions))
 		);
 		contentPane.setLayout(gl_contentPane);
+		
+		
+		//this.getContentPane().setLayout(new FlowLayout());
+		
+		JLabel label = new JLabel();
+		
+		label.setOpaque(true);
+		
+		label.setBackground(Color.GREEN);
+		
+		add(label);
+		
 	}
 	
 	public static FinalDisplay getInstance() {
@@ -456,4 +520,17 @@ public class FinalDisplay extends JFrame {
 			one_display = new FinalDisplay();
 		return one_display;
 	}
+	
+	
+	/*public SetBackgroundColor() {
+		
+		this.getContentPane().setLayout(new FlowLayout());
+		
+		JLabel label = new JLabel();
+		
+		label.setOpaque(true);
+		
+		label.setBackground(Color.BLUE);
+		
+	}*/
 }

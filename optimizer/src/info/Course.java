@@ -24,6 +24,9 @@ public class Course {
 	private List<Course> prerequisites = new ArrayList<>();
 	// Postrequisites, used only in AlgFinal.
 	private Set<Course> postrequisites = new HashSet<>();
+	
+	//DescriptionsCourses
+	private List<Course> descriptions = new ArrayList<>();
 
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
 	public Course(Subject subj, int number, ClassType type, List<Tag> tags) {
@@ -150,6 +153,18 @@ public class Course {
 				if (c != null)
 					postrequisites.add(c);
 	}
+	
+	public List<Course> getDescription(){
+		return descriptions;
+	}
+	
+	public void setDescription(List<Course> p) {
+		if (p != null)
+			for (Course c : p)
+				if (c != null)
+					descriptions.add(c);
+	}
+	
 	public void rmPrq(Course c) {prerequisites.remove(c);}
 	
 	public String toString() {
