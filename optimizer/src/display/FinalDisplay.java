@@ -180,12 +180,13 @@ public class FinalDisplay extends JFrame {
 		key = key.toUpperCase();
 		
 		if(!cMap.containsKey(key)) {
-			JFrame f = new JFrame("Error");
+			/*JFrame f = new JFrame("Error");
 			f.setBounds(300, 300, 300,100);
 			f.setVisible(true);
 			JLabel errorLabel = new JLabel();
 			errorLabel.setText("Invalid Course. Enter a New Course");
-			f.getContentPane().add(errorLabel);
+			f.getContentPane().add(errorLabel); */
+			System.err.println("Invalid Course. Enter a New Course");
 		}else{
 			JFrame frame = new JFrame(key);
 			JPanel panel = new JPanel();
@@ -287,6 +288,7 @@ public class FinalDisplay extends JFrame {
 //		System.err.println(minor.getText() + " requested");
 		toReturn.addProgram(minor.getText());
 		
+		
 		return toReturn;
 	}
 
@@ -313,6 +315,8 @@ public class FinalDisplay extends JFrame {
 		minor = new JTextField();
 		minor.setText("econ-minor");
 		minor.setColumns(10);
+		
+	
 		
 		lblSearchForClasses = new JLabel("Search For Classes");
 		
