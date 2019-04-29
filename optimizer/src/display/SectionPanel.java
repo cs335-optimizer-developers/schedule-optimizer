@@ -20,7 +20,7 @@ import info.Course;
 
 public class SectionPanel extends JPanel {
 	
-	private JPanel cards = new JPanel(new CardLayout());
+	private JPanel cards;
 	List<Course> courses;
 
 	public SectionPanel(List<Course> courses) {
@@ -53,6 +53,7 @@ public class SectionPanel extends JPanel {
 		// No courses are in the semester
 		if(courses == null || courses.size() == 0)
 			return;
+		cards = new JPanel(new CardLayout());
 		JFrame f = new JFrame();
 		JScrollPane scrollPanel = new JScrollPane();
 		f.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
@@ -73,7 +74,7 @@ public class SectionPanel extends JPanel {
 
 			JTable table = new JTable(sectionTable, columnNames);
 			table.setAutoCreateRowSorter(true);
-			table.add(new JLabel("Test"));
+			//table.add(new JLabel(c.getDescription()));
 			JScrollPane scrollPane = new JScrollPane(table);
 			table.setFillsViewportHeight(true);
 			scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
