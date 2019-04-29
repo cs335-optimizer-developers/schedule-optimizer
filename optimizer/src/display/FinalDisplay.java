@@ -1,16 +1,11 @@
 package display;
 
-<<<<<<< HEAD
-import java.awt.EventQueue;
-=======
 import java.awt.BorderLayout;
-import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
-import java.awt.FlowLayout;
-import java.awt.Toolkit;
->>>>>>> c0f953c60a85852fde6e3066b0adcc9dd01032c8
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
@@ -18,13 +13,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import javax.swing.BoxLayout;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -36,10 +31,6 @@ import core.ReadPopulateCSV;
 import info.ClassType;
 import info.Course;
 import info.Semester;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-
-import java.awt.color.*;
 
 
 /**
