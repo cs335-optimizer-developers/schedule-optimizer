@@ -101,15 +101,22 @@ public class FinalDisplay extends JFrame {
 	
 	public void addCourse(Semester[] s, Course c) {
 		if(c!=null) {
-			int min = 0;
+			int minIndex = 0;
+			int minCredits = 150;
 			for(int i = 0; i < s.length; i++) {
-				if(s[i].getCourses().size() < s[min].getCourses().size()) {
-					min = i;
+				List<Course> courses = new ArrayList<Course>(s[i].getCourses().values());
+				int credits = 0;
+				for(int j = 0; j < courses.size(); j++) {
+					credits += courses.get(j).getCredits();
+				}
+				if(credits < minCredits) {
+					minIndex = i;
+					minCredits = credits;
 				}
 			}
-			s[min].addCourse(c);
-			JTextArea a = semContainers.get(min);
-			a.setText(parseSemester(s[min]));
+			s[minIndex].addCourse(c);
+			JTextArea a = semContainers.get(minIndex);
+			a.setText(parseSemester(s[minIndex]));
 		}
 	}
 	

@@ -130,7 +130,7 @@ public class ReadPopulateCSV {
 				// Correct subject format (remove spaces, C E = CE)
 				String subj = data[0].replaceAll("\\s","");
 				String key = Subject.valueOf(subj).toString()+":"+number;
-				
+			
 				// TODO: Check if the Section object is from a new Class, or an already instantiated Class
 				boolean flag = false;
 				Iterator<Course> it = courses.iterator();
@@ -152,7 +152,13 @@ public class ReadPopulateCSV {
 				if(flag)
 					continue;
 				// New Course is created for the section
-				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]),data[5]);
+				int credits;
+				try {
+					credits = Integer.parseInt(data[5]);
+				} catch(NumberFormatException nfe) {
+					credits = 4;
+				}
+				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]),credits);
 				courses.add(c);
 			}
 			
@@ -233,7 +239,13 @@ public class ReadPopulateCSV {
 				else
 					cMap.get(current).addSection(type);
 			}else {
-				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]),data[5]);
+				int credits;
+				try {
+					credits = Integer.parseInt(data[5]);
+				} catch(NumberFormatException nfe) {
+					credits = 4;
+				}
+				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]),credits);
 				cMap.put(current, c);
 			}	
 			}
