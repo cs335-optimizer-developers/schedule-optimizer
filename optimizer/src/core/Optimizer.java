@@ -78,7 +78,6 @@ public class Optimizer {
 		}
 		
 		one_optimizer = this;
-		alg = new AlgFinal();
 	}
 
 	/*
@@ -90,6 +89,8 @@ public class Optimizer {
 		//long first = System.currentTimeMillis();
 		
 		DParam dPar = FinalDisplay.requestParameters();
+		
+		alg = new AlgFinal();
 		newSchedule = alg.build(dPar);
 
 		return newSchedule;

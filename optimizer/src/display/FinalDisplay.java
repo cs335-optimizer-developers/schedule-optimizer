@@ -69,6 +69,7 @@ public class FinalDisplay extends JFrame {
 				FinalDisplay frame = new FinalDisplay();
 				frame.setVisible(true);
 				frame.connect();
+				one_display = frame;
 			} catch (Exception e) {e.printStackTrace();}
 		});
 
@@ -82,7 +83,7 @@ public class FinalDisplay extends JFrame {
 		submitButton.addActionListener(
 				e -> displaySchedule(Optimizer.getInstance().write(), null));
 		btnAdvancedOptions.addActionListener(
-				e -> scheduleDisplay.update((Optimizer.getInstance().generate())));
+				e -> Optimizer.getInstance().generate());
 		btnEnter.addActionListener(
 				e -> {
 					try {
