@@ -249,6 +249,8 @@ public class FinalDisplay extends JFrame {
 			
 			toReturn.addProgram("test-gen-ed");
 			toReturn.addProgram("csci-major");
+			toReturn.addProgram("math-major");
+			toReturn.addProgram("econ-major");
 			
 			return toReturn;
 		}
@@ -265,20 +267,20 @@ public class FinalDisplay extends JFrame {
 		//TODO Check box for if to include gen-eds. Client may choose not to for experimentation.
 		boolean wantGenEd = true;
 		if (wantGenEd) {
-//			System.err.println("test-gen-ed" + " requested");
+			System.err.println("test-gen-ed" + " requested");
 			toReturn.addProgram("test-gen-ed");
 		}
 		
 		//TODO a slider, higher number referring to higher preference to fill gen-eds early.
 		toReturn.setPreferGenEd(1);
 		
-//		System.err.println(majorOne.getText() + " requested");
+		System.out.println(majorOne.getText() + " requested");
 		toReturn.addProgram(majorOne.getText());
 		
-//		System.err.println(majorTwo.getText() + " requested");
+		System.out.println(majorTwo.getText() + " requested");
 		toReturn.addProgram(majorTwo.getText());
 		
-//		System.err.println(minor.getText() + " requested");
+		System.out.println(minor.getText() + " requested");
 		toReturn.addProgram(minor.getText());
 		
 		
