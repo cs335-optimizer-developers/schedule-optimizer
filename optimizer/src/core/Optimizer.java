@@ -57,7 +57,7 @@ public class Optimizer {
 		}
 		
 		//add description stuff
-		HashMap<String, List<String>> courseDescrip = ParseDescrip.parseDescrip();
+		HashMap<String, String> courseDescrip = ParseDescrip.parseDescrip();
 		
 		for(int i = 0; i < availableClasses.length; i++) {
 			Semester s = availableClasses[i];
@@ -66,14 +66,11 @@ public class Optimizer {
 			for(Course advCourse : values) {
 				// Look up every descrips and map to correct course, then add to advanced course descrips.
 				List<Course> descrips = new ArrayList<Course>();
-				List<String> unmapPre = courseDescrip.get(advCourse.getCourseKey());
+				String unmapPre = courseDescrip.get(advCourse.getCourseKey());
 				
 				// Current course has no descrips
 				if(unmapPre == null)
 					continue;
-				
-				for(String ck : unmapPre)
-					descrips.add(courses.get(ck));
 				
 				advCourse.setDescription(descrips);
 			}
