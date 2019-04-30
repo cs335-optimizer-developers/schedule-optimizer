@@ -9,6 +9,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -165,7 +167,14 @@ public class FinalDisplay extends JFrame {
 			JLabel errorLabel = new JLabel();
 			errorLabel.setText("Invalid Course. Enter a New Course");
 			f.getContentPane().add(errorLabel); */
-			System.err.println("Invalid Course. Enter a New Course");
+			//System.err.println("Invalid Course. Enter a New Course");
+			JTextArea textArea = new JTextArea(50, 10);
+			PrintStream printStream = new PrintStream(new CustomOuputStream(textArea));
+			
+			//PrintStream standardErr = System.err;
+			//System.setOut(printStream);
+			System.setErr(printStream);
+			
 		}else{
 			JFrame frame = new JFrame(key);
 			JPanel panel = new JPanel();
