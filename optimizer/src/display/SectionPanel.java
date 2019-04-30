@@ -14,13 +14,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.SwingConstants;
 
 import info.ClassType;
 import info.Course;
 
 public class SectionPanel extends JPanel {
 	
-	private JPanel cards = new JPanel(new CardLayout());
+	private JPanel cards;
 	List<Course> courses;
 
 	public SectionPanel(List<Course> courses) {
@@ -39,12 +40,9 @@ public class SectionPanel extends JPanel {
 			this.add(name);
 			Font f = name.getFont();
 			name.setFont(f.deriveFont(f.getStyle() | Font.BOLD));
-			this.add(new JLabel(("[" + num + "/" + courses.size() + "]")));
-			String prereqs = "\n";
-			for(Course pr : c.getPrerequisites()) {
-				prereqs += pr.getName();
-			}
-			this.add("Prereqs", new JLabel(prereqs));
+			add(new JLabel("<html>[" + num + "/" + courses.size() + "]<br/>" +
+					"<b>Credits</b>: " + c.getCredits() +"<br/>" +
+					prereqToString(c) + "</html>"));
 		}
 	}
 
@@ -53,6 +51,7 @@ public class SectionPanel extends JPanel {
 		// No courses are in the semester
 		if(courses == null || courses.size() == 0)
 			return;
+		cards = new JPanel(new CardLayout());
 		JFrame f = new JFrame();
 		JScrollPane scrollPanel = new JScrollPane();
 		f.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
@@ -73,7 +72,8 @@ public class SectionPanel extends JPanel {
 
 			JTable table = new JTable(sectionTable, columnNames);
 			table.setAutoCreateRowSorter(true);
-			table.add(new JLabel("Test"));
+			//panel.
+			
 			JScrollPane scrollPane = new JScrollPane(table);
 			table.setFillsViewportHeight(true);
 			scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -110,5 +110,22 @@ public class SectionPanel extends JPanel {
 		f.setLocationRelativeTo(null);
 		f.setVisible(true);
         f.setSize(450,300);
+	}
+	
+	private String prereqToString(Course c) {
+		if(c.getPrerequisites().size() == 0)
+			return "";
+		String ret = "<b>Prerequisites</b>: [";
+		int i = 0;
+		for(Course p : c.getPrerequisites()) {
+			if(i+1 == c.getPrerequisites().size()) {
+				ret += p.getName();
+			}
+			else
+				ret += p.getName() + ",";
+			i++;
+		}
+		ret += "]";
+		return ret;
 	}
 }

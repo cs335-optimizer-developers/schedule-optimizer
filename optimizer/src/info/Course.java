@@ -27,9 +27,12 @@ public class Course {
 	
 	//DescriptionsCourses
 	private List<Course> descriptions = new ArrayList<>();
+	
+	//Credits
+	int credits;
 
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
-	public Course(Subject subj, int number, ClassType type, List<Tag> tags) {
+	public Course(Subject subj, int number, ClassType type, List<Tag> tags, int credits) {
 		if(type == null) {
 			System.out.println("Error when creating a new class, section cannot be null... *terminating*");
 			System.exit(1);
@@ -45,6 +48,7 @@ public class Course {
 			this.tags = null;
 		else
 			this.tags = new ArrayList<Tag>(tags);
+		this.credits = credits;
 	}
 	
 	/**
@@ -163,6 +167,10 @@ public class Course {
 			for (Course c : p)
 				if (c != null)
 					descriptions.add(c);
+	}
+	
+	public int getCredits() {
+		return credits;
 	}
 	
 	public void rmPrq(Course c) {prerequisites.remove(c);}

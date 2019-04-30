@@ -80,10 +80,6 @@ public class Optimizer {
 			
 		}
 		
-		
-		
-		
-		
 		one_optimizer = this;
 		alg = new AlgFinal();
 	}
@@ -143,5 +139,18 @@ public class Optimizer {
 	public static Optimizer newInstance() {
 		one_optimizer = new Optimizer();
 		return one_optimizer;
+	}
+	
+	/**
+	 * Convert available classes into a map containing both semesters
+	 * @return
+	 */
+	public static Map<String, Course> generateMap() {
+		Map<String, Course> cMap = new HashMap<String, Course>();
+		for(int i = 0; i < one_optimizer.availableClasses.length; i++) {
+			Semester s = one_optimizer.availableClasses[i];
+			cMap.putAll(s.getCourses());
+		}
+		return cMap;
 	}
 }

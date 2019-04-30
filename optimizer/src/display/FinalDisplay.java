@@ -55,25 +55,10 @@ public class FinalDisplay extends JFrame {
 	private JButton btnEnter;
 	private JButton submitButton;
 	
-	
-	
-	
 	private CSVPanel scheduleDisplay = new CSVPanel();
 	private Map<String, Course> cMap;
 	
-	JTextArea semOneText;
-	JTextArea semTwoText;
-	JTextArea semThreeText;
-	JTextArea semFourText;
-	JTextArea semFiveText;
-	JTextArea semSixText;
-	JTextArea semSevenText;
-	JTextArea semEightText;
-	
-	/**
-	 * Individual main class.
-	 */
-	public static void main(String[] args) {initDisplay();}
+	List<JTextArea> semContainers;
 	
 	/**
 	 * Display the frame.
@@ -109,33 +94,33 @@ public class FinalDisplay extends JFrame {
 				});
 	}
 	
+	public void addCourse(Semester[] s, Course c) {
+		if(c!=null) {
+			int minIndex = 0;
+			int minCredits = 150;
+			for(int i = 0; i < s.length; i++) {
+				List<Course> courses = new ArrayList<Course>(s[i].getCourses().values());
+				int credits = 0;
+				for(int j = 0; j < courses.size(); j++) {
+					credits += courses.get(j).getCredits();
+				}
+				if(credits < minCredits) {
+					minIndex = i;
+					minCredits = credits;
+				}
+			}
+			s[minIndex].addCourse(c);
+			JTextArea a = semContainers.get(minIndex);
+			a.setText(parseSemester(s[minIndex]));
+		}
+	}
+	
 	/**
 	 * Display the schedules, each semester has many courses- display each semester's courses in each
 	 * 	semester text area
 	 * @param s, an array of Semesters. Course c a course to be added.
 	 */
 	public void displaySchedule(Semester[] s, Course c) {
-		// Add Course c to the smallest semester
-		if(c!=null) {
-			int min = 0;
-			for(int i = 0; i < s.length; i++) {
-				if(s[i].getCourses().size() < s[min].getCourses().size()) {
-					min = i;
-				}
-			}
-			s[min].addCourse(c);
-		}
-		
-		List<JTextArea> semContainers = new ArrayList<>();
-		semContainers.add(semOneText);
-		semContainers.add(semTwoText);
-		semContainers.add(semThreeText);
-		semContainers.add(semFourText);
-		semContainers.add(semFiveText);
-		semContainers.add(semSixText);
-		semContainers.add(semSevenText);
-		semContainers.add(semEightText);
-		
 		for(int i = 0; i < semContainers.size(); i++) {
 			JTextArea a = semContainers.get(i);
 			a.setText(parseSemester(s[i]));
@@ -172,7 +157,7 @@ public class FinalDisplay extends JFrame {
 		
 		String key = searchBar.getText();
 		key = key.toUpperCase();
-		
+		key = key.replaceAll(" ", "");
 		if(!cMap.containsKey(key)) {
 			/*JFrame f = new JFrame("Error");
 			f.setBounds(300, 300, 300,100);
@@ -186,7 +171,7 @@ public class FinalDisplay extends JFrame {
 			JPanel panel = new JPanel();
 			frame.setBounds(300, 300, 500, 400);
 			frame.setVisible(true);
-			final Course c = cMap.get(key);
+			Course c = cMap.get(key);
 			List<ClassType> sections = c.getSections();
 			String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
 			Object[][] sectionTable = new Object[sections.size()][4];
@@ -199,18 +184,18 @@ public class FinalDisplay extends JFrame {
 			}
 			JTable table = new JTable(sectionTable, columnNames);	
 			table.setAutoCreateRowSorter(true);
-			table.add(new JLabel("Test"));
 			table.setFillsViewportHeight(true);
 			JScrollPane ScrollPane = new JScrollPane(table);
 			ScrollPane.setPreferredSize(new Dimension(400, 200));   
-			ScrollPane.setMinimumSize(new Dimension(30, 30));
 			panel.add(ScrollPane);
+			panel.add(new JLabel("<html><b>Credits</b>: " + c.getCredits() +"<br/>" +
+					prereqToString(c) + "</html>"));
 			frame.getContentPane().add(panel, BorderLayout.CENTER);
 			JButton addButton = new JButton("Add Class to Semester");
 			addButton.addActionListener(new ActionListener() {
 				@Override
 				public void actionPerformed(ActionEvent e) {
-					displaySchedule(Optimizer.getInstance().getSemesters(), c);
+					addCourse(Optimizer.getInstance().getSemesters(), c);
 				}
 				
 			});
@@ -218,11 +203,25 @@ public class FinalDisplay extends JFrame {
 			frame.getContentPane().add(addButton, BorderLayout.SOUTH);
 		}
 	}
-        
-        
-        
 	
-	
+	private String prereqToString(Course c) {
+		if(c.getPrerequisites().size() == 0)
+			return "";
+		String ret = "<b>Prerequisites</b>: [";
+		int i = 0;
+		for(Course p : c.getPrerequisites()) {
+			if(i+1 == c.getPrerequisites().size()) {
+				ret += p.getName();
+			}
+			else
+				ret += p.getName() + ",";
+			i++;
+		}
+		ret += "]";
+		return ret;
+	}
+        
+        
 	/**
 	 * Parse a semester's courses into a single string.
 	 * @param s, a semester- if null then return "Empty"
@@ -330,28 +329,38 @@ public class FinalDisplay extends JFrame {
 			}
 		});
 		
-		cMap = ReadPopulateCSV.getMap();
+		cMap = Optimizer.generateMap();
 		
 		submitButton = new JButton("Write");
 		
 		btnAdvancedOptions = new JButton("Generate CSV");
 		
-		semOneText = new JTextArea();
+		JTextArea semOneText = new JTextArea();
 		semOneText.setEditable(false);
-		semTwoText = new JTextArea();
+		JTextArea semTwoText = new JTextArea();
 		semTwoText.setEditable(false);
-		semThreeText = new JTextArea();
+		JTextArea semThreeText = new JTextArea();
 		semThreeText.setEditable(false);
-		semFourText = new JTextArea();
+		JTextArea semFourText = new JTextArea();
 		semFourText.setEditable(false);
-		semFiveText = new JTextArea();
+		JTextArea semFiveText = new JTextArea();
 		semFiveText.setEditable(false);
-		semSixText = new JTextArea();
+		JTextArea semSixText = new JTextArea();
 		semSixText.setEditable(false);
-		semSevenText = new JTextArea();
+		JTextArea semSevenText = new JTextArea();
 		semSevenText.setEditable(false);
-		semEightText = new JTextArea();
+		JTextArea semEightText = new JTextArea();
 		semEightText.setEditable(false);
+		
+		semContainers = new ArrayList<>();
+		semContainers.add(semOneText);
+		semContainers.add(semTwoText);
+		semContainers.add(semThreeText);
+		semContainers.add(semFourText);
+		semContainers.add(semFiveText);
+		semContainers.add(semSixText);
+		semContainers.add(semSevenText);
+		semContainers.add(semEightText);
 		
 		JLabel lblSemester = new JLabel("Semester 1");
 		

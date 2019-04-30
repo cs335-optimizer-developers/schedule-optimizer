@@ -23,7 +23,7 @@ public class RunOptimizer {
 		
 		if (debug != true)
 			GenTest.errorLogRedirect();
-				
+		
 		Optimizer opt = Optimizer.getInstance();
 		opt.generate();
 		
