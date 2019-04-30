@@ -24,10 +24,8 @@ public class Course {
 	private List<Course> prerequisites = new ArrayList<>();
 	// Postrequisites, used only in AlgFinal.
 	private Set<Course> postrequisites = new HashSet<>();
-	
 	//DescriptionsCourses
 	private List<Course> descriptions = new ArrayList<>();
-	
 	//Credits
 	int credits;
 

@@ -53,12 +53,10 @@ public class AlgFinal extends AlgZ {
 				else {
 					boolean safe = true;
 					for (Course p : c.getPrerequisites()) {
-						safe = taken.contains(p);
-						if (!safe)
-//							System.out.println("No "+p.getName()+" for "+c.getName());
-						if (!safe && !toTake.contains(p)) {
+						safe = taken.contains(p) || toTake.contains(p);
+						if (!safe) {
 							toAd.add(p);
-//							System.out.println(p.getName()+" tacked on by "+c.getName());
+							System.out.println(p.getName()+" tacked on by "+c.getName());
 						}
 					}
 					if (safe) {
