@@ -37,9 +37,10 @@ import info.Tag;
 public class ReadPopulateCSV {
 	
 	private static Map<String, Course> one_map;
+	// A flag to indicate that the build has completed
+	private static boolean buildFlag = false;
 		
 	public static Semester[] buildSemesters() {
-		
 		Semester[] toReturn = new Semester[2];
 		toReturn[0] = createSemester(Source.fall_2018);
 		toReturn[0].setSemester("Fall");
@@ -49,24 +50,10 @@ public class ReadPopulateCSV {
 		toReturn[1].setSemester("Spring");
 		toReturn[1].setYear(2019);
 		
+		buildFlag = true;
+		
 		return toReturn;
 	}
-
-	public static Map<String, Course> getMap() {
-		if (one_map == null)
-			try {
-				one_map = makeMap();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		return one_map;
-	}
-	
-	
-	//public static void main(String[] args) {
-	//	buildSemesters("./optimizer/input");
-	//}
 	
 	/**
 	 * Create a semester object from the given csv file
@@ -187,72 +174,7 @@ public class ReadPopulateCSV {
 			map.put(c.getCourseKey(), c);
 		}
 		return map;
-		
 	}
-	
-	private static Map<String, Course> makeMap() throws IOException {
-		Map<String, Course> cMap = new HashMap<String, Course>();
-		File file1 = new File(Source.fall_2018);
-		File file2 = new File(Source.spring_2019);
-		List<File> files = new ArrayList<File>();
-		files.add(file1);
-		files.add(file2);
-		
-		Iterator<File> it = files.iterator();
-		while (it.hasNext()){
-		
-		Scanner input = new Scanner(it.next());
-		input.nextLine();
-		while(input.hasNext()) {
-			String values = input.nextLine();
-			String [] data = values.split(",");
-			String current = data[0] + " " + data [1];
-			 
-			Course c;
-				
-				ClassTime meetingTimes = new ClassTime(data[6], parseDays(data[7]), parseQuad(data[3]));
-				
-				double fee = 0;
-				if (!data[9].isEmpty())
-					fee = Double.parseDouble(data[9]);
-				
-				ClassDetails details = new ClassDetails(data[4], meetingTimes, data[8]+data[9], fee);
-				
-				ClassType type;
-				int number;
-				
-				if(data[1].length() == 4) {
-					type = new Lab(details);
-					number = Integer.parseInt(data[1].substring(0, 3));
-				}
-				
-				else {
-					type = new Section(details, Integer.parseInt(data[2]));
-					number = Integer.parseInt(data[1]);
-				}
-				
-				String subj = data[0].replaceAll("\\s","");
-				
-			if(cMap.containsKey(current)) {
-				if(data[1].length() == 4)
-					cMap.get(current).addLab(type);
-				else
-					cMap.get(current).addSection(type);
-			}else {
-				int credits;
-				try {
-					credits = Integer.parseInt(data[5]);
-				} catch(NumberFormatException nfe) {
-					credits = 4;
-				}
-				c = new Course(Subject.valueOf(subj),number,type,parseTags(data[10]),credits);
-				cMap.put(current, c);
-			}	
-			}
-		input.close();
-		}
-		return cMap;
-		}
 	
 	/**
 	 * Parse the string that has been extracted from the data set to a Quad enum

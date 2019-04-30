@@ -61,11 +61,6 @@ public class FinalDisplay extends JFrame {
 	List<JTextArea> semContainers;
 	
 	/**
-	 * Individual main class.
-	 */
-	public static void main(String[] args) {initDisplay();}
-	
-	/**
 	 * Display the frame.
 	 */
 	public static void initDisplay() {
@@ -162,7 +157,7 @@ public class FinalDisplay extends JFrame {
 		
 		String key = searchBar.getText();
 		key = key.toUpperCase();
-		
+		key = key.replaceAll(" ", "");
 		if(!cMap.containsKey(key)) {
 			JFrame f = new JFrame("Error");
 			f.setBounds(300, 300, 300,100);
@@ -175,7 +170,7 @@ public class FinalDisplay extends JFrame {
 			JPanel panel = new JPanel();
 			frame.setBounds(300, 300, 500, 400);
 			frame.setVisible(true);
-			final Course c = cMap.get(key);
+			Course c = cMap.get(key);
 			List<ClassType> sections = c.getSections();
 			String[] columnNames = {"TIME","PROFESSOR","QUAD","SECTION"};
 			Object[][] sectionTable = new Object[sections.size()][4];
@@ -188,12 +183,12 @@ public class FinalDisplay extends JFrame {
 			}
 			JTable table = new JTable(sectionTable, columnNames);	
 			table.setAutoCreateRowSorter(true);
-			table.add(new JLabel("Test"));
 			table.setFillsViewportHeight(true);
 			JScrollPane ScrollPane = new JScrollPane(table);
 			ScrollPane.setPreferredSize(new Dimension(400, 200));   
-			ScrollPane.setMinimumSize(new Dimension(30, 30));
 			panel.add(ScrollPane);
+			panel.add(new JLabel("<html><b>Credits</b>: " + c.getCredits() +"<br/>" +
+					prereqToString(c) + "</html>"));
 			frame.getContentPane().add(panel, BorderLayout.CENTER);
 			JButton addButton = new JButton("Add Class to Semester");
 			addButton.addActionListener(new ActionListener() {
@@ -207,11 +202,25 @@ public class FinalDisplay extends JFrame {
 			frame.getContentPane().add(addButton, BorderLayout.SOUTH);
 		}
 	}
-        
-        
-        
 	
-	
+	private String prereqToString(Course c) {
+		if(c.getPrerequisites().size() == 0)
+			return "";
+		String ret = "<b>Prerequisites</b>: [";
+		int i = 0;
+		for(Course p : c.getPrerequisites()) {
+			if(i+1 == c.getPrerequisites().size()) {
+				ret += p.getName();
+			}
+			else
+				ret += p.getName() + ",";
+			i++;
+		}
+		ret += "]";
+		return ret;
+	}
+        
+        
 	/**
 	 * Parse a semester's courses into a single string.
 	 * @param s, a semester- if null then return "Empty"
@@ -316,7 +325,7 @@ public class FinalDisplay extends JFrame {
 			}
 		});
 		
-		cMap = ReadPopulateCSV.getMap();
+		cMap = Optimizer.generateMap();
 		
 		submitButton = new JButton("Write");
 		
