@@ -9,8 +9,8 @@ import java.util.List;
 
 public class ParseDescrip {
 
-	public static HashMap<String, List<String>> parseDescrip() {
-		HashMap<String, List<String>> courses = new HashMap<String, List<String>>();
+	public static HashMap<String, String> parseDescrip() {
+		HashMap<String, String> courses = new HashMap<String, String>();
 	
 		BufferedReader reader;
 		
@@ -25,20 +25,20 @@ public class ParseDescrip {
 				// Parse the subject and number for each line.
 				String key = line.substring(0, line.indexOf(','));
 				
-				List<String> descrips = new ArrayList<String>();
+				String descrips = line.substring(line.indexOf(','));
 				if(key != null) {
 					String preLine = line.substring(line.indexOf(' ')+1);
 					// No descriptions
 					if(preLine.length() < 4)
 						continue;
 					
-					String course = "";
+					String course = " ";
 					for(int j = 0; j < preLine.length(); j++) {
 						char c = preLine.charAt(j);
 						if(c != ' ')
 							course+=c;
 						else {
-							descrips.add(course);
+							//descrips.add(course);
 							course = "";
 						}
 					}
