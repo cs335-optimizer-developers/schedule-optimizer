@@ -233,6 +233,8 @@ public class AlgFinal extends AlgZ {
 		
 		Set<Course> more = new HashSet<>();
 		
+		boolean lastResort = false;
+		
 		// Init if necessary.
 		if (totalAddedCredits < 124)
 			for (String s : rp.read("electives"))
@@ -245,15 +247,17 @@ public class AlgFinal extends AlgZ {
 			
 			// If it runs out of requested electives, it can default
 			// to semester electives.
-			if (!it.hasNext())
+			if (!it.hasNext()) {
 				it = sm1.iterator();
+				lastResort = true;
+			}
 			
 			Course c = it.next();
 			if (c != null && 
 					!complete.contains(c.getName()) &&
 					c.getPqCount() == 0) {
 				int num = c.getNumber()/100;
-				if (num == 1)
+				if (num == 1 || !lastResort)
 					addCourse(c);
 			}
 		}
