@@ -49,7 +49,7 @@ public abstract class AlgZ implements Algorithm {
 		// May be better to keep them strings at parsing.
 		for (Course c : sm1)
 			smT.put(c.getCourseKey(),c);
-		for (Course c : sm1)
+		for (Course c : sm2)
 			smT.put(c.getCourseKey(),c);
 		
 		for (String prog : programs)

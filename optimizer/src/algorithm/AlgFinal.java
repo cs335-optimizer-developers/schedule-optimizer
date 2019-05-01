@@ -137,6 +137,10 @@ public class AlgFinal extends AlgZ {
 				pq.add(c);
 	}
 	
+	int irritA = 0;
+	int irritB = 0;
+	HashSet<String> complete = new HashSet<>();
+	
 	private void fillClasses() {
 		
 		Set<Course> held = new HashSet<>();
@@ -148,7 +152,7 @@ public class AlgFinal extends AlgZ {
 			
 			System.out.println();
 			System.out.println("Examining "+c.getName()+" with pstrq:"+c.getPostrequisites().size()
-					+" prerq: "+c.getPqCount());
+					+" prerq: "+c.getPqCount()+"/"+c.getPrerequisites().size());
 			
 			// Ensures class can be added.
 			if (c.getPqCount() == 0) {
@@ -178,18 +182,25 @@ public class AlgFinal extends AlgZ {
 			for (Course r : tRm)
 				held.remove(r);
 		}
+		
+		System.out.println("IrritA: "+irritA);
+		System.out.println("IrritB: "+irritB);
+		System.out.println("Bogus: "+bogus);
 	}
 
 	// Adds a class - assumes that it exists in one of the maps.
 	// @return index of course that it is added.
+	
+	int bogus = 0;
+	
 	public int addCourse(Course c) {
 		
 		Semester s = toFill[semIndex];
 		
-		System.out.println("Attempted add");
+//		System.out.println("Attempted add");
 
 		// Current semester is full.
-		if (toFill[semIndex].totalCredits() >= 12) {
+		if (toFill[semIndex].totalCredits() >= 18) {
 			semIndex++;
 			System.out.println("Full semester - "+semIndex);
 		}
@@ -211,9 +222,17 @@ public class AlgFinal extends AlgZ {
 			s = toFill[i];
 			System.out.println("i: "+i);
 			System.out.println(s.totalCredits()+c.getCredits());
-			if (s.totalCredits()+c.getCredits() < 19) {
-					//((i % 2 == 0 && sem1.contains(c)) ||
-//					(i % 2 == 1 && sem2.contains(c)))) {
+			System.out.println(s.totalCredits()+c.getCredits() < 19);
+			if (i % 2 == 0 && sem1.contains(c))
+				irritA++;
+			if (i % 2 == 1 && sem2.contains(c))
+				irritB++;
+			
+			if (s.totalCredits()+c.getCredits() < 19 &&
+					((i % 2 == 0 && sem1.contains(c)) ||
+					(i % 2 == 1 && sem2.contains(c)))) {
+				
+				System.out.println("Happened");
 				
 				loc.put(c, i);
 				for (Course p : c.getPrerequisites())
@@ -222,10 +241,18 @@ public class AlgFinal extends AlgZ {
 			}
 		}
 		
-		if (!(i < toFill.length))
+		if (!(i < toFill.length)) {
 			System.out.println("Error adding "+c.getName());
-		else
-			s.addCourse(c);
+		} else {
+			if (!complete.contains(c.getName())) {
+				complete.add(c.getName());
+				s.addCourse(c);
+			} else {
+				bogus++;
+				return 0;
+			}
+			
+		}
 		
 		return i;
 	}
