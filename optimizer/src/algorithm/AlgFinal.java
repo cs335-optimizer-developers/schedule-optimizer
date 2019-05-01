@@ -34,6 +34,7 @@ public class AlgFinal extends AlgZ {
 	private Map<String,Integer> loc = new HashMap<>();
 	private PriorityQueue<Course> pq;
 	private int threshold = 12;
+	private int requestedCreds = 0;
 	private int totalAddedCredits = 0;
 	
 	private int irritA = 0;
@@ -65,14 +66,15 @@ public class AlgFinal extends AlgZ {
 		enoughClasses();
 		
 		// Print statements
-//		diagnostics();
+		diagnostics();
 	}
 	
 	protected void diagnostics() {
-		System.out.println("IrritA: "+irritA);
-		System.out.println("IrritB: "+irritB);
-		System.out.println("Bogus: "+bogus);
-		System.out.println("Requested Creds: "+totalAddedCredits);
+//		System.out.println("IrritA: "+irritA);
+//		System.out.println("IrritB: "+irritB);
+//		System.out.println("Bogus: "+bogus);
+		System.out.println("Requested Creds: "+requestedCreds);
+		System.out.println("Final creds: "+totalAddedCredits);
 	}
 	
 	private void init() {
@@ -223,7 +225,7 @@ public class AlgFinal extends AlgZ {
 			for (Course r : tRm)
 				held.remove(r);
 		}
-		
+		requestedCreds = totalAddedCredits;
 	}
 
 	private void enoughClasses() {
@@ -251,7 +253,7 @@ public class AlgFinal extends AlgZ {
 					!complete.contains(c.getName()) &&
 					c.getPqCount() == 0) {
 				int num = c.getNumber()/100;
-				if (num == 1 || num == 2)
+				if (num == 1)
 					addCourse(c);
 			}
 		}
@@ -292,7 +294,8 @@ public class AlgFinal extends AlgZ {
 			
 			if (s.totalCredits()+c.getCredits() <= threshold &&
 					((i % 2 == 1 && sem1.contains(c.getName())) ||
-					(i % 2 == 0 && sem2.contains(c.getName())))) {
+					(i % 2 == 0 && sem2.contains(c.getName()))) &&
+					s.getCourses().size() < 6) {
 				
 				loc.put(c.getName(), i);
 				for (Course p : c.getPrerequisites())
