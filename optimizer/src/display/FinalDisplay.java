@@ -55,6 +55,7 @@ public class FinalDisplay extends JFrame {
 	private JTextField searchBar;
 	private JButton btnEnter;
 	private JButton submitButton;
+	private JLabel errMessage;
 	
 	private Map<String, Course> cMap;
 	
@@ -161,21 +162,7 @@ public class FinalDisplay extends JFrame {
 		key = key.toUpperCase();
 		key = key.replaceAll(" ", "");
 		if(!cMap.containsKey(key)) {
-			JFrame f = new JFrame("Error");
-			f.setBounds(300, 300, 300,100);
-			f.setVisible(true);
-			JLabel errorLabel = new JLabel();
-			errorLabel.setText("Invalid Course. Enter a New Course");
-			f.getContentPane().add(errorLabel); 
-			//System.err.println("Invalid Course. Enter a New Course");
-			JTextArea textArea = new JTextArea(50, 10);
-			PrintStream printStream = new PrintStream(new CustomOuputStream(textArea));
 			
-			//PrintStream standardErr = System.err;
-			//System.setOut(printStream);
-			//System.setErr(printStream);
-			
-			//System.err.println("Invalid Course. Enter a New Course");
 		}else{
 			JFrame frame = new JFrame(key);
 			JPanel panel = new JPanel();
@@ -308,6 +295,9 @@ public class FinalDisplay extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
+		errMessage = new JLabel();
+		errMessage.setForeground(Color.RED);
+		
 		lblEnterMajorsAnd = new JLabel("Enter Major(s) and Minor");
 		
 		majorOne = new JTextField();
@@ -322,7 +312,6 @@ public class FinalDisplay extends JFrame {
 		minor.setText("econ-minor");
 		minor.setColumns(10);
 		
-	
 		
 		lblSearchForClasses = new JLabel("Search For Classes");
 		
@@ -390,9 +379,10 @@ public class FinalDisplay extends JFrame {
 		JLabel lblSemester_6 = new JLabel("Semester 7");
 		
 		JLabel lblSemester_7 = new JLabel("Semester 8");
+		
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
-			gl_contentPane.createParallelGroup(Alignment.LEADING)
+			gl_contentPane.createParallelGroup(Alignment.TRAILING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPane.createSequentialGroup()
@@ -407,20 +397,16 @@ public class FinalDisplay extends JFrame {
 							.addComponent(minor, GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(246)
-							.addComponent(submitButton, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+							.addComponent(submitButton, GroupLayout.DEFAULT_SIZE, 88, Short.MAX_VALUE)
 							.addGap(255))
 						.addGroup(gl_contentPane.createSequentialGroup()
-							.addGap(184)
-							.addComponent(btnAdvancedOptions, GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
-							.addGap(192))
-						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(10)
-							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
-								.addComponent(semOneText, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
-								.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+							.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+								.addComponent(semOneText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE)
+								.addGroup(gl_contentPane.createSequentialGroup()
 									.addGap(21)
 									.addComponent(lblSearchForClasses, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-								.addComponent(semFiveText, Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
+								.addComponent(semFiveText, GroupLayout.DEFAULT_SIZE, 138, Short.MAX_VALUE))
 							.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 								.addGroup(gl_contentPane.createSequentialGroup()
 									.addGap(6)
@@ -441,9 +427,9 @@ public class FinalDisplay extends JFrame {
 									.addGap(36)
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
 										.addGroup(gl_contentPane.createSequentialGroup()
-											.addComponent(lblSemester_1, GroupLayout.PREFERRED_SIZE, 35, Short.MAX_VALUE)
+											.addComponent(lblSemester_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
 											.addGap(75)
-											.addComponent(lblSemester_2, GroupLayout.PREFERRED_SIZE, 35, Short.MAX_VALUE))
+											.addComponent(lblSemester_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
 										.addComponent(searchBar, GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE))
 									.addGap(60)
 									.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
@@ -456,7 +442,11 @@ public class FinalDisplay extends JFrame {
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addGap(48)
 							.addComponent(lblSemester, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-							.addGap(472)))
+							.addGap(472))
+						.addGroup(gl_contentPane.createSequentialGroup()
+							.addGap(184)
+							.addComponent(btnAdvancedOptions, GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE)
+							.addGap(192)))
 					.addGap(1))
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addGap(47)
@@ -468,6 +458,10 @@ public class FinalDisplay extends JFrame {
 					.addGap(67)
 					.addComponent(lblSemester_7, GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
 					.addGap(53))
+				.addGroup(Alignment.LEADING, gl_contentPane.createSequentialGroup()
+					.addGap(196)
+					.addComponent(errMessage, GroupLayout.PREFERRED_SIZE, 193, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(201, Short.MAX_VALUE))
 		);
 		gl_contentPane.setVerticalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
@@ -514,7 +508,9 @@ public class FinalDisplay extends JFrame {
 						.addComponent(semSixText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
 						.addComponent(semSevenText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE)
 						.addComponent(semEightText, GroupLayout.PREFERRED_SIZE, 94, GroupLayout.PREFERRED_SIZE))
-					.addGap(135)
+					.addGap(47)
+					.addComponent(errMessage)
+					.addGap(56)
 					.addComponent(btnAdvancedOptions))
 		);
 		contentPane.setLayout(gl_contentPane);
@@ -528,7 +524,7 @@ public class FinalDisplay extends JFrame {
 		
 		label.setBackground(Color.GREEN);
 		
-		add(label);
+		getContentPane().add(label);
 		
 	}
 	
@@ -537,17 +533,4 @@ public class FinalDisplay extends JFrame {
 			one_display = new FinalDisplay();
 		return one_display;
 	}
-	
-	
-	/*public SetBackgroundColor() {
-		
-		this.getContentPane().setLayout(new FlowLayout());
-		
-		JLabel label = new JLabel();
-		
-		label.setOpaque(true);
-		
-		label.setBackground(Color.BLUE);
-		
-	}*/
 }
