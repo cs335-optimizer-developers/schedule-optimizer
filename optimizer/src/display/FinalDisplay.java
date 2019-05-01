@@ -29,7 +29,6 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.EmptyBorder;
 
 import core.Optimizer;
-import core.ReadPopulateCSV;
 import info.ClassType;
 import info.Course;
 import info.Semester;
@@ -57,7 +56,6 @@ public class FinalDisplay extends JFrame {
 	private JButton btnEnter;
 	private JButton submitButton;
 	
-	private CSVPanel scheduleDisplay = new CSVPanel();
 	private Map<String, Course> cMap;
 	
 	List<JTextArea> semContainers;
@@ -71,6 +69,7 @@ public class FinalDisplay extends JFrame {
 				FinalDisplay frame = new FinalDisplay();
 				frame.setVisible(true);
 				frame.connect();
+				one_display = frame;
 			} catch (Exception e) {e.printStackTrace();}
 		});
 
@@ -84,7 +83,7 @@ public class FinalDisplay extends JFrame {
 		submitButton.addActionListener(
 				e -> displaySchedule(Optimizer.getInstance().write(), null));
 		btnAdvancedOptions.addActionListener(
-				e -> scheduleDisplay.update((Optimizer.getInstance().generate())));
+				e -> Optimizer.getInstance().generate());
 		btnEnter.addActionListener(
 				e -> {
 					try {
@@ -134,7 +133,8 @@ public class FinalDisplay extends JFrame {
 						return;
 					}
 					
-			        SectionPanel panel = new SectionPanel(new ArrayList<Course>(s[j].getCourses().values()));
+			        @SuppressWarnings("unused")
+					SectionPanel panel = new SectionPanel(new ArrayList<Course>(s[j].getCourses().values()));
 				}
 
 				@Override
@@ -256,8 +256,11 @@ public class FinalDisplay extends JFrame {
 		if (one_display == null) {
 			DParam toReturn = new DParam();
 			
-			toReturn.addProgram("test-gen-ed");
+			// Dummy input to keep from generating all the time without init.
+			toReturn.addProgram("gen-ed");
 			toReturn.addProgram("csci-major");
+			toReturn.addProgram("math-major");
+			toReturn.addProgram("econ-major");
 			
 			return toReturn;
 		}
@@ -274,20 +277,20 @@ public class FinalDisplay extends JFrame {
 		//TODO Check box for if to include gen-eds. Client may choose not to for experimentation.
 		boolean wantGenEd = true;
 		if (wantGenEd) {
-//			System.err.println("test-gen-ed" + " requested");
-			toReturn.addProgram("test-gen-ed");
+//			System.err.println("gen-ed" + " requested");
+			toReturn.addProgram("gen-ed");
 		}
 		
 		//TODO a slider, higher number referring to higher preference to fill gen-eds early.
 		toReturn.setPreferGenEd(1);
 		
-//		System.err.println(majorOne.getText() + " requested");
+//		System.out.println(majorOne.getText() + " requested");
 		toReturn.addProgram(majorOne.getText());
 		
-//		System.err.println(majorTwo.getText() + " requested");
+//		System.out.println(majorTwo.getText() + " requested");
 		toReturn.addProgram(majorTwo.getText());
 		
-//		System.err.println(minor.getText() + " requested");
+//		System.out.println(minor.getText() + " requested");
 		toReturn.addProgram(minor.getText());
 		
 		
