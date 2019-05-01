@@ -9,6 +9,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -161,6 +163,7 @@ public class FinalDisplay extends JFrame {
 		key = key.replaceAll(" ", "");
 		if(!cMap.containsKey(key)) {
 			errMessage.setText("Enter a Valid Course");
+
 		}else{
 			JFrame frame = new JFrame(key);
 			JPanel panel = new JPanel();
