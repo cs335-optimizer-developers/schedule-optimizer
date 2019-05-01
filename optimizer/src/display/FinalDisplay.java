@@ -9,7 +9,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -161,7 +160,6 @@ public class FinalDisplay extends JFrame {
 		key = key.toUpperCase();
 		key = key.replaceAll(" ", "");
 		if(!cMap.containsKey(key)) {
-<<<<<<< HEAD
 			/*JFrame f = new JFrame("Error");
 			f.setBounds(300, 300, 300,100);
 			f.setVisible(true);
@@ -176,9 +174,6 @@ public class FinalDisplay extends JFrame {
 			//System.setOut(printStream);
 			System.setErr(printStream);
 			
-=======
-			System.err.println("Invalid Course. Enter a New Course");
->>>>>>> bb0f9e600d690e9edf48d25ba1e28a15ee416cba
 		}else{
 			JFrame frame = new JFrame(key);
 			JPanel panel = new JPanel();

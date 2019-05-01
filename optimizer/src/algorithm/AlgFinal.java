@@ -189,7 +189,7 @@ public class AlgFinal extends AlgZ {
 		System.out.println("Attempted add");
 
 		// Current semester is full.
-		if (toFill[semIndex].totalCredits() >= 14) {
+		if (toFill[semIndex].totalCredits() >= 12) {
 			semIndex++;
 			System.out.println("Full semester - "+semIndex);
 		}
