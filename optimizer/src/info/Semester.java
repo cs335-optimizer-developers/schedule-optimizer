@@ -40,6 +40,13 @@ public class Semester {
 	public int size() {
 		return courses.size();
 	}
+	
+	public int totalCredits() {
+		int tR = 0;
+		for (Course c : courses.values())
+			tR += c.getCredits();
+		return tR;
+	}
 //
 //	public void removeCourse(Course c) {
 //		courses.remove();

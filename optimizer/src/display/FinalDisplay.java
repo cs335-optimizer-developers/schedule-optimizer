@@ -284,7 +284,6 @@ public class FinalDisplay extends JFrame {
 //		System.out.println(minor.getText() + " requested");
 		toReturn.addProgram(minor.getText());
 		
-		
 		return toReturn;
 	}
 
