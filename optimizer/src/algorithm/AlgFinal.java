@@ -148,15 +148,14 @@ public class AlgFinal extends AlgZ {
 			
 			System.out.println();
 			System.out.println("Examining "+c.getName()+" with pstrq:"+c.getPostrequisites().size()
-					+" prerq:"+c.getPrerequisites().size());
+					+" prerq: "+c.getPqCount());
 			
 			// Ensures class can be added.
-			if (c.getPrerequisites().size() == 0) {
+			if (c.getPqCount() == 0) {
 //				System.out.println(c.getName()+" being added");
 				addCourse(c);
 				for (Course p : c.getPostrequisites()) {
-					p.rmPrq(c);
-//					updateLatest(c,)
+					p.lessPrq();
 				}
 			}
 			
@@ -167,11 +166,11 @@ public class AlgFinal extends AlgZ {
 			
 			Set<Course> tRm = new HashSet<>();
 			for (Course h : held) {
-				if (h.getPrerequisites().size() == 0) {
+				if (h.getPqCount() == 0) {
 //					System.out.println(h.getName()+" no longer held");
 					addCourse(h);
 					for (Course p : h.getPostrequisites())
-						p.rmPrq(h);
+						p.lessPrq();
 					tRm.add(h);
 				}
 			}
@@ -186,9 +185,11 @@ public class AlgFinal extends AlgZ {
 	public int addCourse(Course c) {
 		
 		Semester s = toFill[semIndex];
+		
+		System.out.println("Attempted add");
 
 		// Current semester is full.
-		if (toFill[semIndex].totalCredits() >= 18) {
+		if (toFill[semIndex].totalCredits() >= 14) {
 			semIndex++;
 			System.out.println("Full semester - "+semIndex);
 		}
@@ -208,13 +209,15 @@ public class AlgFinal extends AlgZ {
 		int i;
 		for (i=fPreq;i<toFill.length;i++) {
 			s = toFill[i];
+			System.out.println("i: "+i);
 			System.out.println(s.totalCredits()+c.getCredits());
-			if (s.totalCredits()+c.getCredits() < 19 &&
-					(i % 2 == 0 && sem1.contains(c)) ||
-					(i % 2 == 1 && sem2.contains(c))) {
+			if (s.totalCredits()+c.getCredits() < 19) {
+					//((i % 2 == 0 && sem1.contains(c)) ||
+//					(i % 2 == 1 && sem2.contains(c)))) {
 				
 				loc.put(c, i);
-				
+				for (Course p : c.getPrerequisites())
+					updateLatest(p,i);
 				break;
 			}
 		}

@@ -27,7 +27,9 @@ public class Course {
 	//DescriptionsCourses
 	private List<Course> descriptions = new ArrayList<>();
 	//Credits
-	int credits;
+	private int credits;
+	// Unsatisfied prereq count.
+	private int pqCount = 0;
 
 	// Instantiates a class object, verifying if tags do exist, and if the section is valid.
 	public Course(Subject subj, int number, ClassType type, List<Tag> tags, int credits) {
@@ -65,13 +67,13 @@ public class Course {
 			return;
 		}
 		this.prerequisites.add(c);
+		pqCount++;
 	}
 	public void addPostreq(Course c) {
 		if(c == null) {
 			System.out.println("Error in class when adding a new postreq...");
 			return;
 		}
-			
 		this.postrequisites.add(c);
 	}
 	
@@ -145,6 +147,7 @@ public class Course {
 			for (Course c : p)
 				if (c != null)
 					prerequisites.add(c);
+		pqCount = prerequisites.size();
 	}
 	public Set<Course> getPostrequisites() {
 		return postrequisites;
@@ -171,7 +174,17 @@ public class Course {
 		return credits;
 	}
 	
-	public void rmPrq(Course c) {prerequisites.remove(c);}
+	public void rmPrq(Course c) {
+		prerequisites.remove(c);
+	}
+	
+	public void lessPrq() {
+		pqCount--;
+	}
+	
+	public int getPqCount() {
+		return pqCount;
+	}
 	
 	public String toString() {
 		String s = getName();
