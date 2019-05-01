@@ -161,7 +161,6 @@ public class FinalDisplay extends JFrame {
 		key = key.toUpperCase();
 		key = key.replaceAll(" ", "");
 		if(!cMap.containsKey(key)) {
-<<<<<<< HEAD
 			/*JFrame f = new JFrame("Error");
 			f.setBounds(300, 300, 300,100);
 			f.setVisible(true);
@@ -175,10 +174,7 @@ public class FinalDisplay extends JFrame {
 			//PrintStream standardErr = System.err;
 			//System.setOut(printStream);
 			System.setErr(printStream);
-			
-=======
 			errMessage.setText("Enter valid course");
->>>>>>> 2e0236f22299b0a8aac0b7a2594dd0a38ccdb21b
 		}else{
 			JFrame frame = new JFrame(key);
 			JPanel panel = new JPanel();
