@@ -159,12 +159,6 @@ public class FinalDisplay extends JFrame {
 		key = key.toUpperCase();
 		key = key.replaceAll(" ", "");
 		if(!cMap.containsKey(key)) {
-			/*JFrame f = new JFrame("Error");
-			f.setBounds(300, 300, 300,100);
-			f.setVisible(true);
-			JLabel errorLabel = new JLabel();
-			errorLabel.setText("Invalid Course. Enter a New Course");
-			f.getContentPane().add(errorLabel); */
 			System.err.println("Invalid Course. Enter a New Course");
 		}else{
 			JFrame frame = new JFrame(key);
@@ -196,6 +190,7 @@ public class FinalDisplay extends JFrame {
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					addCourse(Optimizer.getInstance().getSemesters(), c);
+					frame.dispose();
 				}
 				
 			});
