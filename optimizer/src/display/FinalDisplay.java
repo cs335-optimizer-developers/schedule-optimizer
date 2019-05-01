@@ -260,7 +260,6 @@ public class FinalDisplay extends JFrame {
 			// Dummy input to keep from generating all the time without init.
 			toReturn.addProgram("gen-ed");
 			toReturn.addProgram("csci-major");
-			toReturn.addProgram("math-major");
 			toReturn.addProgram("econ-major");
 			
 			return toReturn;
@@ -321,7 +320,7 @@ public class FinalDisplay extends JFrame {
 		majorTwo.setColumns(10);
 		
 		minor = new JTextField();
-		minor.setText("econ-minor");
+		minor.setText("econ-major");
 		minor.setColumns(10);
 		
 		

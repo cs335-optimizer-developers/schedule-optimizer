@@ -30,6 +30,7 @@ public abstract class AlgZ implements Algorithm {
 	
 	protected Set<Course> sm1;
 	protected Set<Course> sm2;
+	protected Map<String,Course> smT;
 	
 	public AlgZ() {
 		sm1 = new HashSet<Course>(Optimizer.getInstance().getAvailableClasses()[0].getCourses().values());
@@ -43,7 +44,7 @@ public abstract class AlgZ implements Algorithm {
 		ReadPrg rp = new ReadPrg();
 		
 		toTake = new HashSet<Course>();
-		Map<String,Course> smT = new HashMap<>();
+		smT = new HashMap<>();
 		
 		// TODO Less than ideal generation of basic courses.
 		// May be better to keep them strings at parsing.

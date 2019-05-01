@@ -3,12 +3,16 @@ package algorithm;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Map;
 import java.util.PriorityQueue;
+import java.util.Queue;
 import java.util.Set;
 
 import info.Course;
 import info.Semester;
+import io.ReadPrg;
 
 /**
  * 
@@ -25,12 +29,23 @@ public class AlgFinal extends AlgZ {
 	
 	private Semester[] toFill;
 	private int semIndex = 0;
-	private Set<Course> sem2;
-	private Set<Course> sem1;
-	private Map<Course,Integer> loc;
+	private Set<String> sem2;
+	private Set<String> sem1;
+	private Map<String,Integer> loc = new HashMap<>();
 	private PriorityQueue<Course> pq;
+	private int threshold = 12;
+	private int totalAddedCredits = 0;
+	
+	private int irritA = 0;
+	private int irritB = 0;
+	private HashSet<String> complete = new HashSet<>();
+	private int bogus = 0;
+	
 
 	public void distribute(Semester[] toFill) {
+	
+		// Temporary bug fix.
+//		smT.get("CSCI235").addPrereq(smT.get("CSCI245"));
 		
 		this.toFill = toFill;
 		
@@ -45,6 +60,19 @@ public class AlgFinal extends AlgZ {
 		
 		// Optimally allocates classes across semesters.
 		fillClasses();
+		
+		// Ensures that student reaches 124 credit mark.
+		enoughClasses();
+		
+		// Print statements
+//		diagnostics();
+	}
+	
+	protected void diagnostics() {
+		System.out.println("IrritA: "+irritA);
+		System.out.println("IrritB: "+irritB);
+		System.out.println("Bogus: "+bogus);
+		System.out.println("Requested Creds: "+totalAddedCredits);
 	}
 	
 	private void init() {
@@ -57,10 +85,10 @@ public class AlgFinal extends AlgZ {
 		// Populating sets for easy checking.
 		// Also adding postreqs.
 		for (Course c : sm1) {
-			sem1.add(c);
+			sem1.add(c.getName());
 		}
 		for (Course c : sm2) {
-			sem2.add(c);
+			sem2.add(c.getName());
 		}
 		
 	}
@@ -105,13 +133,13 @@ public class AlgFinal extends AlgZ {
 				toTake.add(c);
 			check++;
 			
-			if (check > 8) {
-				System.err.println("Not including, bad prereqs:");
-				for (Course c : toTake) {
-					System.err.println(c.getName()+ " - " + c.getPrerequisites().size() +
-							" total - includes "+c.getPrerequisites().get(0).getName());
-				}
-			}
+//			if (check > 8) {
+//				System.err.println("Not including, bad prereqs:");
+//				for (Course c : toTake) {
+//					System.err.println(c.getName()+ " - " + c.getPrerequisites().size() +
+//							" total - includes "+c.getPrerequisites().get(0).getName());
+//				}
+//			}
 		}
 		toTake = taking;
 	}
@@ -126,9 +154,26 @@ public class AlgFinal extends AlgZ {
 			return pt2 - pt1;
 		};
 		
-		for (Course c : toTake)
+		Queue<Course> toPop;
+		Set<Course> added;
+		
+		for (Course c : toTake) {
+			toPop = new LinkedList<>();
+			added = new HashSet<>();
+			
 			for (Course p : c.getPrerequisites())
-				p.addPostreq(c);
+				toPop.add(p);
+			while (!toPop.isEmpty()) {
+				Course pre = toPop.poll();
+				pre.addPostreq(c);
+				for (Course p : pre.getPrerequisites()) {
+					if (!added.contains(p))
+						toPop.add(p);
+					added.add(p);
+					p.addPostreq(c);
+				}
+			}
+		}
 		
 		pq = new PriorityQueue<>(comp);
 		
@@ -136,10 +181,6 @@ public class AlgFinal extends AlgZ {
 			if (c != null)
 				pq.add(c);
 	}
-	
-	int irritA = 0;
-	int irritB = 0;
-	HashSet<String> complete = new HashSet<>();
 	
 	private void fillClasses() {
 		
@@ -150,12 +191,12 @@ public class AlgFinal extends AlgZ {
 		while (!pq.isEmpty()) {
 			Course c = pq.poll();
 			
-			System.out.println();
-			System.out.println("Examining "+c.getName()+" with pstrq:"+c.getPostrequisites().size()
-					+" prerq: "+c.getPqCount()+"/"+c.getPrerequisites().size());
+//			System.out.println();
+//			System.err.println("Examining "+c.getName()+" with pstrq:"+c.getPostrequisites().size()
+//					+" prerq: "+c.getPqCount()+"/"+c.getPrerequisites().size());
 			
 			// Ensures class can be added.
-			if (c.getPqCount() == 0) {
+			if (c.getPqCount() <= 0) {
 //				System.out.println(c.getName()+" being added");
 				addCourse(c);
 				for (Course p : c.getPostrequisites()) {
@@ -164,7 +205,7 @@ public class AlgFinal extends AlgZ {
 			}
 			
 			else {
-				System.out.println(c.getName()+" held");
+//				System.out.println(c.getName()+" held");
 				held.add(c);
 			}
 			
@@ -183,70 +224,93 @@ public class AlgFinal extends AlgZ {
 				held.remove(r);
 		}
 		
-		System.out.println("IrritA: "+irritA);
-		System.out.println("IrritB: "+irritB);
-		System.out.println("Bogus: "+bogus);
 	}
 
-	// Adds a class - assumes that it exists in one of the maps.
+	private void enoughClasses() {
+		ReadPrg rp = new ReadPrg();
+		
+		Set<Course> more = new HashSet<>();
+		
+		// Init if necessary.
+		if (totalAddedCredits < 124)
+			for (String s : rp.read("electives"))
+				more.add(smT.get(s));
+		
+		// Loop until done.
+		Iterator<Course> it = more.iterator();
+		
+		while (totalAddedCredits < 124) {
+			
+			// If it runs out of requested electives, it can default
+			// to semester electives.
+			if (!it.hasNext())
+				it = sm1.iterator();
+			
+			Course c = it.next();
+			if (c != null && 
+					!complete.contains(c.getName()) &&
+					c.getPqCount() == 0) {
+				int num = c.getNumber()/100;
+				if (num == 1 || num == 2)
+					addCourse(c);
+			}
+		}
+
+//		System.out.println("After Electives: "+totalAddedCredits);
+	}
+	
+	// Adds a course - assumes that it exists in one of the maps.
 	// @return index of course that it is added.
-	
-	int bogus = 0;
-	
-	public int addCourse(Course c) {
+	private int addCourse(Course c) {
 		
 		Semester s = toFill[semIndex];
 		
-//		System.out.println("Attempted add");
-
-		// Current semester is full.
-		if (toFill[semIndex].totalCredits() >= 18) {
-			semIndex++;
-			System.out.println("Full semester - "+semIndex);
-		}
-
 		// Fetching where latest prereq is stored.
 		int fPreq = semIndex;
 		for (Course p : c.getPrerequisites()) {
-			int ind = loc.get(p)+1;
-			System.out.println(ind+" from "+p.getName());
-			if (ind > fPreq)
-				fPreq = ind;
+			if (p != null) {
+				int ind = (loc.containsKey(p.getName())) ? loc.get(p.getName())+1 : 0;
+//				System.out.println(ind+" from "+p.getName());
+				if (ind > fPreq)
+					fPreq = ind;
+			}
 		}
 		
-		System.out.println(c.getName()+" pushed to "+fPreq+" over "+semIndex);
+//		System.out.println(c.getName()+" pushed to "+fPreq+" over "+semIndex);
 		
 		// Find optimal semester to add
 		int i;
 		for (i=fPreq;i<toFill.length;i++) {
 			s = toFill[i];
-			System.out.println("i: "+i);
-			System.out.println(s.totalCredits()+c.getCredits());
-			System.out.println(s.totalCredits()+c.getCredits() < 19);
-			if (i % 2 == 0 && sem1.contains(c))
+//			System.out.println("i: "+i);
+//			System.out.println(s.totalCredits()+c.getCredits());
+//			System.out.println(s.totalCredits()+c.getCredits() < 19);
+			if (i % 2 == 0 && sem1.contains(c.getName()))
 				irritA++;
-			if (i % 2 == 1 && sem2.contains(c))
+			if (i % 2 == 1 && sem2.contains(c.getName()))
 				irritB++;
 			
-			if (s.totalCredits()+c.getCredits() < 19 &&
-					((i % 2 == 0 && sem1.contains(c)) ||
-					(i % 2 == 1 && sem2.contains(c)))) {
+			if (s.totalCredits()+c.getCredits() <= threshold &&
+					((i % 2 == 1 && sem1.contains(c.getName())) ||
+					(i % 2 == 0 && sem2.contains(c.getName())))) {
 				
-				System.out.println("Happened");
-				
-				loc.put(c, i);
+				loc.put(c.getName(), i);
 				for (Course p : c.getPrerequisites())
 					updateLatest(p,i);
 				break;
 			}
 		}
 		
-		if (!(i < toFill.length)) {
-			System.out.println("Error adding "+c.getName());
+		if (!(i < 8)) {
+			if (threshold < 18)
+				threshold += 2;
+//			System.out.println("Error adding "+c.getName()+", up to "+threshold);
 		} else {
 			if (!complete.contains(c.getName())) {
 				complete.add(c.getName());
+//				System.out.println(c.getName()+" placed in "+i);
 				s.addCourse(c);
+				totalAddedCredits += c.getCredits();
 			} else {
 				bogus++;
 				return 0;
@@ -258,8 +322,12 @@ public class AlgFinal extends AlgZ {
 	}
 	
 	private void updateLatest(Course c,int newNum) {
-		if (loc.get(c) < newNum)
-			loc.put(c, newNum);
+		if (loc.containsKey(c.getName()))
+			if (loc.get(c.getName()) < newNum)
+				loc.put(c.getName(), newNum);
+			else
+				return;
+		loc.put(c.getName(), newNum);
 	}
 
 	// Populates semester array with appropriate semester objects
