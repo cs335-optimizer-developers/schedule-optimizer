@@ -1,6 +1,10 @@
 package algorithm;
 
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Set;
 
 import info.Course;
@@ -23,14 +27,33 @@ public class AlgFinal extends AlgZ {
 	private int semIndex = 0;
 	private Set<Course> sem2;
 	private Set<Course> sem1;
+	private Map<Course,Integer> loc;
+	private PriorityQueue<Course> pq;
 
 	public void distribute(Semester[] toFill) {
+		
 		this.toFill = toFill;
+		
+		// Initializes fields in class.
+		init();
+		
+		// Follows train of prereqs and fills toTake set fully.
+		populatePrereqs();
+		
+		// Uses toTake to give each class a postrequisite list.
+		populatePostreqs();
+		
+		// Optimally allocates classes across semesters.
+		fillClasses();
+	}
+	
+	private void init() {
+		
 		makeSem();
-
+		
 		sem1 = new HashSet<>();
 		sem2 = new HashSet<>();
-
+		
 		// Populating sets for easy checking.
 		// Also adding postreqs.
 		for (Course c : sm1) {
@@ -40,34 +63,38 @@ public class AlgFinal extends AlgZ {
 			sem2.add(c);
 		}
 		
-		// Basic attempt to debug.
-		int check = 0;
-		Set<Course> taken = new HashSet<>();
+	}
+	
+	private void populatePrereqs() {
 		
-		while (!toTake.isEmpty() && check < 30) {
+		// Iteration count.
+		int check = 0;
+		Set<Course> taking = new HashSet<>();
+		
+		// Tacking on all prerequisites.
+		while (!toTake.isEmpty() && check < 10) {
 			Set<Course> toRm = new HashSet<>();
 			Set<Course> toAd = new HashSet<>();
 			for (Course c : toTake) {
 				if (c == null)
 					toRm.add(c);
 				else {
+					taking.add(c);
 					boolean safe = true;
 					for (Course p : c.getPrerequisites()) {
-						safe = taken.contains(p);
-						if (!safe)
-//							System.out.println("No "+p.getName()+" for "+c.getName());
-						if (!safe && !toTake.contains(p)) {
+						safe = taking.contains(p) || toTake.contains(p);
+						if (!safe) {
 							toAd.add(p);
 //							System.out.println(p.getName()+" tacked on by "+c.getName());
 						}
 					}
 					if (safe) {
-						System.out.print(c.getName()+" written with:");
-						for (Course p : c.getPrerequisites())
-							System.out.print(" "+p.getName());
-						System.out.println();
-						taken.add(c);
-						addCourse(c);
+//						System.out.print(c.getName()+" being taken");
+//						if (c.getPrerequisites().size() > 0)
+//							System.out.print(" with:");
+//						for (Course p : c.getPrerequisites())
+//							System.out.print(" "+p.getName());
+//						System.out.println();
 						toRm.add(c);
 					}
 				}
@@ -77,121 +104,135 @@ public class AlgFinal extends AlgZ {
 			for (Course c : toAd)
 				toTake.add(c);
 			check++;
+			
+			if (check > 8) {
+				System.err.println("Not including, bad prereqs:");
+				for (Course c : toTake) {
+					System.err.println(c.getName()+ " - " + c.getPrerequisites().size() +
+							" total - includes "+c.getPrerequisites().get(0).getName());
+				}
+			}
 		}
+		toTake = taking;
+	}
+	
+	private void populatePostreqs() {
 		
-		if (check > 15) {
-			System.err.println("Adding despite bad prereqs:");
-			for (Course c : toTake) {
-				System.err.println(c.getName()+ " - " + c.getPrerequisites().size() +
-						" total - includes "+c.getPrerequisites().get(0).getName());
-			}
-			System.out.println();
-			for (Course c : toTake) {
-				addCourse(c);
-			}
-		}
+		// If there are any prerequisites, give minimum priority.
+		// Otherwise, weight postrequisites.
+		Comparator<Course> comp = (o1,o2) -> {
+			int pt1 = o1.getPostrequisites().size();
+			int pt2 = o2.getPostrequisites().size();
+			return pt2 - pt1;
+		};
+		
+		for (Course c : toTake)
+			for (Course p : c.getPrerequisites())
+				p.addPostreq(c);
+		
+		pq = new PriorityQueue<>(comp);
+		
+		for (Course c : toTake)
+			if (c != null)
+				pq.add(c);
+	}
+	
+	private void fillClasses() {
+		
+		Set<Course> held = new HashSet<>();
+		loc = new HashMap<>();
 
-//		// If there are any prerequisites, give minimum priority.
-//		// Otherwise, weight postrequisites.
-//		Comparator<Course> comp = (o1,o2) -> {
-//			@SuppressWarnings("unused")
-//			int pr1 = o1.getPrerequisites().size(),pt1 = o1.getPostrequisites().size();
-//			@SuppressWarnings("unused")
-//			int pr2 = o2.getPrerequisites().size(),pt2 = o2.getPostrequisites().size();
-//			//			if (pr1 == 0 && pr2 == 0)
-//			//				return pt1 - pt2;
-//			//			else if (pr1 != 0 && pr2 != 0)
-//			//				return pr2 - pr1;
-//			//			return (pr1 == 0) ? 1000 : -1000;
-//			return pr1 - pr2;
-//		};
-//
-//		// Adding postrequisites.
-//		PriorityQueue<Course> pq = new PriorityQueue<>(comp);
-//
-//		// Un-added prereqs being added.
-//		Queue<Course> tackOn = new LinkedList<>();
-//		for (Course c : toTake) {
-//			if (c != null) {
-//				System.out.println(c.getName());
-//				if (c.getPrerequisites().size() > 0) {
-//					for (Course preq : c.getPrerequisites()) {
-//						if (!toTake.contains(preq)) {
-//							tackOn.add(preq);
-//							System.out.println("Tacking on "+preq.getName());
-//							preq.addPostreq(c);
-//						}
-//					}
-//				}
-//				System.out.println(c.getPrerequisites().size());
-//			}
-//		}
-//
-//		while (!tackOn.isEmpty()) {
-//			Course c = tackOn.poll();
-//			for (Course p : c.getPrerequisites()) {
-//				if (!toTake.contains(p)) {
-//					toTake.add(p);
-//					System.out.println("Further tacking "+c.getName());
-//					p.addPostreq(c);
-//				}
-//			}
-//		}
-//
-//		for (Course c : toTake)
-//			if (c != null)
-//				pq.add(c);
-//		// One iteration for each course.
-//		while (!pq.isEmpty()) {
-//			Course c = pq.poll();
-//
-//			System.out.println("Examining "+c.getName()+" with pstrq:"+c.getPostrequisites().size()
-//					+" prerq:"+c.getPrerequisites().size());
-//
-//			addClass(c);
-//			for (Course p : c.getPostrequisites())
-//				p.rmPrq(c);
-//		}
-		
-//		for (int i = 0; i < 5; i++) {
-//			Semester s = toFill[i];
-//			System.out.println(i);
-//			for (String str : s.getCourses().keySet())
-//				System.out.println(str);
-//		}
+		// One iteration for each course.
+		while (!pq.isEmpty()) {
+			Course c = pq.poll();
+			
+			System.out.println();
+			System.out.println("Examining "+c.getName()+" with pstrq:"+c.getPostrequisites().size()
+					+" prerq: "+c.getPqCount());
+			
+			// Ensures class can be added.
+			if (c.getPqCount() == 0) {
+//				System.out.println(c.getName()+" being added");
+				addCourse(c);
+				for (Course p : c.getPostrequisites()) {
+					p.lessPrq();
+				}
+			}
+			
+			else {
+				System.out.println(c.getName()+" held");
+				held.add(c);
+			}
+			
+			Set<Course> tRm = new HashSet<>();
+			for (Course h : held) {
+				if (h.getPqCount() == 0) {
+//					System.out.println(h.getName()+" no longer held");
+					addCourse(h);
+					for (Course p : h.getPostrequisites())
+						p.lessPrq();
+					tRm.add(h);
+				}
+			}
+			
+			for (Course r : tRm)
+				held.remove(r);
+		}
 	}
 
 	// Adds a class - assumes that it exists in one of the maps.
-	public void addCourse(Course c) {
+	// @return index of course that it is added.
+	public int addCourse(Course c) {
+		
 		Semester s = toFill[semIndex];
+		
+		System.out.println("Attempted add");
 
 		// Current semester is full.
-		if (toFill[semIndex].size() > 2) {
+		if (toFill[semIndex].totalCredits() >= 14) {
 			semIndex++;
-//			System.out.println("Full semester");
+			System.out.println("Full semester - "+semIndex);
+		}
+
+		// Fetching where latest prereq is stored.
+		int fPreq = semIndex;
+		for (Course p : c.getPrerequisites()) {
+			int ind = loc.get(p)+1;
+			System.out.println(ind+" from "+p.getName());
+			if (ind > fPreq)
+				fPreq = ind;
 		}
 		
-//		// If current semester contains desired class.
-//		if ((semIndex % 2 == 0 && sem1.contains(c)) ||
-//				(semIndex % 2 == 1 && sem2.contains(c))) {
-//			System.out.println("Option a");
-//			s = toFill[semIndex];
-//		}
-//
-//		// If next semester is not full.
-//		else if (toFill[semIndex+1].size()<4){
-//			System.out.println("Option b");
-//			s = toFill[semIndex+1];
-//		}
-//		
-//		// Special case if next semester is full.
-//		else {
-//			System.out.println("Had to jump 2 semesters for "+c.getName());
-//			s = toFill[semIndex+3];
-//		}
+		System.out.println(c.getName()+" pushed to "+fPreq+" over "+semIndex);
 		
-//		System.out.println(c.getName()+" added to "+semIndex);
-		s.addCourse(c);
+		// Find optimal semester to add
+		int i;
+		for (i=fPreq;i<toFill.length;i++) {
+			s = toFill[i];
+			System.out.println("i: "+i);
+			System.out.println(s.totalCredits()+c.getCredits());
+			if (s.totalCredits()+c.getCredits() < 19) {
+					//((i % 2 == 0 && sem1.contains(c)) ||
+//					(i % 2 == 1 && sem2.contains(c)))) {
+				
+				loc.put(c, i);
+				for (Course p : c.getPrerequisites())
+					updateLatest(p,i);
+				break;
+			}
+		}
+		
+		if (!(i < toFill.length))
+			System.out.println("Error adding "+c.getName());
+		else
+			s.addCourse(c);
+		
+		return i;
+	}
+	
+	private void updateLatest(Course c,int newNum) {
+		if (loc.get(c) < newNum)
+			loc.put(c, newNum);
 	}
 
 	// Populates semester array with appropriate semester objects
