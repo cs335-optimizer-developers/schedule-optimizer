@@ -56,25 +56,18 @@ public class Optimizer {
 			
 		}
 		
-		//add description stuff
+		// Add the descriptions to every course object if it exists
 		HashMap<String, String> courseDescrip = ParseDescrip.parseDescrip();
-		
 		for(int i = 0; i < availableClasses.length; i++) {
 			Semester s = availableClasses[i];
 			Map<String, Course> courses = s.getCourses();
-			List<Course> values = new ArrayList<Course>(courses.values());
-			for(Course advCourse : values) {
-				// Look up every descrips and map to correct course, then add to advanced course descrips.
-				List<Course> descrips = new ArrayList<Course>();
-				String unmapPre = courseDescrip.get(advCourse.getCourseKey());
-				
-				// Current course has no descrips
-				if(unmapPre == null)
+			List<String> keys = new ArrayList<String>(courseDescrip.keySet());
+			for(String key : keys) {
+				Course c = courses.get(key);
+				if(c == null)
 					continue;
-				
-				advCourse.setDescription(descrips);
+				c.setDescription(courseDescrip.get(key));
 			}
-			
 		}
 		
 		one_optimizer = this;

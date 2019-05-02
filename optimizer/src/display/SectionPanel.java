@@ -14,6 +14,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 import info.ClassType;
@@ -43,6 +45,7 @@ public class SectionPanel extends JPanel {
 			add(new JLabel("<html>[" + num + "/" + courses.size() + "]<br/>" +
 					"<b>Credits</b>: " + c.getCredits() +"<br/>" +
 					prereqToString(c) + "</html>"));
+			
 		}
 	}
 
@@ -72,7 +75,6 @@ public class SectionPanel extends JPanel {
 
 			JTable table = new JTable(sectionTable, columnNames);
 			table.setAutoCreateRowSorter(true);
-			//panel.
 			
 			JScrollPane scrollPane = new JScrollPane(table);
 			table.setFillsViewportHeight(true);
@@ -82,6 +84,14 @@ public class SectionPanel extends JPanel {
 			panel.add(scrollPane);
 			scrollPanel.setViewportView(panel);
 			scrollPanel.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+			JScrollPane scrollPane2 = new JScrollPane();
+			scrollPane2.setPreferredSize(new Dimension(450,100));
+			JTextArea desc = new JTextArea(c.getDescription());
+			desc.setLineWrap(true);
+			desc.setEditable(false);
+			desc.setWrapStyleWord(true);
+			scrollPane2.setViewportView(desc);
+			panel.add(scrollPane2);
 			cards.add(panel, c.getName());
 		}
 		
@@ -109,7 +119,7 @@ public class SectionPanel extends JPanel {
 		f.pack();
 		f.setLocationRelativeTo(null);
 		f.setVisible(true);
-        f.setSize(450,300);
+        f.setSize(500,425);
 	}
 	
 	private String prereqToString(Course c) {

@@ -160,22 +160,14 @@ public class FinalDisplay extends JFrame {
 		String key = searchBar.getText();
 		key = key.toUpperCase();
 		key = key.replaceAll(" ", "");
+		
 		if(!cMap.containsKey(key)) {
-			/*JFrame f = new JFrame("Error");
-			f.setBounds(300, 300, 300,100);
-			f.setVisible(true);
-			JLabel errorLabel = new JLabel();
-			errorLabel.setText("Invalid Course. Enter a New Course");
-			f.getContentPane().add(errorLabel); */
-			//System.err.println("Invalid Course. Enter a New Course");
 			JTextArea textArea = new JTextArea(50, 10);
 			PrintStream printStream = new PrintStream(new CustomOuputStream(textArea));
-			
-			//PrintStream standardErr = System.err;
-			//System.setOut(printStream);
 			System.setErr(printStream);
 			errMessage.setText("Enter valid course");
-		}else{
+		}
+		else {
 			JFrame frame = new JFrame(key);
 			JPanel panel = new JPanel();
 			frame.setBounds(300, 300, 500, 400);
@@ -199,6 +191,14 @@ public class FinalDisplay extends JFrame {
 			panel.add(ScrollPane);
 			panel.add(new JLabel("<html><b>Credits</b>: " + c.getCredits() +"<br/>" +
 					prereqToString(c) + "</html>"));
+			JScrollPane scrollPane = new JScrollPane();
+			scrollPane.setPreferredSize(new Dimension(450,100));
+			JTextArea desc = new JTextArea(c.getDescription());
+			desc.setLineWrap(true);
+			desc.setEditable(false);
+			desc.setWrapStyleWord(true);
+			scrollPane.setViewportView(desc);
+			panel.add(scrollPane);
 			frame.getContentPane().add(panel, BorderLayout.CENTER);
 			JButton addButton = new JButton("Add Class to Semester");
 			addButton.addActionListener(new ActionListener() {

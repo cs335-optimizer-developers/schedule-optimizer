@@ -24,8 +24,8 @@ public class Course {
 	private List<Course> prerequisites = new ArrayList<>();
 	// Postrequisites, used only in AlgFinal.
 	private Set<Course> postrequisites = new HashSet<>();
-	//DescriptionsCourses
-	private List<Course> descriptions = new ArrayList<>();
+	//Description of the course
+	private String description;
 	//Credits
 	private int credits;
 	// Unsatisfied prereq count.
@@ -161,15 +161,12 @@ public class Course {
 					postrequisites.add(c);
 	}
 	
-	public List<Course> getDescription(){
-		return descriptions;
+	public String getDescription(){
+		return description;
 	}
 	
-	public void setDescription(List<Course> p) {
-		if (p != null)
-			for (Course c : p)
-				if (c != null)
-					descriptions.add(c);
+	public void setDescription(String s) {
+		this.description = s;
 	}
 	
 	public int getCredits() {
