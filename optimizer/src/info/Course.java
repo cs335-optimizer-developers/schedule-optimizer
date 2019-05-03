@@ -61,6 +61,8 @@ public class Course {
 		number = Integer.valueOf(info[1]);
 	}
 	
+	public int getNumber() {return number;}
+	
 	public void addPrereq(Course c) {
 		if(c == null) {
 			System.out.println("Error in class when adding a new prereq...");
