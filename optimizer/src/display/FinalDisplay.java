@@ -122,8 +122,15 @@ public class FinalDisplay extends JFrame {
 	 * @param s, an array of Semesters. Course c a course to be added.
 	 */
 	public void displaySchedule(Semester[] s, Course c) {
+		
 		for(int i = 0; i < semContainers.size(); i++) {
 			JTextArea a = semContainers.get(i);
+			
+			// Delete old action listeners
+			for(MouseListener ml : a.getMouseListeners()) {
+				a.removeMouseListener(ml);
+			}
+			
 			a.setText(parseSemester(s[i]));
 			final int j = i;
 			a.addMouseListener(new MouseListener() {
