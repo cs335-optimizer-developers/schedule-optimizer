@@ -96,6 +96,7 @@ public class Optimizer {
 	 * @return
 	 */
 	public Semester[] write() {
+		generate();
 		if (newSchedule != null) {
 			Writer.writeSchedule(newSchedule);
 		} else {
