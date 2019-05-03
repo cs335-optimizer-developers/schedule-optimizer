@@ -8,6 +8,7 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Random;
 import java.util.Set;
 
 import info.Course;
@@ -255,8 +256,21 @@ public class AlgFinal extends AlgZ {
 			String[] badDepts = {
 					"MUIP","MUCS","MUMS"
 			};
+
+			Random rand = new Random();
+
+			if (lastResort) {
+				int r = rand.nextInt(168);
+
+				for (int t=0;t<r;t++)
+					if (it.hasNext())
+						it.next();
+			}
 			
+			if (lastResort && !it.hasNext())
+				it = sm1.iterator();
 			Course c = it.next();
+			
 			if (c != null && 
 					!complete.contains(c.getName()) &&
 					c.getPqCount() == 0) {
