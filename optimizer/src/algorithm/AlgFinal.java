@@ -252,12 +252,20 @@ public class AlgFinal extends AlgZ {
 				lastResort = true;
 			}
 			
+			String[] badDepts = {
+					"MUIP","MUCS","MUMS"
+			};
+			
 			Course c = it.next();
 			if (c != null && 
 					!complete.contains(c.getName()) &&
 					c.getPqCount() == 0) {
 				int num = c.getNumber()/100;
-				if (num == 1 || !lastResort)
+				boolean safe = (num == 1 || !lastResort);
+				for (String s : badDepts)
+					if (c.getName().contains(s))
+						safe = false;
+				if (safe)
 					addCourse(c);
 			}
 		}

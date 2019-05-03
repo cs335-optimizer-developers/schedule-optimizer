@@ -25,7 +25,7 @@ public class ParseDescrip {
 				// Parse the subject and number for each line.
 				String key = line.substring(0, line.indexOf(','));
 				
-				String descrips = line.substring(line.indexOf(','));
+				String descrips = line.substring(line.indexOf(',')+1);
 				if(key != null) {
 					String preLine = line.substring(line.indexOf(' ')+1);
 					// No descriptions
