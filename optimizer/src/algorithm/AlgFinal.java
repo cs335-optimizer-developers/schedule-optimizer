@@ -38,10 +38,10 @@ public class AlgFinal extends AlgZ {
 	private int requestedCreds = 0;
 	private int totalAddedCredits = 0;
 	
-	private int irritA = 0;
-	private int irritB = 0;
+//	private int irritA = 0;
+//	private int irritB = 0;
 	private HashSet<String> complete = new HashSet<>();
-	private int bogus = 0;
+//	private int bogus = 0;
 	
 
 	public void distribute(Semester[] toFill) {
@@ -313,10 +313,10 @@ public class AlgFinal extends AlgZ {
 //			System.out.println("i: "+i);
 //			System.out.println(s.totalCredits()+c.getCredits());
 //			System.out.println(s.totalCredits()+c.getCredits() < 19);
-			if (i % 2 == 0 && sem1.contains(c.getName()))
-				irritA++;
-			if (i % 2 == 1 && sem2.contains(c.getName()))
-				irritB++;
+//			if (i % 2 == 0 && sem1.contains(c.getName()))
+//				irritA++;
+//			if (i % 2 == 1 && sem2.contains(c.getName()))
+//				irritB++;
 			
 			if (s.totalCredits()+c.getCredits() <= threshold &&
 					((i % 2 == 1 && sem1.contains(c.getName())) ||
@@ -341,7 +341,7 @@ public class AlgFinal extends AlgZ {
 				s.addCourse(c);
 				totalAddedCredits += c.getCredits();
 			} else {
-				bogus++;
+//				bogus++;
 				return 0;
 			}
 			

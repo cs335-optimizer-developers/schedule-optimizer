@@ -15,14 +15,16 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 
 import info.ClassType;
 import info.Course;
 
 public class SectionPanel extends JPanel {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel cards;
 	List<Course> courses;
 
@@ -35,6 +37,10 @@ public class SectionPanel extends JPanel {
 	
 	// Each page of the semester view
 	class Page extends JPanel {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
 		Course c;
 		Page(Course c, int num) {
 			this.c = c;
@@ -98,6 +104,11 @@ public class SectionPanel extends JPanel {
 		JPanel control = new JPanel();
 		control.add(new JButton(new AbstractAction("Prev") {
 
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				CardLayout cl = (CardLayout) cards.getLayout();
@@ -106,6 +117,11 @@ public class SectionPanel extends JPanel {
 		}));
 
 		control.add(new JButton(new AbstractAction("Next") {
+
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
 
 			@Override
 			public void actionPerformed(ActionEvent e) {

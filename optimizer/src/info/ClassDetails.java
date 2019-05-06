@@ -5,7 +5,7 @@ public class ClassDetails {
 	private String title;
 	private ClassTime time;
 	private String prof;
-	private double fee;
+//	private double fee;
 	
 	// If no fee is given, then assume section/lab costs no money
 	public ClassDetails(String title, ClassTime time, String prof) {
@@ -16,7 +16,7 @@ public class ClassDetails {
 		this.title = title;
 		this.time = time;
 		this.prof = prof;
-		this.fee = fee;
+//		this.fee = fee;
 		validateDetails();
 	}
 

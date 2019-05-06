@@ -3,9 +3,7 @@ package io;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 public class ParseDescrip {
 
@@ -32,15 +30,15 @@ public class ParseDescrip {
 					if(preLine.length() < 4)
 						continue;
 					
-					String course = " ";
+//					String course = " ";
 					for(int j = 0; j < preLine.length(); j++) {
-						char c = preLine.charAt(j);
-						if(c != ' ')
-							course+=c;
-						else {
+//						char c = preLine.charAt(j);
+//						if(c != ' ')
+//							course+=c;
+//						else {
 							//descrips.add(course);
-							course = "";
-						}
+//							course = "";
+//						}
 					}
 				}
 				courses.put(key, descrips);

@@ -33,9 +33,9 @@ import info.Tag;
  */
 public class ReadPopulateCSV {
 	
-	private static Map<String, Course> one_map;
+//	private static Map<String, Course> one_map;
 	// A flag to indicate that the build has completed
-	private static boolean buildFlag = false;
+//	private static boolean buildFlag = false;
 		
 	public static Semester[] buildSemesters() {
 		Semester[] toReturn = new Semester[2];
@@ -47,7 +47,7 @@ public class ReadPopulateCSV {
 		toReturn[1].setSemester("Spring");
 		toReturn[1].setYear(2019);
 		
-		buildFlag = true;
+//		buildFlag = true;
 		
 		return toReturn;
 	}
